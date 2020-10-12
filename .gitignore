@@ -1,24 +1,24 @@
-/vendor/
-node_modules/
-npm-debug.log
-yarn-error.log
+/base/vendor/
+/base/node_modules/
+/base/npm-debug.log
+/base/yarn-error.log
 
 # Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
+/base/bootstrap/compiled.php
+/base/app/storage/
 
 # Laravel 5 & Lumen specific
-public/storage
-public/hot
+/base/public/storage
+/base/public/hot
 
 # Laravel 5 & Lumen specific with changed public path
-public_html/storage
-public_html/hot
+/base/public_html/storage
+/base/public_html/hot
 
-storage/*.key
-.env
-Homestead.yaml
-Homestead.json
-/.vagrant
-.phpunit.result.cache
+/base/storage/*.key
+/base/.env
+/base/Homestead.yaml
+/base/Homestead.json
+/base/.vagrant
+/base/.phpunit.result.cache
 .DS_Store
