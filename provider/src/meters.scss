@@ -1,0 +1,35 @@
+    h2:nth-of-type(1) + figure > svg circle, h2:nth-of-type(1) + figure > svg path {
+      fill: hsla(128, 96, 20, 1);
+    }
+
+/*    h2:nth-of-type(1) + figure > svg .m10, h2:nth-of-type(1) + figure > svg .m9,
+    h2:nth-of-type(1) + figure > svg .m8, h2:nth-of-type(1) + figure > svg .m7,
+    h2:nth-of-type(1) + figure > svg .m6, h2:nth-of-type(1) + figure > svg .m5,
+    h2:nth-of-type(1) + figure > svg .m4, h2:nth-of-type(1) + figure > svg .m3,
+    h2:nth-of-type(1) + figure > svg .m2, h2:nth-of-type(1) + figure > svg .m1 {
+     fill: hsla(128, 96, 20, 0.25);
+    }*/
+
+    h2:nth-of-type(2) + figure > svg circle, h2:nth-of-type(2) + figure > svg path {
+      fill: hsla(25, 100, 35, 1);
+    }
+
+    h2:nth-of-type(3) + figure > svg circle, h2:nth-of-type(3) + figure > svg path {
+      fill: hsla(195, 100, 24, 1);
+    }
+
+    h2:nth-of-type(4) + figure > svg circle, h2:nth-of-type(4) + figure > svg path {
+      fill: hsla(298, 100, 31, 1);
+    }
+
+/*    h2:nth-of-type(2) {
+      grid-area: plabel;
+    }
+
+    h2:nth-of-type(3) {
+      grid-area: mlabel;
+    }
+
+    h2:nth-of-type(4) {
+      grid-area: slabel;
+    }*/

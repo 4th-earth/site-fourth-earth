@@ -16,22 +16,65 @@ use Eightfold\CommonMarkAccordions\AccordionExtension;
 use Eightfold\CommonMarkAccordions\AccordionGroupExtension;
 use League\CommonMark\Extension\Table\TableExtension;
 
+use FourthEarth\Site\CommonmarkExtras\Location\LocationExtension;
+use FourthEarth\Site\CommonmarkExtras\OtherSpeaking\OtherSpeakingExtension;
+use FourthEarth\Site\CommonmarkExtras\SelfSpeaking\SelfSpeakingExtension;
+use FourthEarth\Site\CommonmarkExtras\Narration\NarrationExtension;
+
 use Eightfold\ShoopShelf\Shoop;
 
-use Eightfold\Markup\UIKit;
+use Eightfold\LaravelMarkup\UIKit;
+
+// use Eightfold\Markup\UIKit;
 
 class ContentBuilder extends Fold
 {
     private $markdown = "";
 
+    // public function view()
+    // {
+    //     return UIKit::webView(
+    //         $this->pageTitle(),
+    //         $this->appearance(),
+    //         $this->main(),
+    //         $this->stats()
+    //     )->meta($this->meta());
+    // }
+
     public function view()
     {
-        return UIKit::webView(
+        $view = UIKit::webView(
             $this->pageTitle(),
-            $this->appearance(),
-            $this->main(),
-            $this->stats()
-        )->meta($this->meta());
+            UIKit::div(
+                UIKit::main(
+                    $this->logoHeader(),
+                    $this->invitationRequestForm(),
+                    UIKit::markdown(
+                        $this->markdown()->body()
+                    )->extensions(
+                        LocationExtension::class,
+                        OtherSpeakingExtension::class,
+                        SelfSpeakingExtension::class,
+                        NarrationExtension::class
+                    )
+                )->attr("is transcript"),
+                $this->asideStats(),
+                $this->asideAppearance(),
+                UIKit::footer(
+                    UIKit::p("Copyright © Joshua Bruce, 2020. All rights reserved.")
+                )
+            )->attr("class container")
+        )->meta(
+            UIKit::webHead()->favicons(
+                "/assets/favicons/favicon.ico",
+                "/assets/favicons/apple-touch-icon.png",
+                "/assets/favicons/favicon-32x32.png",
+                "/assets/favicons/favicon-16x16.png"
+            )->styles(...["/css/main.css"])
+            // ->scripts(...$this->scripts())
+        );
+
+        return view("ef::default")->with("view", $view);
     }
 
     public function pageTitle($parts = [])
@@ -46,62 +89,116 @@ class ContentBuilder extends Fold
         })->efToString(" | ");
     }
 
-    public function appearance()
+    public function logoHeader()
     {
-        return UIKit::div(
-            UIKit::nav(
-                UIKit::ul(
-                    UIKit::li(
-                        UIKit::anchor(UIKit::span("Fourth Earth"), "/")
-                            ->attr("class home")
-                    ),
-                    UIKit::li(
-                        UIKit::anchor("Citizen", "/citizen"),
-                        UIKit::listWith(
-                            UIKit::anchor("Citizen Glasses", "/citizen/citizen-glasses"),
-                            UIKit::anchor("Species", "/citizen/species"),
-                            UIKit::anchor("Magic", "/citizen/magic-of-fourth-earth")
-                        )
-                    ),
-                    UIKit::li(
-                        UIKit::anchor("Gameplay", "/the-system")
-                    )
+        return UIKit::h1(
+            UIKit::span("Fourth Earth")
+        );
+    }
+
+    public function invitationRequestForm()
+    {
+
+        return UIKit::form(
+            "post /request",
+            UIKit::text("Where should the alpha gameplay invitation be sent?", "email")->placeholder("darl@4th.earth")->email(),
+            UIKit::ul(
+                UIKit::li(
+                    UIKit::input()->attr("type checkbox", "id adult-check", "name adult"),
+                    UIKit::label("I am 18 years or older.")->attr("for adult-check")
+                ),
+                UIKit::li(
+                    UIKit::input()->attr("type checkbox", "id mail-check", "name mail"),
+                    UIKit::label("I consent to periodic emails.")->attr("for mail-check")
                 )
-            ),
-            UIKit::p("Copyright © Joshua Bruce 2020. All rights reserved.")
-                ->attr("class copyright")
-        )->attr("class appearance");
+            )->attr("class checkboxes")
+        )->submitLabel("Request invitation")->attr("novalidate novalidate");
     }
 
-    public function main()
+    public function asideStats()
     {
-        $content = UIKit::markdown("Hmmmm...either the content for this page has not been written or does not exist.");
-        if ($this->hasContent()->unfold()) {
-            $content = UIKit::markdown(
-                $this->markdown()->body()
-            )->extensions(
-                GithubFlavoredMarkdownExtension::class,
-                SmartPunctExtension::class,
-                HeadingPermalinkExtension::class,
-                FootnoteExtension::class,
-                AbbreviationExtension::class,
-                AccordionExtension::class,
-                AccordionGroupExtension::class,
-                TableExtension::class
-            );
-        }
-        return UIKit::main($content)->attr("class transcript");
+        return UIKit::aside(
+            UIKit::h2(UIKit::span("10"), " health"),
+            UIKit::figure(
+                $this->meter()
+            )->attr("is health"),
+            UIKit::h2(UIKit::span("10"), " physical"),
+            UIKit::figure(
+                $this->meter()
+            )->attr("is physical"),
+            UIKit::h2(UIKit::span("10"), " mental"),
+            UIKit::figure(
+                $this->meter()
+            )->attr("is mental"),
+            UIKit::h2(UIKit::span("10"), " spirit"),
+            UIKit::figure(
+                $this->meter()
+            )->attr("is spirit")
+        )->attr("is status");
     }
 
-    public function stats()
+    public function asideAppearance()
     {
-        return UIKit::div(
-            UIKit::div()->attr("class meter meter-health"),
-            UIKit::div()->attr("class meter meter-physical"),
-            UIKit::div()->attr("class meter meter-mental"),
-            UIKit::div()->attr("class meter meter-aura")
-        )->attr("class status");
+        return UIKit::aside(
+        )->attr("is appearance");
     }
+
+    // public function appearance()
+    // {
+    //     return UIKit::div(
+    //         UIKit::nav(
+    //             UIKit::ul(
+    //                 UIKit::li(
+    //                     UIKit::anchor(UIKit::span("Fourth Earth"), "/")
+    //                         ->attr("class home")
+    //                 ),
+    //                 UIKit::li(
+    //                     UIKit::anchor("Citizen", "/citizen"),
+    //                     UIKit::listWith(
+    //                         UIKit::anchor("Citizen Glasses", "/citizen/citizen-glasses"),
+    //                         UIKit::anchor("Species", "/citizen/species"),
+    //                         UIKit::anchor("Magic", "/citizen/magic-of-fourth-earth")
+    //                     )
+    //                 ),
+    //                 UIKit::li(
+    //                     UIKit::anchor("Gameplay", "/the-system")
+    //                 )
+    //             )
+    //         ),
+    //         UIKit::p("Copyright © Joshua Bruce 2020. All rights reserved.")
+    //             ->attr("class copyright")
+    //     )->attr("class appearance");
+    // }
+
+    // public function main()
+    // {
+    //     $content = UIKit::markdown("Hmmmm...either the content for this page has not been written or does not exist.");
+    //     if ($this->hasContent()->unfold()) {
+    //         $content = UIKit::markdown(
+    //             $this->markdown()->body()
+    //         )->extensions(
+    //             GithubFlavoredMarkdownExtension::class,
+    //             SmartPunctExtension::class,
+    //             HeadingPermalinkExtension::class,
+    //             FootnoteExtension::class,
+    //             AbbreviationExtension::class,
+    //             AccordionExtension::class,
+    //             AccordionGroupExtension::class,
+    //             TableExtension::class
+    //         );
+    //     }
+    //     return UIKit::main($content)->attr("class transcript");
+    // }
+
+    // public function stats()
+    // {
+    //     return UIKit::div(
+    //         UIKit::div()->attr("class meter meter-health"),
+    //         UIKit::div()->attr("class meter meter-physical"),
+    //         UIKit::div()->attr("class meter meter-mental"),
+    //         UIKit::div()->attr("class meter meter-aura")
+    //     )->attr("class status");
+    // }
 
     public function markdown()
     {
@@ -193,5 +290,10 @@ class ContentBuilder extends Fold
             "/js/ef-menu.js",
             "/js/ef-accordions.js"
         ]);
+    }
+
+    public function meter()
+    {
+        return '<svg width="100%" height="100%" viewBox="0 0 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-147,-1408.4)"><g id="Artboard6" transform="matrix(0.294118,0,0,0.416667,103.576,1115.9)"><rect x="147.641" y="702" width="850" height="600" style="fill:none;"/><clipPath id="_clip1"><rect x="147.641" y="702" width="850" height="600"/></clipPath><g clip-path="url(#_clip1)"><g transform="matrix(3.57134,0,0,2.52095,-2971.76,-448.092)"><g><g transform="matrix(2.21129,0,0,2.21129,-434.926,-710.8)"><path class="m10" d="M645.497,527.752C675.199,527.752 699.313,551.867 699.313,581.568C699.313,611.27 675.199,635.384 645.497,635.384C615.795,635.384 591.681,611.27 591.681,581.568C591.681,551.867 615.795,527.752 645.497,527.752ZM645.497,532.227C672.729,532.227 694.838,554.336 694.838,581.568C694.838,608.801 672.729,630.91 645.497,630.91C618.264,630.91 596.155,608.801 596.155,581.568C596.155,554.336 618.264,532.227 645.497,532.227Z"/></g><g transform="matrix(0.464546,0,0,0.464546,661.592,232.051)"><circle class="m9" cx="645.497" cy="581.568" r="53.816"/></g><g transform="matrix(0.464546,0,0,0.464546,618.305,274.051)"><circle class="m8" cx="645.497" cy="581.568" r="53.816"/></g><g transform="matrix(0.464546,0,0,0.464546,618.592,334.051)"><circle class="m7" cx="645.497" cy="581.568" r="53.816"/></g><g transform="matrix(0.464546,0,0,0.464546,660.592,378.051)"><circle class="m6" cx="645.497" cy="581.568" r="53.816"/></g><g transform="matrix(0.464546,0,0,0.464546,723.592,378.051)"><circle class="m5" cx="645.497" cy="581.568" r="53.816"/></g><g transform="matrix(0.464546,0,0,0.464546,766.592,335.051)"><circle class="m4" cx="645.497" cy="581.568" r="53.816"/></g><g transform="matrix(0.464546,0,0,0.464546,766.592,275.051)"><circle class="m3" cx="645.497" cy="581.568" r="53.816"/></g><g transform="matrix(0.464546,0,0,0.464546,721.592,231.051)"><circle class="m2" cx="645.497" cy="581.568" r="53.816"/></g><g transform="matrix(0.929092,0,0,0.929092,392.729,34.8862)"><circle class="m1" cx="645.497" cy="581.568" r="53.816"/></g></g></g></g></g></g></svg>';
     }
 }

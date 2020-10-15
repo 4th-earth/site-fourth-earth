@@ -6,15 +6,53 @@ use Laravel\Fortify\Fortify;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Validator;
 
 use Eightfold\Shoop\Shoop;
 use FourthEarth\Site\ContentBuilder;
 
 use Eightfold\LaravelMarkup\UIKit;
 
-Route::domain("lore.". env("SITE"))->group(function () {
+use FourthEarth\Site\Models\Invitation;
+
+Route::domain(env("SITE"))->group(function() {
     $builder = ContentBuilder::fold(
-        Shoop::this(__DIR__)->divide("/")->dropLast(3)->append(["content-fourth-earth"])
+        Shoop::this(__DIR__)->divide("/")->dropLast(3)
+            ->append(["content-fourth-earth", "root"])
+    );
+
+    Route::get("/", function() use ($builder) {
+        return $builder->view();
+    })->middleware("web")->name("home");
+
+    Route::get("/request", function() {
+        return redirect("/");
+    })->middleware("web");
+
+    Route::post("/request", function(Request $request) {
+        $input = $request->all();
+        $rules = [
+            "email" => "required|unique:invitations|email",
+            "adult" => "required",
+            "mail"  => "required"
+        ];
+        $messages = [
+            "email.required" => "We need an email address.",
+            "email.unique"   => "We already have this email address.",
+            "email.email"    => "Does not appear to be an email address.",
+            "adult.required" => "You must be 18 or older, sorry.",
+            "mail.required"  => "We must be able to email you."
+        ];
+
+        Validator::make($input, $rules, $messages)->validate();
+die(var_dump(
+    "made it"
+));
+    })->middleware("web");
+
+    $builder = ContentBuilder::fold(
+        Shoop::this(__DIR__)->divide("/")->dropLast(3)
+            ->append(["content-fourth-earth"])
     );
 
     Route::prefix("assets/ui")->group(function() use ($builder) {
@@ -44,59 +82,4 @@ Route::domain("lore.". env("SITE"))->group(function () {
             );
         })->name("assets");
     });
-
-    Route::any("{any}", function(Request $request, string $any = null) use ($builder) {
-        if ($builder->hasContent()->unfold()) {
-            if ($builder->markdown()->meta()->hasAt("redirect")->unfold()) {
-                return redirect($builder->markdown()->meta()->redirect);
-            }
-            return view("ef::default")->with("view", $builder->view());
-        }
-        return view("ef::default")->with("view", $builder->view());
-    })->where("any", ".*");
-});
-
-Route::domain(env("SITE"))->middleware("web")->group(function() {
-    Route::get("/", function() {
-        $content = <<<EOD
-        Fourth Earth is accepting requests for up to 200 Alpha-round players.
-
-        1. Submit your email address below.
-        2. Follow the verification link.
-        3. Await your invitation.
-        EOD;
-        $home = UIKit::webView(
-            "Fourth Eearth (pre-alpha)",
-            UIKit::form(
-                "post /request",
-                UIKit::text("Email address (for alpha play)", "email")->placeholder("darl@4th.earth")->email()
-            ),
-            UIKit::div(
-                UIKit::div(
-                    UIKit::p("pre-alpha sign-up")->attr("class top")
-                ),
-                UIKit::div(
-                    UIKit::p("pre-beta sign-up")->attr("class top"),
-                    UIKit::p("alpha play")->attr("class bottom")
-                ),
-                UIKit::div(
-                    UIKit::p("pre-open sign-up")->attr("class top"),
-                    UIKit::p("beta play")->attr("class bottom")
-                ),
-                UIKit::div(
-                    UIKit::p("open play")->attr("class bottom")
-                )
-            )->attr("class timeline"),
-            UIKit::main(
-                UIKit::markdown($content)
-            )->attr("is transcript"),
-            UIKit::aside()->attr("is status"),
-            UIKit::aside()->attr("is appearance")
-        );
-        return view("ef::default")->with("view", $home);
-    });
-
-    Route::post("/request", function() {
-
-    })->middleware("web");
 });

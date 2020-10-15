@@ -31,6 +31,16 @@
             "type": "path",
             "url": "../provider",
             "name": "joshbruce/provider-fourth-earth"
+        },
+        {
+            "type": "path",
+            "url": "../provider-journal",
+            "name": "joshbruce/provider-fourth-earth-journal"
+        },
+        {
+            "type": "path",
+            "url": "../provider-lore",
+            "name": "joshbruce/provider-fourth-earth-lore"
         }
     ],
     "config": {
