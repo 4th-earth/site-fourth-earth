@@ -15,11 +15,12 @@ class UpdateRelationships extends Migration
     {
         // users <-> invitation <-> request
         Schema::table('users', function (Blueprint $table) {
-            $table->foreignId('invitation_id')->constrained();
+            $table->foreignId('invitation_id')->nullable()->constrained();
         });
 
         Schema::table('invitations', function (Blueprint $table) {
-            $table->foreignId('request_id')->constrained();
+            $table->foreignId('user_id')->nullable()->constrained();
+            $table->foreignId('invitation_request_id')->nullable()->constrained();
         });
     }
 

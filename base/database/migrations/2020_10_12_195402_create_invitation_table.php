@@ -15,11 +15,9 @@ class CreateInvitationTable extends Migration
     {
         Schema::create('invitations', function (Blueprint $table) {
             $table->id();
-            $table->string("email")->unique();
-            $table->string("token", 32)->unique()->nullable();
-            $table->ipAddress("ip_address");
+            $table->string("code", 32)->unique()->nullable();
+            $table->ipAddress("ip_address")->nullable();
             $table->timestamp("verified_at")->nullable();
-            $table->timestamp("claimed_at")->nullable();
             $table->timestamps();
         });
     }

@@ -25,7 +25,7 @@ use Eightfold\ShoopShelf\Shoop;
 
 use Eightfold\LaravelMarkup\UIKit;
 
-// use Eightfold\Markup\UIKit;
+use FourthEarth\Site\Models\InvitationRequest;
 
 class ContentBuilder extends Fold
 {
@@ -41,29 +41,22 @@ class ContentBuilder extends Fold
     //     )->meta($this->meta());
     // }
 
-    public function view()
+    public function view(string $class = "triple", ...$content)
     {
+        $message = "";
+        if (request()->session()->has("message")) {
+            $message = session("message");
+        }
+
         $view = UIKit::webView(
             $this->pageTitle(),
-            UIKit::div(
-                UIKit::main(
-                    $this->logoHeader(),
-                    $this->invitationRequestForm(),
-                    UIKit::markdown(
-                        $this->markdown()->body()
-                    )->extensions(
-                        LocationExtension::class,
-                        OtherSpeakingExtension::class,
-                        SelfSpeakingExtension::class,
-                        NarrationExtension::class
-                    )
-                )->attr("is transcript"),
-                $this->asideStats(),
-                $this->asideAppearance(),
-                UIKit::footer(
-                    UIKit::p("Copyright © Joshua Bruce, 2020. All rights reserved.")
-                )
-            )->attr("class container")
+            $message,
+            UIKit::main(...$content)->attr("is transcript"),
+            ($class === "triple") ? $this->asideStats() : "",
+            ($class === "tripe") ? $this->asideAppearance() : "",
+            UIKit::footer(
+                UIKit::p("Copyright © Joshua Bruce, 2020. All rights reserved.")
+            )
         )->meta(
             UIKit::webHead()->favicons(
                 "/assets/favicons/favicon.ico",
@@ -72,9 +65,83 @@ class ContentBuilder extends Fold
                 "/assets/favicons/favicon-16x16.png"
             )->styles(...["/css/main.css"])
             // ->scripts(...$this->scripts())
-        );
+        )->bodyAttr("class {$class}");
 
         return view("ef::default")->with("view", $view);
+    }
+
+    public function homeView()
+    {
+        return $this->view("triple",
+            $this->logoHeader(),
+            $this->invitationRequestForm(),
+            UIKit::markdown(
+                $this->markdown()->body()
+            )->extensions(
+                LocationExtension::class,
+                OtherSpeakingExtension::class,
+                SelfSpeakingExtension::class,
+                NarrationExtension::class
+            )
+        );
+    }
+
+    public function requestConfirmView()
+    {
+        return $this->view("full",
+            $this->logoHeader(),
+            UIKit::markdown(
+                $this->markdown()->body()
+            )->extensions(
+                LocationExtension::class,
+                OtherSpeakingExtension::class,
+                SelfSpeakingExtension::class,
+                NarrationExtension::class
+            )
+        );
+    }
+
+    public function registerView()
+    {
+        $token = request()->query("token");
+        $invitationRequest = InvitationRequest::where("token", $token)->firstOrFail();
+        return $this->view("full",
+            $this->logoHeader(),
+            UIKit::markdown(
+                $this->markdown()->body()
+            ),
+            UIKit::form(
+                "post ". route("register"),
+                UIKit::text("code from invitation email", "code"),
+                UIKit::text("email address", "email")->email()->value($invitationRequest->email),
+                UIKit::password("password", "password"),
+                UIKit::password("confirm password", "password_confirmation"),
+                (request()->query("token"))
+                    ? UIKit::input()->attr("type hidden", "name token", "value ". request()->query("token"))
+                    : ""
+            )->submitLabel("Register"),
+            UIKit::p(
+                UIKit::anchor("Already registered?", "/login")
+            )
+        );
+    }
+
+    public function loginView()
+    {
+        return $this->view("full",
+            $this->logoHeader(),
+            UIKit::markdown(
+                $this->markdown()->body()
+            ),
+            UIKit::form(
+                "post ". route("login"),
+                UIKit::text("email address", "email")->email(),
+                UIKit::password("password", "password")
+            )->submitLabel("Sign in"),
+            UIKit::p(
+                UIKit::anchor("Forgot your password?", route('password.request'))
+            )
+        );
     }
 
     public function pageTitle($parts = [])
@@ -93,7 +160,32 @@ class ContentBuilder extends Fold
     {
         return UIKit::h1(
             UIKit::span("Fourth Earth")
-        );
+        )->attr("class logo-header");
+    }
+
+    public function ip()
+    {
+        $keys = [
+            'HTTP_CLIENT_IP',
+            'HTTP_X_FORWARDED_FOR',
+            'HTTP_X_FORWARDED',
+            'HTTP_X_CLUSTER_CLIENT_IP',
+            'HTTP_FORWARDED_FOR',
+            'HTTP_FORWARDED',
+            'REMOTE_ADDR'
+        ];
+
+        foreach ($keys as $key){
+            if (array_key_exists($key, $_SERVER) === true){
+                foreach (explode(',', $_SERVER[$key]) as $ip){
+                    $ip = trim($ip); // just to be safe
+                    if (filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE | FILTER_FLAG_NO_RES_RANGE) !== false){
+                        return $ip;
+                    }
+                }
+            }
+        }
+        return request()->ip();
     }
 
     public function invitationRequestForm()
@@ -112,28 +204,36 @@ class ContentBuilder extends Fold
                     UIKit::label("I consent to periodic emails.")->attr("for mail-check")
                 )
             )->attr("class checkboxes")
-        )->submitLabel("Request invitation")->attr("novalidate novalidate");
+        )->submitLabel("Request invitation");
     }
 
     public function asideStats()
     {
         return UIKit::aside(
-            UIKit::h2(UIKit::span("10"), " health"),
-            UIKit::figure(
-                $this->meter()
-            )->attr("is health"),
-            UIKit::h2(UIKit::span("10"), " physical"),
-            UIKit::figure(
-                $this->meter()
-            )->attr("is physical"),
-            UIKit::h2(UIKit::span("10"), " mental"),
-            UIKit::figure(
-                $this->meter()
-            )->attr("is mental"),
-            UIKit::h2(UIKit::span("10"), " spirit"),
-            UIKit::figure(
-                $this->meter()
-            )->attr("is spirit")
+            UIKit::div(
+                UIKit::h2(UIKit::span("10"), " health"),
+                UIKit::figure(
+                    $this->meter()
+                )
+            )->attr("is health", "data-value 10"),
+            UIKit::div(
+                UIKit::h2(UIKit::span("10"), " physical"),
+                UIKit::figure(
+                    $this->meter()
+                )
+            )->attr("is physical", "data-value 10"),
+            UIKit::div(
+                UIKit::h2(UIKit::span("10"), " mental"),
+                UIKit::figure(
+                    $this->meter()
+                )
+            )->attr("is mental", "data-value 10"),
+            UIKit::div(
+                UIKit::h2(UIKit::span("10"), " spirit"),
+                UIKit::figure(
+                    $this->meter()
+                )
+            )->attr("is spirit", "data-value 10")
         )->attr("is status");
     }
 
@@ -224,7 +324,7 @@ class ContentBuilder extends Fold
         return Shoop::this($this->requestPath())->divide("/", false)->unfold();
     }
 
-    private function contentPath()
+    public function contentPath()
     {
         return $this->main->append(
             $this->requestParts()

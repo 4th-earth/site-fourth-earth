@@ -12,7 +12,9 @@
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
-        "joshbruce/provider-fourth-earth": "~0.0.1",
+        "fourth-earth/provider-fourth-earth": "~0.0.1",
+        "fourth-earth/provider-fourth-earth-journal": "~0.0.1",
+        "fourth-earth/provider-fourth-earth-lore": "~0.0.1",
         "laravel/framework": "^8.0",
         "laravel/jetstream": "^1.4",
         "laravel/sanctum": "^2.6",
@@ -30,17 +32,17 @@
         {
             "type": "path",
             "url": "../provider",
-            "name": "joshbruce/provider-fourth-earth"
+            "name": "fourth-earth/provider-fourth-earth"
         },
         {
             "type": "path",
             "url": "../provider-journal",
-            "name": "joshbruce/provider-fourth-earth-journal"
+            "name": "fourth-earth/provider-fourth-earth-journal"
         },
         {
             "type": "path",
             "url": "../provider-lore",
-            "name": "joshbruce/provider-fourth-earth-lore"
+            "name": "fourth-earth/provider-fourth-earth-lore"
         }
     ],
     "config": {

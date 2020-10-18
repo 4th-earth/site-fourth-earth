@@ -19,7 +19,7 @@ use FourthEarth\Site\CommonmarkExtras\Narration\NarrationExtension;
 
 use FourthEarth\Site\Models\Invitation;
 
-Route::domain("lore.". env("SITE"))->group(function () {
+Route::domain("journal.". env("SITE"))->group(function () {
     $builder = ContentBuilder::fold(
         Shoop::this(__DIR__)->divide("/")->dropLast(3)->append(["content-fourth-earth"])
     );

@@ -1,6 +1,7 @@
 <?php
 
 use Carbon\Carbon;
+use Hashids\Hashids;
 
 use Laravel\Fortify\Fortify;
 use Illuminate\Support\Facades\Route;
@@ -13,7 +14,7 @@ use FourthEarth\Site\ContentBuilder;
 
 use Eightfold\LaravelMarkup\UIKit;
 
-use FourthEarth\Site\Models\Invitation;
+use FourthEarth\Site\Models\InvitationRequest;
 
 Route::domain(env("SITE"))->group(function() {
     $builder = ContentBuilder::fold(
@@ -22,19 +23,53 @@ Route::domain(env("SITE"))->group(function() {
     );
 
     Route::get("/", function() use ($builder) {
-        return $builder->view();
+        if (Auth::user()) {
+            die("authenticated view");
+        }
+        return $builder->homeView();
     })->middleware("web")->name("home");
 
-    Route::get("/request", function() {
-        return redirect("/");
+    Route::get("/register", function(Request $request) use ($builder) {
+        return $builder->registerView();
+    })->middleware("web");
+
+    Route::get("/request", function(Request $request) use ($builder) {
+
+        if (! $request->has("token")) {
+            session()->flash(
+                "message",
+                UIKit::doubleWrap(
+                    UIKit::h2("no token found"),
+                    UIKit::markdown("We did not find a token. Please try following the link from the email again.")
+                )->outer("div", "is alert-warning", "role alert")
+            );
+
+            return redirect("/");
+        }
+
+        $token = $request->query("token");
+
+        $request = InvitationRequest::claimRequest($token);
+        if (! $request) {
+            session()->flash(
+                "message",
+                UIKit::doubleWrap(
+                    UIKit::h2("invitation request expired"),
+                    UIKit::markdown("Invite requests are only valid for 72 hours. Please resubmit your email address to try again.")
+                )->outer("div", "is alert-warning", "role alert")
+            );
+            return redirect("/");
+        }
+
+        return $builder->requestConfirmView();
     })->middleware("web");
 
     Route::post("/request", function(Request $request) {
         $input = $request->all();
         $rules = [
-            "email" => "required|unique:invitations|email",
-            "adult" => "required",
-            "mail"  => "required"
+            "email" => "required|unique:invitation_requests|email",
+            "adult" => "required|accepted",
+            "mail"  => "required|accepted"
         ];
         $messages = [
             "email.required" => "We need an email address.",
@@ -45,9 +80,20 @@ Route::domain(env("SITE"))->group(function() {
         ];
 
         Validator::make($input, $rules, $messages)->validate();
-die(var_dump(
-    "made it"
-));
+
+        $email = $request->input("email");
+
+        InvitationRequest::newRequest($email)->sendMail();
+
+        session()->flash(
+            "message",
+            UIKit::doubleWrap(
+                UIKit::h2("confirmation email sent"),
+                UIKit::markdown("Please check your email and follow the link there to confirm your request. (And help ensure a bit that you're not a robot.)")
+            )->outer("div", "is alert-success", "role alert")
+        );
+
+        return back();
     })->middleware("web");
 
     $builder = ContentBuilder::fold(

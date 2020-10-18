@@ -13,11 +13,11 @@ class CreateRequestsTable extends Migration
      */
     public function up()
     {
-        Schema::create('requests', function (Blueprint $table) {
+        Schema::create('invitation_requests', function (Blueprint $table) {
             $table->id();
             $table->string("email")->unique();
             $table->string("token", 32)->unique()->nullable();
-            $table->ipAddress("ip_address");
+            $table->ipAddress("ip_address")->nullable();
             $table->timestamp("verified_at")->nullable();
             $table->timestamps();
         });

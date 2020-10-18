@@ -6,6 +6,11 @@ use App\Actions\Jetstream\DeleteUser;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Jetstream\Jetstream;
 
+use Laravel\Fortify\Fortify;
+
+use Eightfold\Shoop\Shoop;
+use FourthEarth\Site\ContentBuilder;
+
 class JetstreamServiceProvider extends ServiceProvider
 {
     /**
@@ -28,6 +33,20 @@ class JetstreamServiceProvider extends ServiceProvider
         $this->configurePermissions();
 
         Jetstream::deleteUsersUsing(DeleteUser::class);
+
+        Fortify::registerView(function () {
+            return ContentBuilder::fold(
+                Shoop::this(__DIR__)->divide("/")->dropLast(4)
+                    ->append(["content-fourth-earth", "root"])
+            )->registerView();
+        });
+
+        Fortify::loginView(function () {
+            return ContentBuilder::fold(
+                Shoop::this(__DIR__)->divide("/")->dropLast(4)
+                    ->append(["content-fourth-earth", "root"])
+            )->loginView();
+        });
     }
 
     /**

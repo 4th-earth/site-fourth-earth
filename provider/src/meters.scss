@@ -1,35 +1,167 @@
-    h2:nth-of-type(1) + figure > svg circle, h2:nth-of-type(1) + figure > svg path {
-      fill: hsla(128, 96, 20, 1);
-    }
+[is="health"][data-value="10"] > figure > svg {
+  & .m10 {
+    fill: hsla(128, 96, 20, 1);
+  }
 
-/*    h2:nth-of-type(1) + figure > svg .m10, h2:nth-of-type(1) + figure > svg .m9,
-    h2:nth-of-type(1) + figure > svg .m8, h2:nth-of-type(1) + figure > svg .m7,
-    h2:nth-of-type(1) + figure > svg .m6, h2:nth-of-type(1) + figure > svg .m5,
-    h2:nth-of-type(1) + figure > svg .m4, h2:nth-of-type(1) + figure > svg .m3,
-    h2:nth-of-type(1) + figure > svg .m2, h2:nth-of-type(1) + figure > svg .m1 {
-     fill: hsla(128, 96, 20, 0.25);
-    }*/
+  & .m9 {
+    fill: hsla(128, 96, 20, 1);
+  }
 
-    h2:nth-of-type(2) + figure > svg circle, h2:nth-of-type(2) + figure > svg path {
-      fill: hsla(25, 100, 35, 1);
-    }
+  & .m8 {
+    fill: hsla(128, 96, 20, 1);
+  }
 
-    h2:nth-of-type(3) + figure > svg circle, h2:nth-of-type(3) + figure > svg path {
-      fill: hsla(195, 100, 24, 1);
-    }
+  & .m7 {
+    fill: hsla(128, 96, 20, 1);
+  }
 
-    h2:nth-of-type(4) + figure > svg circle, h2:nth-of-type(4) + figure > svg path {
-      fill: hsla(298, 100, 31, 1);
-    }
+  & .m6 {
+    fill: hsla(128, 96, 20, 1);
+  }
 
-/*    h2:nth-of-type(2) {
-      grid-area: plabel;
-    }
+  & .m5 {
+    fill: hsla(128, 96, 20, 1);
+  }
 
-    h2:nth-of-type(3) {
-      grid-area: mlabel;
-    }
+  & .m4 {
+    fill: hsla(128, 96, 20, 1);
+  }
 
-    h2:nth-of-type(4) {
-      grid-area: slabel;
-    }*/
+  & .m3 {
+    fill: hsla(128, 96, 20, 1);
+  }
+
+  & .m2 {
+    fill: hsla(128, 96, 20, 1);
+  }
+
+  & .m1 {
+    fill: hsla(128, 96, 20, 1);
+  }
+}
+
+[is="physical"][data-value="10"] > figure > svg {
+  & .m10 {
+    fill: hsla(25, 100, 35, 1);
+  }
+
+  & .m9 {
+    fill: hsla(25, 100, 35, 1);
+  }
+
+  & .m8 {
+    fill: hsla(25, 100, 35, 1);
+  }
+
+  & .m7 {
+    fill: hsla(25, 100, 35, 1);
+  }
+
+  & .m6 {
+    fill: hsla(25, 100, 35, 1);
+  }
+
+  & .m5 {
+    fill: hsla(25, 100, 35, 1);
+  }
+
+  & .m4 {
+    fill: hsla(25, 100, 35, 1);
+  }
+
+  & .m3 {
+    fill: hsla(25, 100, 35, 1);
+  }
+
+  & .m2 {
+    fill: hsla(25, 100, 35, 1);
+  }
+
+  & .m1 {
+    fill: hsla(25, 100, 35, 1);
+  }
+}
+
+[is="mental"][data-value="10"] > figure > svg {
+  & .m10 {
+    fill: hsla(195, 100, 24, 1);
+  }
+
+  & .m9 {
+    fill: hsla(195, 100, 24, 1);
+  }
+
+  & .m8 {
+    fill: hsla(195, 100, 24, 1);
+  }
+
+  & .m7 {
+    fill: hsla(195, 100, 24, 1);
+  }
+
+  & .m6 {
+    fill: hsla(195, 100, 24, 1);
+  }
+
+  & .m5 {
+    fill: hsla(195, 100, 24, 1);
+  }
+
+  & .m4 {
+    fill: hsla(195, 100, 24, 1);
+  }
+
+  & .m3 {
+    fill: hsla(195, 100, 24, 1);
+  }
+
+  & .m2 {
+    fill: hsla(195, 100, 24, 1);
+  }
+
+  & .m1 {
+    fill: hsla(195, 100, 24, 1);
+  }
+}
+
+[is="spirit"][data-value="10"] > figure > svg {
+  & .m10 {
+    fill: hsla(298, 100, 31, 1);
+  }
+
+  & .m9 {
+    fill: hsla(298, 100, 31, 1);
+  }
+
+  & .m8 {
+    fill: hsla(298, 100, 31, 1);
+  }
+
+  & .m7 {
+    fill: hsla(298, 100, 31, 1);
+  }
+
+  & .m6 {
+    fill: hsla(298, 100, 31, 1);
+  }
+
+  & .m5 {
+    fill: hsla(298, 100, 31, 1);
+  }
+
+  & .m4 {
+    fill: hsla(298, 100, 31, 1);
+  }
+
+  & .m3 {
+    fill: hsla(298, 100, 31, 1);
+  }
+
+  & .m2 {
+    fill: hsla(298, 100, 31, 1);
+  }
+
+  & .m1 {
+    fill: hsla(298, 100, 31, 1);
+  }
+}
