@@ -12,14 +12,9 @@
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
-        "fourth-earth/provider-fourth-earth": "~0.0.1",
-        "fourth-earth/provider-fourth-earth-journal": "~0.0.1",
-        "fourth-earth/provider-fourth-earth-lore": "~0.0.1",
+        "joshbruce/fourth-earth": "~0.0.1",
         "laravel/framework": "^8.0",
-        "laravel/jetstream": "^1.4",
-        "laravel/sanctum": "^2.6",
-        "laravel/tinker": "^2.0",
-        "livewire/livewire": "^2.0"
+        "laravel/tinker": "^2.0"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",
@@ -31,18 +26,8 @@
     "repositories": [
         {
             "type": "path",
-            "url": "../provider",
-            "name": "fourth-earth/provider-fourth-earth"
-        },
-        {
-            "type": "path",
-            "url": "../provider-journal",
-            "name": "fourth-earth/provider-fourth-earth-journal"
-        },
-        {
-            "type": "path",
-            "url": "../provider-lore",
-            "name": "fourth-earth/provider-fourth-earth-lore"
+            "url": "../provider-main",
+            "name": "joshbruce/fourth-earth"
         }
     ],
     "config": {
@@ -67,7 +52,7 @@
             "Tests\\": "tests/"
         }
     },
-    "minimum-stability": "beta",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
         "post-autoload-dump": [

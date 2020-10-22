@@ -11,10 +11,4 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.sass("../provider/src/main.scss", "public/css");
-
-// mix.js('resources/js/app.js', 'public/js')
-//     .postCss('resources/css/app.css', 'public/css', [
-//         require('postcss-import'),
-//         require('tailwindcss'),
-//     ]);
+mix.sass("../provider-main/src/main.scss", "public/css");
