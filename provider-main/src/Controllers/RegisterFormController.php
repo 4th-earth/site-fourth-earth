@@ -32,7 +32,7 @@ class RegisterFormController extends AbstractController
         return parent::view(
             [
                 parent::logoHeader(),
-                $this->registrationForm()
+                $this->registrationForm(),
             ]
         );
     }
@@ -41,15 +41,21 @@ class RegisterFormController extends AbstractController
     {
         $request = Request::where("token", request()->query("token"))
             ->firstOrFail();
-        return UIKit::form(
-            "post /register",
-            UIKit::text("invitation code", "code"),
-            UIKit::text("email address", "email", $request->email)
-                ->placeholder("darl@4th.earth")->email(),
-            UIKit::password("password", "password"),
-            UIKit::password("confirm password", "password_confirmation"),
-            UIKit::input()->attr("type hidden", "name token", "value ". $request->token)
-        )->submitLabel("Register")->attr("novalidate novalidate");
+        return UIKit::div(
+            UIKit::form(
+                "post /register",
+                UIKit::text("invitation code", "code"),
+                UIKit::text("email address", "email")
+                    ->value($request->email)
+                    ->placeholder("darl@4th.earth")->email(),
+                UIKit::password("password", "password"),
+                UIKit::input()->attr("type hidden", "name token", "value ". $request->token)
+            )->submitLabel("Register")->attr("novalidate novalidate"),
+            UIKit::p(
+                "Already registered? ",
+                UIKit::anchor("Sign in", "/login")
+            )
+        )->attr("class centered");
     }
 
     // public function markdown()

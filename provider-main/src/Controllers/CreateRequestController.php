@@ -2,7 +2,7 @@
 
 namespace FourthEarth\Site\Controllers;
 
-use App\Http\Controllers\Controller;
+use FourthEarth\Site\Controllers\AbstractController;
 
 use Illuminate\Http\Request as LaravelRequest;
 use Illuminate\Support\Facades\Validator;
@@ -12,7 +12,7 @@ use Eightfold\LaravelMarkup\UIKit;
 
 use FourthEarth\Site\Models\Request;
 
-class CreateRequestController extends Controller
+class CreateRequestController extends AbstractController
 {
     public function __invoke()
     {
@@ -33,13 +33,7 @@ class CreateRequestController extends Controller
 
         $validator = Validator::make($request, $rules, $messages);
         if ($validator->fails()) {
-            session()->flash(
-                "message",
-                UIKit::doubleWrap(
-                    UIKit::h2("errors detected"),
-                    UIKit::markdown("The form was not completed properly. Please correct the errors below.")
-                )->outer("div", "is alert-error", "role alert")
-            );
+            parent::errorMessage();
             $validator->validate();
         }
 

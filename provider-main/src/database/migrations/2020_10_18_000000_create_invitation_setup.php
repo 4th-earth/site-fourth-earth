@@ -30,6 +30,7 @@ class CreateInvitationSetup extends Migration
         });
 
         Schema::table("users", function (Blueprint $table) {
+            $table->string("name")->nullable()->change();
             $table->foreignId('invitation_id')->nullable()->constrained();
         });
     }

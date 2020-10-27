@@ -2,12 +2,14 @@
 
 namespace App\Models;
 
+use Hashids\Hashids;
+
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-use FourthEarth\Site\Models\Invitations;
+use FourthEarth\Site\Models\Invitation;
 
 class User extends Authenticatable
 {
@@ -19,9 +21,10 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name',
         'email',
         'password',
+        'invitation_id',
+        'email_verified_at'
     ];
 
     /**
@@ -45,6 +48,11 @@ class User extends Authenticatable
 
     public function invitation()
     {
-        return $this->belongsTo(Invitation::class);
+        return $this->belongsTo(Invitation::class)->first();
+    }
+
+    public function hash()
+    {
+        return (new Hashids(env("APP_KEY"), 12))->encode($this->id);
     }
 }

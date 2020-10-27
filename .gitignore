@@ -1,11 +1,11 @@
-/base/vendor/
-/base/node_modules/
-/base/npm-debug.log
-/base/yarn-error.log
+vendor/
+node_modules/
+npm-debug.log
+yarn-error.log
 
 # Laravel 4 specific
-/base/bootstrap/compiled.php
-/base/app/storage/
+bootstrap/compiled.php
+app/storage/
 
 # Laravel 5 & Lumen specific
 /base/public/storage

@@ -11,6 +11,17 @@ use Eightfold\LaravelMarkup\UIKit;
 
 class AbstractController extends Controller
 {
+    static public function errorMessage()
+    {
+        session()->flash(
+            "message",
+            UIKit::doubleWrap(
+                UIKit::h2("errors detected"),
+                UIKit::markdown("The form was not completed properly. Please correct the errors below.")
+            )->outer("div", "is alert-error", "role alert")
+        );
+    }
+
     public function view(
         array $mainContent = [],
         array $leftContent = [],

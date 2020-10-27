@@ -32,6 +32,11 @@ class Invitation extends Model
         return $invitation;
     }
 
+    public function user()
+    {
+        return $this->hasOne(User::class)->first();
+    }
+
     public function request()
     {
         return $this->belongsTo(Request::class)->first();

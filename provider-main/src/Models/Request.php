@@ -33,7 +33,7 @@ class Request extends Model
 
     public function invitation()
     {
-        return $this->hasOne(Invitation::class);
+        return $this->hasOne(Invitation::class)->first();
     }
 
     public function sendMail()

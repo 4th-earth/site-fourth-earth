@@ -127,7 +127,7 @@ main {
   form {
     grid-column: 2 / span 2;
     display: grid;
-    margin: 2rem 0;
+    /*margin: 2rem 0;*/
 
     label {
       color: var(--color-ef-white);
@@ -209,6 +209,7 @@ main {
       }
     }
   }
+
   & a {
     display: inline-block;
     padding: 3px 4px;
@@ -225,10 +226,12 @@ main {
 
   & > .centered {
     grid-column: 2 / span 2;
-    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 
-    margin: 4rem 0;
+    /*margin: 4rem 0;*/
     & > div {
+      grid-column: 2 / span 2;
       margin: 2rem auto;
       padding: 0 0.5rem;
       display: inline-block;
@@ -245,6 +248,10 @@ main {
 
     & h2 {
       text-align: center;
+    }
+
+    & p {
+      grid-column: 2 / span 2;
     }
   }
 
