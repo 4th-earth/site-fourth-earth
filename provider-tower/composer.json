@@ -1,0 +1,41 @@
+{
+  "name": "joshbruce/fourth-earth-tower",
+  "version": "0.0.1",
+  "type": "project",
+  "description": "Future-fantasy, text-based RPG.",
+  "require": {
+      "php": "^7.3",
+      "joshbruce/php-dice-tower": "~0.0.4",
+      "livewire/livewire": "~2.3"
+  },
+  "require-dev": {
+      "facade/ignition": "^2.3.6",
+      "mockery/mockery": "^1.3.1",
+      "nunomaduro/collision": "^5.0",
+      "phpunit/phpunit": "^9.3"
+  },
+  "config": {
+      "optimize-autoloader": true,
+      "preferred-install": "dist",
+      "sort-packages": true
+  },
+  "autoload": {
+      "psr-4": {
+        "FourthEarth\\Tower\\": "./src/"
+      }
+  },
+  "autoload-dev": {
+      "psr-4": {
+        "FourthEarth\\Tower\\Tests\\": "./tests/"
+      }
+  },
+  "extra": {
+      "laravel": {
+          "providers": [
+            "FourthEarth\\Tower\\Provider"
+          ]
+      }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

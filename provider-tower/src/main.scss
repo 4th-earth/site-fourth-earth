@@ -1,0 +1,396 @@
+@mixin sr-only {
+    position: absolute;
+    left: -999em;
+}
+
+:root {
+  --header-font: Futura, "Trebuchet MS", Arial, sans-serif;
+  --mono-font: "Courier New", Courier , "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  --body-font: "Open Sans", Helvetica, Verdana, sans-serif;
+
+  --color-green-dark: hsla(128, 96%, 20%, 1);
+  --color-orange-dark: hsla(25, 100%, 35%, 1);
+  --color-blue-dark: hsla(195, 100%, 24%, 1);
+  --color-purple-dark: hsla(298, 100%, 31%, 1);
+  --color-red-dark: hsla(357, 100%, 35%, 1);
+  --color-yellow-dark: hsla(55, 100%, 25%, 1);
+
+  --color-green: hsla(130, 92%, 50%, 1);
+  --color-orange: hsla(25, 100%, 51%, 1);
+  --color-blue: hsla(194, 92%, 50%, 1);
+  --color-purple: hsla(298, 92%, 43%, 1);
+  --color-red: hsla(357, 92%, 47%, 1);
+  --color-yellow: hsla(55, 92%, 50%, 1);
+
+  --color-red-light: hsla(357, 91%, 70%, 1);
+
+  --color-red-lightest: hsla(357, 92%, 95%, 1);
+  --color-green-lightest: hsla(130, 92%, 95%, 1);
+  --color-yellow-lightest: hsla(55, 92%, 95%, 1);
+
+  --color-ef-key: hsl(298,92%,43%);
+  --color-ef-white: hsl(202,2%,99%);
+  --color-ef-black: hsl(202,19%,19%);
+  --color-ef-black-light: hsl(202,19%,30%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: var(--body-font);
+}
+
+div.container {
+  display: grid;
+  grid-template-columns: 300px auto 300px;
+  grid-template-rows: auto 1fr auto auto;
+  grid-template-areas:
+    "left message right"
+    "left main right"
+    "left prompt right"
+    "footer footer footer";
+
+  height: 100vh;
+  overflow-y: scroll;
+
+  background-color: var(--color-ef-black);
+}
+
+h1.logo-header {
+  margin-top: 2rem;
+  height: 100px;
+  grid-column: 2 / span 2;
+  background-image: url("/assets/ui/logo.svg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  & > span {
+    @include sr-only;
+  }
+}
+
+[is="alert"] {
+  grid-area: message;
+}
+
+[is="left-sidebar"] {
+  grid-area: left;
+
+  & > div {
+    position: sticky;
+    top: 2rem;
+  }
+}
+
+[is="right-sidebar"] {
+  grid-area: right;
+
+  & > div {
+    position: sticky;
+    top: 2rem;
+  }
+}
+
+[is="health"], [is="physical"], [is="mental"], [is="spirit"] {
+  display: grid;
+  grid-template-areas:
+    "meter"
+    "label";
+  margin-top: 1.5rem;
+  text-align: center;
+
+  & > h2 {
+    grid-area: label;
+    margin-top: 0;
+    font-size: 1.25rem;
+    font-weight: normal;
+    color: var(--color-ef-white);
+  }
+
+  & > figure {
+    grid-area: meter;
+    margin: 0 auto;
+    width: 25%;
+  }
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(min-content, max-content);
+  padding-bottom: 100px;
+  color: var(--color-ef-white);
+
+  form {
+    grid-column: 2 / span 2;
+    display: grid;
+    /*margin: 2rem 0;*/
+
+    label {
+      color: var(--color-ef-white);
+    }
+
+    & [is="form-control"] > label, & [is="form-control-with-errors"] > label {
+      display: block;
+      margin: 2rem 0;
+      margin-bottom: 0.5rem;
+    }
+
+    & [is="form-control-with-errors"] {
+      & > [is="form-control-error-message"] {
+        display: block;
+        margin: 0.5rem 0;
+        color: var(--color-red);
+        font-weight: bold;
+      }
+
+      & > input {
+        border: 4px solid var(--color-red);
+      }
+    }
+
+    & fieldset {
+      margin: 0;
+      margin-top: 1rem;
+      padding: 0;
+      border: none;
+
+      & > legend {
+        @include sr-only;
+      }
+
+      & > ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        & > li {
+          margin: 0.5rem 0;
+          display: grid;
+          grid-gap: 0.5rem;
+          grid-template-areas: "checkbox label";
+          grid-template-columns: min-content auto;
+
+          & > label {
+            grid-area: label;
+          }
+
+          & > input {
+            grid-area: checkbox;
+          }
+        }
+      }
+    }
+
+    & input[type="email"], & input[type="text"], & input[type="password"] {
+      padding: 0.25rem;
+      padding-right: 0;
+      width: 99%;
+      font-size: 1.25rem;
+    }
+
+    & button {
+      cursor: pointer;
+      margin: 1rem 0;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 3px;
+      font-weight: bold;
+      font-size: 1rem;
+      color: var(--color-ef-white);
+      background-color: var(--color-purple);
+      justify-self: end;
+
+      &:hover {
+        background-color: var(--color-ef-black-light);
+      }
+    }
+  }
+
+  & a {
+    display: inline-block;
+    padding: 3px 4px;
+    border-radius: 3px;
+    background-color: var(--color-ef-key);
+    font-weight: bold;
+    color: var(--color-ef-white);
+    text-decoration: none;
+
+    &:hover {
+      background-color: var(--color-ef-black-light);
+    }
+  }
+
+  & > .centered {
+    grid-column: 2 / span 2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    /*margin: 4rem 0;*/
+    & > div {
+      grid-column: 2 / span 2;
+      margin: 2rem auto;
+      padding: 0 0.5rem;
+      display: inline-block;
+      box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.30);
+      background-color: var(--color-ef-white);
+      color: var(--color-ef-black);
+
+      border-radius: 0 10px 10px 10px;
+      border-left: 4px solid var(--color-ef-key);
+
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+
+    & h2 {
+      text-align: center;
+    }
+
+    & p {
+      grid-column: 2 / span 2;
+    }
+  }
+
+  & > [role="alert"] {
+    grid-area: message;
+    grid-column: 1 / span 4;
+
+    margin: 4px 0;
+    padding: 0 0.5rem;
+    display: inline-block;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.30);
+
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    color: var(--color-ef-black);
+
+    &[is="alert-error"] {
+      background-color: var(--color-red-lightest);
+      border: 4px solid var(--color-red);
+    }
+
+    &[is="alert-success"] {
+      background-color: var(--color-green-lightest);
+      border: 4px solid var(--color-green);
+    }
+
+    &[is="alert-warning"] {
+      background-color: var(--color-yellow-lightest);
+      border: 4px solid var(--color-yellow);
+    }
+  }
+
+  & > [is="location"] {
+    grid-column: 1 / span 4;
+    border-bottom: 1px solid var(--color-ef-black);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    position: sticky;
+    top: 0;
+
+    padding: 4px;
+    background-color: var(--color-ef-black-light);
+  }
+
+  & > [is="other-speaking"], & > [is="self-speaking"] {
+    margin: 0.5rem 0;
+    & > div {
+      padding: 0 0.5rem;
+      display: inline-block;
+      box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.30);
+      background-color: var(--color-ef-white);
+      color: var(--color-ef-black);
+
+      font-size: 1rem;
+      line-height: 1.5rem;
+
+      & > h2 {
+        margin: 0;
+        padding-top: 0.75rem;
+        line-height: 0;
+        font-size: 0.9rem;
+      }
+
+      p {
+        margin-bottom: 0.25rem;
+      }
+    }
+  }
+
+  & > [is="other-speaking"] {
+    grid-column: 1 / span 3;
+    margin: 4px 0;
+    & > div {
+      border-radius: 0 10px 10px 10px;
+      border-left: 4px solid var(--color-ef-key);
+    }
+  }
+
+  & > [is="self-speaking"] {
+    grid-column: 2 / span 3;
+    text-align: right;
+    & > div {
+      margin-right: 5px;
+      border-radius: 10px 0 10px 10px;
+      border-right: 4px solid var(--color-blue);
+      text-align: left;
+    }
+  }
+
+  & > [is="narration"] {
+    grid-column: 2 / span 2;
+    display: grid;
+    justify-items: center;
+
+    & > div {
+      margin: 0 auto;
+      padding: 2rem;
+      display: inline-block;
+
+      font-size: 1rem;
+      line-height: 1.5rem;
+      & > h2 {
+        font-size: 1rem;
+        line-height: 2rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+footer {
+  grid-area: footer;
+  position: sticky;
+  bottom: 0;
+  background-color: var(--color-ef-black);
+
+  & > div {
+    position: sticky;
+    bottom: 0;
+
+    & > .copyright {
+      font-size: 0.8rem;
+      color: var(--color-ef-white);
+    }
+  }
+}
+
+
+
+/*[is="prompt"] {
+  grid-area: prompt;
+
+  & > form {
+    position: fixed;
+    bottom: 100px;
+  }
+}*/
+
+@import "meters.scss";

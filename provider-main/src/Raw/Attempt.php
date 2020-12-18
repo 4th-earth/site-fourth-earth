@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace FourthEarth\Raw;
+namespace FourthEarth\Site\Raw;
 
 use Eightfold\Foldable\Fold;
 use Eightfold\Foldable\Foldable;
@@ -9,7 +9,7 @@ use Eightfold\Foldable\Foldable;
 use Eightfold\Shoop\Shoop;
 use JoshBruce\DiceBag\DiceBag;
 
-use FourthEarth\Raw\Result;
+use FourthEarth\Site\Raw\Result;
 
 class Attempt extends Fold
 {
@@ -89,9 +89,6 @@ class Attempt extends Fold
             return false;
         }
 
-        if ($this->nextOverflowToUse === 1) {
-            var_dump("was set");
-        }
         $costPer = $this->costPerIncrease();
         $overflowCount = count($this->overflows);
         $overflowsDecreased = 0;

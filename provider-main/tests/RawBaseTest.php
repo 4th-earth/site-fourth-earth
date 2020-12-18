@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-use FourthEarth\Raw\Tests;
+use FourthEarth\Site\Tests;
 
 use PHPUnit\Framework\TestCase;
 use Eightfold\Foldable\Tests\PerformantEqualsTestFilter as AssertEquals;
 
-use FourthEarth\Raw\Attempt;
-use FourthEarth\Raw\Result;
+use FourthEarth\Site\Raw\Attempt;
+use FourthEarth\Site\Raw\Result;
 
 class RawBaseTest extends TestCase
 {

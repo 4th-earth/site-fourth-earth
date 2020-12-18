@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace FourthEarth\Raw;
+namespace FourthEarth\Site\Raw;
 
 use Eightfold\Foldable\Fold;
 use Eightfold\Foldable\Foldable;
