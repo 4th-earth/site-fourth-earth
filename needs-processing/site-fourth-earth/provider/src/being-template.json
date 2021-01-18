@@ -1,0 +1,16 @@
+{
+  "name":"",
+  "description":"",
+  "batteries":{
+    "physical":1000, // if difficulty is 0, reduction will be less than 1 and accumulate over time
+    "mental":1000,
+    "aura":1000
+  }
+  "proficiencies":{
+    // if not listed here, proficiency in skill or action is 0
+    "hide":{
+      "rank":1,
+      "next":1 // when hits zero, rank increases by 1 and next is 4 steps away
+    }
+  }
+}

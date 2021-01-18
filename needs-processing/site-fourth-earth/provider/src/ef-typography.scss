@@ -1,0 +1,117 @@
+$font-size-xxxl: 32;
+$font-size-xxxl-d: 64;
+
+$font-size-xxl: 28;
+$font-size-xxl-d: 30;
+
+$font-size-xl: 26;
+$font-size-xl-d: 28;
+
+$font-size-l: 24;
+$font-size-l-d: 26;
+
+$font-size: 18;
+$font-size-d: 20;
+
+$font-size-s: 16;
+$font-size-s-d: 18;
+
+$font-size-xs: 10;
+$font-size-xs-d: 12;
+
+@mixin font-size-xxxl {
+    font-size: $font-size-xxxl + px;
+    line-height: 2.5rem;
+    @include media-desktop {
+        font-size: $font-size-xxxl-d + px;
+    }
+}
+
+@mixin font-size-xxl {
+    line-height: 2.25rem;
+    font-size: $font-size-xxl + px;
+    & > span {
+        font-size: $font-size-xxl + px;
+    }
+    @include media-desktop {
+        font-size: $font-size-xxl-d + px;
+        & > span {
+            font-size: $font-size-xxl-d + px;
+        }
+    }
+}
+
+@mixin font-size-xl {
+    line-height: 2.25rem;
+    font-size: $font-size-xl + px;
+    & > span {
+        font-size: $font-size-xl + px;
+    }
+    @include media-desktop {
+        font-size: $font-size-xl-d + px;
+        & > span {
+            font-size: $font-size-xl-d + px;
+        }
+    }
+}
+
+@mixin font-size-l {
+    line-height: 2rem;
+    font-size: $font-size-l + px;
+    & > span {
+        font-size: $font-size-l + px;
+    }
+
+    @include media-desktop {
+        font-size: $font-size-l-d + px;
+        & > span {
+            font-size: $font-size-l-d + px;
+        }
+    }
+}
+
+@mixin font-size {
+    font-size: $font-size + px;
+    line-height: 1.75rem;
+    @include media-desktop {
+        font-size: $font-size-d + px;
+    }
+}
+
+@mixin font-size-s {
+    font-size: $font-size-s + px;
+    line-height: 1.5rem;
+    @include media-desktop {
+        font-size: $font-size-s-d + px;
+    }
+}
+
+@mixin font-size-xs {
+    font-size: $font-size-xs + px;
+    line-height: 1.25rem;
+    @include media-desktop {
+        font-size: $font-size-xs-d + px;
+    }
+}
+
+@mixin text-center {
+    text-align: center;
+}
+
+@mixin text-narrow {
+    max-width: 650px;
+}
+
+@mixin text-wide {
+    max-width: 800px;
+}
+
+@mixin sr-only {
+    position: absolute;
+    left: -999em;
+}
+
+.center {
+    @include hMargin(auto, auto);
+    @include text-center;
+}

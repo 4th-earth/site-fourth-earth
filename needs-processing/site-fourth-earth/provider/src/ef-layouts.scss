@@ -1,0 +1,62 @@
+@mixin full-section {
+    max-width: 720px;
+    min-width: 300px;
+    @include media-desktop {
+        margin: 0 auto;
+        max-width: 1120px;
+        min-width: 720px;
+    }
+}
+
+@mixin media-desktop($minWidth: 720) {
+    @media screen and (min-width: $minWidth + px) {
+        @content;
+    }
+}
+
+@mixin cMargin {
+    margin: 0 auto;
+}
+
+@mixin hMargin($left, $right) {
+    @if $left == "auto" {
+        margin-left: auto;
+
+    } @else {
+        margin-left: $left + px;
+
+    }
+
+    @if $right == "auto" {
+        margin-right: auto;
+
+    } @else {
+        margin-right: $right + px;
+    }
+}
+
+@mixin vMargin($top, $bottom) {
+    margin-top: $top + px;
+    margin-bottom: $bottom + px;
+}
+
+@mixin grid($columns: 2, $gap: 70) {
+    @include media-desktop {
+        $totalColumns: $columns * 2;
+        $span: $totalColumns / $columns;
+        $offset: $columns - 1;
+        $nth-child: if( $columns % 2 == 0, 'odd', 'even' );
+
+        display: grid;
+        grid-gap: $gap + px;
+        grid-template-columns: repeat($totalColumns, 1fr);
+
+        & > * {
+            grid-column: span $span;
+
+            &:nth-last-child(#{$offset}):nth-child(#{$nth-child}) {
+                grid-column: $span / span $span;
+            }
+        }
+    }
+}

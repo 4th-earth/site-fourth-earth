@@ -1,0 +1,45 @@
+{
+    "name": "fourth-earth/provider-fourth-earth",
+    "version": "0.0.1",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Josh Bruce",
+            "email": "josh@joshbruce.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "laravel/socialite": "^5.0",
+        "8fold/ef-laravel-provider": "~0.3.7",
+        "joshbruce/php-dice-bag": "~1.0",
+        "hashids/hashids": "^4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.1",
+        "phpunit/php-code-coverage": "~9"
+    },
+    "autoload": {
+        "psr-4": {
+            "FourthEarth\\Site\\": "./src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FourthEarth\\Site\\Tests\\": "./tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FourthEarth\\Site\\Provider"
+            ]
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "beta",
+    "prefer-stable": true
+}
