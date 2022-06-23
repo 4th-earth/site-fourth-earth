@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: 8fold Laravel Provider doesn't do this thing and I think it should
+about: Something is missing.
 ---
 
 **Describe the feature**

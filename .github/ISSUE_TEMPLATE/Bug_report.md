@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: 8fold Laravel Provider says it does this thing but does not
+about: Something isn't the way it should be.
 ---
 
 **Describe the bug**

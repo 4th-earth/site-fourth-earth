@@ -1,0 +1,56 @@
+{
+  "name": "4th-earth/site-fourth-earth",
+  "type": "site-collection",
+  "description": "Site content and code for 4th.earth.",
+  "license": "mixed",
+  "authors": [
+    {
+      "name": "Alexander Midknight",
+      "email": "alex@amidknight.com",
+      "homepage": "https://amidknight.com",
+      "role": "Lead"
+    }
+  ],
+  "support": {
+    "forum": "https://github.com/4th-earth/site-fourth-earth/discussions",
+    "issues": "https://github.com/4th-earth/site-fourth-earth/issues",
+    "source": "https://github.com/4th-earth/site-fourth-earth"
+  },
+  "require": {
+    "php": "^8.1"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "FE\\SiteDynamic\\": "./site-dynamic-php/src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "FE\\SiteDynamic\\Tests\\": "./site-dynamic-php/tests"
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "prefer-stable": true,
+  "scripts": {
+    "prod": "@production",
+    "production": [
+      "composer dumpautoload -o",
+      "@style",
+      "@stan",
+      "@test"
+    ],
+    "deploy": [
+      "@production",
+      "@optimize-autoload"
+    ],
+    "style": "./vendor/bin/phpcs --standard=phpcs.xml",
+    "stan": "./vendor/bin/phpstan analyze",
+    "test": "./vendor/bin/phpunit",
+    "optimize-autoload": "composer dumpautoload --no-dev --classmap-authoritative"
+  }
+}
