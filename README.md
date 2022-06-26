@@ -4,5 +4,8 @@
 
  1. Make it easy for others to contribute.
  2. As an extension of the first, I'm going to keep it as old-school PHP as possible.
+ 3. Let the server be the server.
+
+ This is a departure from my previous work of removing HTML from the PHP code.
 
  © Copyright 2022 Alexander Midknight all rights reserved
