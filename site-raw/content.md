@@ -141,6 +141,18 @@ Batteries:
 	- *Note: Slow, fast, and fastest speaks to the length of game time required to recharge all batteries as if they we at, or near, 0.*
 - Players MAY spend battery points to reduce the Difficulty Rating of an action; 1 Difficulty Rating per battery points point.
 	- The battery points spent MUST come from the battery being target by the action.
+
+</details>
+
+### Official additions
+
+The following are classified as one-off rulesets related to specific situations, which Players MAY choose to incorporate into their game-play piecemeal.
+
+*Note: We make some presumptions about the setup used in conjunction with these additions, which MAY be modified to meet your needs.*
+
+<details>
+<summary>Inter-character battery point transfer</summary>
+
 - Players MAY transfer battery points from a Character they control to another Character in the Setting; Difficulty Rating is based on distance between Characters.
 	- Touch: Difficulty of 0.
 	- Distance (usually line of sight): Difficulty of 1.
@@ -149,12 +161,6 @@ Batteries:
 	- Players MAY increase the Difficulty Rating if transferring more than a single battery point at a time.
 
 </details>
-
-### Additions
-
-The following are classified as one-off rulesets related to specific situations, which Players MAY choose to incorporate into their game-play piecemeal.
-
-*Note: We make some presumptions about the setup used in conjunction with this addition, which MAY be modified to meet your needs.*
 
 <details>
 <summary>Death, resurrection, and reincarnation</summary>
