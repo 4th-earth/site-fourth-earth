@@ -28,6 +28,7 @@ $externalLinks = [
 
 $peprmaLinks = [
     'min_heading_level' => 2,
+    'max_heading_level' => 3,
     'symbol'            => '＃'
 ];
 
@@ -46,6 +47,7 @@ function content(
         ->minified()
         ->smartPunctuation()
         ->descriptionLists()
+        ->tables()
         ->attributes() // for class on notices
         ->defaultAttributes($defaultAttributes)
         ->abbreviations()
@@ -64,6 +66,88 @@ function content(
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta name="description" content="A tabletop role playing game for the ages.">
+        <style type="text/css">
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                width: 70ch;
+                margin: 4rem auto;
+                line-height: 1.4rem;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            h3 {
+                font-style: italic;
+            }
+
+            details {
+                margin: 2rem 0;
+            }
+
+            table {
+                margin: 2rem auto;
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            table th {
+                padding: 5px 0;
+            }
+
+            table td {
+                padding: 7px 5px;
+                border: 1px solid black;
+            }
+
+            li {
+                margin: 0.75rem 0;
+            }
+
+            div[is="heading-wrapper"] {
+                display: grid;
+                grid-auto-columns: 44pt auto;
+                column-gap: 2ch;
+                grid-template-areas:
+                    'link text';
+                margin-top: 3rem;
+            }
+
+            div[is="heading-wrapper"] > h2,
+            div[is="heading-wrapper"] > h3,
+            div[is="heading-wrapper"] > h4,
+            div[is="heading-wrapper"] > h5,
+            div[is="heading-wrapper"] > h6 {
+                grid-area: text;
+            }
+
+            div[is="heading-wrapper"] > a {
+                grid-area: link;
+                display: inline-block;
+                width: 44pt;
+                height: 44pt;
+                background: red;
+            }
+
+            div[is="heading-wrapper"] > a > span {
+                position: absolute;
+                left: -999px;
+            }
+        </style>
     </head>
     <body>
         <?php print(content($converterConfig, $defaultAttributes, $externalLinks, $peprmaLinks)); ?>
