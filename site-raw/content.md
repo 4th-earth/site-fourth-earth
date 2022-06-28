@@ -2,18 +2,6 @@
 
 These are the rules as written for 4th Earth [.rules as written](RAW) a framework for creating [.table-top role playing games](TTRPGs). 
 
-4th Earth is designed for collaborative storytelling (and home brewing) from the mundane, theatre of the absurd, to the fanciful and super-heroic. Whether you're solo-adventuring or in a group, 4th Earth gives you a set of simple mechanics to keep the mystery and unknown alive.
-
-Players personify one or more Characters who interact with the Setting and other Characters. Those interactions are given a [Difficulty Rating](#difficulty-rating). The Difficulty Rating and Proficiency Ranks are used to create a Dice Pool, which is rolled to resolve the interaction and determine if it was successful or not. Life Batteries are used to determine the life and health of the Character and MAY be used to adjust the Difficulty Rating of an interaction.
-
-4th Earth is created with following values in mind:
-
-1. **Additive over reductive.** Players should be able to start from a simple foundation and add to it, instead of starting from an "everything and the kitchen sink" place and reducing.
-2. **Narrative over simulation.** Players should be able to focus on creating engaging stories without strictly replicating reality.
-3. **Flow over grinding.** Players should be able to get lost in their story and actions without performing repetitive tasks.
-4. **Power ceilings over threat escalation.** Saved the town, saved the country, saved the world, saved the universe, what next?
-5. **Progressive disclosure over saturation.** Players should be able to start playing having never read the rules or specification and learn as they go.
-
 4th Earth RAW uses the key words described in [Key words for use in RFCs to Indicate Requirement Levels](https://datatracker.ietf.org/doc/html/rfc2119):
 
 - MUST, REQUIRED, or SHALL;
@@ -22,30 +10,40 @@ Players personify one or more Characters who interact with the Setting and other
 - SHOULD NOT or NOT RECOMMENDED; and
 - MAY or OPTIONAL.
 
-Players personify Characters who interact with the Setting and other Characters. Interactions:
+4th Earth RAW is designed for collaborative storytelling (and home brewing) from the mundane, theatre of the absurd, to the fanciful and super-heroic. Whether you're solo-adventuring or in a group, 4th Earth RAW gives you a set of mechanics to keep the mystery and unknown alive.
 
-- MUST be assigned a Difficulty Rating,
-- MAY target a non-health Life Battery, if applicable.
+Players personify one or more Characters who interact with the Setting and other Characters. Interactions:
 
-The Player for the Character MAY create a Dice Pool based on the Difficulty Rating, where the number of dice in the pool MAY be less than equal to the number of applicable Proficiency Ranks available to the Character.
+- MUST be assigned a [Difficulty Rating](),
+- MAY target a non-health [Life Battery](), if applicable.
+
+The Player for the Character MAY create a [Dice Pool]()based on the Difficulty Rating, where the number of dice in the pool MAY be less than or equal to the number of applicable [Proficiency Ranks]() available to the Character.
+
+4th Earth RAW is created with following values in mind:
+
+1. **Additive over reductive.** Players should be able to start from a simple foundation and add to it, instead of starting from an "everything and the kitchen sink" place and reducing.
+2. **Narrative over simulation.** Players should be able to focus on creating engaging stories without strictly replicating reality.
+3. **Flow over grinding.** Players should be able to get lost in their story and actions without performing repetitive tasks.
+4. **Power ceilings over threat escalation.** Saved the town, saved the country, saved the world, saved the universe, what next?
+5. **Progressive disclosure over saturation.** Players should be able to start playing having never read the rules or specification and learn as they go.
 
 ## Difficulty Rating
 
-The Difficulty Rating is the keystone mechanic for Characters to interact with the Setting and other Characters.
+The Difficulty Rating is the Action mechanic for Characters to interact with the Setting and other Characters.
 
 Character actions consist of the following, minimal, list of activities:
 
 1. Character intent; the Player describes what the Character will attempt to do.
 2. The intent is assigned an initial [Difficulty Rating](#difficulty-rating).
-3. The Player (and Narrator, if applicable) MAY negotiate the Difficulty Rating up or down.
-4. The Player creates a Dice Pool based on the agreed upon Difficulty Rating and rolls the Dice Pool, if applicable.
+3. The initial Difficulty Rating MAY be adjusted up or down.
+4. The Player MAY create a Dice Pool based on the agreed upon Difficulty Rating and rolls.
 
-Actions are resolved by answering the following questions:
+Actions are resolved by answering:
 
 - Was the action successful?
 - How was the outside world affected by the action?
 
-Difficulty is based on qualities of the opposing force for the given intent. 
+Difficulty is based on qualities of the opposing force for the given the Action. 
 
 - Difficulty 0 MUST represent automatic success.
 - Difficulty Infinite MUST be impossible for the Character to achieve in the Setting.
@@ -55,8 +53,10 @@ Difficulty is based on qualities of the opposing force for the given intent.
 <details>
 <summary>Vanilla implementation</summary>
 
+The vanilla implementation is designed to facilitate solo-adventuring and minimize the number of Players rolling at any given time.
+
 - Difficulty MAY be reduced by spending Life Battery points.
-- Difficulty MAY be increased or decreased by negotiating with the Narrator, if applicable.
+- Difficulty MAY be increased or decreased by negotiating with a Narrator, if applicable.
 
 </details>
 
@@ -76,18 +76,18 @@ Difficulty is based on qualities of the opposing force for the given intent.
 
 ## Dice pools
 
-Dice Pools are a collection of dice. The sides of the dice to use is determined by the [Difficulty Rating](#difficulty-rating-table) of the intended action. The number of dice in the pool is determined by the number of [Proficiency Ranks](#proficiency-ranks) being applied to the action.
+Dice Pools are a collection of dice. The sides of the dice in the pool is determined by the [Difficulty Rating](#difficulty-rating-table) of the Action. The number of dice in the pool is determined by the number of [Proficiency Ranks](#proficiency-ranks) applied to the Action.
 
 Dice Pools:
 
-- MUST have at least 1 die regardless of [Difficulty Rating](#difficulty-rating) or [Proficiency Ranks](#proficiency-ranks); referred to as the base die.
+- MUST have at least 1 die regardless of Difficulty Rating or Proficiency Ranks; referred to as the base die.
 - Rolling 1 on a single die in the Dice Pool MUST represent successful completion of the action.
 - SHOULD NOT exceed 5 dice, which keeps the pool manageable and allows room for additional dice to facilitate things like critical success, failure, or both.
 
 <details>
 <summary>Vanilla implementation</summary>
 
-The vanilla implementation is designed to facilitate solo-adventuring and minimize the number of Players rolling at any given time. In short, Players do not roll against one another and Difficulty Ratings are assigned or derived; even for combat. Instead, each Character is given an opportunity to succeed or fail at their desired action.  
+See above.
 
 </details> 
 
