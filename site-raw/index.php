@@ -99,6 +99,10 @@ function content(
                 margin: 2rem 0;
             }
 
+            details:hover {
+                cursor: pointer;
+            }
+
             table {
                 margin: 2rem auto;
                 width: 100%;

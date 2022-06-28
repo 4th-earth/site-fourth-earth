@@ -22,30 +22,45 @@ Players personify one or more Characters who interact with the Setting and other
 - SHOULD NOT or NOT RECOMMENDED; and
 - MAY or OPTIONAL.
 
-## Difficulty rating
+Players personify Characters who interact with the Setting and other Characters. Interactions:
 
-Difficulty is based on qualities of the opposing force for the given interaction. 
+- MUST be assigned a Difficulty Rating,
+- MAY target a non-health Life Battery, if applicable.
+
+The Player for the Character MAY create a Dice Pool based on the Difficulty Rating, where the number of dice in the pool MAY be less than equal to the number of applicable Proficiency Ranks available to the Character.
+
+## Difficulty Rating
+
+The Difficulty Rating is the keystone mechanic for Characters to interact with the Setting and other Characters.
+
+Character actions consist of the following, minimal, list of activities:
+
+1. Character intent; the Player describes what the Character will attempt to do.
+2. The intent is assigned an initial [Difficulty Rating](#difficulty-rating).
+3. The Player (and Narrator, if applicable) MAY negotiate the Difficulty Rating up or down.
+4. The Player creates a Dice Pool based on the agreed upon Difficulty Rating and rolls the Dice Pool, if applicable.
+
+Actions are resolved by answering the following questions:
+
+- Was the action successful?
+- How was the outside world affected by the action?
+
+Difficulty is based on qualities of the opposing force for the given intent. 
 
 - Difficulty 0 MUST represent automatic success.
 - Difficulty Infinite MUST be impossible for the Character to achieve in the Setting.
 - Difficulty SHOULD be based on the Character attempting the interaction (standing up may be difficulty 6 for an infant and difficulty 0 for an adult).
-- Players SHOULD be able to influence the difficulty in one or more ways.
-- Rolling a single number on a single die in the Dice Pool SHOULD be considered success.
-	- This single number MUST be present on all the dice available for a Dice Pool.
-	- The single number SHOULD be consistent for the duration of the session and MAY change from session to session as agreed upon by the players.
-	- Difficulty 1 SHOULD favor dice over coins where an even or odd number represent success and SHOULD include the single number.
+- Players SHOULD be able to influence the Difficulty in one or more ways.
 
 <details>
 <summary>Vanilla implementation</summary>
 
-- Rolling 1 on at least one die in the Dice Pool means the actions was a success. 
-- Difficulty can be reduced by spending Life Battery points.
-- Difficulty can be increased or decreased by negotiating with the narrator, if applicable.
-- Difficulty applies to probability to hit when [interacting with other Characters](#interacting-with-the-setting-and-characters) in a contested fashion; the actor rolls, not the target.
+- Difficulty MAY be reduced by spending Life Battery points.
+- Difficulty MAY be increased or decreased by negotiating with the Narrator, if applicable.
 
 </details>
 
-### Table
+### Difficulty Rating Table
 
 |Level   |Sides            |Human-friendly             |Opposing value |
 |:-----:|:-----------:|:----------------------|:------------:|
@@ -59,33 +74,78 @@ Difficulty is based on qualities of the opposing force for the given interaction
 |7        |No dice!        |Impossible, if not reduced |1                |
 |Infinite |non-applicable |Impossible                    |0                |
 
-## Proficiency ranks
+## Dice pools
 
-Skills and tools increase or decrease the probability of success for an interaction. 
+Dice Pools are a collection of dice. The sides of the dice to use is determined by the [Difficulty Rating](#difficulty-rating-table) of the intended action. The number of dice in the pool is determined by the number of [Proficiency Ranks](#proficiency-ranks) being applied to the action.
 
-For example, trying to cut bread with a banana may increase the Difficulty Rating, even if the resulting Dice Pool has five or more dice.
+Dice Pools:
 
-- Each rank SHOULD require earning two or more proficiency points toward the rank. 
-- Each rank SHOULD be achievable in roughly four attempts.
-- Each rank MAY increase the number of dice in the Dice Pool.
-- The implementation SHOULD be stable for the entire session. 
-	- The implementation MAY be adjusted from session to session. 
-	- These adjustments SHOULD be minimal from one session to the next.
+- MUST have at least 1 die regardless of [Difficulty Rating](#difficulty-rating) or [Proficiency Ranks](#proficiency-ranks); referred to as the base die.
+- Rolling 1 on a single die in the Dice Pool MUST represent successful completion of the action.
+- SHOULD NOT exceed 5 dice, which keeps the pool manageable and allows room for additional dice to facilitate things like critical success, failure, or both.
 
 <details>
 <summary>Vanilla implementation</summary>
 
-- Proficiency points MUST be applied to something related to the action performed. (For example, using a knife to cut bread results in a proficiency point being earned. That point can be applied to the cooking skill, knife use, or both, however, cannot be applied to a skill in casting a spell, if applicable.)
-- Skills SHOULD have more possible ranks than tools.
-- Earning a proficiency point MAY increase more than one rank-able aspect of the Character.
-	- The implementation for applying proficiency points SHOULD be consistent for the entire session.
-	- The implementation for applying proficiency points MAY be adjusted session to session.
-- Skill-trees are determined as Players [Interact with the Setting and Characters](#interacting-with-the-setting-and-characters) through their Characters, not beforehand; reduces pre-setup and starts game play in the most open and freeform condition.
-	- Skills may be sub-divided (forming a skill tree); cooking in general versus a specific recipe.
-		- It is left to play discretion to determine parent-child relationships among skills.
-		- At least two ranks in the parent SHOULD be earned before proficiency points are earned toward the child (more specialized skill).
-		- If mastery (three ranks) in the parent skill has been achieved, the Difficult Rating of the action is reduced by one.
-		- The hierarchy of the skill tree SHOULD be limited to three levels or less.
+The vanilla implementation is designed to facilitate solo-adventuring and minimize the number of Players rolling at any given time. In short, Players do not roll against one another and Difficulty Ratings are assigned or derived; even for combat. Instead, each Character is given an opportunity to succeed or fail at their desired action.  
+
+</details> 
+
+### Official Modifications: Dice Pools
+
+<details>
+<summary>Re-roll implementation</summary>
+
+- Players MAY spend battery and proficiency points to re-roll and action. (The health battery cannot be used.)
+- Players MAY spend 2 points to re-roll the whole Dice Pool or 1 point to re-roll a single die in the pool.
+- As long at the Character has points remaining, the Player MAY continue spending points.
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Proficiency Ranks
+
+Proficiency Ranks represent the level or proficiency a Character has performing a skill or using a tool.
+
+- Each rank SHOULD require earning two or more proficiency points toward the rank. 
+- Each rank SHOULD be achievable in roughly four attempts.
+- Each rank MAY increase the number of dice in the Dice Pool.
+- Using a tool MAY reduce the Difficulty rating of an action up to 2 levels.
+- The implementation SHOULD be stable for the entire session. 
+	- The implementation MAY be adjusted from session to session. 
+	- These adjustments SHOULD be minimal from one session to the next.
+- Skills SHOULD have more possible ranks than tools. We RECOMMEND:
+	- 3 ranks per skill.
+	- 1 rank per tool; general, not specific (a knife is a knife).
+	- 4 proficiency points per rank.
+- Proficiency points MUST be applied to a skill or tool related to the action performed. (For example, using a knife to cut bread results in a proficiency point being earned. That point can be applied to the cooking skill, use of the edged tool, or both, however, the proficiency point MUST NOT be applied to a skill in casting a spell, if applicable.) We RECOMMEND:
+	- 2 proficiency points earned on success and
+	- 1 point earned on failure and
+	- MAY be distributed any way the Player deems suitable.
+
+<details>
+<summary>Vanilla implementation</summary>
+
+- Skill-trees SHOULD be determined by Players as Characters interact with the Setting and other Characters; reduces pre-setup and starts game play in the most open and freeform condition.
+	- Skills may be sub-divided (forming a skill-tree); cooking in general versus a specific recipe.
+		- It is left to Player discretion to determine parent-child relationships among skills.
+		- At least two ranks in the parent SHOULD be earned before proficiency points are earned toward the child (more specialized skill). If a parent is created after ranks in the child have been earned, we RECOMMEND moving the achieved ranks to the parent proficiency. 
+		- If mastery (three ranks) in the parent skill has been achieved, the Difficulty Rating of the action is automatically reduced by one; this reduction MUST only apply once.
+		- The hierarchy of the skill-tree SHOULD be limited to three levels or less.
 
 </details>
 
@@ -120,10 +180,6 @@ Batteries:
 
 - Extends the vanilla implementation.
 - Characters have 3 additional batteries: physical, mental, and spirit.
-- Batteries MAY be used to recharge other batteries.
-	- Health MUST NOT be used to recharge any of the other batteries.
-	- It takes 2 points from any combination of batteries to recharge 1 point to the other non-health batteries. (For example, 2 point from spirit can be used to recharge 1 point to physical; or, 1 point from spirit and 1 point from mental can be used to recharge 1 point to physical.)
-	- It takes 3 points from any combination of batteries to recharge 1 point to the health battery. (For example, 2 points from spirit and 1 point from physical can be used to recharge 1 point to health.)
 - For a Character to be considered dead, all batteries should be at 0; none of the batteries can be negative.
 - Each action SHOULD target one non-health battery.
 	- Injury and healing actions SHOULD affect the health battery.
@@ -144,21 +200,35 @@ Batteries:
 
 </details>
 
-### Official additions
+### Official modifications
 
 The following are classified as one-off rulesets related to specific situations, which Players MAY choose to incorporate into their game-play piecemeal.
 
 *Note: We make some presumptions about the setup used in conjunction with these additions, which MAY be modified to meet your needs.*
 
 <details>
-<summary>Inter-character battery point transfer</summary>
+<summary>Overflow recharging</summary>
 
-- Players MAY transfer battery points from a Character they control to another Character in the Setting; Difficulty Rating is based on distance between Characters.
+- Batteries MAY be used to recharge other batteries.
+	- Health MUST NOT be used to recharge any of the other batteries.
+	- It takes 2 points from any combination of batteries to recharge 1 point to the other non-health batteries. (For example, 2 point from spirit can be used to recharge 1 point to physical; or, 1 point from spirit and 1 point from mental can be used to recharge 1 point to physical.)
+	- It takes 3 points from any combination of batteries to recharge 1 point to the health battery. (For example, 2 points from spirit and 1 point from physical can be used to recharge 1 point to health.)
+
+</details>
+
+<details>
+<summary>Assisting other Characters</summary>
+
+When assisting other Characters using this modification, one Character transfers one or more of their battery points to the Character performing a given action. The Difficulty Rating here is applied to the assisting itself.
+
+- The transfer MUST be from the same battery the point will be transferred to.
+- Players MAY transfer battery points from a Character they control to another Character in the Setting; the baseline Difficulty Rating is based on distance between Characters:
 	- Touch: Difficulty of 0.
 	- Distance (usually line of sight): Difficulty of 1.
-	- Ranged (usually out of sight): Difficulty of 2.
-	- The transfer MUST be from the same battery the point will be transferred to.
-	- Players MAY increase the Difficulty Rating if transferring more than a single battery point at a time.
+	- Ranged (MAY be out of sight): Difficulty of 2.
+- Players MAY increase the Difficulty Rating after starting with the baseline.
+- The Difficulty Rating to assist SHOULD be less than the initial Difficult Rating of the action being performed.
+- Assisting SHOULD NOT require movement by the assisting character.
 
 </details>
 
@@ -213,28 +283,112 @@ The last example includes a baseline description of the characters that can be p
 
 ## Interacting with the Setting and Characters
 
-[Character](#characters) actions consist of the following, minimal, list of activities:
 
-1. Character intent; the Player describes what they would like the character to attempt.
-2. The intent is assigned a [Difficulty Rating](#difficulty-rating).
-3. The Player (and Narrator) MAY negotiate the Difficulty Rating up or down.
-4. The Player creates a Dice Pool based on the agreed upon Difficulty Rating and rolls the Dice Pool, if applicable.
 
-Actions are resolved by answering the following questions:
 
-- Was the action successful?
-- How was the outside world effected by the action?
+### Official modifications
 
-Dice Pools are a collection of dice. The sides of the dice to use is determined by the [Difficulty Rating](#table) of the intended action. The number of dice in the pool is determine by the number of [Proficiency Ranks](#proficiency-ranks) being applied to the action.
-
-Dice Pools:
-
-- MUST have at least 1 die regardless of [Proficiency Ranks](#proficiency-ranks); referred to as the base die.
-- SHOULD NOT exceed 5 dice, which keeps the pool manageable and allows room for additional dice to facilitate things like critical success, failure, or both. 
+The following modifications are official implementations for concepts related to the Dice Pool.
 
 <details>
-<summary>No counter-roll implementation</summary>
+<summary>Criticality</summary>
+
+Criticality represents wild success *and* failure for mundane and combat actions. 
+
+- Players MUST add an extra die to the Dice Pool, which is known as the Criticality Die and should be distinct from the other dice in the pool; we RECOMMEND a 10-sided die, which represents a 10 percent chance of criticality.
+	- The die MAY be changed per session or per action.
+- If a 1 is rolled on the Criticality Die, the result is a critical success or failure based on the success or failure of the rest of the Dice Pool.
+- Players MAY decide to opt-out or -in to using the Criticality Die prior to the creation of the Dice Pool; Players SHOULD decide prior to becoming aware of the difficulty level assigned to the action.
+	- Players MAY decide to always roll a Criticality Die as a group decision.
+
+Beyond the narrative implications and outcomes, Criticality comes with mechanical impacts on the Character.
+
+#### Critical, mundane success
+
+A critical success on a non-combat (mundane) action, results in the following changes to the battery targeted by the action. MUST NOT be the health battery.
+
+The Player rolls one, 12-sided die.
+
+|Die value    |Effect |
+|:------------|:------|
+|Even number |Plus 1 |
+|1, 5, 9      |Plus 2 |
+|3, 7         |Plus 3 |
+|11           |Plus 5 |
+
+If the target battery becomes full, the Player MAY distribute the remaining points to other non-health batteries of their choosing.
 
 
+#### Critical, mundane failure
+
+Is the opposite of the Critical, mundane success. 
+
+- MUST subtract the effect in the Critical, mundane success table.
+- If the target battery reaches 0, the Player MUST spend the remaining points against other non-health batteries of their choosing.
+	- If using the Overflow recharging modification, Players SHOULD NOT use that mechanic to resolve the reduction of a target battery that has reached 0 due to critical failure. 
+
+#### Critical, combat success
+
+This implementation presumes you are using the vanilla implementation of combat described above.
+
+The Player rolls one, 12-sided die.
+
+|Die value    |Effect |
+|:------------|:------|
+|Even number |Plus 1 to attacker target action battery, or, any other non-health battery if the target action battery is full |
+|1, 5, 9      |Multiply base potential energy by 1.5 |
+|3, 7         |Multiply base potential energy by 2 |
+|11           |Trauma: Roll another 12-sided die and apply result from the Critical, combat success effects extension table |
+
+##### Critical, combat success effects extension table
+
+This table presumes you are using the Standard four battery implementation.
+
+|Die value    |Effect |
+|:------------|:------|
+|1        |Defender Difficulty rating reduced by 2, recurring and compounding |
+|2, 5, 8  |Multiply base potential energy by 2 |
+|3, 6, 9  |Multiply base potential energy by 2.5 |
+|4, 7     |Reduce defender's spirit battery by 1; use health battery if spirit battery is not available or is at 0 |
+|10       |Reduce defender's health battery by 1, recurring and compounding |
+|11       |Multiply base potential energy by 3 |
+|12       |Defender can't act for 2 rounds | 
+
+Recurring means the effect is applied every round. Compounding means the effect can be applied multiple times. This simulates severe injury and allows for severe injury to occur multiple times.
+
+For example, a Character (attacker) is fighting another Character (defender) with a Difficulty rating of 6. The Player rolls a Critical, combat success that results in the Difficulty rating being reduced by 2, becoming 4. Every following round, the defender's Difficulty rating will be 4. If the Player manages to roll the same Critical, combat success a second time, the defender's Difficulty rating would become 2 for each following round. This could increase to the point where the defender's Difficulty rating becomes 0.
+
+#### Critical, combat failure
+
+The Player rolls one, 12-sided die.
+
+|Die value    |Effect |
+|:------------|:------|
+|Even number |Minus 1 from attacker target action battery, or, any other non-health battery if the target action battery is at 0 |
+|1, 5, 9      |Minus 2 from attacker target action battery, does not impact other batteries, if target action battery is at 0 |
+|3, 7         |Attacker damages self at one-to-one Scale, 0 resistance, base potential energy divided by 2 (round down); damage cannot be less than 1 |
+|11           |Trauma: Roll another 12-sided die and apply result from the Critical, combat failure effects extension table |
+
+##### Critical, combat failure effects extension table
+
+|Die value    |Effect |
+|:------------|:------|
+|11        |Tool used is rendered useless for future rounds. If no tool is used, multiply base potential energy by 3 and target attacker |
+|Other.    |Apply Critical, combat success effects extension table replacing the word "defender" with "attacker" |
+
+</details>
+
+<details>
+<summary>Partials and complications</summary>
+
+This modification is designed to operate with the Criticality modification above, however, players MAY choose to use it as a standalone modification.
+
+- Players MUST add an extra die to the Dice Pool, which is known as the Criticality die and should be distinct from the other dice in the pool; we RECOMMEND a 10-sided die, which represents a 10 percent chance of a partial or complication.
+	- The die MAY be changed per session or per action.
+- If the greatest number on the Criticality Die is rolled, the result is a partial or complication based on the success or failure of the rest of the Dice Pool.
+	- A partial is a mildly positive effect on an otherwise failed action.
+	- A complication is a mildly negative effect on an otherwise successful action.
+- Players MAY decide to opt-out or -in to using the Criticality Die prior to the creation of the Dice Pool; Players SHOULD decide prior to becoming aware of the difficulty level assigned to the action.
+	- Players MAY decide to always roll a Criticality Die as a group decision.
 
 </details>
