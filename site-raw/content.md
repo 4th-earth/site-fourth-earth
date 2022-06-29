@@ -102,44 +102,29 @@ See above.
 
 </details>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Proficiency Ranks
 
-Proficiency Ranks represent the level or proficiency a Character has performing a skill or using a tool.
+Proficiency Ranks represent the level of proficiency a Character has performing a skill or using a tool.
 
-- Each rank SHOULD require earning two or more proficiency points toward the rank. 
+- Each rank SHOULD require earning two or more Proficiency Points toward the rank. 
 - Each rank SHOULD be achievable in roughly four attempts.
-- Each rank MAY increase the number of dice in the Dice Pool.
-- Using a tool MAY reduce the Difficulty rating of an action up to 2 levels.
-- The implementation SHOULD be stable for the entire session. 
+- The implementation used SHOULD be stable for the entire session. 
 	- The implementation MAY be adjusted from session to session. 
 	- These adjustments SHOULD be minimal from one session to the next.
 - Skills SHOULD have more possible ranks than tools. We RECOMMEND:
 	- 3 ranks per skill.
 	- 1 rank per tool; general, not specific (a knife is a knife).
-	- 4 proficiency points per rank.
-- Proficiency points MUST be applied to a skill or tool related to the action performed. (For example, using a knife to cut bread results in a proficiency point being earned. That point can be applied to the cooking skill, use of the edged tool, or both, however, the proficiency point MUST NOT be applied to a skill in casting a spell, if applicable.) We RECOMMEND:
-	- 2 proficiency points earned on success and
-	- 1 point earned on failure and
-	- MAY be distributed any way the Player deems suitable.
+	- 4 Proficiency Points per rank.
+- Each rank MAY increase the number of dice in the Dice Pool by 1.
+- Using a tool MAY reduce the Difficulty Rating of an action up to 2 levels.
 
 <details>
 <summary>Vanilla implementation</summary>
 
+- Proficiency Points MUST be applied to a skill or tool related to the action performed. (For example, using a knife to cut bread results in a proficiency point being earned. That point can be applied to the cooking skill, use of the edged tool, or both, however, the proficiency point MUST NOT be applied to a skill in casting a spell, if applicable.) We RECOMMEND:
+	- 2 proficiency points earned on success and
+	- 1 point earned on failure and
+	- MAY be distributed any way the Player deems suitable.
 - Skill-trees SHOULD be determined by Players as Characters interact with the Setting and other Characters; reduces pre-setup and starts game play in the most open and freeform condition.
 	- Skills may be sub-divided (forming a skill-tree); cooking in general versus a specific recipe.
 		- It is left to Player discretion to determine parent-child relationships among skills.
@@ -148,6 +133,19 @@ Proficiency Ranks represent the level or proficiency a Character has performing 
 		- The hierarchy of the skill-tree SHOULD be limited to three levels or less.
 
 </details>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Life Batteries
 
