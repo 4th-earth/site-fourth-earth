@@ -14,10 +14,18 @@ These are the rules as written for 4th Earth [.rules as written](RAW) a framewor
 
 Players personify one or more Characters who interact with the Setting and other Characters. Interactions:
 
-- MUST be assigned a [Difficulty Rating](),
-- MAY target a non-health [Life Battery](), if applicable.
+- MUST be assigned a [Difficulty Rating](#difficulty-rating) and
+- MAY target a non-health [Life Battery](#life-batteries), if applicable.
 
-The Player for the Character MAY create a [Dice Pool]()based on the Difficulty Rating, where the number of dice in the pool MAY be less than or equal to the number of applicable [Proficiency Ranks]() available to the Character.
+The Player for the Character MAY create a [Dice Pool](#dice-pools)based on the Difficulty Rating, where the number of dice in the pool MAY be less than or equal to the number of applicable [Proficiency Ranks](#proficiency-ranks) available to the Character.
+
+We RECOMMEND Players use standard polyhedral dice; specifically:
+
+- 4-sided,
+- 6-sided,
+- 8-sided,
+- 10-sided, and
+- 12-sided.
 
 4th Earth RAW is created with following values in mind:
 
@@ -25,7 +33,7 @@ The Player for the Character MAY create a [Dice Pool]()based on the Difficulty R
 2. **Narrative over simulation.** Players should be able to focus on creating engaging stories without strictly replicating reality.
 3. **Flow over grinding.** Players should be able to get lost in their story and actions without performing repetitive tasks.
 4. **Power ceilings over threat escalation.** Saved the town, saved the country, saved the world, saved the universe, what next?
-5. **Progressive disclosure over saturation.** Players should be able to start playing having never read the rules or specification and learn as they go.
+5. **Progressive disclosure over saturation.** Players should be able to start having never read the rules or specification and learn as they go.
 
 ## Difficulty Rating
 
@@ -36,18 +44,19 @@ Character actions consist of the following, minimal, list of activities:
 1. Character intent; the Player describes what the Character will attempt to do.
 2. The intent is assigned an initial [Difficulty Rating](#difficulty-rating).
 3. The initial Difficulty Rating MAY be adjusted up or down.
-4. The Player MAY create a Dice Pool based on the agreed upon Difficulty Rating and rolls.
+4. The Player MAY create a Dice Pool based on the agreed upon Difficulty Rating and rolls the Dice Pool.
 
 Actions are resolved by answering:
 
-- Was the action successful?
+- Was the action successful? and 
 - How was the outside world affected by the action?
 
-Difficulty is based on qualities of the opposing force for the given the Action. 
+Difficulty is based on qualities of the opposing force for the given Action and the Character performing that Action. 
 
 - Difficulty 0 MUST represent automatic success.
 - Difficulty Infinite MUST be impossible for the Character to achieve in the Setting.
-- Difficulty SHOULD be based on the Character attempting the interaction (standing up may be difficulty 6 for an infant and difficulty 0 for an adult).
+- Difficulty Rating MUST NOT be less than 0.
+- Difficulty SHOULD be based on the Character attempting the interaction (standing up may be Difficulty 6 for an infant and Difficulty 0 for an adult).
 - Players SHOULD be able to influence the Difficulty in one or more ways.
 
 <details>
@@ -55,8 +64,52 @@ Difficulty is based on qualities of the opposing force for the given the Action.
 
 The vanilla implementation is designed to facilitate solo-adventuring and minimize the number of Players rolling at any given time.
 
-- Difficulty MAY be reduced by spending Life Battery points.
+- Difficulty MAY be reduced by spending [Life Battery](#life-batteries) points.
 - Difficulty MAY be increased or decreased by negotiating with a Narrator, if applicable.
+
+</details>
+
+<details>
+<summary>Vanilla harming other Characters</summary>
+
+- There MUST be one attacking Character and one or more defending Character(s).
+- Difficulty Rating MUST represent difficulty to hit; this includes grappling, holding, or restraining the Defending Character.
+- Difficulty Rating MUST start at 0.
+	- Difficulty Rating SHOULD be increased using the Defending Character Difficulty Rating table below.
+- Slow Actions MUST be performed only once per round.
+- Fast Actions MAY be performed twice by the Attacking Character in a turn or round.
+	- If the Fast Action is performed twice the Difficulty Rating MUST be divided by 2 and split evenly between the two Actions.
+		- If the Fast Action is performed twice and the Difficulty Rating is odd, Player MUST round down the first and round up the second.
+		- Players MAY spend non-health Life Battery points to reduce the Difficulty Ratings individually.
+- Damage SHOULD be calculated using the Attacking Character Potential Energy table below.
+- Grappling, holding, or restraining MUST NOT cause damage to the Defending Character. 
+	- If the Defending Character is restrained in some way, attempting to escape MUST result in the Defending Character becoming the Attacking Character; SHOULD happen on the Defending Character's turn, if applicable.
+
+### Defending Character Difficulty Rating table
+
+The following table describes a method for calculating the Difficulty Rating of a Defending Character. The Difficulty Rating represents the difficulty to hit; damage is calculated by using the Attacking Character Potential Energy table below.
+
+|Question |Answer is yes |
+|:--------|:-------------|
+|Defender is subdued? |Difficulty Rating is 0, no need to continue to further questions unless applied to the psychology and morality of the Attacking Character. |
+|Defender has active allies |Plus 1 to Difficulty Rating per active ally. |
+|Defender is less Scale |Plus 1 to Difficulty Rating per steps smaller in Scale. |
+|Defender is aware of Attacker |Plus 1 to Difficulty Rating. |
+
+### Attacking Character Potential Energy table
+
+The following table describes a method for calculating the Potential Energy of an attack, which determines how many Life Battery points will be spent if the attack is successful.
+
+- All physical attack MUST target the health battery.
+- Verbal, advanced technology, or magic attacks MAY impact non-health Life Batteries and SHOULD be a known quality or attribute of the action, technology, or spell.
+
+|Action |Details |Potential Energy |
+|:------|:-------|:---------------:|
+|Jab    |Fast and light |1 per Fast Action taken and successful; maximum of 2 |
+|Uppercut, kick, or ram |Slow and medium |2 |
+|Dual (tool each hand) |Fast and medium |2 per Fast Action taken; maximum of 4 |
+|Two-handed |Slow and medium |3 |
+|Advanced technology or magic |Slow and heavy |5 |
 
 </details>
 
@@ -74,15 +127,17 @@ The vanilla implementation is designed to facilitate solo-adventuring and minimi
 |7        |No dice!        |Impossible, if not reduced |1                |
 |Infinite |non-applicable |Impossible                    |0                |
 
+### Official Modifications: Difficulty Ratings
+
+
+
 ## Dice pools
 
 Dice Pools are a collection of dice. The sides of the dice in the pool is determined by the [Difficulty Rating](#difficulty-rating-table) of the Action. The number of dice in the pool is determined by the number of [Proficiency Ranks](#proficiency-ranks) applied to the Action.
 
-Dice Pools:
-
-- MUST have at least 1 die regardless of Difficulty Rating or Proficiency Ranks; referred to as the base die.
+- Dice Pools MUST have at least 1 die regardless of Difficulty Rating or Proficiency Ranks; referred to as the base die.
 - Rolling 1 on a single die in the Dice Pool MUST represent successful completion of the action.
-- SHOULD NOT exceed 5 dice, which keeps the pool manageable and allows room for additional dice to facilitate things like critical success, failure, or both.
+- Dice Pools SHOULD NOT exceed 5 dice, which keeps the pool manageable and allows room for additional dice to facilitate things like critical success, failure, or both.
 
 <details>
 <summary>Vanilla implementation</summary>
@@ -96,8 +151,8 @@ See above.
 <details>
 <summary>Re-roll implementation</summary>
 
-- Players MAY spend Proficiency Points and non-health Life Battery points to re-roll an action.
-- Players MAY spend 2 points to re-roll the whole Dice Pool or 1 point to re-roll a single die in the pool.
+- Players MAY spend [Proficiency Points](#proficiency-ranks) and non-health [Life Battery](#life-batteries) points to re-roll an action.
+- Players MAY spend 1 point to re-roll the whole Dice Pool or 2 points to re-roll a single die in the pool.
 - As long as the Character has points remaining, the Player MAY continue spending points to re-roll.
 
 </details>
@@ -110,8 +165,9 @@ Criticality represents success *and* failure beyond the intention of the Charact
 - Characters MUST have one or more non-health Life Batteries.
 - Players MUST add an extra die to the Dice Pool, which is known as the Criticality Die and SHOULD be distinct from other dice in the pool; we RECOMMEND a 10-sided die, which represents a 10 percent chance of criticality.
 	- The die MAY be changed per session or action.
-- If a 1 is rolled on the Criticality Die, the result is a critical success or failure based on the success or failure of the rest of the Dice Pool.
-- Players MAY decide to opt-out or -in to using the Criticality Die prior to the creation of the Dice Pool; Players SHOULD decide prior to becoming aware of the Difficulty Rating assigned to the action.
+- If a 1 is rolled on the Criticality Die, the result is a critical success or failure based on the success or failure of the rest of the Dice Pool, respectively.
+- Players MAY decide to opt-out or -in to using the Criticality Die prior to the creation of the Dice Pool.
+	- Players SHOULD decide whether they will apply the Critically Die prior to becoming aware of the Difficulty Rating assigned to the action.
 	- Players MAY decide to always roll a Criticality Die as a group decision. We RECOMMEND the decision be made prior to the beginning of the session.
 
 Beyond the narrative implications and outcomes, Criticality comes with mechanical impacts on the Character.
@@ -124,22 +180,22 @@ A critical success on a non-combat (mundane) action, results in the following ch
 
 The Player rolls one, 12-sided die.
 
-|Die value    |Effect |
+|Die value    |Affect on Action target battery |
 |:------------|:------|
 |Even number  |Plus 1 |
-|1, 5, 9      |Plus 2 |
-|3, 7         |Plus 3 |
+|1, 5, or 9      |Plus 2 |
+|3 or 7         |Plus 3 |
 |11           |Plus 5 |
 
-If the target battery becomes full, the Player MAY distribute the remaining points to other non-health batteries of their choosing.
+If the Action target battery becomes full, the Player MAY distribute the remaining points to other non-health batteries of their choosing.
 
 #### Critical, mundane failure
 
-Is the opposite of the Critical, mundane success. 
+Critical, mundane failure is the opposite of a Critical, mundane success. 
 
-- MUST subtract the effect in the Critical, mundane success table.
-- If the target battery reaches 0, the Player MUST spend the remaining points against other non-health batteries of their choosing.
-	- If using the Overflow recharging modification, Players SHOULD NOT use that mechanic to resolve the reduction of a target battery that has reached 0 due to critical failure. 
+- MUST subtract the affect in the Critical, mundane success table.
+- If the Action target battery reaches 0, the Player MUST spend the remaining points against other non-health batteries of their choosing.
+	- If using the Overflow recharging modification, Players SHOULD NOT use that mechanic to resolve the reduction of an Action target battery that's reached 0 due to critical failure. 
 
 #### Critical, combat success
 
@@ -149,9 +205,9 @@ The Player rolls one, 12-sided die.
 
 |Die value    |Effect |
 |:------------|:------|
-|Even number |Plus 1 to attacker target action battery, or, any other non-health battery if the target action battery is full |
-|1, 5, 9      |Multiply base potential energy by 1.5 |
-|3, 7         |Multiply base potential energy by 2 |
+|Even number |Plus 1 to attacker Action target battery, or, any other non-health battery if the Action target battery is full |
+|1, 5, or 9      |Multiply base Potential Energy by 1.5 |
+|3 or 7         |Multiply base Potential Energy by 2 |
 |11           |Trauma: Roll another 12-sided die and apply result from the Critical, combat success effects extension table |
 
 ##### Critical, combat success effects extension table
@@ -160,12 +216,12 @@ The Player rolls one, 12-sided die.
 
 |Die value    |Effect |
 |:------------|:------|
-|1        |Defender Difficulty rating reduced by 2, recurring and compounding |
-|2, 5, 8  |Multiply base potential energy by 2 |
-|3, 6, 9  |Multiply base potential energy by 2.5 |
-|4, 7     |Reduce defender's spirit battery by 1; use health battery if spirit battery is unavailable or is at 0 |
+|1        |Defender Difficulty Rating reduced by 2, recurring and compounding |
+|2, 5, or 8  |Multiply base Potential Energy by 2, target defender. |
+|3, 6, or 9  |Multiply base Potential Energy by 2.5, target defender. |
+|4 or 7     |Reduce defender's spirit battery by 1; use health battery if spirit battery is unavailable or at 0 |
 |10       |Reduce defender's health battery by 1, recurring and compounding |
-|11       |Multiply base potential energy by 3 |
+|11       |Multiply base Potential Energy by 3, target defender. |
 |12       |Defender can't act for 2 rounds | 
 
 Recurring means the effect is applied every round. Compounding means the effect can be applied multiple times. This simulates severe injury and allows for severe injury to occur multiple times.
@@ -178,9 +234,9 @@ The Player rolls one, 12-sided die.
 
 |Die value    |Effect |
 |:------------|:------|
-|Even number |Minus 1 from attacker target action battery, or, any other non-health battery if the target action battery is at 0 |
-|1, 5, 9      |Minus 2 from attacker target action battery, does not impact other batteries, if target action battery is at 0 |
-|3, 7         |Attacker damages self at one-to-one Scale, 0 resistance, base potential energy divided by 2 (round down); damage cannot be less than 1 |
+|Even number |Minus 1 from attacker Action target battery, or, any other non-health battery, if the Action target battery is at 0 |
+|1, 5, or 9      |Minus 2 from attacker Action target battery, does not impact other Life Batteries, if Action target battery is at 0 |
+|3 or 7         |Attacker damages self at one-to-one Scale, 0 resistance, base Potential Energy divided by 2 (round down); damage cannot be less than 1 |
 |11           |Trauma: Roll another 12-sided die and apply result from the Critical, combat failure effects extension table |
 
 ##### Critical, combat failure effects extension table
@@ -189,8 +245,8 @@ The Player rolls one, 12-sided die.
 
 |Die value    |Effect |
 |:------------|:------|
-|11        |Tool used is rendered useless for future rounds. If no tool is used, multiply base potential energy by 3 and target attacker |
-|Other.    |Apply Critical, combat success effects extension table replacing the word "defender" with "attacker" |
+|11        |Tool used is rendered useless for future rounds. If no tool is used, multiply base Potential Energy by 3 and target the attacker. |
+|Other    |Apply Critical, combat success effects extension table replacing the word "defender" with "attacker" |
 
 </details>
 
