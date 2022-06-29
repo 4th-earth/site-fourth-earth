@@ -241,41 +241,24 @@ Proficiency Ranks represent the level of proficiency a Character has performing 
 
 </details>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Life Batteries
 
 Life batteries represent the life force of a Character. 
 
-Batteries:
-
-- MUST have multiple ways to recharge. 
+- Characters MUST have at least one Life Battery.
+- Batteries MUST have multiple ways to recharge. 
 	- Some recharging methods SHOULD be player initiated (sleep, for example).
 	- SHOULD favor a "both ways" approach; if batteries can recharge multiple ways, they SHOULD be able to drain multiple ways (starvation, for example).
-- SHOULD be kept to a minimum to reduce administrative overhead and maintain tension.
-- SHOULD have the same maximum number of battery points; for each battery.
-- SHOULD be the same for all Characters (even non-player characters) in a Setting with the same rules applied.
-- MAY be created before play begins or created as the story progresses (Players may decide a stealth battery is appropriate while playing).
-- MAY be used to resolve actions.
+- The number of Batteries SHOULD be kept to a minimum to reduce administrative overhead and maintain tension.
+- Batteries SHOULD have the same maximum number of battery points; for each battery.
+- Batteries SHOULD be the same for all Characters (even non-player characters) in a Setting with the same rules applied.
+- Batteries MAY be created before play begins or created as the story progresses (Players may decide a stealth battery is appropriate while playing).
+- Batteries MAY be used to resolve actions.
 
 <details>
 <summary>Vanilla implementation</summary>
 
-- Each Character has 1 battery, called health, with a maximum value of 8.
+- Each Character has 1 battery named, health, with a maximum value of 8.
 - Characters are considered dead when their health battery reaches 0.
 - Characters may recharge their health battery by using items, resting, or seeking assistance from other Characters.
 - Recharging activities MAY have a Difficulty Rating applied.
@@ -294,23 +277,20 @@ Batteries:
 	- Physical tasks SHOULD predominately affect the physical battery.
 	- Mentally taxing activities SHOULD predominately impact the mental battery.
 	- Magic and similar actions SHOULD predominately impact the spirit battery.
-	- *Note: The ability to recharge a battery by pulling points from a different battery facilitates the notion that actions are rarely strictly physical, mental, or spiritual.*
-- Player-initiated recharging activities SHOULD include the following, with the associated batteries and points per unit of time.
-	- The following recharging activities MUST recharge each battery by one point and the target battery by the points specified.
+	- *Note: The overflow recharging (see below) facilitates the notion that actions are rarely strictly physical, mental, or spiritual and is RECOMMENDED.*
+- Player-initiated recharging activities SHOULD include the following, with the associated batteries and points per unit of time and MUST increase each battery at least one point per unit of time.
 	- Rest (slow): Health battery, 2 points.
 	- Nap (fast): Physical battery, 3 points.
 	- Sleep (fastest): Physical battery, 4 points.
 	- Meditate (fast): Mental battery, 3 points.
 	- Pray (fast): Spirit battery, 3 points.
-	- *Note: Slow, fast, and fastest speaks to the length of game time required to recharge all batteries as if they we at, or near, 0.*
-- Players MAY spend battery points to reduce the Difficulty Rating of an action; 1 Difficulty Rating per battery points point.
+	- *Note: Slow, fast, and fastest speaks to the length of player time compared to character time required to recharge all batteries as if they were at, or near, 0.*
+- Players MAY spend non-health battery points to reduce the Difficulty Rating of an action; 1 Difficulty Rating per battery point.
 	- The battery points spent MUST come from the battery being target by the action.
 
 </details>
 
 ### Official modifications
-
-The following are classified as one-off rulesets related to specific situations, which Players MAY choose to incorporate into their game-play piecemeal.
 
 *Note: We make some presumptions about the setup used in conjunction with these additions, which MAY be modified to meet your needs.*
 
@@ -327,15 +307,15 @@ The following are classified as one-off rulesets related to specific situations,
 <details>
 <summary>Assisting other Characters</summary>
 
-When assisting other Characters using this modification, one Character transfers one or more of their battery points to the Character performing a given action. The Difficulty Rating here is applied to the assisting itself.
+When assisting other Characters using this modification, one Character transfers one or more of their battery points to the Character performing a given action. The Difficulty Rating here is applied to the action of assisting itself for the assisting character.
 
 - The transfer MUST be from the same battery the point will be transferred to.
 - Players MAY transfer battery points from a Character they control to another Character in the Setting; the baseline Difficulty Rating is based on distance between Characters:
-	- Touch: Difficulty of 0.
-	- Distance (usually line of sight): Difficulty of 1.
-	- Ranged (MAY be out of sight): Difficulty of 2.
+	- Touch: Difficulty 0.
+	- Distance (usually line of sight): Difficulty 1.
+	- Ranged (MAY be out of sight): Difficulty 2.
 - Players MAY increase the Difficulty Rating after starting with the baseline.
-- The Difficulty Rating to assist SHOULD be less than the initial Difficult Rating of the action being performed.
+- The Difficulty Rating to assist SHOULD be less than the initial Difficult Rating of the action being performed by the other Character.
 - Assisting SHOULD NOT require movement by the assisting character.
 
 </details>
@@ -344,7 +324,7 @@ When assisting other Characters using this modification, one Character transfers
 <summary>Death, resurrection, and reincarnation</summary>
 
 - If a Character dies, 1 proficiency point SHOULD be removed from all completed Proficiency Ranks. This represents relearning or recovering skills, however, maintaining some memory of the skill.
-- If a Character is resurrection the health battery MUST be set to 1; all other batteries MUST be set to 0.
+- If a Character is resurrected, the health battery MUST be set to 1; all other batteries MUST be set to 0.
 	- The Character is the same character and MAY retain possessions.
 	- *Note: The Character has to have died first, therefore, the impact of death applies.*
 - If a Character is reincarnated they are considered to have died and been resurrected, therefore, the impacts of those two situations apply along with:
@@ -353,6 +333,19 @@ When assisting other Characters using this modification, one Character transfers
 	- The Character, if maintained as the actual same Character, will appear in their hometown (place of birth) or place of residence.
 
 </details>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Characters
 
