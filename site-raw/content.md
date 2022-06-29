@@ -128,11 +128,15 @@ Proficiency Ranks represent the level of proficiency a Character has performing 
 - Skill-trees SHOULD be determined by Players as Characters interact with the Setting and other Characters; reduces pre-setup and starts game play in the most open and freeform condition.
 	- Skills may be sub-divided (forming a skill-tree); cooking in general versus a specific recipe.
 		- It is left to Player discretion to determine parent-child relationships among skills.
-		- At least two ranks in the parent SHOULD be earned before proficiency points are earned toward the child (more specialized skill). If a parent is created after ranks in the child have been earned, we RECOMMEND moving the achieved ranks to the parent proficiency. 
+		- At least two ranks in the parent SHOULD be earned before proficiency points are earned toward the child (more specialized skill). If a parent skill is created after ranks in the child have been earned, we RECOMMEND moving the achieved ranks to the parent proficiency. 
 		- If mastery (three ranks) in the parent skill has been achieved, the Difficulty Rating of the action is automatically reduced by one; this reduction MUST only apply once.
 		- The hierarchy of the skill-tree SHOULD be limited to three levels or less.
+- Tools SHOULD NOT be sub-divided.
 
 </details>
+
+
+
 
 
 
