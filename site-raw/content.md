@@ -96,43 +96,42 @@ See above.
 <details>
 <summary>Re-roll implementation</summary>
 
-- Players MAY spend battery and proficiency points to re-roll and action. (The health battery cannot be used.)
+- Players MAY spend Proficiency Points and non-health Life Battery points to re-roll an action.
 - Players MAY spend 2 points to re-roll the whole Dice Pool or 1 point to re-roll a single die in the pool.
-- As long at the Character has points remaining, the Player MAY continue spending points.
+- As long as the Character has points remaining, the Player MAY continue spending points to re-roll.
 
 </details>
-
-### Official modifications: Dice Pool
 
 <details>
 <summary>Criticality</summary>
 
-Criticality represents wild success *and* failure for mundane and combat actions. 
+Criticality represents success *and* failure beyond the intention of the Character for mundane and combat actions. 
 
 - Characters MUST have one or more non-health Life Batteries.
-- Players MUST add an extra die to the Dice Pool, which is known as the Criticality Die and should be distinct from the other dice in the pool; we RECOMMEND a 10-sided die, which represents a 10 percent chance of criticality.
-	- The die MAY be changed per session or per action.
+- Players MUST add an extra die to the Dice Pool, which is known as the Criticality Die and SHOULD be distinct from other dice in the pool; we RECOMMEND a 10-sided die, which represents a 10 percent chance of criticality.
+	- The die MAY be changed per session or action.
 - If a 1 is rolled on the Criticality Die, the result is a critical success or failure based on the success or failure of the rest of the Dice Pool.
-- Players MAY decide to opt-out or -in to using the Criticality Die prior to the creation of the Dice Pool; Players SHOULD decide prior to becoming aware of the difficulty level assigned to the action.
-	- Players MAY decide to always roll a Criticality Die as a group decision.
+- Players MAY decide to opt-out or -in to using the Criticality Die prior to the creation of the Dice Pool; Players SHOULD decide prior to becoming aware of the Difficulty Rating assigned to the action.
+	- Players MAY decide to always roll a Criticality Die as a group decision. We RECOMMEND the decision be made prior to the beginning of the session.
 
 Beyond the narrative implications and outcomes, Criticality comes with mechanical impacts on the Character.
 
 #### Critical, mundane success
 
-A critical success on a non-combat (mundane) action, results in the following changes to the battery targeted by the action. MUST NOT be the health battery.
+A critical success on a non-combat (mundane) action, results in the following changes to the battery targeted by the action. 
+
+- MUST NOT be the health battery.
 
 The Player rolls one, 12-sided die.
 
 |Die value    |Effect |
 |:------------|:------|
-|Even number |Plus 1 |
+|Even number  |Plus 1 |
 |1, 5, 9      |Plus 2 |
 |3, 7         |Plus 3 |
 |11           |Plus 5 |
 
 If the target battery becomes full, the Player MAY distribute the remaining points to other non-health batteries of their choosing.
-
 
 #### Critical, mundane failure
 
@@ -157,21 +156,21 @@ The Player rolls one, 12-sided die.
 
 ##### Critical, combat success effects extension table
 
-This table presumes you are using the Standard four battery implementation.
+The Player rolls one, 12-sided die.
 
 |Die value    |Effect |
 |:------------|:------|
 |1        |Defender Difficulty rating reduced by 2, recurring and compounding |
 |2, 5, 8  |Multiply base potential energy by 2 |
 |3, 6, 9  |Multiply base potential energy by 2.5 |
-|4, 7     |Reduce defender's spirit battery by 1; use health battery if spirit battery is not available or is at 0 |
+|4, 7     |Reduce defender's spirit battery by 1; use health battery if spirit battery is unavailable or is at 0 |
 |10       |Reduce defender's health battery by 1, recurring and compounding |
 |11       |Multiply base potential energy by 3 |
 |12       |Defender can't act for 2 rounds | 
 
 Recurring means the effect is applied every round. Compounding means the effect can be applied multiple times. This simulates severe injury and allows for severe injury to occur multiple times.
 
-For example, a Character (attacker) is fighting another Character (defender) with a Difficulty rating of 6. The Player rolls a Critical, combat success that results in the Difficulty rating being reduced by 2, becoming 4. Every following round, the defender's Difficulty rating will be 4. If the Player manages to roll the same Critical, combat success a second time, the defender's Difficulty rating would become 2 for each following round. This could increase to the point where the defender's Difficulty rating becomes 0.
+For example, a Character (attacker) is fighting another Character (defender) with a Difficulty Rating of 6. The Player rolls a Critical, combat success that results in the Difficulty Rating being reduced by 2, becoming a Difficulty Rating of 4. Every following round, the defender's Difficulty rating will be 4 (recurring). If the Player manages to roll the same Critical, combat success a second time, the defender's Difficulty Rating becomes 2 for each following round (compounding). This could increase to the point where the defender's Difficulty Rating becomes 0.
 
 #### Critical, combat failure
 
@@ -186,6 +185,8 @@ The Player rolls one, 12-sided die.
 
 ##### Critical, combat failure effects extension table
 
+The Player rolls one, 12-sided die.
+
 |Die value    |Effect |
 |:------------|:------|
 |11        |Tool used is rendered useless for future rounds. If no tool is used, multiply base potential energy by 3 and target attacker |
@@ -198,27 +199,27 @@ The Player rolls one, 12-sided die.
 
 This modification is designed to operate with the Criticality modification above, however, players MAY choose to use it as a standalone modification.
 
-- Players MUST add an extra die to the Dice Pool, which is known as the Criticality die and should be distinct from the other dice in the pool; we RECOMMEND a 10-sided die, which represents a 10 percent chance of a partial or complication.
+- Players MUST add an extra die to the Dice Pool, which is known as the Criticality die and SHOULD be distinct from the other dice in the pool; we RECOMMEND a 10-sided die, which represents a 10 percent chance of a partial or complication.
 	- The die MAY be changed per session or per action.
 - If the greatest number on the Criticality Die is rolled, the result is a partial or complication based on the success or failure of the rest of the Dice Pool.
 	- A partial is a mildly positive effect on an otherwise failed action.
 	- A complication is a mildly negative effect on an otherwise successful action.
 - Players MAY decide to opt-out or -in to using the Criticality Die prior to the creation of the Dice Pool; Players SHOULD decide prior to becoming aware of the difficulty level assigned to the action.
-	- Players MAY decide to always roll a Criticality Die as a group decision.
+	- Players MAY decide to always roll a Criticality Die as a group decision. We RECOMMEND the decision be made prior to the beginning of the session.
 
 </details>
 
 ## Proficiency Ranks
 
-Proficiency Ranks represent the level of proficiency a Character has performing a skill or using a tool.
+Proficiency Ranks represent the level of proficiency a Character has performing certain types of actions or using a tool.
 
 - Each rank SHOULD require earning two or more Proficiency Points toward the rank. 
 - Each rank SHOULD be achievable in roughly four attempts.
 - The implementation used SHOULD be stable for the entire session. 
 	- The implementation MAY be adjusted from session to session. 
 	- These adjustments SHOULD be minimal from one session to the next.
-- Skills SHOULD have more possible ranks than tools. We RECOMMEND:
-	- 3 ranks per skill.
+- Action Types SHOULD have more possible ranks than tools. We RECOMMEND:
+	- 3 ranks per Action Type.
 	- 1 rank per tool; general, not specific (a knife is a knife).
 	- 4 Proficiency Points per rank.
 - Each rank MAY increase the number of dice in the Dice Pool by 1.
@@ -227,15 +228,14 @@ Proficiency Ranks represent the level of proficiency a Character has performing 
 <details>
 <summary>Vanilla implementation</summary>
 
-- Proficiency Points MUST be applied to a skill or tool related to the action performed. (For example, using a knife to cut bread results in a proficiency point being earned. That point can be applied to the cooking skill, use of the edged tool, or both, however, the proficiency point MUST NOT be applied to a skill in casting a spell, if applicable.) We RECOMMEND:
-	- 2 proficiency points earned on success and
-	- 1 point earned on failure and
-	- MAY be distributed any way the Player deems suitable.
+- Proficiency Points MUST be applied to an Action Type or tool related to the action performed. (For example, using a knife to cut bread results in a proficiency point being earned. That point can be applied to a cooking Action Type, to the edged tool, or both, however, the Proficiency Point MUST NOT be applied to a spell casting Action Typed, if applicable.) We RECOMMEND:
+	- 2 Proficiency Points earned on success and
+	- 1 point earned on failure.
 - Skill-trees SHOULD be determined by Players as Characters interact with the Setting and other Characters; reduces pre-setup and starts game play in the most open and freeform condition.
 	- Skills may be sub-divided (forming a skill-tree); cooking in general versus a specific recipe.
 		- It is left to Player discretion to determine parent-child relationships among skills.
-		- At least two ranks in the parent SHOULD be earned before proficiency points are earned toward the child (more specialized skill). If a parent skill is created after ranks in the child have been earned, we RECOMMEND moving the achieved ranks to the parent proficiency. 
-		- If mastery (three ranks) in the parent skill has been achieved, the Difficulty Rating of the action is automatically reduced by one; this reduction MUST only apply once.
+		- At least two ranks in the parent SHOULD be earned before proficiency points are earned toward the child (more specialized skill). If a parent skill is created after ranks in the child have been earned, we RECOMMEND moving the achieved ranks to the parent proficiency and re-building ranks in the child proficiency. 
+		- If mastery (three ranks) in the parent skill has been achieved, the Difficulty Rating of the action is automatically reduced by one; this reduction MUST only apply once regardless of skill-tree depth and use.
 		- The hierarchy of the skill-tree SHOULD be limited to three levels or less.
 - Tools SHOULD NOT be sub-divided.
 
