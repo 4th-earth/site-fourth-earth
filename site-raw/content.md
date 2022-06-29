@@ -129,7 +129,61 @@ The following table describes a method for calculating the Potential Energy of a
 
 ### Official Modifications: Difficulty Ratings
 
+<details>
+<summary>Vanilla Scale</summary>
 
+Scale is a way of measuring the size difference between Characters in a Setting or Scene. Scale MAY affect things like Difficulty Ratings and Resistance. This implementation SHOULD be used in conjunction with other modifications.
+
+- The smallest Character in a Setting or Scene SHOULD be given a Scale of 1; the Scale of other Characters is relative to 1 in whole number increments.
+	- When characters are interacting, the smallest Character in the interaction SHOULD be given a Scale of 1.
+- If the interacting Characters are roughly the same size, both SHOULD be Scale 1.
+- Larger Scale Characters SHOULD have a higher resistance, if applicable.
+- Smaller Scale Character SHOULD have a higher Difficulty Rating.
+
+</details>
+
+<details>
+<summary>Vanilla Stance</summary>
+
+Stance affords Players the ability to modify the Difficulty Rating when interacting with other Characters; particularly for combat.
+
+- Players MUST announce the Stance of their Character when describing the Action to be taken.
+	- If the Stance is not announced, the Character SHOULD be considered to be in a neutral stance.
+	- Players SHOULD decide whether announcing the Stance MUST happen every turn or round, or, if a Stance change remains the same until changed again.
+- Changing Stance MUST be considered a Fast Action, therefore, does not take an entire turn or round.
+- Changes to the Difficulty Rating SHOULD be based on the Stance of both interacting Characters using the Stance Difficulty Rating Adjustment table below (where "A" is the Attacking Character and "D" is the Defending Character).
+
+|             |A: Offensive |A: Neutral |A: Defensive |
+|-------------|:------------|:----------|:------------|
+|D: Offensive |Minus 2 |Minus 1 | 0 |
+|D: Neutral   |Minus 1 | 0 |Plus 1 |
+|D: Defensive |0 |Plus 1 |Plus 2 |
+
+</details>
+
+<details>
+<summary>Vanilla Resistance</summary>
+
+Resistance results in a modification to Potential Energy when attacked in a way that causes physical damage; draining the health Life Battery.
+
+
+
+
+Stance affords Players the ability to modify the Difficulty Rating when interacting with other Characters; particularly for combat.
+
+- Players MUST announce the Stance of their Character when describing the Action to be taken.
+	- If the Stance is not announced, the Character SHOULD be considered to be in a neutral stance.
+	- Players SHOULD decide whether announcing the Stance MUST happen every turn or round, or, if a Stance change remains the same until changed again.
+- Changing Stance MUST be considered a Fast Action, therefore, does not take an entire turn or round.
+- Changes to the Difficulty Rating SHOULD be based on the Stance of both interacting Characters using the Stance Difficulty Rating Adjustment table below (where "A" is the Attacking Character and "D" is the Defending Character).
+
+|             |A: Offensive |A: Neutral |A: Defensive |
+|-------------|:------------|:----------|:------------|
+|D: Offensive |Minus 2 |Minus 1 | 0 |
+|D: Neutral   |Minus 1 | 0 |Plus 1 |
+|D: Defensive |0 |Plus 1 |Plus 2 |
+
+</details>
 
 ## Dice pools
 
