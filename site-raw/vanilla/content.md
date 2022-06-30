@@ -1,11 +1,15 @@
 # 4th Earth RAW: Vanilla
 
-## Difficulty Rating
+Creating a [.tabletop role playing game](TTRPG) can be a bit overwhelming. 4th Earth RAW: Vanilla is designed to provide a minimal setup for Players to create Characters and begin creating their stories in the spirit of [4th Earth RAW](/).
+
+If you would like to expand these rules and mechanics and aren't sure where to start, we RECOMMEND looking at the official add-on implementations known as Sprinkles.
 
 The vanilla implementation is designed to facilitate solo-adventuring and minimize the number of Players rolling at any given time.
 
-- Difficulty MAY be reduced by spending [Life Battery](#life-batteries) points.
-- Difficulty MAY be increased or decreased by negotiating with a Narrator, if applicable.
+## Difficulty Rating
+
+- Difficulty MAY be reduced by spending non-health [Life Battery](#life-batteries) points; 1 Difficulty Rating for each target action battery point spent.
+- Difficulty MAY be increased or decreased by negotiating with the Narrator, if applicable.
 
 ### Harming Other Characters
 
