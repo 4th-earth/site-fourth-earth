@@ -69,12 +69,14 @@ function content(
         <style type="text/css">
             html {
                 scroll-behavior: smooth;
+                font-family: monospace;
+                font-size: 1.5rem;
             }
 
             body {
                 width: 70ch;
                 margin: 4rem auto;
-                line-height: 1.4rem;
+                line-height: 1.5rem;
             }
 
             h1,
