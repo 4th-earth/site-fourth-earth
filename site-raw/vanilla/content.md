@@ -11,22 +11,47 @@ The vanilla implementation is designed to facilitate solo-adventuring and minimi
 - Difficulty MAY be reduced by spending non-health [Life Battery](#life-batteries) points; 1 Difficulty Rating for each target action battery point spent.
 - Difficulty MAY be increased or decreased by negotiating with the Narrator, if applicable.
 
+### Opposing Character Interactions 
+
+The following apply to Character Actions where the target of the Action is a Character who is contesting the Action; if the Action isn’t contested, the Difficulty Rating MUST be 0.
+
+- There MUST be a protagonist and an antagonist where the protagonist is the Character performing the Action.
+- For mundane Actions, the initial Difficulty Rating for the protagonist MUST be at least the number of Proficiency Ranks the antagonist has in the same proficiency being used by the protagonist.
+- For physically aggressive Actions:
+    - Difficulty Rating MUST represent difficulty to hit the antagonist; this includes grappling, holding, or restraining the Defending Character.
+    - Difficulty Rating MUST start at 0.
+    - Difficulty Rating SHOULD be calculated using the Antagonist Difficulty Rating Table below.
+    - Damage SHOULD be calculated using the Protagonist Potential Energy Table below.
+    - Grappling, holding, or restraining MUST NOT cause damage to the Antagonist. 
+        - If the Antagonist is restrained in some way, attempting to escape MUST result in the Antagonist becoming the Protagonist; SHOULD happen on the Antagonist’s turn, if applicable.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Harming Other Characters
 
-- There MUST be one attacking Character and one or more defending Character(s).
-- Difficulty Rating MUST represent difficulty to hit; this includes grappling, holding, or restraining the Defending Character.
-- Difficulty Rating MUST start at 0.
-	- Difficulty Rating SHOULD be increased using the Defending Character Difficulty Rating table below.
 - Slow Actions MUST be performed only once per round.
 - Fast Actions MAY be performed twice by the Attacking Character in a turn or round.
 	- If the Fast Action is performed twice the Difficulty Rating MUST be divided by 2 and split evenly between the two Actions.
 		- If the Fast Action is performed twice and the Difficulty Rating is odd, Player MUST round down the first and round up the second.
 		- Players MAY spend non-health Life Battery points to reduce the Difficulty Ratings individually.
-- Damage SHOULD be calculated using the Attacking Character Potential Energy table below.
-- Grappling, holding, or restraining MUST NOT cause damage to the Defending Character. 
-	- If the Defending Character is restrained in some way, attempting to escape MUST result in the Defending Character becoming the Attacking Character; SHOULD happen on the Defending Character’s turn, if applicable.
 
-#### Defending Character Difficulty Rating table
+#### Antagonist Difficulty Rating Table
 
 The following table describes a method for calculating the Difficulty Rating of a Defending Character. The Difficulty Rating represents the difficulty to hit; damage is calculated by using the Attacking Character Potential Energy table below.
 
@@ -37,7 +62,7 @@ The following table describes a method for calculating the Difficulty Rating of 
 |Defender is less Scale |Plus 1 to Difficulty Rating per steps smaller in Scale. |
 |Defender is aware of Attacker |Plus 1 to Difficulty Rating. |
 
-#### Attacking Character Potential Energy table
+#### Protagonist Potential Energy Table
 
 The following table describes a method for calculating the Potential Energy of an attack, which determines how many Life Battery points will be spent if the attack is successful.
 
