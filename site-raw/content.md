@@ -2,24 +2,19 @@
 
 These are the guidelines and guardrails for 4th Earth [.rules as written](RAW) a framework for creating [.table-top role playing games](TTRPGs). The Vanilla Implementation illustrates one method for applying the rules as written to create a TTRPG.
 
-4th Earth RAW uses the key words described in [Key words for use in RFCs to Indicate Requirement Levels](https://datatracker.ietf.org/doc/html/rfc2119):
+4th Earth RAW uses the key words described in [Key words for use in RFCs to Indicate Requirement Levels](https://datatracker.ietf.org/doc/html/rfc2119), the all-caps are not screaming at you:
 
-- MUST, REQUIRED, or SHALL;
-- MUST NOT or SHALL NOT;
-- SHOULD or RECOMMENDED;
-- SHOULD NOT or NOT RECOMMENDED; and
-- MAY or OPTIONAL.
+- MUST, REQUIRED, or SHALL, mean that the definition is an absolute requirement of the specification;
+- MUST NOT or SHALL NOT, mean that the definition is an absolute prohibition of the specification;
+- SHOULD or RECOMMENDED, mean that there may exist valid reasons in particular circumstances to ignore a particular item, but the full implications must be understood and carefully weighed before choosing a different course;
+- SHOULD NOT or NOT RECOMMENDED, mean that there may exist valid reasons in particular circumstances when the particular behavior is acceptable or even useful, but the full implications should be understood and the case carefully weighed before implementing any behavior described with this label; and
+- MAY or OPTIONAL, mean that an item is truly optional.
 
-4th Earth RAW is designed for collaborative storytelling (and home brewing) from the mundane, theatre of the absurd, to the fanciful and super-heroic. Whether you're solo-adventuring or in a group, 4th Earth RAW gives you a set of mechanics to keep the mystery and unknown alive.
+4th Earth RAW is designed for collaborative storytelling, home brewing, and hacking. From the mundane, theatre of the absurd, to the fanciful and super-heroic, whether you're solo-adventuring or in a group, 4th Earth RAW gives you a set of mechanics to keep the mystery and challenge alive.
 
-Players personify one or more Characters who interact with the Setting and other Characters. Interactions:
+Players personify one or more Characters who interact with the Setting and other Characters.
 
-- MUST be assigned a [Difficulty Rating](#difficulty-rating) and
-- MAY target a non-health [Life Battery](#life-batteries), if applicable.
-
-The Player for the Character MAY create a [Dice Pool](#dice-pools)based on the Difficulty Rating, where the number of dice in the pool MAY be less than or equal to the number of applicable [Proficiency Ranks](#proficiency-ranks) available to the Character.
-
-We RECOMMEND Players use standard polyhedral dice; specifically:
+**Equipment:** We RECOMMEND Players use standard polyhedral dice, however, any means by which choosing multiple random numbers between 1 and 12 will do; the dice would be:
 
 - 4-sided,
 - 6-sided,
@@ -27,37 +22,32 @@ We RECOMMEND Players use standard polyhedral dice; specifically:
 - 10-sided, and
 - 12-sided.
 
-4th Earth RAW is created with following values in mind:
+4th Earth RAW is created with the following values in mind:
 
-1. **Additive over reductive.** Players should be able to start from a simple foundation and add to it, instead of starting from an "everything and the kitchen sink" place and reducing.
-2. **Narrative over simulation.** Players should be able to focus on creating engaging stories without strictly replicating reality.
-3. **Flow over grinding.** Players should be able to get lost in their story and actions without performing repetitive tasks.
-4. **Power ceilings over threat escalation.** Saved the town, saved the country, saved the world, saved the universe, what next?
-5. **Progressive disclosure over saturation.** Players should be able to start having never read the rules or specification and learn as they go.
+- **Additive over reductive.** Players should be able to start from a simple foundation and add to it, instead of starting from an "everything and the kitchen sink" place and reducing.
+- **Narrative over simulation.** Players should be able to focus on creating engaging stories without strictly replicating reality.
+- **Flow over grinding.** Players should be able to get lost in their story and actions without performing repetitive tasks.
+- **Power ceilings over threat escalation.** Saved the town, saved the country, saved the world, saved the universe, what next?
+- **Progressive disclosure over saturation.** Players should be able to enter a story having never read the rules or specification and learn as they go.
 
 ## Difficulty Rating
 
 The Difficulty Rating is the Action mechanic for Characters to interact with the Setting and other Characters.
 
-Character actions consist of the following, minimal, list of activities:
+Character Actions consist of the following, minimal, list of activities:
 
 1. Character intent; the Player describes what the Character will attempt to do.
-2. The intent is assigned an initial [Difficulty Rating](#difficulty-rating).
+2. The intent MUST be assigned an initial [Difficulty Rating](#difficulty-rating).
 3. The initial Difficulty Rating MAY be adjusted up or down.
-4. The Player MAY create a Dice Pool based on the agreed upon Difficulty Rating and rolls the Dice Pool.
+4. The Player MAY create a Dice Pool based on the agreed upon Difficulty Rating and rolls to determine success or failure.
 
-Actions are resolved by answering:
-
-- Was the action successful? and 
-- How was the outside world affected by the action?
-
-Difficulty Ratings are based on qualities of the opposing force or Character for the given Action and the Character performing that Action. 
+Actions are resolved by answering: Was the action successful? and How was the outside world affected by the action?
 
 - Difficulty 0 MUST represent automatic success.
 - Difficulty Infinite MUST be impossible for the Character to achieve in the Setting.
 - Difficulty Ratings MUST NOT be less than 0.
-- Difficulty Ratings SHOULD be based on the Character attempting the interaction (standing up may be Difficulty 6 for an infant and Difficulty 0 for an adult).
-- Players SHOULD be able to influence the Difficulty in one or more ways.
+- Difficulty Ratings SHOULD be based on the Character attempting the interaction, the complexity of the action, and qualities of any opposing force (standing up may be Difficulty 6 for an infant and Difficulty 0 for an adult).
+- Players SHOULD be able to influence the Difficulty Rating in one or more ways.
 
 ### Difficulty Rating Table
 
@@ -75,15 +65,17 @@ Difficulty Ratings are based on qualities of the opposing force or Character for
 
 ## Dice pools
 
-Dice Pools are a collection of dice. The sides of the dice in the pool is determined by the [Difficulty Rating](#difficulty-rating-table) of the Action. The number of dice in the pool is determined by the number of [Proficiency Ranks](#proficiency-ranks) applied to the Action.
+Dice Pools are a collection of dice. 
 
+- The number of sides of dice in the pool MUST be determine by the adjusted [Difficulty Rating](#difficulty-rating-table).
+- The number of dice in the pool MUST be determined by the number of [Proficiency Ranks](#proficiency-ranks) applied to the Action.
 - Dice Pools MUST have at least 1 die regardless of Difficulty Rating or Proficiency Ranks; referred to as the base die.
 - Rolling 1 on a single die in the Dice Pool MUST represent successful completion of the action.
 - Dice Pools SHOULD NOT exceed 5 dice, which keeps the pool manageable and allows room for additional dice to facilitate things like critical success, failure, or both.
 
 ## Proficiency Ranks
 
-Proficiency Ranks represent the level of proficiency a Character has performing certain types of actions or using a tool.
+Proficiency Ranks represent the level of proficiency a Character has performing certain types of actions or using a tool. Proficiency Points are sub-aspects of a Proficiency Rank.
 
 - Each rank SHOULD require earning two or more Proficiency Points toward the rank. 
 - Each rank SHOULD be achievable in roughly four attempts.
@@ -91,9 +83,9 @@ Proficiency Ranks represent the level of proficiency a Character has performing 
 	- The implementation MAY be adjusted from session to session. 
 	- These adjustments SHOULD be minimal from one session to the next.
 - Action Types SHOULD have more possible ranks than tools. We RECOMMEND:
-	- 3 ranks per Action Type.
-	- 1 rank per tool; general, not specific (a knife is a knife).
 	- 4 Proficiency Points per rank.
+	- 3 ranks per Action Type.
+	- 1 rank per tool; general, not specific (a knife is a knife, however, a knife used for cooking is different than a knife used for combat).
 - Each rank MAY increase the number of dice in the Dice Pool by 1.
 - Using a tool MAY reduce the Difficulty Rating of an action up to 2 levels.
 
@@ -101,38 +93,22 @@ Proficiency Ranks represent the level of proficiency a Character has performing 
 
 Life batteries represent the life force of a Character. 
 
-- Characters MUST have at least one Life Battery.
 - Batteries MUST have multiple ways to recharge. 
 	- Some recharging methods SHOULD be player initiated (sleep, for example).
-	- SHOULD favor a "both ways" approach; if batteries can recharge multiple ways, they SHOULD be able to drain multiple ways (starvation, for example).
+	- The implementation SHOULD favor a "both ways" approach; if batteries can recharge multiple ways, they SHOULD be able to drain multiple ways (starvation, for example).
 - The number of Batteries SHOULD be kept to a minimum to reduce administrative overhead and maintain tension.
 - Batteries SHOULD have the same maximum number of battery points; for each battery.
-- Batteries SHOULD be the same for all Characters (even non-player characters) in a Setting with the same rules applied.
-- Batteries MAY be created before play begins or created as the story progresses (Players may decide a stealth battery is appropriate while playing).
+- Batteries SHOULD be the same for all Characters in a Setting with the same rules applied (even non-player characters and enemies).
+		- Batteries MAY be created before play begins, however we RECOMMEND creating Life Batteries as the story progresses  based on the Actions of Characters. (Players may decide a stealth battery is appropriate while playing and add it to all Characters).
 - Batteries MAY be used to resolve actions.
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Characters
 
-Characters are anything within a [Setting](#setting) that can be personified by a Player.
-
-- MUST be part of one or more more general identities.
+- MUST be part of one or more encompassing identities.
 - MUST have one or more [Life Batteries](#life-batteries).
-- SHOULD be played by the same Player with every appearance unless otherwise agreed to in the Player Pacts.
-- SHOULD favor nurture over nature for Proficiencies.
-- SHOULD have a unique name to distinguish characters form one another.
+- SHOULD be played by the same Player with every appearance unless otherwise agreed to in the Social Contract.
+- SHOULD favor nurture over nature for Proficiency Ranks.
+- SHOULD have a unique name to distinguish Characters from one another.
 
 Examples:
 
@@ -142,14 +118,14 @@ Examples:
 
 ## Setting
 
-4th Earth RAW is a game engine and does not require a specific setting. Further, you can use 4th Earth RAW in the setting of other games.
+4th Earth RAW is a game engine and does not require a specific Setting. Further, you can use 4th Earth RAW in the Setting of other games.
 
-- MUST be agreed to by *all* players (including the narrator).
-- MUST be enough to give flavor and direction; could be a single sentence or tome.
+- MUST be agreed to by *all* players (including the Narrator, if applicable).
+- MUST be enough to give flavor and direction; MAY be a single sentence or tome.
 - MUST describe where, when, what, and general theme.
-- MAY be developed by the players, a narrator, the outside world, or anything else.
+- MAY be developed by the Players, a Narrator, the outside world, or anything else.
 - MAY include a specific, short-term plot (adventures and one-shots). 
-	- MAY be a generic, long-term campaign. MAY be a world open for exploration with not agenda beyond exploration. Or, a combination.
+	- MAY be a generic, long-term campaign. MAY be a world open for exploration with no agenda or conflict beyond that exploration. Or, a combination.
 
 Examples:
 
@@ -157,13 +133,23 @@ Examples:
 2. Greek mythos, The Underworld during the 12th labor of Hercules involving deities and demigods (a one-shot mythology hero quest).
 3. Early 21st century, Pluto, single-cell organisms (an evolution serial).
 
-The last example includes a baseline description of the characters that can be played during the serialized adventure.
+The last example includes a baseline description of the Characters that can be played during the serialized adventure.
 
-## Interacting with the Setting and Characters
+## Social Contract
 
+The Social Contract, "is the agreement or understanding between all the group's participants (players and GM alike) about how they will behave towards each other." Much like character for the individual and culture for the group, a Social Contract will exist. The question is: How transparent, codified, and formal is it?
 
+Another way to look at it, the Social Contract is the guidelines and guardrails for meatspace. 
 
+The Social Contract:
 
-### Official modifications
+- MUST be agreed to by all Players.
+- MUST be applied to all Players in a similar manner.
+- MAY be verbal; we RECOMMEND writing it down.
+- MAY be created as Players interact with each other.
 
-The following modifications are official implementations for concepts related to the Dice Pool.
+Resources for developing a Social Contract:
+
+- Large list of starter questions a Social Contract MAY address: [https://rpgmuseum.fandom.com/wiki/Social_contract](https://rpgmuseum.fandom.com/wiki/Social_contract)
+- An example of a Social Contract: [https://static1.squarespace.com/static/5512e30de4b018f9300e3a55/t/57802bb3bebafbf78186bc68/1468017592481/Downloadable+Social+Contract.pdf](https://static1.squarespace.com/static/5512e30de4b018f9300e3a55/t/57802bb3bebafbf78186bc68/1468017592481/Downloadable+Social+Contract.pdf)
+
