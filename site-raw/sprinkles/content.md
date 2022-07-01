@@ -147,3 +147,27 @@ This modification is designed to operate with the Criticality modification above
 	- A complication is a mildly negative effect on an otherwise successful action.
 - Players MAY decide to opt-out or -in to using the Criticality Die prior to the creation of the Dice Pool; Players SHOULD decide prior to becoming aware of the difficulty level assigned to the action.
 	- Players MAY decide to always roll a Criticality Die as a group decision. We RECOMMEND the decision be made prior to the beginning of the session.
+
+## Assisting other Characters
+
+When assisting other Characters using this modification, one Character transfers one or more of their battery points to the Character performing a given action. The Difficulty Rating here is applied to the action of assisting itself for the assisting character.
+
+- The transfer MUST be from the same battery the point will be transferred to.
+- Players MAY transfer battery points from a Character they control to another Character in the Setting; the baseline Difficulty Rating is based on distance between Characters:
+	- Touch: Difficulty 0.
+	- Distance (usually line of sight): Difficulty 1.
+	- Ranged (MAY be out of sight): Difficulty 2.
+- Players MAY increase the Difficulty Rating after starting with the baseline.
+- The Difficulty Rating to assist SHOULD be less than the initial Difficult Rating of the action being performed by the other Character.
+- Assisting SHOULD NOT require movement by the assisting character.
+
+## Death, resurrection, and reincarnation
+
+- If a Character dies, 1 proficiency point SHOULD be removed from all completed Proficiency Ranks. This represents relearning or recovering skills, however, maintaining some memory of the skill.
+- If a Character is resurrected, the health battery MUST be set to 1; all other batteries MUST be set to 0.
+	- The Character is the same character and MAY retain possessions.
+	- *Note: The Character has to have died first, therefore, the impact of death applies.*
+- If a Character is reincarnated they are considered to have died and been resurrected, therefore, the impacts of those two situations apply along with:
+	- 1 point being removed from all partially acquired Proficiency Ranks.
+	- The Character loses all physical possessions they had at the time of death.
+	- The Character, if maintained as the actual same Character, will appear in their hometown (place of birth) or place of residence. 
