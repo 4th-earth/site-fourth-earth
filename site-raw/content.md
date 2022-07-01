@@ -81,6 +81,7 @@ Proficiency Ranks represent the level of proficiency a [Character](#characters) 
 
 - Each rank SHOULD require earning two or more Proficiency Points toward the rank. 
 - Each rank SHOULD be achievable in roughly four attempts.
+    - Proficiency Points SHOULD NOT be earned if the Difficulty Rating is 0. 
 - The implementation SHOULD be stable for the entire session. 
 	- The implementation MAY be adjusted from session to session. 
 	- These adjustments SHOULD be minimal from one session to the next.

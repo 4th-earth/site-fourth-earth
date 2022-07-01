@@ -1,6 +1,6 @@
 # 4th Earth RAW: Vanilla
 
-Creating a [.tabletop role playing game](TTRPG) can be a bit overwhelming. 4th Earth RAW: Vanilla is designed to provide a minimal setup for Players to create Characters and begin creating their stories in the spirit of [4th Earth RAW](/).
+Creating a [.tabletop role playing game](TTRPG) can be a bit overwhelming. 4th Earth RAW: Vanilla is designed to provide a minimal setup for Players to create Characters and begin creating stories in the spirit of [4th Earth RAW](/).
 
 If you would like to expand these rules and mechanics and aren't sure where to start, we RECOMMEND looking at the official add-on implementations known as Sprinkles.
 
@@ -8,50 +8,50 @@ The vanilla implementation is designed to facilitate solo-adventuring and minimi
 
 ## Difficulty Rating
 
-- Difficulty MAY be reduced by spending non-health [Life Battery](#life-batteries) points; 1 Difficulty Rating for each target action battery point spent.
 - Difficulty MAY be increased or decreased by negotiating with the Narrator, if applicable.
-- If using non-health Life Batteries, Difficulty Ratings SHOULD target one non-health battery; known as the target action battery. For example:
-	- Injury and healing actions SHOULD affect the health battery.
-	- Physical tasks SHOULD predominately affect the physical battery.
-	- Mentally taxing activities SHOULD predominately impact the mental battery.
-	- Magic and similar actions SHOULD predominately impact the spirit battery.
-	- *Note: The overflow recharging (see below) facilitates the notion that actions are rarely strictly physical, mental, or spiritual and is RECOMMENDED.*
-- Players MAY spend non-health battery points, if applicable, to reduce the Difficulty Rating of an action; 1 Difficulty Rating per battery point.
-	- The battery points spent MUST come from the target action battery.
+- If using a health Life Battery, spending battery points SHOULD NOT reduce the DifficultyRating.
+- If using non-health Life Batteries (or a combination):
+    - Difficulty MAY be reduced by spending non-health [Life Battery](#life-batteries) points; 1 Difficulty Rating for each target action battery point spent.
+    - Difficulty Ratings SHOULD target one non-health battery; known as the target action battery. For example:
+	    - Injury and healing actions SHOULD affect the health battery.
+	    - Physical tasks SHOULD predominately affect the physical battery.
+	    - Mentally taxing activities SHOULD predominately impact the mental battery.
+	    - Magic and similar actions SHOULD predominately impact the spirit battery.
 
 ### Opposing Character Interactions
 
 The following apply to Character Actions where the target of the Action is a Character who is contesting the Action; if the Action isn’t contested, the Difficulty Rating MUST be 0.
 
 - There MUST be a protagonist and an antagonist where the protagonist is the Character performing the Action.
-- For mundane Actions, the initial Difficulty Rating for the protagonist MUST be at least the number of Proficiency Ranks the antagonist has in the same proficiency being used by the protagonist.
+- The initial Difficulty Rating, unless subdued, SHOULD BE at least the number of Proficiency Ranks the antagonist has in the same proficiency being used by the protagonist; including parent proficiencies.
 - For physically aggressive Actions:
-	- Difficulty Rating MUST represent difficulty to hit the antagonist; this includes grappling, holding, or restraining the Defending Character.
-	- Difficulty Rating MUST start at 0.
+	- Difficulty Rating MUST represent difficulty to hit the antagonist; this includes grappling, holding, or restraining the antagonist.
 	- Difficulty Rating SHOULD be calculated using the Antagonist Difficulty Rating below.
 	- Damage SHOULD be calculated using the Protagonist Potential Energy below.
 	- Grappling, holding, or restraining MUST NOT cause damage to the Antagonist.
 			- If the Antagonist is restrained in some way, attempting to escape MUST result in the Antagonist becoming the Protagonist; SHOULD happen on the Antagonist’s turn, if applicable.
+- The initial Difficulty Rating MAY be reduced by 1, if performing an Action using a specialty proficiency and having mastered the parent proficiency’s (three ranks).
 
 #### Antagonist Difficulty Rating
 
-The following describes a method for calculating the Difficulty Rating of an Antagonist. The Difficulty Rating represents the difficulty to hit or connect; damage is calculated by using the Protagonist Potential Energy table below.
+The following describes a method for calculating the Difficulty Rating of an Antagonist.
 
-- Antagonist Difficulty Rating MUST start at 0; if the Antagonist is subdued, the Difficulty Rating remains 0.
+- Start from the initial Difficulty Rating defined above.
 - If the Antagonist is aware of the aggressive action, the Difficulty Rating MUST be increased by 1.
-- If the Antagonist has active allies, the Difficulty Rating SHOULD be increased by 1 for each active ally.
+- If the Antagonist has active allies, the Difficulty Rating SHOULD be increased by 1 for every 2 active allies. (1 active ally SHOULD NOT result in an increase, 4 active allies SHOULD result in an increase of 2.)
 
 #### Protagonist Potential Energy
 
-The following table describes a method for calculating the Potential Energy of an attack, which determines how many Life Battery points will be spent if the attack is successful.
+The following table describes a method for calculating the Potential Energy (damage) of an attack, which determines how many Life Battery points will be lost if the attack is successful.
 
-- All physical attack MUST target the health battery.
+- If using a health Life Battery, physical damage MUST target the health battery.
 - Verbal, advanced technology, or magic attacks MAY impact non-health Life Batteries and SHOULD be a known quality or attribute of the action, technology, or spell.
-- Slow Actions MUST be performed only once per round.
+- Slow Actions MUST be limited to once per turn or round.
 - Fast Actions MAY be performed twice by the Attacking Character in a turn or round.
-	- If the Fast Action is performed twice the Difficulty Rating MUST be divided by 2 and split evenly between the two Actions.
-		- If the Fast Action is performed twice and the Difficulty Rating is odd, Player MUST round down the first and round up the second.
-		- Players MAY spend non-health Life Battery points to reduce the Difficulty Ratings individually.
+	- If the Fast Action is performed twice, the Difficulty Rating MUST be divided by 2 and split evenly between the two Actions; if performing once, the Difficulty Rating MUST NOT be split.
+		- If the Fast Action is performed twice and the Difficulty Rating is odd, Player MUST round up the first and round down the second.
+		- If using non-health Life Batteries, Players MAY spend non-health Life Battery points to reduce the Difficulty Ratings individually; as if they were two, separate actions.
+- Potential Energy MAY be reduced mechanically (see Resistance Sprinkle), or, through negotiation and narrative convenience (incapacitate instead of kill, for example).
 
 |Action |Details |Potential Energy |
 |:——|:-——|:—————:|
@@ -67,16 +67,15 @@ See Sprinkles.
 
 ## Proficiency Ranks
 
-- Proficiency Points MUST be applied to an Action Type or tool related to the action performed. (For example, using a knife to cut bread results in a proficiency point being earned. That point can be applied to a cooking Action Type, to the edged tool, or both, however, the Proficiency Point MUST NOT be applied to a spell casting Action Typed, if applicable.) We RECOMMEND:
+- Proficiency Points MUST be applied to an Action Type or tool related to the action performed. (For example, using a knife to cut bread results in a proficiency point being earned. That point can be applied to a cooking Action Type, to the edged tool, or both, however, the Proficiency Point MUST NOT be applied to a spell casting Action Type, if applicable.) We RECOMMEND:
 	- 2 Proficiency Points earned on success and
 	- 1 point earned on failure.
 - Skill-trees SHOULD be determined by Players as Characters interact with the Setting and other Characters; reduces pre-setup and starts game play in the most open and freeform condition.
-	- Each proficiency MAY have 1 child proficiency. The parent SHOULD represent a general proficiency and the child SHOULD represent a specialty. (For example, preparing food MAY have a child proficiency of baking a cake.)
+	- Each proficiency MAY have up to 1 child proficiency. The parent SHOULD represent a general proficiency and the child SHOULD represent a specialty. (For example, preparing food MAY have a child proficiency of baking a cake.)
 	- Players MAY determine parent-child relationships among proficiencies.
 	- At least two ranks in the parent MUST be earned before proficiency points are earned toward the child (more specialized skill).
-		- If a parent skill is created after ranks in the child have been earned, we RECOMMEND moving the achieved ranks to the parent proficiency and re-building ranks in the child proficiency.
-		- The Difficulty Rating of an Action MAY be reduced by 1, if three ranks has been achieved in the parent proficiency and the action is using the child proficiency.
-- Tools SHOULD NOT be sub-divided.
+		- If a parent skill is created after proficiency points or ranks in the child have been earned, we RECOMMEND moving the achieved points and ranks to the parent proficiency and re-building ranks in the child.
+- Tools SHOULD NOT be tiered.
 
 
 
