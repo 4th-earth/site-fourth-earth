@@ -44,7 +44,7 @@ The following describes a method for calculating the Difficulty Rating of an Ant
 
 The following table describes a method for calculating the Potential Energy (damage) of an attack, which determines how many Life Battery points will be lost if the attack is successful.
 
-- If using a health Life Battery, physical damage MUST target the health battery.
+- Physical damage MUST target the health Life Battery.
 - Verbal, advanced technology, or magic attacks MAY impact non-health Life Batteries and SHOULD be a known quality or attribute of the action, technology, or spell.
 - Slow Actions MUST be limited to once per turn or round.
 - Fast Actions MAY be performed twice by the Attacking Character in a turn or round.
@@ -77,27 +77,15 @@ See Sprinkles.
 		- If a parent skill is created after proficiency points or ranks in the child have been earned, we RECOMMEND moving the achieved points and ranks to the parent proficiency and re-building ranks in the child.
 - Tools SHOULD NOT be tiered.
 
-
-
-
-
-
-
-
-
-
-
-
-
 ## Life Batteries
 
 - Each battery MUST have 8 battery points.
 - Each Character MUST have at least 1 battery named, health.
 	- We RECOMMEND 3 additional non-health batteries named, physical, mental, and spirit.
-- Characters are considered deceased when their health battery reaches 0.
-	- If using non-health batteries, Characters are considered deceased when all Life Batteries are at 0.
+- Characters are considered deceased (or incapacitated) when their health battery reaches 0.
+	- If using non-health batteries, Characters are considered deceased (or incapacitated) when all Life Batteries are at 0.
 - Characters may recharge their health battery by using items, resting, or seeking assistance from other Characters.
-	- If using non-health batteries, any recharging action SHOULD recharge all batteries, including health, at least 1 point per unit of time. We RECOMMEND the recharging Actions and primary batteries affected per unit of time:
+	- If using non-health batteries, any recharging action SHOULD recharge all batteries, including health, at least 1 point per unit of time. We RECOMMEND the following recharging Actions and primary batteries affected per unit of time:
 	   - Rest (slow): Health battery, 2 points.
 	   - Nap (fast): Physical battery, 3 points.
 	   - Sleep (fastest): Physical battery, 4 points.
@@ -105,10 +93,28 @@ See Sprinkles.
 	   - Pray (fast): Spirit battery, 3 points.
 	   - *Note: Slow, fast, and fastest speaks to the length of player time compared to character time required to recharge all batteries as if they were at, or near, 0.*
 - Recharging activities MAY have a Difficulty Rating applied.
-- Batteries MAY be used to recharge other batteries.
-	- Health MUST NOT be used to recharge any other Life Batteries.
-	- 2 Battery Points from any combination of Life Batteries MUST be spent to recharge 1 point to the other, non-health, Life Battery. (For example, 2 points from spirit can be used to recharge 1 point to physical; or, 1 point from spirit and 1 point from mental can be used to recharge 1 point to physical.)
+- Life Batteries MAY be used to recharge other batteries.
+	- The health battery MUST NOT be used to recharge any other Life Batteries.
+	- 2 Battery Points from any combination of Life Batteries MUST be spent to recharge 1 point to another, non-health, Life Battery. (For example, 2 points from spirit can be used to recharge 1 point to physical; or, 1 point from spirit and 1 point from mental can be used to recharge 1 point to physical.)
 	- Battery Points equal to the number of non-health Life Batteries MUST be spent to recharge 1 point to the health battery. (For example, 3 non-health batteries means 2 points from spirit and 1 point from physical can be used to recharge 1 point to health.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Life Batteries: Official Additions
 
