@@ -10,6 +10,14 @@ The vanilla implementation is designed to facilitate solo-adventuring and minimi
 
 - Difficulty MAY be reduced by spending non-health [Life Battery](#life-batteries) points; 1 Difficulty Rating for each target action battery point spent.
 - Difficulty MAY be increased or decreased by negotiating with the Narrator, if applicable.
+- If using non-health Life Batteries, Difficulty Ratings SHOULD target one non-health battery; known as the target action battery. For example:
+	- Injury and healing actions SHOULD affect the health battery.
+	- Physical tasks SHOULD predominately affect the physical battery.
+	- Mentally taxing activities SHOULD predominately impact the mental battery.
+	- Magic and similar actions SHOULD predominately impact the spirit battery.
+	- *Note: The overflow recharging (see below) facilitates the notion that actions are rarely strictly physical, mental, or spiritual and is RECOMMENDED.*
+- Players MAY spend non-health battery points, if applicable, to reduce the Difficulty Rating of an action; 1 Difficulty Rating per battery point.
+	- The battery points spent MUST come from the target action battery.
 
 ### Opposing Character Interactions 
 
@@ -18,12 +26,12 @@ The following apply to Character Actions where the target of the Action is a Cha
 - There MUST be a protagonist and an antagonist where the protagonist is the Character performing the Action.
 - For mundane Actions, the initial Difficulty Rating for the protagonist MUST be at least the number of Proficiency Ranks the antagonist has in the same proficiency being used by the protagonist.
 - For physically aggressive Actions:
-    - Difficulty Rating MUST represent difficulty to hit the antagonist; this includes grappling, holding, or restraining the Defending Character.
-    - Difficulty Rating MUST start at 0.
-    - Difficulty Rating SHOULD be calculated using the Antagonist Difficulty Rating below.
-    - Damage SHOULD be calculated using the Protagonist Potential Energy below.
-    - Grappling, holding, or restraining MUST NOT cause damage to the Antagonist. 
-        - If the Antagonist is restrained in some way, attempting to escape MUST result in the Antagonist becoming the Protagonist; SHOULD happen on the Antagonist’s turn, if applicable.
+	- Difficulty Rating MUST represent difficulty to hit the antagonist; this includes grappling, holding, or restraining the Defending Character.
+	- Difficulty Rating MUST start at 0.
+	- Difficulty Rating SHOULD be calculated using the Antagonist Difficulty Rating below.
+	- Damage SHOULD be calculated using the Protagonist Potential Energy below.
+	- Grappling, holding, or restraining MUST NOT cause damage to the Antagonist. 
+			- If the Antagonist is restrained in some way, attempting to escape MUST result in the Antagonist becoming the Protagonist; SHOULD happen on the Antagonist’s turn, if applicable.
 
 #### Antagonist Difficulty Rating
 
@@ -63,11 +71,11 @@ See Sprinkles.
 	- 2 Proficiency Points earned on success and
 	- 1 point earned on failure.
 - Skill-trees SHOULD be determined by Players as Characters interact with the Setting and other Characters; reduces pre-setup and starts game play in the most open and freeform condition.
-	- Skills may be sub-divided (forming a skill-tree); cooking in general versus a specific recipe.
-		- It is left to Player discretion to determine parent-child relationships among skills.
-		- At least two ranks in the parent SHOULD be earned before proficiency points are earned toward the child (more specialized skill). If a parent skill is created after ranks in the child have been earned, we RECOMMEND moving the achieved ranks to the parent proficiency and re-building ranks in the child proficiency. 
-		- If mastery (three ranks) in the parent skill has been achieved, the Difficulty Rating of the action is automatically reduced by one; this reduction MUST only apply once regardless of skill-tree depth and use.
-		- The hierarchy of the skill-tree SHOULD be limited to three levels or less.
+	- Each proficiency MAY have 1 child proficiency. The parent SHOULD represent a general proficiency and the child SHOULD represent a specialty. (For example, preparing food MAY have a child proficiency of baking a cake.)
+	- Players MAY determine parent-child relationships among proficiencies.
+	- At least two ranks in the parent MUST be earned before proficiency points are earned toward the child (more specialized skill). 
+		- If a parent skill is created after ranks in the child have been earned, we RECOMMEND moving the achieved ranks to the parent proficiency and re-building ranks in the child proficiency. 
+		- The Difficulty Rating of an Action MAY be reduced by 1, if three ranks has been achieved in the parent proficiency and the action is using the child proficiency.
 - Tools SHOULD NOT be sub-divided.
 
 
@@ -85,41 +93,25 @@ See Sprinkles.
 ## Life Batteries
 
 - Each battery MUST have 8 battery points.
-- Each Character MUST have at least 1 battery named, health, with a maximum value of 8.
-    - We RECOMMEND 3 non-health batteries named, physical, mental, and spirit.
+- Each Character MUST have at least 1 battery named, health.
+	- We RECOMMEND 3 additional non-health batteries named, physical, mental, and spirit.
 - Characters are considered deceased when their health battery reaches 0.
-    - If using non-health batteries, Characters are considered deceased when all Life Batteries are at 0.
-- If using non-health batteries, Character Actions SHOULD target one non-health battery. For example:
-	- Injury and healing actions SHOULD affect the health battery.
-	- Physical tasks SHOULD predominately affect the physical battery.
-	- Mentally taxing activities SHOULD predominately impact the mental battery.
-	- Magic and similar actions SHOULD predominately impact the spirit battery.
-	- *Note: The overflow recharging (see below) facilitates the notion that actions are rarely strictly physical, mental, or spiritual and is RECOMMENDED.*
-- Players MAY spend non-health battery points, if applicable, to reduce the Difficulty Rating of an action; 1 Difficulty Rating per battery point.
-	- The battery points spent MUST come from the battery being target by the action.
+	- If using non-health batteries, Characters are considered deceased when all Life Batteries are at 0.
 - Characters may recharge their health battery by using items, resting, or seeking assistance from other Characters.
-    - If using non-health batteries, any recharging action SHOULD recharge all batteries, including health, at least 1 point per unit of time. We RECOMMEND the recharging Actions and primary batteries affected per unit of time:
-       - Rest (slow): Health battery, 2 points.
-       - Nap (fast): Physical battery, 3 points.
-       - Sleep (fastest): Physical battery, 4 points.
-       - Meditate (fast): Mental battery, 3 points.
-       - Pray (fast): Spirit battery, 3 points.
-       - *Note: Slow, fast, and fastest speaks to the length of player time compared to character time required to recharge all batteries as if they were at, or near, 0.*
+	- If using non-health batteries, any recharging action SHOULD recharge all batteries, including health, at least 1 point per unit of time. We RECOMMEND the recharging Actions and primary batteries affected per unit of time:
+	   - Rest (slow): Health battery, 2 points.
+	   - Nap (fast): Physical battery, 3 points.
+	   - Sleep (fastest): Physical battery, 4 points.
+	   - Meditate (fast): Mental battery, 3 points.
+	   - Pray (fast): Spirit battery, 3 points.
+	   - *Note: Slow, fast, and fastest speaks to the length of player time compared to character time required to recharge all batteries as if they were at, or near, 0.*
 - Recharging activities MAY have a Difficulty Rating applied.
 - Batteries MAY be used to recharge other batteries.
-	- Health MUST NOT be used to recharge any of the other batteries.
-	- It takes 2 points from any combination of batteries to recharge 1 point to the other, non-health, batteries. (For example, 2 points from spirit can be used to recharge 1 point to physical; or, 1 point from spirit and 1 point from mental can be used to recharge 1 point to physical.)
-	- It takes the number of non-health battery points from any combination of batteries to recharge 1 point to the health battery. (For example, 3 non-health batteries means 2 points from spirit and 1 point from physical can be used to recharge 1 point to health.)
+	- Health MUST NOT be used to recharge any other Life Batteries.
+	- 2 Battery Points from any combination of Life Batteries MUST be spent to recharge 1 point to the other, non-health, Life Battery. (For example, 2 points from spirit can be used to recharge 1 point to physical; or, 1 point from spirit and 1 point from mental can be used to recharge 1 point to physical.)
+	- Battery Points equal to the number of non-health Life Batteries MUST be spent to recharge 1 point to the health battery. (For example, 3 non-health batteries means 2 points from spirit and 1 point from physical can be used to recharge 1 point to health.)
 
 ### Life Batteries: Official Additions
- 
-
-*Note: We make some presumptions about the setup used in conjunction with these additions, which MAY be modified to meet your needs.*
-
-<details>
-<summary>Overflow recharging</summary>
-
-</details>
 
 <details>
 <summary>Assisting other Characters</summary>
