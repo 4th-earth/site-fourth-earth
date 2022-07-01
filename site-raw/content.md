@@ -98,6 +98,7 @@ Life batteries represent the life force of a [Character](#characters). Battery P
 - Batteries MUST have multiple ways to recharge. 
 	- Some recharging methods SHOULD be player initiated (sleep, for example).
 	- The implementation SHOULD favor a "both ways" approach; if batteries can recharge multiple ways, they SHOULD be able to drain multiple ways (starvation, for example).
+- Batteries MUST NOT be negative.
 - The number of Batteries SHOULD be kept to a minimum to reduce administrative overhead and maintain tension.
 - Batteries SHOULD have the same maximum number of Battery Points for each battery.
 - Batteries SHOULD be the same for all Characters in a [Setting](#setting) with the same rules applied (even non-player Characters and enemies).

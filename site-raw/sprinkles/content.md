@@ -1,0 +1,149 @@
+## Scale
+
+Presumes 4th Earth RAW: Vanilla.
+
+Scale is a way of measuring the size difference between Characters in a Setting or Scene. Scale MAY affect things like Difficulty Ratings and Resistance. This implementation SHOULD be used in conjunction with other modifications.
+
+- The smallest Character in a Setting SHOULD be given a Scale of 1; the Scale of other Characters is relative to 1 in whole number increments.
+	- When characters are interacting, the smallest Character in the interaction SHOULD be given a Scale of 1.
+- If the interacting Characters are roughly the same size, both SHOULD be Scale 1.
+- Larger Scale Characters SHOULD have a higher resistance, if applicable.
+- Smaller Scale Character SHOULD have a higher Difficulty Rating.
+
+#### Antagonist Difficulty Rating
+
+- If Antagonist is lesser Scale, the Difficulty Rating SHOULD be increased by 1 for each step smaller.
+
+## Stance
+
+Stance affords Players the ability to modify the Difficulty Rating when interacting with other Characters; particularly for combat.
+
+- Players MUST announce the Stance of their Character when describing the Action to be taken.
+	- If the Stance is not announced, the Character SHOULD be considered to be in a neutral stance.
+	- Players SHOULD decide whether announcing the Stance MUST happen every turn or round, or, if a Stance change remains the same until changed again.
+- Changing Stance MUST be considered a Fast Action, therefore, does not take an entire turn or round.
+- Changes to the Difficulty Rating SHOULD be based on the Stance of both interacting Characters using the Stance Difficulty Rating Adjustment table below (where “A” is the Attacking Character and “D” is the Defending Character).
+
+#### Antagonist Difficulty Rating
+
+|             |A: Offensive |A: Neutral |A: Defensive |
+|-————|:————|:-———|:————|
+|D: Offensive |Minus 2 |Minus 1 | 0 |
+|D: Neutral   |Minus 1 | 0 |Plus 1 |
+|D: Defensive |0 |Plus 1 |Plus 2 |
+
+## Resistance
+
+### Protagonist Potential Energy
+
+Resistance results in a modification to Potential Energy when attacked in a way that causes physical damage; draining the health Life Battery.
+
+***
+
+## Re-roll 
+
+- Players MAY spend [Proficiency Points](#proficiency-ranks) and non-health [Life Battery](#life-batteries) points to re-roll an action.
+- Players MAY spend 1 point to re-roll the whole Dice Pool or 2 points to re-roll a single die in the pool.
+- As long as the Character has points remaining, the Player MAY continue spending points to re-roll.
+
+## Criticality 
+
+Criticality represents success *and* failure beyond the intention of the Character for mundane and combat actions. 
+
+- Characters MUST have one or more non-health Life Batteries.
+- Players MUST add an extra die to the Dice Pool, which is known as the Criticality Die and SHOULD be distinct from other dice in the pool; we RECOMMEND a 10-sided die, which represents a 10 percent chance of criticality.
+	- The die MAY be changed per session or action.
+- If a 1 is rolled on the Criticality Die, the result is a critical success or failure based on the success or failure of the rest of the Dice Pool, respectively.
+- Players MAY decide to opt-out or -in to using the Criticality Die prior to the creation of the Dice Pool.
+	- Players SHOULD decide whether they will apply the Critically Die prior to becoming aware of the Difficulty Rating assigned to the action.
+	- Players MAY decide to always roll a Criticality Die as a group decision. We RECOMMEND the decision be made prior to the beginning of the session.
+
+Beyond the narrative implications and outcomes, Criticality comes with mechanical impacts on the Character.
+
+### Critical, mundane success
+
+A critical success on a non-combat (mundane) action, results in the following changes to the battery targeted by the action. 
+
+- MUST NOT be the health battery.
+
+The Player rolls one, 12-sided die.
+
+|Die value    |Affect on Action target battery |
+|:————|:——|
+|Even number  |Plus 1 |
+|1, 5, or 9      |Plus 2 |
+|3 or 7         |Plus 3 |
+|11           |Plus 5 |
+
+If the Action target battery becomes full, the Player MAY distribute the remaining points to other non-health batteries of their choosing.
+
+### Critical, mundane failure
+
+Critical, mundane failure is the opposite of a Critical, mundane success. 
+
+- MUST subtract the affect in the Critical, mundane success table.
+- If the Action target battery reaches 0, the Player MUST spend the remaining points against other non-health batteries of their choosing.
+	- If using the Overflow recharging modification, Players SHOULD NOT use that mechanic to resolve the reduction of an Action target battery that’s reached 0 due to critical failure. 
+
+### Critical, combat success
+
+This implementation presumes you are using the vanilla implementation of combat described above.
+
+The Player rolls one, 12-sided die.
+
+|Die value    |Effect |
+|:————|:——|
+|Even number |Plus 1 to attacker Action target battery, or, any other non-health battery if the Action target battery is full |
+|1, 5, or 9      |Multiply base Potential Energy by 1.5 |
+|3 or 7         |Multiply base Potential Energy by 2 |
+|11           |Trauma: Roll another 12-sided die and apply result from the Critical, combat success effects extension table |
+
+#### Critical, combat success effects extension table
+
+The Player rolls one, 12-sided die.
+
+|Die value    |Effect |
+|:————|:——|
+|1        |Defender Difficulty Rating reduced by 2, recurring and compounding |
+|2, 5, or 8  |Multiply base Potential Energy by 2, target defender. |
+|3, 6, or 9  |Multiply base Potential Energy by 2.5, target defender. |
+|4 or 7     |Reduce defender’s spirit battery by 1; use health battery if spirit battery is unavailable or at 0 |
+|10       |Reduce defender’s health battery by 1, recurring and compounding |
+|11       |Multiply base Potential Energy by 3, target defender. |
+|12       |Defender can’t act for 2 rounds | 
+
+Recurring means the effect is applied every round. Compounding means the effect can be applied multiple times. This simulates severe injury and allows for severe injury to occur multiple times.
+
+For example, a Character (attacker) is fighting another Character (defender) with a Difficulty Rating of 6. The Player rolls a Critical, combat success that results in the Difficulty Rating being reduced by 2, becoming a Difficulty Rating of 4. Every following round, the defender’s Difficulty rating will be 4 (recurring). If the Player manages to roll the same Critical, combat success a second time, the defender’s Difficulty Rating becomes 2 for each following round (compounding). This could increase to the point where the defender’s Difficulty Rating becomes 0.
+
+### Critical, combat failure
+
+The Player rolls one, 12-sided die.
+
+|Die value    |Effect |
+|:————|:——|
+|Even number |Minus 1 from attacker Action target battery, or, any other non-health battery, if the Action target battery is at 0 |
+|1, 5, or 9      |Minus 2 from attacker Action target battery, does not impact other Life Batteries, if Action target battery is at 0 |
+|3 or 7         |Attacker damages self at one-to-one Scale, 0 resistance, base Potential Energy divided by 2 (round down); damage cannot be less than 1 |
+|11           |Trauma: Roll another 12-sided die and apply result from the Critical, combat failure effects extension table |
+
+#### Critical, combat failure effects extension table
+
+The Player rolls one, 12-sided die.
+
+|Die value    |Effect |
+|:————|:——|
+|11        |Tool used is rendered useless for future rounds. If no tool is used, multiply base Potential Energy by 3 and target the attacker. |
+|Other    |Apply Critical, combat success effects extension table replacing the word “defender” with “attacker” |
+
+## Partials and Complications
+
+This modification is designed to operate with the Criticality modification above, however, players MAY choose to use it as a standalone modification.
+
+- Players MUST add an extra die to the Dice Pool, which is known as the Criticality die and SHOULD be distinct from the other dice in the pool; we RECOMMEND a 10-sided die, which represents a 10 percent chance of a partial or complication.
+	- The die MAY be changed per session or per action.
+- If the greatest number on the Criticality Die is rolled, the result is a partial or complication based on the success or failure of the rest of the Dice Pool.
+	- A partial is a mildly positive effect on an otherwise failed action.
+	- A complication is a mildly negative effect on an otherwise successful action.
+- Players MAY decide to opt-out or -in to using the Criticality Die prior to the creation of the Dice Pool; Players SHOULD decide prior to becoming aware of the difficulty level assigned to the action.
+	- Players MAY decide to always roll a Criticality Die as a group decision. We RECOMMEND the decision be made prior to the beginning of the session.
