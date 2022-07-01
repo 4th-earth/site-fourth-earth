@@ -4,7 +4,7 @@ Creating a [.tabletop role playing game](TTRPG) can be a bit overwhelming. 4th E
 
 If you would like to expand these rules and mechanics and aren't sure where to start, we RECOMMEND looking at the official add-on implementations known as Sprinkles.
 
-The vanilla implementation is designed to facilitate solo-adventuring and minimize the number of Players rolling at any given time.
+The vanilla implementation is designed to facilitate solo-adventuring and minimize the number of Players rolling at any given time. However, the vanilla implementation can also be used with groups, with or without a Narrator acting as facilitator and increasing story dynamism.
 
 ## Difficulty Rating
 
@@ -19,7 +19,7 @@ The vanilla implementation is designed to facilitate solo-adventuring and minimi
 - Players MAY spend non-health battery points, if applicable, to reduce the Difficulty Rating of an action; 1 Difficulty Rating per battery point.
 	- The battery points spent MUST come from the target action battery.
 
-### Opposing Character Interactions 
+### Opposing Character Interactions
 
 The following apply to Character Actions where the target of the Action is a Character who is contesting the Action; if the Action isn’t contested, the Difficulty Rating MUST be 0.
 
@@ -30,7 +30,7 @@ The following apply to Character Actions where the target of the Action is a Cha
 	- Difficulty Rating MUST start at 0.
 	- Difficulty Rating SHOULD be calculated using the Antagonist Difficulty Rating below.
 	- Damage SHOULD be calculated using the Protagonist Potential Energy below.
-	- Grappling, holding, or restraining MUST NOT cause damage to the Antagonist. 
+	- Grappling, holding, or restraining MUST NOT cause damage to the Antagonist.
 			- If the Antagonist is restrained in some way, attempting to escape MUST result in the Antagonist becoming the Protagonist; SHOULD happen on the Antagonist’s turn, if applicable.
 
 #### Antagonist Difficulty Rating
@@ -39,7 +39,7 @@ The following describes a method for calculating the Difficulty Rating of an Ant
 
 - Antagonist Difficulty Rating MUST start at 0; if the Antagonist is subdued, the Difficulty Rating remains 0.
 - If the Antagonist is aware of the aggressive action, the Difficulty Rating MUST be increased by 1.
-- If the Antagonist has active allies, the Difficulty Rating SHOULD be increased by 1 for each active ally. 
+- If the Antagonist has active allies, the Difficulty Rating SHOULD be increased by 1 for each active ally.
 
 #### Protagonist Potential Energy
 
@@ -73,8 +73,8 @@ See Sprinkles.
 - Skill-trees SHOULD be determined by Players as Characters interact with the Setting and other Characters; reduces pre-setup and starts game play in the most open and freeform condition.
 	- Each proficiency MAY have 1 child proficiency. The parent SHOULD represent a general proficiency and the child SHOULD represent a specialty. (For example, preparing food MAY have a child proficiency of baking a cake.)
 	- Players MAY determine parent-child relationships among proficiencies.
-	- At least two ranks in the parent MUST be earned before proficiency points are earned toward the child (more specialized skill). 
-		- If a parent skill is created after ranks in the child have been earned, we RECOMMEND moving the achieved ranks to the parent proficiency and re-building ranks in the child proficiency. 
+	- At least two ranks in the parent MUST be earned before proficiency points are earned toward the child (more specialized skill).
+		- If a parent skill is created after ranks in the child have been earned, we RECOMMEND moving the achieved ranks to the parent proficiency and re-building ranks in the child proficiency.
 		- The Difficulty Rating of an Action MAY be reduced by 1, if three ranks has been achieved in the parent proficiency and the action is using the child proficiency.
 - Tools SHOULD NOT be sub-divided.
 
