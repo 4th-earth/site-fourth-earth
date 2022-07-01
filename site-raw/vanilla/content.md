@@ -106,7 +106,10 @@ See Sprinkles.
        - Pray (fast): Spirit battery, 3 points.
        - *Note: Slow, fast, and fastest speaks to the length of player time compared to character time required to recharge all batteries as if they were at, or near, 0.*
 - Recharging activities MAY have a Difficulty Rating applied.
-- 
+- Batteries MAY be used to recharge other batteries.
+	- Health MUST NOT be used to recharge any of the other batteries.
+	- It takes 2 points from any combination of batteries to recharge 1 point to the other, non-health, batteries. (For example, 2 points from spirit can be used to recharge 1 point to physical; or, 1 point from spirit and 1 point from mental can be used to recharge 1 point to physical.)
+	- It takes the number of non-health battery points from any combination of batteries to recharge 1 point to the health battery. (For example, 3 non-health batteries means 2 points from spirit and 1 point from physical can be used to recharge 1 point to health.)
 
 ### Life Batteries: Official Additions
  
@@ -115,11 +118,6 @@ See Sprinkles.
 
 <details>
 <summary>Overflow recharging</summary>
-
-- Batteries MAY be used to recharge other batteries.
-	- Health MUST NOT be used to recharge any of the other batteries.
-	- It takes 2 points from any combination of batteries to recharge 1 point to the other non-health batteries. (For example, 2 point from spirit can be used to recharge 1 point to physical; or, 1 point from spirit and 1 point from mental can be used to recharge 1 point to physical.)
-	- It takes 3 points from any combination of batteries to recharge 1 point to the health battery. (For example, 2 points from spirit and 1 point from physical can be used to recharge 1 point to health.)
 
 </details>
 
