@@ -46,6 +46,7 @@ Actions are resolved by answering: Was the action successful? and How was the ou
 - Difficulty 0 MUST represent automatic success.
 - Difficulty Infinite MUST be impossible for the Character to achieve in the Setting.
 - Difficulty Ratings MUST NOT be less than 0.
+- Difficulty Ratings MUST be whole numbers.
 - Difficulty Ratings SHOULD be based on the Character attempting the interaction, the complexity of the action, and qualities of any opposing force (standing up may be Difficulty 6 for an infant and Difficulty 0 for an adult).
 - Players SHOULD be able to influence the Difficulty Rating in one or more ways.
 
