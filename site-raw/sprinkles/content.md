@@ -4,6 +4,29 @@
 
 For the sake of keeping 4th Earth RAW: Vanilla relatively lightweight, they were pulled from that specification.
 
+## Resistance
+
+Resistance results in a modification to protagonist Potential Energy (PE) when attacked in a way that causes physical damage; draining the health Life Battery.
+
+Every Character SHOULD have some type of flesh with varying degrees of thickness.
+
+|Thickness |Resistance |PE adjustment |
+|:---------|:---------:|:-------------|
+|Thin      |negative 1 |plus 1        |
+|Average   |0          |0             |
+|Thick     |1          |minus 1       |
+
+Characters MAY have some type of armor.
+
+|Grade  |Resistance |PE adjustment |
+|:------|:---------:|:-------------|
+|None   |0          |0             |
+|Light  |1          |minus 1       |
+|Medium |2          |minus 2       |
+|Heavy  |3          |minus 3       |
+
+Players MAY apply different modifications for specific areas of the Character.
+
 ## Scale
 
 Scale is a way of measuring the size difference between Characters in a Setting or Scene.
@@ -24,7 +47,8 @@ Presumes Resistance Sprinkle or similar implementation.
 
 Imagine a fly hitting a human. The human is hundreds of times larger than the fly. The human most likely will never take damage enough to matter, even if bit.
 
-- Larger Scale Characters SHOULD have a higher resistance, if applicable. We RECOMMEND increasing Resistance by 1 for each step greater the antagonist is.
+- We RECOMMEND using in conjunction with the Resistance Sprinkle.
+- Larger Scale Characters SHOULD have a higher Resistance, if applicable. We RECOMMEND increasing Resistance by 1 for each step greater the antagonist is.
 
 ## Stance
 
@@ -46,12 +70,12 @@ Stance affords Characters to be more or less aggressive, at a cost.
     - If the protagonist is in a defensive stance and the antagonist is in a neutral stance, the antagonist Difficulty Raring SHOULD be increased by 1.
 
 |             |P: Offensive |P: Neutral |P: Defensive |
-|-————|:————|:-———|:————|
-|A: Offensive |Minus 2 |Minus 1 | 0 |
-|A: Neutral   |Minus 1 | 0 |Plus 1 |
-|A: Defensive |0 |Plus 1 |Plus 2 |
+|-————--------|:—---—-----——|:-———------|:—------———--|
+|A: Offensive |Minus 2      |Minus 1    | 0           |
+|A: Neutral   |Minus 1      | 0         |Plus 1       |
+|A: Defensive |0            |Plus 1     |Plus 2       |
 
-## Re-roll 
+## Re-roll
 
 - Players MAY spend Proficiency Points and non-health Life Battery points to re-roll an action.
     - When using non-health Life Battery points, the points SHOULD use the target action battery. (Any inter-battery recharging mechanics SHOULD apply.)
@@ -73,17 +97,10 @@ Stance affords Characters to be more or less aggressive, at a cost.
 
 
 
-## Resistance
 
-### Protagonist Potential Energy
+## Criticality
 
-Resistance results in a modification to Potential Energy when attacked in a way that causes physical damage; draining the health Life Battery.
-
-***
-
-## Criticality 
-
-Criticality represents success *and* failure beyond the intention of the Character for mundane and combat actions. 
+Criticality represents success *and* failure beyond the intention of the Character for mundane and combat actions.
 
 - Characters MUST have one or more non-health Life Batteries.
 - Players MUST add an extra die to the Dice Pool, which is known as the Criticality Die and SHOULD be distinct from other dice in the pool; we RECOMMEND a 10-sided die, which represents a 10 percent chance of criticality.
@@ -97,7 +114,7 @@ Beyond the narrative implications and outcomes, Criticality comes with mechanica
 
 ### Critical, mundane success
 
-A critical success on a non-combat (mundane) action, results in the following changes to the battery targeted by the action. 
+A critical success on a non-combat (mundane) action, results in the following changes to the battery targeted by the action.
 
 - MUST NOT be the health battery.
 
@@ -114,11 +131,11 @@ If the Action target battery becomes full, the Player MAY distribute the remaini
 
 ### Critical, mundane failure
 
-Critical, mundane failure is the opposite of a Critical, mundane success. 
+Critical, mundane failure is the opposite of a Critical, mundane success.
 
 - MUST subtract the affect in the Critical, mundane success table.
 - If the Action target battery reaches 0, the Player MUST spend the remaining points against other non-health batteries of their choosing.
-	- If using the Overflow recharging modification, Players SHOULD NOT use that mechanic to resolve the reduction of an Action target battery that’s reached 0 due to critical failure. 
+	- If using the Overflow recharging modification, Players SHOULD NOT use that mechanic to resolve the reduction of an Action target battery that’s reached 0 due to critical failure.
 
 ### Critical, combat success
 
@@ -145,7 +162,7 @@ The Player rolls one, 12-sided die.
 |4 or 7     |Reduce defender’s spirit battery by 1; use health battery if spirit battery is unavailable or at 0 |
 |10       |Reduce defender’s health battery by 1, recurring and compounding |
 |11       |Multiply base Potential Energy by 3, target defender. |
-|12       |Defender can’t act for 2 rounds | 
+|12       |Defender can’t act for 2 rounds |
 
 Recurring means the effect is applied every round. Compounding means the effect can be applied multiple times. This simulates severe injury and allows for severe injury to occur multiple times.
 
@@ -205,4 +222,4 @@ When assisting other Characters using this modification, one Character transfers
 - If a Character is reincarnated they are considered to have died and been resurrected, therefore, the impacts of those two situations apply along with:
 	- 1 point being removed from all partially acquired Proficiency Ranks.
 	- The Character loses all physical possessions they had at the time of death.
-	- The Character, if maintained as the actual same Character, will appear in their hometown (place of birth) or place of residence. 
+	- The Character, if maintained as the actual same Character, will appear in their hometown (place of birth) or place of residence.
