@@ -1,36 +1,77 @@
+# 4th Earth RAW: Sprinkles
+
+4th Earth RAW: Sprinkles are individual mechanics that MAY be sprinkled on top of 4th Earth RAW: Vanilla or your own 4th Earth RAW variation.
+
+For the sake of keeping 4th Earth RAW: Vanilla relatively lightweight, they were pulled from that specification.
+
 ## Scale
 
-Presumes 4th Earth RAW: Vanilla.
+Scale is a way of measuring the size difference between Characters in a Setting or Scene.
 
-Scale is a way of measuring the size difference between Characters in a Setting or Scene. Scale MAY affect things like Difficulty Ratings and Resistance. This implementation SHOULD be used in conjunction with other modifications.
+- The smallest Character in a Setting or interaction SHOULD be given a Scale of 1; the Scale of other Characters is relative to 1 in whole number increments.
+    - When characters are interacting, the smallest Character in the interaction SHOULD be given a Scale of 1.
+    - If the interacting Characters are roughly the same size, both SHOULD be Scale 1.
 
-- The smallest Character in a Setting SHOULD be given a Scale of 1; the Scale of other Characters is relative to 1 in whole number increments.
-	- When characters are interacting, the smallest Character in the interaction SHOULD be given a Scale of 1.
-- If the interacting Characters are roughly the same size, both SHOULD be Scale 1.
-- Larger Scale Characters SHOULD have a higher resistance, if applicable.
-- Smaller Scale Character SHOULD have a higher Difficulty Rating.
+### Antagonist Difficulty Rating: Scale
 
-#### Antagonist Difficulty Rating
+Imagine a human trying to hit a fly. The human is hundreds of times larger than the fly. The fly is very difficult to hit without tools and being sneaky.
 
 - If Antagonist is lesser Scale, the Difficulty Rating SHOULD be increased by 1 for each step smaller.
 
+### Resistance: Scale
+
+Presumes Resistance Sprinkle or similar implementation.
+
+Imagine a fly hitting a human. The human is hundreds of times larger than the fly. The human most likely will never take damage enough to matter, even if bit.
+
+- Larger Scale Characters SHOULD have a higher resistance, if applicable. We RECOMMEND increasing Resistance by 1 for each step greater the antagonist is.
+
 ## Stance
 
-Stance affords Players the ability to modify the Difficulty Rating when interacting with other Characters; particularly for combat.
+Stance affords Characters to be more or less aggressive, at a cost.
 
-- Players MUST announce the Stance of their Character when describing the Action to be taken.
-	- If the Stance is not announced, the Character SHOULD be considered to be in a neutral stance.
-	- Players SHOULD decide whether announcing the Stance MUST happen every turn or round, or, if a Stance change remains the same until changed again.
-- Changing Stance MUST be considered a Fast Action, therefore, does not take an entire turn or round.
-- Changes to the Difficulty Rating SHOULD be based on the Stance of both interacting Characters using the Stance Difficulty Rating Adjustment table below (where “A” is the Attacking Character and “D” is the Defending Character).
+- Characters MUST be neutral in stance unless announced otherwise.
+    - Players MAY decide whether the announcement should be with every Character Action, only if the stance changes, or, in some other way.
+- Changing stance is considered a Fast Action.
 
-#### Antagonist Difficulty Rating
+### Antagonist Difficulty Rating: Stance
 
-|             |A: Offensive |A: Neutral |A: Defensive |
+- Difficulty Raring adjustments SHOULD take the stance of the protagonist and antagonist into consideration.
+- If the protagonist and antagonist are in neutral stance, there MUST NOT be an adjustment to the antagonist Difficulty Rating.
+    - If the protagonist is in an offensive stance and the antagonist is in a defensive stance, there MUST NOT be an adjustment.
+    - If the protagonist is in a defensive stance and the antagonist is in an offensive stance, there MUST NOT be an adjustment.
+- If the protagonist and antagonist are both in an offensive stance, the antagonist Difficulty Rating SHOULD be decreased by 2.
+    - If the protagonist and antagonist are both in a defensive stance, the antagonist Difficulty Rating SHOULD be increased by 2.
+- If the protagonist is in an offensive stance and the antagonist is in a neutral position, the antagonist Difficulty Rating SHOULD be decreased by 1.
+    - If the protagonist is in a defensive stance and the antagonist is in a neutral stance, the antagonist Difficulty Raring SHOULD be increased by 1.
+
+|             |P: Offensive |P: Neutral |P: Defensive |
 |-————|:————|:-———|:————|
-|D: Offensive |Minus 2 |Minus 1 | 0 |
-|D: Neutral   |Minus 1 | 0 |Plus 1 |
-|D: Defensive |0 |Plus 1 |Plus 2 |
+|A: Offensive |Minus 2 |Minus 1 | 0 |
+|A: Neutral   |Minus 1 | 0 |Plus 1 |
+|A: Defensive |0 |Plus 1 |Plus 2 |
+
+## Re-roll 
+
+- Players MAY spend Proficiency Points and non-health Life Battery points to re-roll an action.
+    - When using non-health Life Battery points, the points SHOULD use the target action battery. (Any inter-battery recharging mechanics SHOULD apply.)
+- Players MAY spend 1 point to re-roll the whole Dice Pool or 2 points to re-roll a single die in the pool.
+- As long as the Character has points remaining, the Player MAY continue spending points to re-roll.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Resistance
 
@@ -39,12 +80,6 @@ Stance affords Players the ability to modify the Difficulty Rating when interact
 Resistance results in a modification to Potential Energy when attacked in a way that causes physical damage; draining the health Life Battery.
 
 ***
-
-## Re-roll 
-
-- Players MAY spend [Proficiency Points](#proficiency-ranks) and non-health [Life Battery](#life-batteries) points to re-roll an action.
-- Players MAY spend 1 point to re-roll the whole Dice Pool or 2 points to re-roll a single die in the pool.
-- As long as the Character has points remaining, the Player MAY continue spending points to re-roll.
 
 ## Criticality 
 
