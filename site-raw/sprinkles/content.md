@@ -10,7 +10,7 @@ For the sake of keeping 4th Earth RAW: Vanilla relatively lightweight, they were
 
 - An active ally MUST be a Character who has the ability to perform Actions during a round and those Actions will be in support of the Protagonist or Antagonist, not both.
 - If the Antagonist has active allies, the Difficulty Rating MUST be increased by 1 for every 2 active allies. (1 active ally MUST NOT result in an increase, 4 active allies SHOULD result in an increase of 2.)
-    - If the Protagonist has active allies, the Difficulty Rating MAY be reduced in the same way as it is increased for the antagonist. (Both have 2 active allies, Difficulty Rating MAY NOT change.)
+	- If the Protagonist has active allies, the Difficulty Rating MAY be reduced in the same way as it is increased for the antagonist. (Both have 2 active allies, Difficulty Rating MAY NOT change.)
 
 ## Resistance
 
@@ -40,8 +40,8 @@ Players MAY apply different modifications for specific areas of the Character.
 Scale is a way of measuring the size difference between Characters in a Setting or Scene.
 
 - The smallest Character in a Setting or interaction SHOULD be given a Scale of 1; the Scale of other Characters is relative to 1 in whole number increments.
-    - When characters are interacting, the smallest Character in the interaction SHOULD be given a Scale of 1.
-    - If the interacting Characters are roughly the same size, both SHOULD be Scale 1.
+	- When characters are interacting, the smallest Character in the interaction SHOULD be given a Scale of 1.
+	- If the interacting Characters are roughly the same size, both SHOULD be Scale 1.
 
 ### Antagonist Difficulty Rating: Scale
 
@@ -63,19 +63,19 @@ Imagine a fly hitting a human. The human is hundreds of times larger than the fl
 Stance affords Characters to be more or less aggressive, at a cost.
 
 - Characters MUST be neutral in stance unless announced otherwise.
-    - Players MAY decide whether the announcement should be with every Character Action, only if the stance changes, or, in some other way.
+	- Players MAY decide whether the announcement should be with every Character Action, only if the stance changes, or, in some other way.
 - Changing stance is considered a Fast Action.
 
 ### Antagonist Difficulty Rating: Stance
 
 - Difficulty Raring adjustments SHOULD take the stance of the protagonist and antagonist into consideration.
 - If the protagonist and antagonist are in neutral stance, there MUST NOT be an adjustment to the antagonist Difficulty Rating.
-    - If the protagonist is in an offensive stance and the antagonist is in a defensive stance, there MUST NOT be an adjustment.
-    - If the protagonist is in a defensive stance and the antagonist is in an offensive stance, there MUST NOT be an adjustment.
+	- If the protagonist is in an offensive stance and the antagonist is in a defensive stance, there MUST NOT be an adjustment.
+	- If the protagonist is in a defensive stance and the antagonist is in an offensive stance, there MUST NOT be an adjustment.
 - If the protagonist and antagonist are both in an offensive stance, the antagonist Difficulty Rating SHOULD be decreased by 2.
-    - If the protagonist and antagonist are both in a defensive stance, the antagonist Difficulty Rating SHOULD be increased by 2.
+	- If the protagonist and antagonist are both in a defensive stance, the antagonist Difficulty Rating SHOULD be increased by 2.
 - If the protagonist is in an offensive stance and the antagonist is in a neutral position, the antagonist Difficulty Rating SHOULD be decreased by 1.
-    - If the protagonist is in a defensive stance and the antagonist is in a neutral stance, the antagonist Difficulty Raring SHOULD be increased by 1.
+	- If the protagonist is in a defensive stance and the antagonist is in a neutral stance, the antagonist Difficulty Raring SHOULD be increased by 1.
 
 |             |P: Offensive |P: Neutral |P: Defensive |
 |-————--------|:—---—-----——|:-———------|:—------———--|

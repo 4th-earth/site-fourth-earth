@@ -10,12 +10,12 @@ The vanilla implementation is designed to facilitate solo-adventuring. However, 
 
 - The health Life Battery MUST NOT be used to reduce the Difficulty Rating.
 - If using non-health Life Batteries:
-    - Difficulty MAY be reduced by spending [Life Battery](#life-batteries) points; 1 Difficulty Rating for each target action battery point spent.
-    - Difficulty Ratings SHOULD target one non-health battery; known as the target action battery. For example:
-	    - Injury and healing Actions SHOULD affect the health battery.
-	    - Physical Actions SHOULD predominately affect the physical battery.
-	    - Mentally taxing Actions SHOULD predominately impact the mental battery.
-	    - Magic and similar actions SHOULD predominately impact the spirit battery.
+	- Difficulty MAY be reduced by spending [Life Battery](#life-batteries) points; 1 Difficulty Rating for each target action battery point spent.
+	- Difficulty Ratings SHOULD target one non-health battery; known as the target action battery. For example:
+		- Injury and healing Actions SHOULD affect the health battery.
+		- Physical Actions SHOULD predominately affect the physical battery.
+		- Mentally taxing Actions SHOULD predominately impact the mental battery.
+		- Magic and similar actions SHOULD predominately impact the spirit battery.
 - Difficulty MAY be increased or decreased by negotiating with the Narrator, if applicable.
 
 ### Opposing Character Interactions
@@ -24,7 +24,7 @@ The following apply to Character Actions where the target of the Action is anoth
 
 - There MUST be a protagonist (the Character performing the Action) and an antagonist (the Character impacted by the Action); the protagonist Player is the one rolling Dice Pool.
 - If the antagonist is subdued, the Difficulty Rating MUST be 0.
-    - The initial Difficulty Rating, unless subdued, SHOULD BE at least the number of Proficiency Ranks the antagonist has in the same proficiency used by the protagonist; including parent proficiencies.
+	- The initial Difficulty Rating, unless subdued, SHOULD BE at least the number of Proficiency Ranks the antagonist has in the same proficiency used by the protagonist; including parent proficiencies.
 - For physically aggressive Actions:
 	- Difficulty Rating MUST represent difficulty to hit the antagonist; this includes grappling, holding, or restraining the antagonist.
 	- Difficulty Rating SHOULD be calculated using the Antagonist Difficulty Rating below.

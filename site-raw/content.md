@@ -1,6 +1,8 @@
 # 4th Earth: Rules as Written
 
-These are the guidelines and guardrails for 4th Earth [.rules as written](RAW) a framework for creating [.table-top role playing games](TTRPGs). The [Vanilla Implementation](/vanilla/) illustrates one method for applying the rules as written to create a TTRPG. 4th Earth RAW assumes very little previous experience with TTRPGs; defined terms are title-cased and their definitions are available in the glossary for each implementation. It should be presumed if there is not an explicit rule for or against something, Players MAY do whatever they would like.
+These are the guidelines and guardrails for 4th Earth [.rules as written](RAW) a framework for creating [.table-top role playing games](TTRPGs). The [Vanilla Implementation](/vanilla/) illustrates one method for applying the rules as written to create a TTRPG.
+
+4th Earth RAW assumes very little previous experience with TTRPGs; defined terms are title-cased and their definitions are available in the glossary for each implementation. It should be presumed if there is not an explicit rule for or against something, Players MAY do whatever they would like.
 
 4th Earth RAW uses the key words described in [Key words for use in RFCs to Indicate Requirement Levels](https://datatracker.ietf.org/doc/html/rfc2119), the all-caps are not screaming at you:
 
@@ -14,7 +16,7 @@ These are the guidelines and guardrails for 4th Earth [.rules as written](RAW) a
 
 Players personify one or more [Characters](#characters) who interact with the [Setting](#setting) and other Characters.
 
-**Equipment:** We RECOMMEND Players use standard polyhedral dice, however, any means by which choosing multiple random numbers between 1 and 12 will do; the dice would be:
+**Equipment:** We RECOMMEND Players use standard polyhedral dice, however, any means by which choosing one or more random numbers between 1 and 12 will do; the dice would be:
 
 - 4-sided,
 - 6-sided,
@@ -28,11 +30,9 @@ Players personify one or more [Characters](#characters) who interact with the [S
 - **Narrative over simulation.** Players SHOULD be able to focus on creating engaging stories without strictly replicating reality.
 - **Flow over grinding.** Players SHOULD be able to get lost in their story and actions without performing repetitive tasks.
 - **Power ceilings over threat escalation.** Saved the town, saved the country, saved the world, saved the universe, what next? Having 50 percent of a Character's life force drained in one shot is the same whether their life force is 10 or 100.
-- **Progressive disclosure over saturation.** Players SHOULD be able to enter a story having never read the rules or specification and learn as they go.
+- **Progressive disclosure over saturation.** Players SHOULD be able to enter a story having never read the specification and learn as they go.
 
 ## Difficulty Rating
-
-The Difficulty Rating is the Action mechanic for [Characters](#characters) to interact with the [Setting](#setting) and other Characters.
 
 Character Actions consist of the following, minimal, list of activities:
 
@@ -43,8 +43,8 @@ Character Actions consist of the following, minimal, list of activities:
 
 Actions are resolved by answering: Was the action successful? and How was the outside world affected by the action?
 
-- Difficulty 0 MUST represent automatic success.
-- Difficulty Infinite MUST be impossible for the Character to achieve in the Setting.
+- Difficulty Rating 0 MUST represent automatic success.
+- Difficulty Rating Infinite MUST be impossible for the Character to achieve in the Setting.
 - Difficulty Ratings MUST NOT be less than 0.
 - Difficulty Ratings MUST be whole numbers.
 - Difficulty Ratings SHOULD be based on the Character attempting the interaction, the complexity of the action, and qualities of any opposing force (standing up may be Difficulty 6 for an infant and Difficulty 0 for an adult).
@@ -70,7 +70,7 @@ Actions are resolved by answering: Was the action successful? and How was the ou
 
 Dice Pools are a collection of dice.
 
-- The number of sides of dice in the pool MUST be determined by the adjusted [Difficulty Rating](#difficulty-rating) in the [Difficulty Rating table](#difficulty-rating-table).
+- The numeric range of dice in the pool MUST be determined by the adjusted [Difficulty Rating](#difficulty-rating) in the [Difficulty Rating table](#difficulty-rating-table).
 - The number of dice in the pool MUST NOT exceed the number of [Proficiency Ranks](#proficiency-ranks) applied to the Action; SHOULD NOT include parent proficiencies.
 - Dice Pools MUST have at least 1 die regardless of Difficulty Rating or Proficiency Ranks; referred to as the base die.
 - Rolling 1 on a single die in the Dice Pool MUST represent successful completion of the action.
@@ -80,12 +80,12 @@ Dice Pools are a collection of dice.
 
 Proficiency Ranks represent the level of proficiency a [Character](#characters) has performing certain Actions, using a tool, or combination. Proficiency Points are sub-aspects of a Proficiency Rank.
 
-- Each rank MUST require earning two or more Proficiency Points toward the rank.
-     - Each rank SHOULD be achievable in roughly four attempts.
-    - Proficiency Points SHOULD NOT be earned if the Difficulty Rating is 0.
-- The implementation SHOULD be stable for the entire session.
-	- The implementation MAY be adjusted from session to session.
-	- These adjustments SHOULD be minimal from one session to the next.
+- Each Rank MUST require earning two or more Proficiency Points toward the rank.
+	- Each rank SHOULD be achievable in roughly four attempts.
+	- Proficiency Points SHOULD NOT be earned if the Difficulty Rating is 0.
+- The implementation SHOULD be stable for the entire Session.
+	- The implementation MAY be adjusted from session to Session.
+	- These adjustments SHOULD be minimal from one Session to the next.
 - Action Types SHOULD have more possible ranks than tools. We RECOMMEND:
 	- 4 Proficiency Points per rank.
 	- 3 ranks per Action Type.
@@ -174,5 +174,30 @@ Resources for developing a Social Contract:
 
 ## Glossary
 
+Action
+:    One or more activities attempted or performed within the Setting.
+:    MAY NOT be restricted to Characters within the Setting.
 
+Character
+:    A noun personified in the Setting of the game.
+
+Dice Pool
+:    A collection of dice, or random numbers within a range.
+:    Used for resolving Actions.
+
+Difficulty Rating
+:    The main Action mechanic for Characters to interact with the Setting and other Characters.
+
+Player
+:    A sentient being who is participating the playing of the game.
+:    MAY personify one or more Characters with the Setting of the game.
+
+Proficiency Point
+:    A sub-aspect of a Proficiency Rank earned in order to achieve a Rank.
+
+Proficiency Rank (or Rank)
+:    A representation of how proficient a Character is at performing certain Actions.
+
+Setting
+:    The attributes and surroundings, in aggregate, that Characters inhabit.
 
