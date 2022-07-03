@@ -81,30 +81,28 @@ Dice Pools are a collection of dice.
 Proficiency Ranks represent the level of proficiency a [Character](#characters) has performing certain Actions, using a tool, or combination. Proficiency Points are sub-aspects of a Proficiency Rank.
 
 - Each Rank MUST require earning two or more Proficiency Points toward the rank.
-	- Each rank SHOULD be achievable in roughly four attempts.
+	- Each Rank SHOULD be achievable in roughly four attempts.
 	- Proficiency Points SHOULD NOT be earned if the Difficulty Rating is 0.
 - The implementation SHOULD be stable for the entire Session.
-	- The implementation MAY be adjusted from session to Session.
+	- The implementation MAY be adjusted from Session to Session.
 	- These adjustments SHOULD be minimal from one Session to the next.
-- Action Types SHOULD have more possible ranks than tools. We RECOMMEND:
+- Action Types SHOULD have more possible Ranks than Tools. We RECOMMEND:
 	- 4 Proficiency Points per rank.
-	- 3 ranks per Action Type.
-	- 1 rank per tool; general, not specific (a knife is a knife, however, a knife used for cooking is different than a knife used for combat–even if it's the exact same knife).
-- Each rank MAY increase the number of dice in the [Dice Pool](#dice-pools) by 1.
-- Using a tool MAY reduce the [Difficulty Rating](#difficulty-rating) of an Action up to 2 levels.
+	- 3 Ranks per Action Type.
+	- 1 Rank per Tool; general, not specific (a knife is a knife, however, a knife used for cooking is different than a knife used for combat–even if it's the exact same knife).
+- Each Rank MAY increase the number of dice in the [Dice Pool](#dice-pools) by 1.
+- Using a Tool MAY reduce the [Difficulty Rating](#difficulty-rating) of an Action up to 2 levels.
 
 ## Life Batteries
 
-Life batteries represent the life force of a [Character](#characters). Battery Points are a sub-aspect of Life Batteries.
-
-- Batteries MUST be the same for all Characters in a [Setting](#setting) with the same rules applied (even non-player Characters and enemies).
-	- Batteries MAY be created before play begins, however, we RECOMMEND creating Life Batteries as the story progresses based on the Actions of Characters. (Players may decide a stealth battery is appropriate while playing and add it to all Characters).
+- Batteries MUST be the same for all [Characters](#characters) in a [Setting](#setting) with the same rules applied (even non-player Characters and enemies).
+	- Batteries MAY be created before play begins, however, we RECOMMEND creating Life Batteries as the story progresses based on Actions of Characters. (Players may decide a stealth Battery is appropriate while playing and add it to all Characters).
 - Batteries MUST have multiple ways to recharge.
 	- Some recharging methods SHOULD be player initiated (sleep, for example).
-	- The implementation SHOULD favor a "both ways" approach; if batteries can recharge multiple ways, they SHOULD be able to drain multiple ways (starvation, for example).
+	- The implementation SHOULD favor a "both ways" approach; if Batteries can recharge multiple ways, they SHOULD be able to drain multiple ways (starvation, for example).
 - Batteries MUST NOT be negative.
 - The number of Batteries SHOULD be kept to a minimum to reduce administrative overhead and maintain tension.
-- Batteries SHOULD have the same maximum number of Battery Points for each battery.
+- Each Battery SHOULD have the same maximum number of Battery Points for each battery.
 - Battery Points MAY be used to reduce [Difficulty Ratings](#difficulty-rating); we RECOMMEND reducing Difficulty Rating 1 level for each Battery Point spent.
 
 ## Characters
@@ -128,7 +126,7 @@ Examples:
 4th Earth RAW is a game engine and does not require a specific Setting. Further, you MAY use 4th Earth RAW in the Setting of other games.
 
 - Setting MUST be agreed to by *all* players (including the Narrator, if applicable).
-- MUST be enough to give flavor and direction; MAY be a single sentence all the way to a tome.
+- MUST be enough to give flavor and direction; MAY be a single sentence all the way to one or more tomes.
 - MUST describe where, when, what, and general theme.
 - MAY be developed by the Players, a Narrator, the outside world, or anything else.
 - MAY include a specific, short-term plot (adventures and one-shots).
@@ -146,9 +144,7 @@ Examples:
 
 ## Time and Space
 
-A round ends after each Character Action has been resolved. A turn ends after a single Character Action has been resolved.
-
-- Player time SHOULD NOT be the same as Character time.
+- Player Time SHOULD NOT be the same as Character Time.
 - Players SHOULD favor cinematic over real-time.
 	- Players SHOULD favor real-time over turn-based Action resolution.
 - Items within the Setting MAY decay over time.
@@ -156,7 +152,7 @@ A round ends after each Character Action has been resolved. A turn ends after a 
 
 ## Social Contract
 
-The Social Contract, is an agreement or understanding between Players (including the Narrator, if applicable) about how they will behave towards each other. Much like character for the individual and culture for the group, a Social Contract will exist. The question is: How transparent, intentional, and formal is it?
+Much like character for the individual and culture for the group, a Social Contract will exist. The question is: How transparent, intentional, and formal is it?
 
 Another way to look at it, the Social Contract outlines the guidelines and guardrails for meatspace.
 
@@ -178,8 +174,17 @@ Action
 :    One or more activities attempted or performed within the Setting.
 :    MAY NOT be restricted to Characters within the Setting.
 
+Action Type
+:    Represents an Action or collection of Actions that can be improved over time.
+
+Battery Point
+:    A sub-aspect of a Life Battery.
+
 Character
 :    A noun personified in the Setting of the game.
+
+Character Time
+:    The amount of time that passes for Characters within the Setting.
 
 Dice Pool
 :    A collection of dice, or random numbers within a range.
@@ -188,9 +193,21 @@ Dice Pool
 Difficulty Rating
 :    The main Action mechanic for Characters to interact with the Setting and other Characters.
 
+Fast Action
+:    An Action performed by a Character, with one or more related Difficulty Rating(s), which MAY be performed multiple times per Turn.
+
+Life Battery (or Battery)
+:    Represents the life force of a Character.
+
+Narrator
+:    A Player who has addition responsibilities, which MAY include setting Difficulty Ratings, adding flavor to the story, and other duties often taken by a Game or Dungeon Master.
+
 Player
 :    A sentient being who is participating the playing of the game.
 :    MAY personify one or more Characters with the Setting of the game.
+
+Player Time
+:    The amount of time that passes for Players playing the game.
 
 Proficiency Point
 :    A sub-aspect of a Proficiency Rank earned in order to achieve a Rank.
@@ -198,6 +215,23 @@ Proficiency Point
 Proficiency Rank (or Rank)
 :    A representation of how proficient a Character is at performing certain Actions.
 
+Round
+:    Ends after Character Actions have been resolved for all active Characters.
+
+Session
+:    Ends when Players stop playing the game for a given period of time; breaks during a Session do not constitute a break in the Session.
+
 Setting
 :    The attributes and surroundings, in aggregate, that Characters inhabit.
 
+Slow Action
+:    An Action performed by a Character, with related Difficulty Rating, which MAY be performed once per Turn.
+
+Social Contract
+:    An agreement or understanding between Players (including the Narrator, if applicable) about how they will behave towards each other.
+
+Tool
+:    An item within the Setting that can be used by a Character.
+
+Turn
+:    Ends after all Fast and Slow Actions have been performed by a Character.
