@@ -24,11 +24,11 @@ Players personify one or more [Characters](#characters) who interact with the [S
 
 4th Earth RAW is created with the following values in mind:
 
-- **Additive over reductive.** Players should be able to start from a simple foundation and add to it, instead of starting from a position of "everything and the kitchen sink" and reducing.
-- **Narrative over simulation.** Players should be able to focus on creating engaging stories without strictly replicating reality.
-- **Flow over grinding.** Players should be able to get lost in their story and actions without performing repetitive tasks.
+- **Additive over reductive.** Players SHOULD be able to start from a simple foundation and add to it, instead of starting from a position of "everything and the kitchen sink" and reducing.
+- **Narrative over simulation.** Players SHOULD be able to focus on creating engaging stories without strictly replicating reality.
+- **Flow over grinding.** Players SHOULD be able to get lost in their story and actions without performing repetitive tasks.
 - **Power ceilings over threat escalation.** Saved the town, saved the country, saved the world, saved the universe, what next? Having 50 percent of a Character's life force drained in one shot is the same whether their life force is 10 or 100.
-- **Progressive disclosure over saturation.** Players should be able to enter a story having never read the rules or specification and learn as they go.
+- **Progressive disclosure over saturation.** Players SHOULD be able to enter a story having never read the rules or specification and learn as they go.
 
 ## Difficulty Rating
 
@@ -71,17 +71,17 @@ Actions are resolved by answering: Was the action successful? and How was the ou
 Dice Pools are a collection of dice. 
 
 - The number of sides of dice in the pool MUST be determined by the adjusted [Difficulty Rating](#difficulty-rating) in the [Difficulty Rating table](#difficulty-rating-table).
-- The number of dice in the pool MUST NOT exceed the number of [Proficiency Ranks](#proficiency-ranks) applied to the Action.
+- The number of dice in the pool MUST NOT exceed the number of [Proficiency Ranks](#proficiency-ranks) applied to the Action; SHOULD NOT include parent proficiencies.
 - Dice Pools MUST have at least 1 die regardless of Difficulty Rating or Proficiency Ranks; referred to as the base die.
 - Rolling 1 on a single die in the Dice Pool MUST represent successful completion of the action.
 - Dice Pools SHOULD NOT exceed 5 dice, which keeps the pool manageable and allows room for additional dice to facilitate things like critical success, failure, or both.
 
 ## Proficiency Ranks
 
-Proficiency Ranks represent the level of proficiency a [Character](#characters) has performing certain types of actions or using a tool. Proficiency Points are sub-aspects of a Proficiency Rank.
+Proficiency Ranks represent the level of proficiency a [Character](#characters) has performing certain Actions, using a tool, or combination. Proficiency Points are sub-aspects of a Proficiency Rank.
 
-- Each rank SHOULD require earning two or more Proficiency Points toward the rank. 
-- Each rank SHOULD be achievable in roughly four attempts.
+- Each rank MUST require earning two or more Proficiency Points toward the rank. 
+     - Each rank SHOULD be achievable in roughly four attempts.
     - Proficiency Points SHOULD NOT be earned if the Difficulty Rating is 0. 
 - The implementation SHOULD be stable for the entire session. 
 	- The implementation MAY be adjusted from session to session. 
@@ -97,15 +97,15 @@ Proficiency Ranks represent the level of proficiency a [Character](#characters) 
 
 Life batteries represent the life force of a [Character](#characters). Battery Points are a sub-aspect of Life Batteries.
 
+- Batteries MUST be the same for all Characters in a [Setting](#setting) with the same rules applied (even non-player Characters and enemies).
+	- Batteries MAY be created before play begins, however, we RECOMMEND creating Life Batteries as the story progresses based on the Actions of Characters. (Players may decide a stealth battery is appropriate while playing and add it to all Characters).
 - Batteries MUST have multiple ways to recharge. 
 	- Some recharging methods SHOULD be player initiated (sleep, for example).
 	- The implementation SHOULD favor a "both ways" approach; if batteries can recharge multiple ways, they SHOULD be able to drain multiple ways (starvation, for example).
 - Batteries MUST NOT be negative.
 - The number of Batteries SHOULD be kept to a minimum to reduce administrative overhead and maintain tension.
 - Batteries SHOULD have the same maximum number of Battery Points for each battery.
-- Batteries SHOULD be the same for all Characters in a [Setting](#setting) with the same rules applied (even non-player Characters and enemies).
-	- Batteries MAY be created before play begins, however, we RECOMMEND creating Life Batteries as the story progresses  based on the Actions of Characters. (Players may decide a stealth battery is appropriate while playing and add it to all Characters).
-- Battery Points MAY be used to reduce [Difficulty Rating](#difficulty-rating).
+- Battery Points MAY be used to reduce [Difficulty Ratings](#difficulty-rating); we RECOMMEND reducing Difficulty Rating 1 level for each Battery Point spent.
 
 ## Characters
 
@@ -125,10 +125,10 @@ Examples:
 
 ## Setting
 
-4th Earth RAW is a game engine and does not require a specific Setting. Further, you can use 4th Earth RAW in the Setting of other games.
+4th Earth RAW is a game engine and does not require a specific Setting. Further, you MAY use 4th Earth RAW in the Setting of other games.
 
-- MUST be agreed to by *all* players (including the Narrator, if applicable).
-- MUST be enough to give flavor and direction; MAY be a single sentence or tome.
+- Setting MUST be agreed to by *all* players (including the Narrator, if applicable).
+- MUST be enough to give flavor and direction; MAY be a single sentence all the way to a tome.
 - MUST describe where, when, what, and general theme.
 - MAY be developed by the Players, a Narrator, the outside world, or anything else.
 - MAY include a specific, short-term plot (adventures and one-shots). 
@@ -142,20 +142,20 @@ Examples:
 2. Greek mythos, The Underworld during the 12th labor of Hercules involving deities and demigods (a one-shot mythology hero quest).
 3. Early 21st century, Pluto, single-cell organisms (an evolution serial).
 
-*Note: The last example includes a baseline description of the [Characters](#characters) that can be played during the serialized adventure.*
+*Note: The second and third example includes a baseline description of the [Characters](#characters) that can be played during the serialized adventure.*
 
 ## Social Contract
 
 The Social Contract, is an agreement or understanding between Players (including the Narrator, if applicable) about how they will behave towards each other. Much like character for the individual and culture for the group, a Social Contract will exist. The question is: How transparent, intentional, and formal is it?
 
-Another way to look at it, the Social Contract is the guidelines and guardrails for meatspace. 
+Another way to look at it, the Social Contract outlines the guidelines and guardrails for meatspace. 
 
 The Social Contract:
 
 - MUST be agreed to by all Players.
 - MUST be applied to all Players in a similar manner.
-- MAY be verbal or unspoken; we RECOMMEND writing it down.
-- MAY be created as Players interact with each other.
+- MAY be verbal or unspoken; we RECOMMEND written.
+- MAY be created or modified as Players interact with each other.
 
 Resources for developing a Social Contract:
 

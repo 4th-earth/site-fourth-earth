@@ -1,6 +1,6 @@
 # 4th Earth RAW: Vanilla
 
-Creating a [.tabletop role playing game](TTRPG) can be a bit overwhelming. 4th Earth RAW: Vanilla is designed to provide a minimal setup for Players to create Characters and stories in the spirit of [4th Earth RAW](/).
+4th Earth [.rules as written](RAW): Vanilla is designed to provide a minimal setup for Players to create Characters and stories in the spirit of [4th Earth RAW](/).
 
 If you want to expand these mechanics and aren't sure where to start, we RECOMMEND looking at the official add-on implementations known as Sprinkles.
 

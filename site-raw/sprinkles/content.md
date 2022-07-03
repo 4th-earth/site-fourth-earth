@@ -4,6 +4,8 @@
 
 For the sake of keeping 4th Earth RAW: Vanilla relatively lightweight, they were pulled from that specification.
 
+*Note: Sprinkles add complexity to gameplay.*
+
 ## Scale
 
 Scale is a way of measuring the size difference between Characters in a Setting or Scene.
