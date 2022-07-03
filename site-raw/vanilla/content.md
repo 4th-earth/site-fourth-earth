@@ -37,7 +37,7 @@ The following apply to Character Actions where the target of the Action is anoth
 
 The following describes a method for calculating the Difficulty Rating of an Antagonist.
 
-- Start from the initial Difficulty Rating defined above.
+- Start from the initial Difficulty Rating (DEFINE IN GLOSSARY) defined above.
 - If the Antagonist is aware of the aggressive action, the Difficulty Rating MUST be increased by 1.
 
 #### Protagonist Potential Energy
