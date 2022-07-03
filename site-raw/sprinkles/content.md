@@ -6,6 +6,12 @@ For the sake of keeping 4th Earth RAW: Vanilla relatively lightweight, they were
 
 *Note: Sprinkles add complexity to gameplay.*
 
+## Allies
+
+- An active ally MUST be a Character who has the ability to perform Actions during a round and those Actions will be in support of the Protagonist or Antagonist, not both.
+- If the Antagonist has active allies, the Difficulty Rating MUST be increased by 1 for every 2 active allies. (1 active ally MUST NOT result in an increase, 4 active allies SHOULD result in an increase of 2.)
+    - If the Protagonist has active allies, the Difficulty Rating MAY be reduced in the same way as it is increased for the antagonist. (Both have 2 active allies, Difficulty Rating MAY NOT change.)
+
 ## Resistance
 
 Resistance results in a modification to protagonist Potential Energy (PE) when attacked in a way that causes physical damage; draining the health Life Battery.

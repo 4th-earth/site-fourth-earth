@@ -39,8 +39,6 @@ The following describes a method for calculating the Difficulty Rating of an Ant
 
 - Start from the initial Difficulty Rating defined above.
 - If the Antagonist is aware of the aggressive action, the Difficulty Rating MUST be increased by 1.
-- If the Antagonist has active allies, the Difficulty Rating SHOULD be increased by 1 for every 2 active allies. (1 active ally SHOULD NOT result in an increase, 4 active allies SHOULD result in an increase of 2.)
-    - If the Protagonist has active allies, the Difficulty Rating MAY be reduced in the same way as it is increased for the antagonist. (Both have 2 active allies, Difficulty Rating MAY NOT change.)
 
 #### Protagonist Potential Energy
 
