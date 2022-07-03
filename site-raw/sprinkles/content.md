@@ -90,6 +90,55 @@ Stance affords Characters to be more or less aggressive, at a cost.
 - Players MAY spend 1 point to re-roll the whole Dice Pool or 2 points to re-roll a single die in the pool.
 - As long as the Character has points remaining, the Player MAY continue spending points to re-roll.
 
+## Advanced Technology and Magic
+
+The following mechanics MAY be applied to both advanced technology tools and magic. 
+
+- The use of advanced technology tools and magic MUST use two rolls and dice pools.
+	- The first Difficulty Rating MUST represent the difficulty of using the advanced technology or casting a spell.
+	- The second Difficulty Rating SHOULD use the Antagonist Difficulty Rating mechanic.
+- If the Difficulty Rating of using the tools or casting the spell exceeds 7, the Difficulty Rating SHOULD be set at 7.
+- Difficulty Rating to use MUST start at 0 and SHOULD be adjusted using the tables below.
+	- Initial Difficulty Rating SHOULD be greater than 0 and MUST NOT be less than 0.
+	- The tables SHOULD be used in whole, however, all tables MAY NOT be used.
+		- The tables used SHOULD remain consistent for an entire session.
+
+### Rarity of Tool or Spell
+
+|Rarity |Modification |
+|:-----|:------:|
+|Ubiquitous |0 |
+|Common |Plus 1 |
+|Uncommon |Plus 2 |
+|Rare |Plus 3 |
+
+### Target of Tool or Spell
+
+|Target |Modification |
+|:------|:---------:|
+|Inanimate object |Plus 1 |
+|Self |Plus 2 |
+|Another |Plus 3 |
+
+### Intent of Protagonist
+
+|Intent |Modification |
+|:----|:---:|
+|Survival |0 |
+|Heal |Plus 1 |
+|Harm |Plus 2 |
+
+### Distance from Protagonist 
+
+|Distance |Modification |
+|:----|:---:|
+|Touch |0 |
+|Distance |1 |
+|Ranged |2 |
+
+### Internal or External to Target
+
+Some advanced technology or magic MAY move from the Protagonist to the target
 
 
 

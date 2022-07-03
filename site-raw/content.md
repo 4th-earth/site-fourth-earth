@@ -1,6 +1,6 @@
 # 4th Earth: Rules as Written
 
-These are the guidelines and guardrails for 4th Earth [.rules as written](RAW) a framework for creating [.table-top role playing games](TTRPGs). The [Vanilla Implementation](/vanilla/) illustrates one method for applying the rules as written to create a TTRPG.
+These are the guidelines and guardrails for 4th Earth [.rules as written](RAW) a framework for creating [.table-top role playing games](TTRPGs). The [Vanilla Implementation](/vanilla/) illustrates one method for applying the rules as written to create a TTRPG. 4th Earth RAW assumes very little previous experience with TTRPGs; defined terms are title-cased and their definitions are available in the glossary for each implementation. It should be presumed if there is not an explicit rule for or against something, Players MAY do whatever they would like.
 
 4th Earth RAW uses the key words described in [Key words for use in RFCs to Indicate Requirement Levels](https://datatracker.ietf.org/doc/html/rfc2119), the all-caps are not screaming at you:
 
@@ -52,23 +52,23 @@ Actions are resolved by answering: Was the action successful? and How was the ou
 
 ### Difficulty Rating Table
 
-|Level   |Sides            |Human-friendly             |Opposing value |
-|:-----:|:-----------:|:----------------------|:------------:|
-|0        |0                |Done!                        |Infinite          |
-|1        |2                |Safe bet                     |7                 |
-|2        |4                |Simple                        |6                |
-|3        |6                |Difficult                      |5                |
-|4        |8                |Long shot                    |4                |
-|5        |10               |Leap of faith                |3                |
-|6        |12               |Inconceivable                |2                |
-|7        |No dice!        |Impossible, if not reduced |1                |
-|Infinite |non-applicable |Impossible                    |0                |
+|Level    |Sides          |Human-friendly             |Opposing value |
+|:-------:|:-------------:|:--------------------------|:-------------:|
+|0        |0              |Done!                      |Infinite       |
+|1        |2              |Safe bet                   |7              |
+|2        |4              |Simple                     |6              |
+|3        |6              |Difficult                  |5              |
+|4        |8              |Long shot                  |4              |
+|5        |10             |Leap of faith              |3              |
+|6        |12             |Inconceivable              |2              |
+|7        |No dice!       |Impossible, if not reduced |1              |
+|Infinite |non-applicable |Impossible                 |0              |
 
 *Note: Multiplying the Difficulty Rating by 2 results in the number sides for the dice in the [Dice Pool](#dice-pools).*
 
 ## Dice pools
 
-Dice Pools are a collection of dice. 
+Dice Pools are a collection of dice.
 
 - The number of sides of dice in the pool MUST be determined by the adjusted [Difficulty Rating](#difficulty-rating) in the [Difficulty Rating table](#difficulty-rating-table).
 - The number of dice in the pool MUST NOT exceed the number of [Proficiency Ranks](#proficiency-ranks) applied to the Action; SHOULD NOT include parent proficiencies.
@@ -80,11 +80,11 @@ Dice Pools are a collection of dice.
 
 Proficiency Ranks represent the level of proficiency a [Character](#characters) has performing certain Actions, using a tool, or combination. Proficiency Points are sub-aspects of a Proficiency Rank.
 
-- Each rank MUST require earning two or more Proficiency Points toward the rank. 
+- Each rank MUST require earning two or more Proficiency Points toward the rank.
      - Each rank SHOULD be achievable in roughly four attempts.
-    - Proficiency Points SHOULD NOT be earned if the Difficulty Rating is 0. 
-- The implementation SHOULD be stable for the entire session. 
-	- The implementation MAY be adjusted from session to session. 
+    - Proficiency Points SHOULD NOT be earned if the Difficulty Rating is 0.
+- The implementation SHOULD be stable for the entire session.
+	- The implementation MAY be adjusted from session to session.
 	- These adjustments SHOULD be minimal from one session to the next.
 - Action Types SHOULD have more possible ranks than tools. We RECOMMEND:
 	- 4 Proficiency Points per rank.
@@ -99,7 +99,7 @@ Life batteries represent the life force of a [Character](#characters). Battery P
 
 - Batteries MUST be the same for all Characters in a [Setting](#setting) with the same rules applied (even non-player Characters and enemies).
 	- Batteries MAY be created before play begins, however, we RECOMMEND creating Life Batteries as the story progresses based on the Actions of Characters. (Players may decide a stealth battery is appropriate while playing and add it to all Characters).
-- Batteries MUST have multiple ways to recharge. 
+- Batteries MUST have multiple ways to recharge.
 	- Some recharging methods SHOULD be player initiated (sleep, for example).
 	- The implementation SHOULD favor a "both ways" approach; if batteries can recharge multiple ways, they SHOULD be able to drain multiple ways (starvation, for example).
 - Batteries MUST NOT be negative.
@@ -131,9 +131,9 @@ Examples:
 - MUST be enough to give flavor and direction; MAY be a single sentence all the way to a tome.
 - MUST describe where, when, what, and general theme.
 - MAY be developed by the Players, a Narrator, the outside world, or anything else.
-- MAY include a specific, short-term plot (adventures and one-shots). 
-	- MAY be a generic, long-term campaign. 
-	- MAY be a world open for exploration with no agenda or conflict beyond that exploration. 
+- MAY include a specific, short-term plot (adventures and one-shots).
+	- MAY be a generic, long-term campaign.
+	- MAY be a world open for exploration with no agenda or conflict beyond that exploration.
 	- Or, MAY be a combination.
 
 Examples:
@@ -144,11 +144,21 @@ Examples:
 
 *Note: The second and third example includes a baseline description of the [Characters](#characters) that can be played during the serialized adventure.*
 
+## Time and Space
+
+A round ends after each Character Action has been resolved. A turn ends after a single Character Action has been resolved.
+
+- Player time SHOULD NOT be the same as Character time.
+- Players SHOULD favor cinematic over real-time.
+	- Players SHOULD favor real-time over turn-based Action resolution.
+- Items within the Setting MAY decay over time.
+	- Characters SHOULD be able to perform maintenance Actions on items to slow the decay of those items.
+
 ## Social Contract
 
 The Social Contract, is an agreement or understanding between Players (including the Narrator, if applicable) about how they will behave towards each other. Much like character for the individual and culture for the group, a Social Contract will exist. The question is: How transparent, intentional, and formal is it?
 
-Another way to look at it, the Social Contract outlines the guidelines and guardrails for meatspace. 
+Another way to look at it, the Social Contract outlines the guidelines and guardrails for meatspace.
 
 The Social Contract:
 
@@ -161,4 +171,8 @@ Resources for developing a Social Contract:
 
 - Large list of starter questions a Social Contract MAY address: [https://rpgmuseum.fandom.com/wiki/Social_contract](https://rpgmuseum.fandom.com/wiki/Social_contract)
 - An example of a Social Contract: [https://static1.squarespace.com/static/5512e30de4b018f9300e3a55/t/57802bb3bebafbf78186bc68/1468017592481/Downloadable+Social+Contract.pdf](https://static1.squarespace.com/static/5512e30de4b018f9300e3a55/t/57802bb3bebafbf78186bc68/1468017592481/Downloadable+Social+Contract.pdf)
+
+## Glossary
+
+
 
