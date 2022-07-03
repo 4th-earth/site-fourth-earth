@@ -1,16 +1,16 @@
 # 4th Earth RAW: Vanilla
 
-4th Earth [.rules as written](RAW): Vanilla is designed to provide minimal mechanics for Players to create Characters and stories in the spirit of [4th Earth RAW](/).
+4th Earth [.rules as written](RAW): Vanilla is designed to provide a minimal setup for Players to create Characters and stories in the spirit of [4th Earth RAW](/).
 
 If you want to expand these mechanics and aren't sure where to start, we RECOMMEND looking at the official add-on implementations known as Sprinkles.
 
-The vanilla implementation is designed to facilitate solo-adventuring. However, the vanilla implementation MAY be used with groups, with or without a Narrator.
+The vanilla implementation is designed to facilitate solo-adventuring. However, the vanilla implementation MAY be used with groups, with or without a Narrator acting as facilitator and increasing story dynamism.
 
 ## Difficulty Rating
 
-- The health [Life Battery](#life-batteries) MUST NOT be used to reduce Difficulty Ratings.
+- The health Life Battery MUST NOT be used to reduce the Difficulty Rating.
 - If using non-health Life Batteries:
-    - Difficulty Rating MAY be reduced by spending non-health [Life Battery](#life-batteries) points; 1 Difficulty Rating for each Target Action Battery Point spent.
+    - Difficulty MAY be reduced by spending [Life Battery](#life-batteries) points; 1 Difficulty Rating for each target action battery point spent.
     - Difficulty Ratings SHOULD target one non-health battery; known as the target action battery. For example:
 	    - Injury and healing Actions SHOULD affect the health battery.
 	    - Physical Actions SHOULD predominately affect the physical battery.
@@ -22,15 +22,15 @@ The vanilla implementation is designed to facilitate solo-adventuring. However, 
 
 The following apply to Character Actions where the target of the Action is another Character who is contesting the Action; if the Action isn’t contested, the Difficulty Rating MUST be 0.
 
-- There MUST be a protagonist (the Character performing the Action) and an antagonist (the Character impacted by the Action); the protagonist Player is the one rolling Dice Pool.
-- If the antagonist is subdued, the Difficulty Rating MUST be 0.
-    - The initial Difficulty Rating, unless subdued, SHOULD BE at least the number of Proficiency Ranks the antagonist has in the same proficiency used by the protagonist; including parent proficiencies.
+- There MUST be a Protagonist and an Antagonist; the Protagonist Player Rolls the Dice Pool.
+- If the Antagonist is subdued, the Difficulty Rating MUST be 0.
+    - The initial Difficulty Rating, unless subdued, SHOULD BE at least the number of Proficiency Ranks the Antagonist has in the same Action Types and Tools used by the Protagonist; including parent proficiencies.
 - For physically aggressive Actions:
-	- Difficulty Rating MUST represent difficulty to hit the antagonist; this includes grappling, holding, or restraining the antagonist.
+	- Difficulty Rating MUST represent difficulty to hit the Antagonist; this includes grappling, holding, or restraining the Antagonist.
 	- Difficulty Rating SHOULD be calculated using the Antagonist Difficulty Rating below.
 	- Damage SHOULD be calculated using the Protagonist Potential Energy below.
 	- Grappling, holding, or restraining MUST NOT cause damage to the Antagonist.
-			- If the Antagonist is restrained in some way, attempting to escape MUST result in the Antagonist becoming the Protagonist; SHOULD happen on the Antagonist’s turn, if applicable.
+			- If the Antagonist is restrained in some way, attempting to escape MUST result in the Antagonist becoming the Protagonist; SHOULD happen on the Antagonist’s turn, if using turn-based gameplay.
 - The initial Difficulty Rating MAY be reduced by 1, if performing an Action using a specialty and having mastered the parent proficiency (three ranks).
 
 #### Antagonist Difficulty Rating
@@ -99,3 +99,17 @@ See Sprinkles.
 	- The health battery MUST NOT be used to recharge any other Life Batteries.
 	- To recharge 1 Battery Point to a non-health battery, Players MUST spend Battery Points equal to the number of non-health battery minus 1 (the target). (For example, if there are 3 non-health Life Batteries, 2 points from spirit can be used to recharge 1 point to physical; or, 1 point from spirit and 1 point from mental can be used to recharge 1 point to physical.)
 	- Battery Points equal to the number of non-health Life Batteries MUST be spent to recharge 1 point to the health battery. (For example, 3 non-health batteries means 2 points from spirit and 1 point from physical can be used to recharge 1 point to health.)
+
+## Glossary
+
+Antagonist
+:    The Character impacted by a contested Action of another Character.
+
+Protagonist
+:    The Character performing an Action in a contested Action.
+
+Target Action Battery
+:    The Life Battery targeted by an Action.
+
+Target Action Battery Point
+:    The Battery Points for a Target Action Battery.
