@@ -1,21 +1,21 @@
 # 4th Earth RAW: Vanilla
 
-4th Earth [.rules as written](RAW): Vanilla is designed to provide a minimal setup for Players to create Characters and stories in the spirit of [4th Earth RAW](/).
+4th Earth [.rules as written](RAW): Vanilla is designed to provide minimal mechanics for Players to create Characters and stories in the spirit of [4th Earth RAW](/).
 
 If you want to expand these mechanics and aren't sure where to start, we RECOMMEND looking at the official add-on implementations known as Sprinkles.
 
-The vanilla implementation is designed to facilitate solo-adventuring. However, the vanilla implementation MAY be used with groups, with or without a Narrator acting as facilitator and increasing story dynamism.
+The vanilla implementation is designed to facilitate solo-adventuring. However, the vanilla implementation MAY be used with groups, with or without a Narrator.
 
 ## Difficulty Rating
 
-- The health Life Battery MUST NOT be used to reduce the Difficulty Rating.
+- The health [Life Battery](#life-batteries) MUST NOT be used to reduce Difficulty Ratings.
 - If using non-health Life Batteries:
-	- Difficulty MAY be reduced by spending [Life Battery](#life-batteries) points; 1 Difficulty Rating for each target action battery point spent.
-	- Difficulty Ratings SHOULD target one non-health battery; known as the target action battery. For example:
-		- Injury and healing Actions SHOULD affect the health battery.
-		- Physical Actions SHOULD predominately affect the physical battery.
-		- Mentally taxing Actions SHOULD predominately impact the mental battery.
-		- Magic and similar actions SHOULD predominately impact the spirit battery.
+    - Difficulty Rating MAY be reduced by spending non-health [Life Battery](#life-batteries) points; 1 Difficulty Rating for each Target Action Battery Point spent.
+    - Difficulty Ratings SHOULD target one non-health battery; known as the target action battery. For example:
+	    - Injury and healing Actions SHOULD affect the health battery.
+	    - Physical Actions SHOULD predominately affect the physical battery.
+	    - Mentally taxing Actions SHOULD predominately impact the mental battery.
+	    - Magic and similar actions SHOULD predominately impact the spirit battery.
 - Difficulty MAY be increased or decreased by negotiating with the Narrator, if applicable.
 
 ### Opposing Character Interactions
@@ -24,7 +24,7 @@ The following apply to Character Actions where the target of the Action is anoth
 
 - There MUST be a protagonist (the Character performing the Action) and an antagonist (the Character impacted by the Action); the protagonist Player is the one rolling Dice Pool.
 - If the antagonist is subdued, the Difficulty Rating MUST be 0.
-	- The initial Difficulty Rating, unless subdued, SHOULD BE at least the number of Proficiency Ranks the antagonist has in the same proficiency used by the protagonist; including parent proficiencies.
+    - The initial Difficulty Rating, unless subdued, SHOULD BE at least the number of Proficiency Ranks the antagonist has in the same proficiency used by the protagonist; including parent proficiencies.
 - For physically aggressive Actions:
 	- Difficulty Rating MUST represent difficulty to hit the antagonist; this includes grappling, holding, or restraining the antagonist.
 	- Difficulty Rating SHOULD be calculated using the Antagonist Difficulty Rating below.
@@ -47,19 +47,20 @@ The following table describes a method for calculating the Potential Energy (dam
 - Physical damage MUST target the health Life Battery.
 - Verbal, advanced technology, or magic attacks MAY impact non-health Life Batteries and SHOULD be a known quality or attribute of the action, tool, or spell.
 - Slow Actions MUST be limited to once per turn or round.
-- Fast Actions MAY be performed twice by the Attacking Character in a turn or round.
+- Fast Actions MAY be performed twice by the protagonist in a Turn or Round.
 	- If the Fast Action is performed twice, the Difficulty Rating MUST be divided by 2 and split evenly between the two Actions; if performing once, the Difficulty Rating MUST NOT be split.
 		- If the Fast Action is performed twice and the Difficulty Rating is odd, Player MUST round up the first and round down the second Difficulty Rating.
 		- If using non-health Life Batteries, Players MAY spend non-health Life Battery points to reduce the Difficulty Ratings individually; as if they were two, separate Actions.
 - Potential Energy MAY be reduced mechanically (see Resistance Sprinkle), or, through negotiation and narrative convenience (incapacitate instead of kill, for example).
 
-|Action |Details |Potential Energy |
-|:——|:-——|:—————:|
-|Jab    |Fast and light |1 per Fast Action taken and successful; maximum of 2 |
-|Uppercut, kick, or ram |Slow and medium |2 |
-|Dual (tool each hand) |Fast and medium |2 per Fast Action taken; maximum of 4 |
-|Two-handed |Slow and medium |3 |
-|Advanced technology or magic |Slow and heavy |5 |
+|Action                       |Details         |Potential Energy                                     |
+|:---------------------------:|:--------------:|:----------------------------------------------------|
+|Jab                          |Fast and light  |1 per Fast Action taken and successful; maximum of 2 |
+|Uppercut, kick, ram, or slam |Slow and medium |2                                                    |
+|Dual (tool each hand)        |Fast and medium |2 per Fast Action taken; maximum of 4                |
+|Two-handed                   |Slow and medium |3                                                    |
+|Advanced technology or magic |Slow and heavy  |5                                                    |
+
 
 ## Dice Pools
 
