@@ -78,7 +78,7 @@ Stance affords Characters to be more or less aggressive, at a cost.
 	- If the protagonist is in a defensive stance and the antagonist is in a neutral stance, the antagonist Difficulty Raring SHOULD be increased by 1.
 
 |             |P: Offensive |P: Neutral |P: Defensive |
-|-————--------|:—---—-----——|:-———------|:—------———--|
+|-------------|:------------|:----------|:------------|
 |A: Offensive |Minus 2      |Minus 1    | 0           |
 |A: Neutral   |Minus 1      | 0         |Plus 1       |
 |A: Defensive |0            |Plus 1     |Plus 2       |
@@ -105,36 +105,36 @@ The following mechanics MAY be applied to both advanced technology tools and mag
 
 ### Rarity of Tool or Spell
 
-|Rarity |Modification |
-|:-----|:------:|
-|Ubiquitous |0 |
-|Common |Plus 1 |
-|Uncommon |Plus 2 |
-|Rare |Plus 3 |
+|Rarity     |Modification |
+|:----------|:-----------:|
+|Ubiquitous |0            |
+|Common     |Plus 1       |
+|Uncommon   |Plus 2       |
+|Rare       |Plus 3       |
 
 ### Target of Tool or Spell
 
-|Target |Modification |
-|:------|:---------:|
-|Inanimate object |Plus 1 |
-|Self |Plus 2 |
-|Another |Plus 3 |
+|Target           |Modification |
+|:----------------|:-----------:|
+|Inanimate object |Plus 1       |
+|Self             |Plus 2       |
+|Another          |Plus 3       |
 
 ### Intent of Protagonist
 
-|Intent |Modification |
-|:----|:---:|
-|Survival |0 |
-|Heal |Plus 1 |
-|Harm |Plus 2 |
+|Intent   |Modification |
+|:--------|:-----------:|
+|Survival |0            |
+|Heal     |Plus 1       |
+|Harm     |Plus 2       |
 
 ### Distance from Protagonist
 
 |Distance |Modification |
-|:----|:---:|
-|Touch |0 |
-|Distance |1 |
-|Ranged |2 |
+|:--------|:-----------:|
+|Touch    |0            |
+|Distance |1            |
+|Ranged   |2            |
 
 ### Internal or External to Target
 
@@ -200,26 +200,26 @@ This implementation presumes you are using the vanilla implementation of combat 
 
 The Player rolls one, 12-sided die.
 
-|Die value    |Effect |
-|:————|:——|
+|Die value   |Effect                                                                                                          |
+|:-----------|:---------------------------------------------------------------------------------------------------------------|
 |Even number |Plus 1 to attacker Action target battery, or, any other non-health battery if the Action target battery is full |
-|1, 5, or 9      |Multiply base Potential Energy by 1.5 |
-|3 or 7         |Multiply base Potential Energy by 2 |
-|11           |Trauma: Roll another 12-sided die and apply result from the Critical, combat success effects extension table |
+|1, 5, or 9  |Multiply base Potential Energy by 1.5                                                                           |
+|3 or 7      |Multiply base Potential Energy by 2                                                                             |
+|11          |Trauma: Roll another 12-sided die and apply result from the Critical, combat success effects extension table    |
 
 #### Critical, combat success effects extension table
 
 The Player rolls one, 12-sided die.
 
-|Die value    |Effect |
-|:————|:——|
-|1        |Defender Difficulty Rating reduced by 2, recurring and compounding |
-|2, 5, or 8  |Multiply base Potential Energy by 2, target defender. |
-|3, 6, or 9  |Multiply base Potential Energy by 2.5, target defender. |
-|4 or 7     |Reduce defender’s spirit battery by 1; use health battery if spirit battery is unavailable or at 0 |
-|10       |Reduce defender’s health battery by 1, recurring and compounding |
-|11       |Multiply base Potential Energy by 3, target defender. |
-|12       |Defender can’t act for 2 rounds |
+|Die value  |Effect |
+|:----------|:---------------------------------------------------------------------------------------------------|
+|1          |Defender Difficulty Rating reduced by 2, recurring and compounding                                  |
+|2, 5, or 8 |Multiply base Potential Energy by 2, target defender.                                               |
+|3, 6, or 9 |Multiply base Potential Energy by 2.5, target defender.                                             |
+|4 or 7     |Reduce defender’s spirit battery by 1; use health battery if spirit battery is unavailable or at 0. |
+|10         |Reduce defender’s health battery by 1, recurring and compounding.                                   |
+|11         |Multiply base Potential Energy by 3, target defender.                                               |
+|12         |Defender can’t act for 2 rounds.                                                                    |
 
 Recurring means the effect is applied every round. Compounding means the effect can be applied multiple times. This simulates severe injury and allows for severe injury to occur multiple times.
 
@@ -229,8 +229,8 @@ For example, a Character (attacker) is fighting another Character (defender) wit
 
 The Player rolls one, 12-sided die.
 
-|Die value    |Effect |
-|:————|:——|
+|Die value   |Effect |
+|:-----------|:------|
 |Even number |Minus 1 from attacker Action target battery, or, any other non-health battery, if the Action target battery is at 0 |
 |1, 5, or 9      |Minus 2 from attacker Action target battery, does not impact other Life Batteries, if Action target battery is at 0 |
 |3 or 7         |Attacker damages self at one-to-one Scale, 0 resistance, base Potential Energy divided by 2 (round down); damage cannot be less than 1 |
