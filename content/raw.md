@@ -1,8 +1,12 @@
 # 4th Earth: Rules as Written
 
+4th Earth RAW is designed for collaborative storytelling, home brewing, and hacking. From the mundane, theatre of the absurd, to the fanciful and super-heroic, whether you're solo-adventuring or in a group, 4th Earth RAW gives you a set of mechanics to keep the mystery and challenge alive.
+
+Players personify one or more [Characters](#characters) who interact with the [Setting](#setting) and other Characters.
+
 These are the guidelines and guardrails for 4th Earth [.rules as written](RAW) a framework for creating [.table-top role playing games](TTRPGs). The [Vanilla Implementation](/vanilla/) illustrates one method for applying the rules as written to create a TTRPG.
 
-4th Earth RAW assumes very little previous experience with TTRPGs; defined terms are title-cased and their definitions are available in the glossary for each implementation. It should be presumed if there is not an explicit rule for or against something, Players MAY do whatever they would like.
+4th Earth RAW presumes little previous experience with TTRPGs; defined terms are title-cased and their definitions are available in the glossary for each implementation. It should be presumed if there is not an explicit rule for or against something, Players MAY do whatever they would like.
 
 4th Earth RAW uses the key words described in [Key words for use in RFCs to Indicate Requirement Levels](https://datatracker.ietf.org/doc/html/rfc2119), the all-caps are not screaming at you:
 
@@ -11,10 +15,6 @@ These are the guidelines and guardrails for 4th Earth [.rules as written](RAW) a
 - SHOULD or RECOMMENDED, mean that there may exist valid reasons in particular circumstances to ignore a particular item, but the full implications must be understood and carefully weighed before choosing a different course;
 - SHOULD NOT or NOT RECOMMENDED, mean that there may exist valid reasons in particular circumstances when the particular behavior is acceptable or even useful, but the full implications should be understood and the case carefully weighed before implementing any behavior described with this label; and
 - MAY or OPTIONAL, mean that an item is truly optional.
-
-4th Earth RAW is designed for collaborative storytelling, home brewing, and hacking. From the mundane, theatre of the absurd, to the fanciful and super-heroic, whether you're solo-adventuring or in a group, 4th Earth RAW gives you a set of mechanics to keep the mystery and challenge alive.
-
-Players personify one or more [Characters](#characters) who interact with the [Setting](#setting) and other Characters.
 
 **Equipment:** We RECOMMEND Players use standard polyhedral dice, however, any means by which choosing one or more random numbers between 1 and 12 will do; the dice would be:
 
@@ -29,7 +29,7 @@ Players personify one or more [Characters](#characters) who interact with the [S
 - **Additive over reductive.** Players SHOULD be able to start from a simple foundation and add to it, instead of starting from a position of "everything and the kitchen sink" and reducing.
 - **Narrative over simulation.** Players SHOULD be able to focus on creating engaging stories without strictly replicating reality.
 - **Flow over grinding.** Players SHOULD be able to get lost in their story and actions without performing repetitive tasks.
-- **Power ceilings over threat escalation.** Saved the town, saved the country, saved the world, saved the universe, what next? Having 50 percent of a Character's life force drained in one shot is the same whether their life force is 10 or 100.
+- **Power ceilings over threat escalation.** The Setting SHOULD NOT require becoming ever more dangerous for everyone, including the Characters, to keep tension in the story. Characters MAY become more powerful, they SHOULD NOT become invincible.
 - **Progressive disclosure over saturation.** Players SHOULD be able to enter a story having never read the specification and learn as they go.
 
 ## Difficulty Rating
@@ -89,7 +89,7 @@ Proficiency Ranks represent the level of proficiency a [Character](#characters) 
 - Action Types SHOULD have more possible Ranks than Tools. We RECOMMEND:
 	- 4 Proficiency Points per rank.
 	- 3 Ranks per Action Type.
-	- 1 Rank per Tool; general, not specific (a knife is a knife, however, a knife used for cooking is different than a knife used for combat–even if it's the exact same knife).
+	- 1 Rank per Tool; general, not specific (if a Character knows how to use a knife for cooking, they know how to use it for combat; they're just better at cooking than combat).
 - Each Rank MAY increase the number of dice in the [Dice Pool](#dice-pools) by 1.
 - Using a Tool MAY reduce the [Difficulty Rating](#difficulty-rating) of an Action up to 2 levels.
 

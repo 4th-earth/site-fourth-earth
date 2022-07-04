@@ -2,7 +2,7 @@
 
 4th Earth [.rules as written](RAW): Vanilla is designed to provide a minimal setup for Players to create Characters and stories in the spirit of [4th Earth RAW](/).
 
-If you want to expand these mechanics and aren't sure where to start, we RECOMMEND looking at the official add-on implementations known as Sprinkles.
+If you want to expand these mechanics and aren't sure where to start, we RECOMMEND looking at the official add-on implementations known as [Sprinkles](/sprinkles/).
 
 The vanilla implementation is designed to facilitate solo-adventuring. However, the vanilla implementation MAY be used with groups, with or without a Narrator acting as facilitator and increasing story dynamism.
 
@@ -53,14 +53,13 @@ The following table describes a method for calculating the Potential Energy (dam
 		- If using non-health Life Batteries, Players MAY spend non-health Life Battery points to reduce the Difficulty Ratings individually; as if they were two, separate Actions.
 - Potential Energy MAY be reduced mechanically (see Resistance Sprinkle), or, through negotiation and narrative convenience (incapacitate instead of kill, for example).
 
-|Action                       |Details         |Potential Energy                                     |
-|:---------------------------:|:--------------:|:----------------------------------------------------|
-|Jab                          |Fast and light  |1 per Fast Action taken and successful; maximum of 2 |
-|Uppercut, kick, ram, or slam |Slow and medium |2                                                    |
-|Dual (tool each hand)        |Fast and medium |2 per Fast Action taken; maximum of 4                |
-|Two-handed                   |Slow and medium |3                                                    |
-|Advanced technology or magic |Slow and heavy  |5                                                    |
-
+|Action                       |Speed |Potential Energy                                     |
+|:---------------------------:|:----:|:----------------------------------------------------|
+|Jab                          |Fast  |1 per Fast Action taken and successful; maximum of 2 |
+|Uppercut, kick, ram, or slam |Slow  |2                                                    |
+|Dual (same tool each hand)   |Fast  |2 per Fast Action taken with the tool; maximum of 4  |
+|Two-handed                   |Slow  |3                                                    |
+|Advanced technology or magic |Slow  |5                                                    |
 
 ## Dice Pools
 
@@ -73,7 +72,7 @@ See Sprinkles.
 	- 1 point earned on failure, and
 	- 0 points earned for Actions with Difficulty Rating of 0; even if the initial Difficulty Rating was greater than 0.
 - Proficiencies and specialties SHOULD be determined by Players as Characters interact with the Setting and other Characters; reduces pre-setup and starts game play in the most open and freeform condition.
-	- Each proficiency MAY have up to 1 child proficiency. The parent SHOULD represent a general proficiency and the child SHOULD represent a specialty. The specialty AHOULD be a specific Action Type, not a combination. (For example, preparing food MAY have a child proficiency of baking a cake. Further, a master of unarmed combat MAY have a specialty in a jab but not in kung fu.)
+	- Each proficiency MAY have up to 1 child proficiency. The parent SHOULD represent a general proficiency and the child SHOULD represent a specialty. The specialty SHOULD be a specific Action Type, not a combination. (For example, preparing food MAY have a child proficiency of baking a cake. Further, a master of unarmed combat MAY have a specialty in a jab but not in kung fu.)
 	- Players MAY determine parent-child relationships among proficiencies and specialties.
 	- The proficiency MUST be mastered before proficiency points are earned toward the specialty.
 		- If a proficiency is later determined to be a specialty, we RECOMMEND moving the achieved points and ranks to the proficiency and re-building ranks in the specialty.
