@@ -10,8 +10,8 @@ The vanilla implementation is designed to facilitate solo-adventuring. However, 
 
 - The health Life Battery MUST NOT be used to reduce the Difficulty Rating.
 - If using non-health Life Batteries:
-    - Difficulty MAY be reduced by spending [Life Battery](#life-batteries) points; 1 Difficulty Rating for each target action battery point spent.
-    - Difficulty Ratings SHOULD target one non-health battery; known as the target action battery. For example:
+    - Difficulty MAY be reduced by spending [Life Battery](#life-batteries) points; 1 Difficulty Rating for each Target Action Battery point spent.
+    - Difficulty Ratings SHOULD target one non-health battery. For example:
 	    - Injury and healing Actions SHOULD affect the health battery.
 	    - Physical Actions SHOULD predominately affect the physical battery.
 	    - Mentally taxing Actions SHOULD predominately impact the mental battery.

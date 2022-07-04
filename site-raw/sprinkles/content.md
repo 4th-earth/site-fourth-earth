@@ -92,7 +92,7 @@ Stance affords Characters to be more or less aggressive, at a cost.
 
 ## Advanced Technology and Magic
 
-The following mechanics MAY be applied to both advanced technology tools and magic. 
+The following mechanics MAY be applied to both advanced technology tools and magic.
 
 - The use of advanced technology tools and magic MUST use two rolls and dice pools.
 	- The first Difficulty Rating MUST represent the difficulty of using the advanced technology or casting a spell.
@@ -128,7 +128,7 @@ The following mechanics MAY be applied to both advanced technology tools and mag
 |Heal |Plus 1 |
 |Harm |Plus 2 |
 
-### Distance from Protagonist 
+### Distance from Protagonist
 
 |Distance |Modification |
 |:----|:---:|
@@ -177,12 +177,12 @@ A critical success on a non-combat (mundane) action, results in the following ch
 
 The Player rolls one, 12-sided die.
 
-|Die value    |Affect on Action target battery |
-|:————|:——|
-|Even number  |Plus 1 |
-|1, 5, or 9      |Plus 2 |
-|3 or 7         |Plus 3 |
-|11           |Plus 5 |
+|Die value   |Affect on Target Action Battery |
+|:-----------|:-------------------------------|
+|Even number |Plus 1                          |
+|1, 5, or 9  |Plus 2                          |
+|3 or 7      |Plus 3                          |
+|11          |Plus 5                          |
 
 If the Action target battery becomes full, the Player MAY distribute the remaining points to other non-health batteries of their choosing.
 
