@@ -59,8 +59,12 @@
                 border: 1px solid black;
             }
 
-            li {
+            li, dt {
                 margin: 0.75rem 0;
+            }
+
+            dt {
+                margin-bottom: 0;
             }
 
             div[is="heading-wrapper"] {

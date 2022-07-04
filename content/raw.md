@@ -1,12 +1,23 @@
 # 4th Earth: Rules as Written
 
+- [Difficulty rating](#difficulty-rating)
+	- [Difficulty rating table](#difficulty-rating-table)
+- [Dice pools](#dice-pools)
+- [Proficiency ranks](#proficiency-ranks)
+- [Life batteries](#life-batteries)
+- [Characters](#characters)
+- [Setting](#setting)
+- [Time and space](#time-and-space)
+- [Social contract](#social-contract)
+- [Glossary](#glossary)
+
 4th Earth RAW is designed for collaborative storytelling, home brewing, and hacking. From the mundane, theatre of the absurd, to the fanciful and super-heroic, whether you're solo-adventuring or in a group, 4th Earth RAW gives you a set of mechanics to keep the mystery and challenge alive.
 
 Players personify one or more [Characters](#characters) who interact with the [Setting](#setting) and other Characters.
 
 These are the guidelines and guardrails for 4th Earth [.rules as written](RAW) a framework for creating [.table-top role playing games](TTRPGs). The [Vanilla Implementation](/vanilla/) illustrates one method for applying the rules as written to create a TTRPG.
 
-4th Earth RAW presumes little previous experience with TTRPGs; defined terms are title-cased and their definitions are available in the glossary for each implementation. It should be presumed if there is not an explicit rule for or against something, Players MAY do whatever they would like.
+4th Earth RAW presumes little previous experience with TTRPGs; defined terms are title-cased and their definitions are available in the glossary for each implementation. It should be presumed if there is not an explicit rule for or against something, Players MAY do whatever they like.
 
 4th Earth RAW uses the key words described in [Key words for use in RFCs to Indicate Requirement Levels](https://datatracker.ietf.org/doc/html/rfc2119), the all-caps are not screaming at you:
 
@@ -37,17 +48,17 @@ These are the guidelines and guardrails for 4th Earth [.rules as written](RAW) a
 Character Actions consist of the following, minimal, list of activities:
 
 1. Character intent; the Player describes what the Character will attempt to do.
-2. The intent MUST be assigned an initial Difficulty Rating between 0 and Infinite.
+2. The intent MUST be assigned an Initial Difficulty Rating between 0 and Infinite.
 3. The initial Difficulty Rating MAY be adjusted up or down.
-4. The Player MAY create a [Dice Pool](#dice-pools) based on the adjusted Difficulty Rating and rolls to determine success or failure.
+4. The Player MAY create a [Dice Pool](#dice-pools) based on the Adjusted Difficulty Rating and rolls to determine success or failure.
 
-Actions are resolved by answering: Was the action successful? and How was the outside world affected by the action?
+Actions are resolved by answering: Was the Action successful? and How were the Setting and other Characters affected by the Action?
 
 - Difficulty Rating 0 MUST represent automatic success.
 - Difficulty Rating Infinite MUST be impossible for the Character to achieve in the Setting.
 - Difficulty Ratings MUST NOT be less than 0.
 - Difficulty Ratings MUST be whole numbers.
-- Difficulty Ratings SHOULD be based on the Character attempting the interaction, the complexity of the action, and qualities of any opposing force (standing up may be Difficulty 6 for an infant and Difficulty 0 for an adult).
+- Difficulty Ratings SHOULD be based on the Character attempting the Action, the complexity of the Action, and qualities of any opposing force (standing up may be Difficulty 6 for an infant and Difficulty 0 for an able-bodied person).
 - Players SHOULD be able to influence the Difficulty Rating in one or more ways.
 
 ### Difficulty Rating Table
@@ -70,24 +81,24 @@ Actions are resolved by answering: Was the action successful? and How was the ou
 
 Dice Pools are a collection of dice.
 
-- The numeric range of dice in the pool MUST be determined by the adjusted [Difficulty Rating](#difficulty-rating) in the [Difficulty Rating table](#difficulty-rating-table).
+- The numeric range of dice in the pool MUST be determined by the Adjusted [Difficulty Rating](#difficulty-rating) in the [Difficulty Rating table](#difficulty-rating-table).
 - The number of dice in the pool MUST NOT exceed the number of [Proficiency Ranks](#proficiency-ranks) applied to the Action; SHOULD NOT include parent proficiencies.
 - Dice Pools MUST have at least 1 die regardless of Difficulty Rating or Proficiency Ranks; referred to as the base die.
-- Rolling 1 on a single die in the Dice Pool MUST represent successful completion of the action.
+- Rolling 1 on a single die in the Dice Pool MUST represent successful completion of the Action.
 - Dice Pools SHOULD NOT exceed 5 dice, which keeps the pool manageable and allows room for additional dice to facilitate things like critical success, failure, or both.
 
 ## Proficiency Ranks
 
-Proficiency Ranks represent the level of proficiency a [Character](#characters) has performing certain Actions, using a tool, or combination. Proficiency Points are sub-aspects of a Proficiency Rank.
+Proficiency Ranks represent the level of proficiency a [Character](#characters) has performing certain Actions, using a Tool, or combination. Proficiency Points are sub-aspects of a Proficiency Rank.
 
-- Each Rank MUST require earning two or more Proficiency Points toward the rank.
+- Each Rank MUST require earning two or more Proficiency Points toward the Rank.
 	- Each Rank SHOULD be achievable in roughly four attempts.
 	- Proficiency Points SHOULD NOT be earned if the Difficulty Rating is 0.
 - The implementation SHOULD be stable for the entire Session.
 	- The implementation MAY be adjusted from Session to Session.
 	- These adjustments SHOULD be minimal from one Session to the next.
 - Action Types SHOULD have more possible Ranks than Tools. We RECOMMEND:
-	- 4 Proficiency Points per rank.
+	- 4 Proficiency Points per Rank.
 	- 3 Ranks per Action Type.
 	- 1 Rank per Tool; general, not specific (if a Character knows how to use a knife for cooking, they know how to use it for combat; they're just better at cooking than combat).
 - Each Rank MAY increase the number of dice in the [Dice Pool](#dice-pools) by 1.
@@ -117,7 +128,7 @@ Examples:
 
 1. Teenage, male, human, cleric with a health battery with a maximum value of 10. Grew up in a monastery where he learned healing spells.
 2. Adult, female, goddess, warrior with health, physical, mental, and aura batteries with a maximum value of 8 each. Grew up in a military family and has been training since she was old enough to walk.
-3. Elderly, female, dog with a health battery with a maximum value of 6.
+3. Elderly dog with a health battery with a maximum value of 6.
 
 *Note: The Characters in these examples, MUST NOT be played in the same [Setting](#setting), unless the Players agree to modify the Characters to have the same Life Batteries and maximum values.*
 
@@ -170,6 +181,9 @@ Resources for developing a Social Contract:
 
 ## Glossary
 
+Adjusted Difficulty Rating
+:    The Initial Difficulty Rating after all adjustments have been taken into account.
+
 Action
 :    One or more activities attempted or performed within the Setting.
 :    MAY NOT be restricted to Characters within the Setting.
@@ -196,15 +210,18 @@ Difficulty Rating
 Fast Action
 :    An Action performed by a Character, with one or more related Difficulty Rating(s), which MAY be performed multiple times per Turn.
 
+Initial Difficulty Rating
+:    The Difficulty Rating initially assigned to an Action prior to any adjustments.
+
 Life Battery (or Battery)
 :    Represents the life force of a Character.
 
 Narrator
-:    A Player who has addition responsibilities, which MAY include setting Difficulty Ratings, adding flavor to the story, and other duties often taken by a Game or Dungeon Master.
+:    A Player who has additional responsibilities, which MAY include setting Difficulty Ratings, adding flavor to the story, and other duties often taken by a Game or Dungeon Master.
 
 Player
-:    A sentient being who is participating the playing of the game.
-:    MAY personify one or more Characters with the Setting of the game.
+:    A sentient being who is participating in the playing of the game.
+:    MAY personify one or more Characters within the Setting of the game.
 
 Player Time
 :    The amount of time that passes for Players playing the game.
