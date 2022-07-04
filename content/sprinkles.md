@@ -229,21 +229,21 @@ For example, a Character (attacker) is fighting another Character (defender) wit
 
 The Player rolls one, 12-sided die.
 
-|Die value   |Effect |
-|:-----------|:------|
+|Die value   |Effect                                                                                                              |
+|:-----------|:-------------------------------------------------------------------------------------------------------------------|
 |Even number |Minus 1 from attacker Action target battery, or, any other non-health battery, if the Action target battery is at 0 |
-|1, 5, or 9      |Minus 2 from attacker Action target battery, does not impact other Life Batteries, if Action target battery is at 0 |
-|3 or 7         |Attacker damages self at one-to-one Scale, 0 resistance, base Potential Energy divided by 2 (round down); damage cannot be less than 1 |
-|11           |Trauma: Roll another 12-sided die and apply result from the Critical, combat failure effects extension table |
+|1, 5, or 9  |Minus 2 from attacker Action target battery, does not impact other Life Batteries, if Action target battery is at 0 |
+|3 or 7      |Attacker damages self at one-to-one Scale, 0 resistance, base Potential Energy divided by 2 (round down); damage cannot be less than 1 |
+|11          |Trauma: Roll another 12-sided die and apply result from the Critical, combat failure effects extension table        |
 
 #### Critical, combat failure effects extension table
 
 The Player rolls one, 12-sided die.
 
-|Die value    |Effect |
-|:————|:——|
+|Die value |Effect                                                                                                                            |
+|:---------|:---------------------------------------------------------------------------------------------------------------------------------|
 |11        |Tool used is rendered useless for future rounds. If no tool is used, multiply base Potential Energy by 3 and target the attacker. |
-|Other    |Apply Critical, combat success effects extension table replacing the word “defender” with “attacker” |
+|Other     |Apply Critical, combat success effects extension table replacing the word “defender” with “attacker.”                             |
 
 ## Partials and Complications
 
