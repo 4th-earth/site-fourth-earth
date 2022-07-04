@@ -2,8 +2,6 @@
 
 4th Earth RAW: Sprinkles are individual mechanics that MAY be sprinkled on top of 4th Earth RAW: Vanilla or your own 4th Earth RAW variation.
 
-For the sake of keeping 4th Earth RAW: Vanilla relatively lightweight, they were pulled from that specification.
-
 *Note: Sprinkles add complexity to gameplay.*
 
 ## Allies

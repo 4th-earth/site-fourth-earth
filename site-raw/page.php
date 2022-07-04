@@ -51,7 +51,7 @@
             }
 
             table th {
-                padding: 5px 0;
+                padding: 5px 3px;
             }
 
             table td {

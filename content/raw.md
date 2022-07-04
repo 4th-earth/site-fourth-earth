@@ -10,6 +10,9 @@
 - [Time and space](#time-and-space)
 - [Social contract](#social-contract)
 - [Glossary](#glossary)
+- Elsewhere
+    - [Vanilla Implementation](/vanilla/)
+    - [Sprinkles](/sprinkles/)
 
 4th Earth RAW is designed for collaborative storytelling, home brewing, and hacking. From the mundane, theatre of the absurd, to the fanciful and super-heroic, whether you're solo-adventuring or in a group, 4th Earth RAW gives you a set of mechanics to keep the mystery and challenge alive.
 
