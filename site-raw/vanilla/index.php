@@ -6,7 +6,7 @@ ini_set('display_startup_errors', '1');
 ini_set('realpath_cache_size', '4096');
 ini_set('realpath_cache_ttl', '600');
 
-require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/../../vendor/autoload.php';
 
 use Eightfold\Markdown\Markdown as MarkdownConverter;
 
