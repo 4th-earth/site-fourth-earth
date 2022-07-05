@@ -14,11 +14,11 @@
     - [Vanilla Implementation](/vanilla/)
     - [Sprinkles](/sprinkles/)
 
-4th Earth RAW is designed for collaborative storytelling, home brewing, and hacking. From the mundane, theatre of the absurd, to the fanciful and super-heroic, whether you're solo-adventuring or in a group, 4th Earth RAW gives you a set of mechanics to keep the mystery and challenge alive.
+4th Earth [.rules as written](RAW) is designed for collaborative storytelling, home brewing, and hacking. From the mundane, theatre of the absurd, to the fanciful and super-heroic, whether you're solo-adventuring or in a group, 4th Earth RAW gives you a set of mechanics to keep the mystery and challenge alive.
 
 Players personify one or more [Characters](#characters) who interact with the [Setting](#setting) and other Characters.
 
-These are the guidelines and guardrails for 4th Earth [.rules as written](RAW) a framework for creating [.table-top role playing games](TTRPGs). The [Vanilla Implementation](/vanilla/) illustrates one method for applying the rules as written to create a TTRPG.
+These are the guidelines and guardrails for 4th Earth RAW a framework for creating [.table-top role playing games](TTRPGs). The [Vanilla Implementation](/vanilla/) illustrates one method for applying the rules as written to create a TTRPG.
 
 4th Earth RAW presumes little previous experience with TTRPGs; defined terms are title-cased and their definitions are available in the glossary for each implementation. It should be presumed if there is not an explicit rule for or against something, Players MAY do whatever they like.
 
@@ -52,7 +52,7 @@ Character Actions consist of the following, minimal, list of activities:
 
 1. Character intent; the Player describes what the Character will attempt to do.
 2. The intent MUST be assigned an Initial Difficulty Rating between 0 and Infinite.
-3. The initial Difficulty Rating MAY be adjusted up or down.
+3. The Initial Difficulty Rating MAY be adjusted up or down.
 4. The Player MAY create a [Dice Pool](#dice-pools) based on the Adjusted Difficulty Rating and rolls to determine success or failure.
 
 Actions are resolved by answering: Was the Action successful? and How were the Setting and other Characters affected by the Action?
@@ -78,7 +78,7 @@ Actions are resolved by answering: Was the Action successful? and How were the S
 |7        |No dice!       |Impossible, if not reduced |1              |
 |Infinite |non-applicable |Impossible                 |0              |
 
-*Note: Multiplying the Difficulty Rating by 2 results in the number sides for the dice in the [Dice Pool](#dice-pools).*
+*Note: Multiplying the Difficulty Rating by 2 results in the number of sides for the dice in the [Dice Pool](#dice-pools).*
 
 ## Dice pools
 
@@ -110,13 +110,13 @@ Proficiency Ranks represent the level of proficiency a [Character](#characters) 
 ## Life Batteries
 
 - Batteries MUST be the same for all [Characters](#characters) in a [Setting](#setting) with the same rules applied (even non-player Characters and enemies).
-	- Batteries MAY be created before play begins, however, we RECOMMEND creating Life Batteries as the story progresses based on Actions of Characters. (Players may decide a stealth Battery is appropriate while playing and add it to all Characters).
+	- Batteries MAY be created before play begins, however, we RECOMMEND creating Life Batteries as the story progresses based on Actions of the Characters. (Players may decide a stealth Battery is appropriate while playing and add it to all Characters).
 - Batteries MUST have multiple ways to recharge.
 	- Some recharging methods SHOULD be player initiated (sleep, for example).
 	- The implementation SHOULD favor a "both ways" approach; if Batteries can recharge multiple ways, they SHOULD be able to drain multiple ways (starvation, for example).
 - Batteries MUST NOT be negative.
 - The number of Batteries SHOULD be kept to a minimum to reduce administrative overhead and maintain tension.
-- Each Battery SHOULD have the same maximum number of Battery Points for each battery.
+- Each Battery SHOULD have the same maximum number of Battery Points for each Battery.
 - Battery Points MAY be used to reduce [Difficulty Ratings](#difficulty-rating); we RECOMMEND reducing Difficulty Rating 1 level for each Battery Point spent.
 
 ## Characters

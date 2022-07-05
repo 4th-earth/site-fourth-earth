@@ -8,11 +8,11 @@
 
 - An active ally MUST be a Character who has the ability to perform Actions during a round and those Actions will be in support of the Protagonist or Antagonist, not both.
 - If the Antagonist has active allies, the Difficulty Rating MUST be increased by 1 for every 2 active allies. (1 active ally MUST NOT result in an increase, 4 active allies SHOULD result in an increase of 2.)
-	- If the Protagonist has active allies, the Difficulty Rating MAY be reduced in the same way as it is increased for the antagonist. (Both have 2 active allies, Difficulty Rating MAY NOT change.)
+	- If the Protagonist has active allies, the Difficulty Rating MAY be reduced in the same way as it is increased for the Antagonist. (Both have 2 active allies, Difficulty Rating MAY NOT change based on allies.)
 
 ## Resistance
 
-Resistance results in a modification to protagonist Potential Energy (PE) when attacked in a way that causes physical damage; draining the health Life Battery.
+Resistance results in a modification to Protagonist Potential Energy (PE) when attacked in a way that causes physical damage; draining the health Life Battery.
 
 Every Character SHOULD have some type of flesh with varying degrees of thickness.
 
@@ -31,7 +31,7 @@ Characters MAY have some type of armor.
 |Medium |2          |minus 2       |
 |Heavy  |3          |minus 3       |
 
-Players MAY apply different modifications for specific areas of the Character.
+Players MAY apply different modifications for specific areas of the Character (being hit where a Character isn't armored, for example).
 
 ## Scale
 
@@ -40,40 +40,41 @@ Scale is a way of measuring the size difference between Characters in a Setting 
 - The smallest Character in a Setting or interaction SHOULD be given a Scale of 1; the Scale of other Characters is relative to 1 in whole number increments.
 	- When characters are interacting, the smallest Character in the interaction SHOULD be given a Scale of 1.
 	- If the interacting Characters are roughly the same size, both SHOULD be Scale 1.
+- Scales MUST be in whole numbers; if a character is not twice or half the size of another, they are all scale 1.
 
 ### Antagonist Difficulty Rating: Scale
 
 Imagine a human trying to hit a fly. The human is hundreds of times larger than the fly. The fly is very difficult to hit without tools and being sneaky.
 
-- If Antagonist is lesser Scale, the Difficulty Rating SHOULD be increased by 1 for each step smaller.
+- If the Antagonist is lesser Scale, the Difficulty Rating SHOULD be increased by 1 for each step smaller.
 
 ### Resistance: Scale
 
 Presumes Resistance Sprinkle or similar implementation.
 
-Imagine a fly hitting a human. The human is hundreds of times larger than the fly. The human most likely will never take damage enough to matter, even if bit.
+Imagine a fly hitting a human. The human is hundreds of times larger than the fly. The human will most likely not take damage enough to matter, even if bitten by the fly.
 
 - We RECOMMEND using in conjunction with the Resistance Sprinkle.
-- Larger Scale Characters SHOULD have a higher Resistance, if applicable. We RECOMMEND increasing Resistance by 1 for each step greater the antagonist is.
+- Larger Scale Characters SHOULD have a higher Resistance, if applicable. We RECOMMEND increasing Resistance by 1 for each step greater the Antagonist is.
 
 ## Stance
 
 Stance affords Characters to be more or less aggressive, at a cost.
 
 - Characters MUST be neutral in stance unless announced otherwise.
-	- Players MAY decide whether the announcement should be with every Character Action, only if the stance changes, or, in some other way.
-- Changing stance is considered a Fast Action.
+	- Players MAY decide whether the announcement should be with every Character Action, only if the Stance changes, or, in some other way.
+- Changing stance MUST be considered a Fast Action.
 
 ### Antagonist Difficulty Rating: Stance
 
-- Difficulty Raring adjustments SHOULD take the stance of the protagonist and antagonist into consideration.
-- If the protagonist and antagonist are in neutral stance, there MUST NOT be an adjustment to the antagonist Difficulty Rating.
-	- If the protagonist is in an offensive stance and the antagonist is in a defensive stance, there MUST NOT be an adjustment.
-	- If the protagonist is in a defensive stance and the antagonist is in an offensive stance, there MUST NOT be an adjustment.
-- If the protagonist and antagonist are both in an offensive stance, the antagonist Difficulty Rating SHOULD be decreased by 2.
-	- If the protagonist and antagonist are both in a defensive stance, the antagonist Difficulty Rating SHOULD be increased by 2.
-- If the protagonist is in an offensive stance and the antagonist is in a neutral position, the antagonist Difficulty Rating SHOULD be decreased by 1.
-	- If the protagonist is in a defensive stance and the antagonist is in a neutral stance, the antagonist Difficulty Raring SHOULD be increased by 1.
+- Difficulty Rating adjustments SHOULD take the Stance of the Protagonist and Antagonist into consideration.
+- If the Protagonist and Antagonist are in neutral Stance, there MUST NOT be an adjustment to the Antagonist Difficulty Rating.
+	- If the Protagonist is in an offensive Stance and the Antagonist is in a defensive Stance, there MUST NOT be an adjustment.
+	- If the Protagonist is in a defensive Stance and the Antagonist is in an offensive Stance, there MUST NOT be an adjustment.
+- If the Protagonist and Antagonist are both in an offensive Stance, the antagonist Difficulty Rating SHOULD be decreased by 2.
+	- If the protagonist and antagonist are both in a defensive Stance, the Antagonist Difficulty Rating SHOULD be increased by 2.
+- If the Protagonist is in an offensive Stance and the Antagonist is in a neutral Stance, the Antagonist Difficulty Rating SHOULD be decreased by 1.
+	- If the Protagonist is in a defensive Stance and the Antagonist is in a neutral Stance, the Antagonist Difficulty Rating SHOULD be increased by 1.
 
 |             |P: Offensive |P: Neutral |P: Defensive |
 |-------------|:------------|:----------|:------------|
@@ -83,23 +84,24 @@ Stance affords Characters to be more or less aggressive, at a cost.
 
 ## Re-roll
 
-- Players MAY spend Proficiency Points and non-health Life Battery points to re-roll an action.
-    - When using non-health Life Battery points, the points SHOULD use the target action battery. (Any inter-battery recharging mechanics SHOULD apply.)
-- Players MAY spend 1 point to re-roll the whole Dice Pool or 2 points to re-roll a single die in the pool.
-- As long as the Character has points remaining, the Player MAY continue spending points to re-roll.
+- Players MAY spend Proficiency Points and non-health Life Battery Points to re-roll an action.
+    - When using non-health Life Battery Points, the Points SHOULD use the Target Action Battery. (Any inter-battery recharging mechanics SHOULD apply.)
+- Players MAY spend 1 Point to re-roll the whole Dice Pool or 2 Points to re-roll a single die in the pool (including modifier dice, such as a Criticality Die).
+- As long as the Character has Points remaining, the Player MAY continue spending Points to re-roll.
 
 ## Advanced Technology and Magic
 
-The following mechanics MAY be applied to both advanced technology tools and magic.
+The following mechanics MAY be applied to both advanced technology Tools and magic.
 
-- The use of advanced technology tools and magic MUST use two rolls and dice pools.
+- The use of advanced technology Tools and magic MUST use two rolls and Dice Pools.
 	- The first Difficulty Rating MUST represent the difficulty of using the advanced technology or casting a spell.
 	- The second Difficulty Rating SHOULD use the Antagonist Difficulty Rating mechanic.
 - If the Difficulty Rating of using the tools or casting the spell exceeds 7, the Difficulty Rating SHOULD be set at 7.
 - Difficulty Rating to use MUST start at 0 and SHOULD be adjusted using the tables below.
 	- Initial Difficulty Rating SHOULD be greater than 0 and MUST NOT be less than 0.
-	- The tables SHOULD be used in whole, however, all tables MAY NOT be used.
+	- We RECOMMEND using all the tables, however, Players MAY pick and choose, or, build their own.
 		- The tables used SHOULD remain consistent for an entire session.
+- Players SHOULD specify whether Items, Tools, and similar are considered advanaced technology and magic.
 
 ### Rarity of Tool or Spell
 
@@ -131,12 +133,19 @@ The following mechanics MAY be applied to both advanced technology tools and mag
 |Distance |Modification |
 |:--------|:-----------:|
 |Touch    |0            |
-|Distance |1            |
-|Ranged   |2            |
+|Distance |Plus 1       |
+|Ranged   |Plus 2       |
 
 ### Internal or External to Target
 
-Some advanced technology or magic MAY move from the Protagonist to the target
+Some advanced technology or magic MAY move from the Protagonist to the target (external) while others may start *within* the target (internal).
+
+- External technology and magic SHOULD be impacted by Resistance, if applicable.
+
+|Attribute |Modification                                             |
+|:---------|:-------------------------------------------------------:|
+|Internal  |0                                                        |
+|External  |Antagonist Difficulty Rating divided by 4; rounded down. |
 
 
 
@@ -158,8 +167,8 @@ Some advanced technology or magic MAY move from the Protagonist to the target
 Criticality represents success *and* failure beyond the intention of the Character for mundane and combat actions.
 
 - Characters MUST have one or more non-health Life Batteries.
-- Players MUST add an extra die to the Dice Pool, which is known as the Criticality Die and SHOULD be distinct from other dice in the pool; we RECOMMEND a 10-sided die, which represents a 10 percent chance of criticality.
-	- The die MAY be changed per session or action.
+- Players MUST add an extra die to the Dice Pool, which is known as the Criticality Die and SHOULD be distinct from other dice in the pool; we RECOMMEND using a die with the same number of sides or greater.
+	- The die MAY be changed per Session or Action.
 - If a 1 is rolled on the Criticality Die, the result is a critical success or failure based on the success or failure of the rest of the Dice Pool, respectively.
 - Players MAY decide to opt-out or -in to using the Criticality Die prior to the creation of the Dice Pool.
 	- Players SHOULD decide whether they will apply the Critically Die prior to becoming aware of the Difficulty Rating assigned to the action.

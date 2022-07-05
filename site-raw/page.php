@@ -59,6 +59,10 @@
                 border: 1px solid black;
             }
 
+            body > ul:first-of-type {
+                margin-bottom: 4rem;
+            }
+
             li, dt {
                 margin: 0.75rem 0;
             }
