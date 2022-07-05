@@ -9,6 +9,7 @@
 - Elsewhere:
 	- [RAW](/)
 	- [Sprinkles](/sprinkles/)
+	- [Character Sheet](/vanilla/character-sheet.pdf)
 
 4th Earth [.rules as written](RAW): Vanilla is designed to provide a minimal setup for Players to create Characters and stories in the spirit of [4th Earth RAW](/).
 
