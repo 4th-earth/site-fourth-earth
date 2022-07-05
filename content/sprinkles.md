@@ -147,40 +147,40 @@ Some advanced technology or magic MAY move from the Protagonist to the target (e
 |Internal  |0                                                        |
 |External  |Antagonist Difficulty Rating divided by 4; rounded down. |
 
+## Opposing Difficulty Rating
 
+This Sprinkle is designed to aid in solo-adventuring (the Player is not rolling *for* another Character), introduce opposing rolls (Players can go "head-to-head" with rolls), or both.
 
-
-
-
-
-
-
-
-
-
-
-
-
+- If using opposing rolls between two Players, two Actions MUST be created; one for the the Protagonist and one for the Antagonist.
+	- The Initial Difficulty Rating SHOULD be for the Protagonist based on their Action against the Antagonist (see Antagonist Difficulty Rating from 4th Earth RAW: Vanilla).
+	- The Difficulty Rating for the Antagonist SHOULD be an opposing Difficulty Rating (see opposing value in the Difficulty Rating Table from 4th Earth RAW).
+	- Both Players MAY reduce their Difficulty Ratings as if their Character was performing the Action.
+		- The Player with the most ones rolled from their pool SHOULD win.
+		- We RECOMMEND ties go to the Protagonist.
+- If using opposing rolls to facilitate solo-adventuring, one Action MUST be created and SHOULD use the Difficulty Rating Table from 4th Earth RAW to determine Difficulty Rating for the Player.
+	- The non-Player Character (when they are the Protagonist) MUST reduce the Antagonist Difficulty Rating to 0, if possible.
+		- If the non-Player Character cannot reduce the Antagonist Difficulty Rating to 0, they MUST reduce it as much as possible.
+- If using Criticality, resolution SHOULD be handled as if the non-Player Character was a Player Character and the Protagonist in the exchange.
 
 ## Criticality
 
-Criticality represents success *and* failure beyond the intention of the Character for mundane and combat actions.
+Criticality represents success *and* failure beyond the intention of the Character for mundane and aggressive actions.
 
 - Characters MUST have one or more non-health Life Batteries.
 - Players MUST add an extra die to the Dice Pool, which is known as the Criticality Die and SHOULD be distinct from other dice in the pool; we RECOMMEND using a die with the same number of sides or greater.
 	- The die MAY be changed per Session or Action.
 - If a 1 is rolled on the Criticality Die, the result is a critical success or failure based on the success or failure of the rest of the Dice Pool, respectively.
 - Players MAY decide to opt-out or -in to using the Criticality Die prior to the creation of the Dice Pool.
-	- Players SHOULD decide whether they will apply the Critically Die prior to becoming aware of the Difficulty Rating assigned to the action.
-	- Players MAY decide to always roll a Criticality Die as a group decision. We RECOMMEND the decision be made prior to the beginning of the session.
+	- Players SHOULD decide whether they will apply the Critically Die prior to becoming aware of the Difficulty Rating assigned to the Action.
+	- Players MAY decide to always roll a Criticality Die as a group decision (part of the Social Contract). We RECOMMEND the decision be made prior to the beginning of the Session.
 
 Beyond the narrative implications and outcomes, Criticality comes with mechanical impacts on the Character.
 
 ### Critical, mundane success
 
-A critical success on a non-combat (mundane) action, results in the following changes to the battery targeted by the action.
+A critical success on a non-combat (mundane) action, results in the following changes to the Target Action Battery.
 
-- MUST NOT be the health battery.
+- MUST NOT be the health Battery.
 
 The Player rolls one, 12-sided die.
 
@@ -191,57 +191,55 @@ The Player rolls one, 12-sided die.
 |3 or 7      |Plus 3                          |
 |11          |Plus 5                          |
 
-If the Action target battery becomes full, the Player MAY distribute the remaining points to other non-health batteries of their choosing.
+If the Target Action Battery becomes full, the Player MAY distribute the remaining points to other non-health Batteries.
 
 ### Critical, mundane failure
 
 Critical, mundane failure is the opposite of a Critical, mundane success.
 
 - MUST subtract the affect in the Critical, mundane success table.
-- If the Action target battery reaches 0, the Player MUST spend the remaining points against other non-health batteries of their choosing.
-	- If using the Overflow recharging modification, Players SHOULD NOT use that mechanic to resolve the reduction of an Action target battery that’s reached 0 due to critical failure.
+- If the Target Action Battery reaches 0, the Player MUST spend the remaining points against other non-health Batteries.
+	- Players SHOULD NOT use other Life Batteries to recharge the Target Action Battery as part of the resolution of Critical, mundane failure.
 
-### Critical, combat success
+### Critical, aggressive action success
 
-This implementation presumes you are using the vanilla implementation of combat described above.
+This implementation presumes 4th Earth RAW: Vanilla. Players MAY replace Potential Energy with the label they use to calculate a draining affect on the health battery (damage).
 
 The Player rolls one, 12-sided die.
 
-|Die value   |Effect                                                                                                          |
-|:-----------|:---------------------------------------------------------------------------------------------------------------|
-|Even number |Plus 1 to attacker Action target battery, or, any other non-health battery if the Action target battery is full |
-|1, 5, or 9  |Multiply base Potential Energy by 1.5                                                                           |
-|3 or 7      |Multiply base Potential Energy by 2                                                                             |
-|11          |Trauma: Roll another 12-sided die and apply result from the Critical, combat success effects extension table    |
+|Die value   |Effect                                                                                                              |
+|:-----------|:-------------------------------------------------------------------------------------------------------------------|
+|Even number |Plus 1 to Protagonist Target Action Battery, or, any other non-health Battery if the Target Action Battery is full. |
+|1, 5, or 9  |Multiply base Potential Energy by 1.5; MUST be rounded up or down.                                                  |
+|3 or 7      |Multiply base Potential Energy by 2.                                                                                |
+|11          |Trauma: Roll another 12-sided die and apply result from the Critical, combat success effects extension table        |
 
 #### Critical, combat success effects extension table
 
 The Player rolls one, 12-sided die.
 
 |Die value  |Effect |
-|:----------|:---------------------------------------------------------------------------------------------------|
-|1          |Defender Difficulty Rating reduced by 2, recurring and compounding                                  |
-|2, 5, or 8 |Multiply base Potential Energy by 2, target defender.                                               |
-|3, 6, or 9 |Multiply base Potential Energy by 2.5, target defender.                                             |
-|4 or 7     |Reduce defender’s spirit battery by 1; use health battery if spirit battery is unavailable or at 0. |
-|10         |Reduce defender’s health battery by 1, recurring and compounding.                                   |
-|11         |Multiply base Potential Energy by 3, target defender.                                               |
-|12         |Defender can’t act for 2 rounds.                                                                    |
+|:----------|:-----------------------------------------------------------------------------------------------------|
+|1          |Antagonist Difficulty Rating reduced by 2, Recurring and Compounding                                  |
+|2, 5, or 8 |Multiply base Potential Energy by 2, target Antagonist.                                               |
+|3, 6, or 9 |Multiply base Potential Energy by 2.5, target Antagonist; MUST be rounded up or down.                 |
+|4 or 7     |Reduce Antagonist's spirit Battery by 1; use health Battery if Spirit battery is unavailable or at 0. |
+|10         |Reduce Antagonist’s health Battery by 1, Recurring and Compounding.                                   |
+|11         |Multiply base Potential Energy by 3, target Antagonist.                                               |
+|12         |Antagonist can’t act for 2 rounds; no longer considered an Active Character.                          |
 
-Recurring means the effect is applied every round. Compounding means the effect can be applied multiple times. This simulates severe injury and allows for severe injury to occur multiple times.
-
-For example, a Character (attacker) is fighting another Character (defender) with a Difficulty Rating of 6. The Player rolls a Critical, combat success that results in the Difficulty Rating being reduced by 2, becoming a Difficulty Rating of 4. Every following round, the defender’s Difficulty rating will be 4 (recurring). If the Player manages to roll the same Critical, combat success a second time, the defender’s Difficulty Rating becomes 2 for each following round (compounding). This could increase to the point where the defender’s Difficulty Rating becomes 0.
+*A note on Recurring and Compounding: A Protagonist is fighting an Antagonist with a Difficulty Rating 6; based on Proficiency Ranks in the Protagonist's Action. The Player rolls a Critical, success resulting in the Difficulty Rating being reduced by 2, becoming a Difficulty Rating 4. Every following round, the Antagonist’s Difficulty Rating will be 4 (Recurring). If the Player manages to roll the same Critical, combat success a second time, the Antagonist’s Difficulty Rating becomes 2 (compounding). This could increase to the point where the Antagonist’s Difficulty Rating becomes 0.*
 
 ### Critical, combat failure
 
 The Player rolls one, 12-sided die.
 
-|Die value   |Effect                                                                                                              |
-|:-----------|:-------------------------------------------------------------------------------------------------------------------|
-|Even number |Minus 1 from attacker Action target battery, or, any other non-health battery, if the Action target battery is at 0 |
-|1, 5, or 9  |Minus 2 from attacker Action target battery, does not impact other Life Batteries, if Action target battery is at 0 |
-|3 or 7      |Attacker damages self at one-to-one Scale, 0 resistance, base Potential Energy divided by 2 (round down); damage cannot be less than 1 |
-|11          |Trauma: Roll another 12-sided die and apply result from the Critical, combat failure effects extension table        |
+|Die value   |Effect                                                                                                                   |
+|:-----------|:------------------------------------------------------------------------------------------------------------------------|
+|Even number |Minus 1 from Protagonist's Target Action Battery, or, any other non-health battery, if the Target Action Battery is at 0 |
+|1, 5, or 9  |Minus 2 from Protagonist's Target Action Battery, does not impact other Life Batteries, if Target Action Battery is at 0 |
+|3 or 7      |Protagonist damages self at one-to-one Scale, 0 resistance, Potential Energy divided by 2 (round down); damage MUST be greater than 0. |
+|11          |Trauma: Roll another 12-sided die and apply result from the Critical, combat failure effects extension table             |
 
 #### Critical, combat failure effects extension table
 
@@ -249,8 +247,21 @@ The Player rolls one, 12-sided die.
 
 |Die value |Effect                                                                                                                            |
 |:---------|:---------------------------------------------------------------------------------------------------------------------------------|
-|11        |Tool used is rendered useless for future rounds. If no tool is used, multiply base Potential Energy by 3 and target the attacker. |
-|Other     |Apply Critical, combat success effects extension table replacing the word “defender” with “attacker.”                             |
+|11        |Tool used is rendered useless for future Rounds. If no Tool is used, multiply Potential Energy by 3, target the Protagonist. |
+|Other     |Apply Critical, combat success effects extension table replacing the word “Antagonist” with “Protagonist.”                             |
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Partials and Complications
 
@@ -287,3 +298,11 @@ When assisting other Characters using this modification, one Character transfers
 	- 1 point being removed from all partially acquired Proficiency Ranks.
 	- The Character loses all physical possessions they had at the time of death.
 	- The Character, if maintained as the actual same Character, will appear in their hometown (place of birth) or place of residence.
+
+## Glossary
+
+Compounding
+:    Compounding means the effect can be applied multiple times.
+
+Recurring
+:    Recurring means the effect is applied every Round.
