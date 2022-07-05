@@ -21,9 +21,13 @@ function pageTitle(): string {
     } elseif ($request === '/sprinkles/') {
         return 'Sprinkles | Rules as Written | 4th Earth';
 
+    } elseif ($request === '/versioning/') {
+        return 'Versioning | Rules as Written | 4th Earth';
+        
     }
     return 'Page not found error';
 }
+
 function fileForRequest(): string|bool {
     $request = $_SERVER['REQUEST_URI'];
     if ($request === '/') {
@@ -35,8 +39,11 @@ function fileForRequest(): string|bool {
     } elseif ($request === '/sprinkles/') {
         return __DIR__ . '/../content/sprinkles.md';
 
+    } elseif ($request === '/versioning/') {
+        return __DIR__ . '/../content/versioning.md';
+        
     }
-    die(var_dump($request));
+
     return false;
 }
 
