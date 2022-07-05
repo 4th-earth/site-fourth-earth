@@ -23,6 +23,9 @@
 	- [Resistance](#resistance-scale)
 - [Stance](#stance)
 	- [Antagonist Difficulty Rating](#antagonist-difficulty-rating-stance)
+- Elsewhere:
+    - [RAW](/)
+    - [Vanilla](/vanilla/)
 
 4th Earth RAW: Sprinkles are individual, official mechanics that MAY be sprinkled on top of 4th Earth RAW: Vanilla or your own 4th Earth RAW variation.
 
