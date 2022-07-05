@@ -115,7 +115,7 @@ A critical success on a non-combat (mundane) action, results in the following ch
 The Player rolls one, 12-sided die.
 
 |Die value   |Affect on Target Action Battery |
-|:-----------|:-------------------------------|
+|:-----------|:------------------------------:|
 |Even number |Plus 1                          |
 |1, 5, or 9  |Plus 2                          |
 |3 or 7      |Plus 3                          |
@@ -195,7 +195,7 @@ The Player rolls one, 12-sided die.
 
 ## Inter-Character battery point transfer
 
-This Sprinkle affords one Character to assist another Character by transferring Life Battery points to the other Character. 
+This Sprinkle affords one Character to assist another Character by transferring Life Battery points to the other Character.
 
 - The Difficulty Rating to perform the transfer MUST apply to the assisting Character.
 - The transfer MUST be from the same Life Battery the point will be transferred to.
@@ -242,19 +242,19 @@ Resistance results in a modification to Protagonist Potential Energy (PE) when a
 Every Character SHOULD have some type of flesh with varying degrees of thickness.
 
 |Thickness |Resistance |PE adjustment |
-|:---------|:---------:|:-------------|
-|Thin      |negative 1 |plus 1        |
+|:---------|:---------:|:------------:|
+|Thin      |Negative 1 |Plus 1        |
 |Average   |0          |0             |
-|Thick     |1          |minus 1       |
+|Thick     |1          |Minus 1       |
 
 Characters MAY have some type of armor.
 
 |Grade  |Resistance |PE adjustment |
-|:------|:---------:|:-------------|
+|:------|:---------:|:------------:|
 |None   |0          |0             |
-|Light  |1          |minus 1       |
-|Medium |2          |minus 2       |
-|Heavy  |3          |minus 3       |
+|Light  |1          |Minus 1       |
+|Medium |2          |Minus 2       |
+|Heavy  |3          |Minus 3       |
 
 Players MAY apply different modifications for specific areas of the Character (being hit where a Character isn't armored, for example).
 
@@ -309,7 +309,7 @@ Stance affords Characters to be more or less aggressive, at a cost.
 	- If the Protagonist is in a defensive Stance and the Antagonist is in a neutral Stance, the Antagonist Difficulty Rating SHOULD be increased by 1.
 
 |             |P: Offensive |P: Neutral |P: Defensive |
-|-------------|:------------|:----------|:------------|
+|-------------|:-----------:|:---------:|:-----------:|
 |A: Offensive |Minus 2      |Minus 1    | 0           |
 |A: Neutral   |Minus 1      | 0         |Plus 1       |
 |A: Defensive |0            |Plus 1     |Plus 2       |
