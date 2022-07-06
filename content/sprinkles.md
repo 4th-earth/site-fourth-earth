@@ -26,19 +26,22 @@
 - Elsewhere:
     - [RAW](/)
     - [Vanilla](/vanilla/)
+    - [Versioning](/versioning/)
 
-4th Earth RAW: Sprinkles are individual, official mechanics that MAY be sprinkled on top of 4th Earth RAW: Vanilla or your own 4th Earth RAW variation.
+4th Earth RAW: Sprinkles are individual, official mechanics that MAY be sprinkled on top of 4th Earth RAW: Vanilla or your own 4th Earth RAW specification.
 
 *Note: Sprinkles add complexity to gameplay.*
 
 ## Advanced Technology and Magic
+
+Version: 0.1.0
 
 The following mechanics MAY be applied to both advanced technology Tools and magic.
 
 - The use of advanced technology Tools and magic MUST use two rolls and Dice Pools.
 	- The first Difficulty Rating MUST represent the difficulty of using the advanced technology or casting a spell.
 	- The second Difficulty Rating SHOULD use the Antagonist Difficulty Rating mechanic.
-- If the Difficulty Rating of using the tools or casting the spell exceeds 7, the Difficulty Rating SHOULD be set at 7.
+- If the Difficulty Rating of using the Tools or casting the spell exceeds 7, the Difficulty Rating SHOULD be set at 7.
 - Difficulty Rating to use MUST start at 0 and SHOULD be adjusted using the tables below.
 	- Initial Difficulty Rating SHOULD be greater than 0 and MUST NOT be less than 0.
 	- We RECOMMEND using all the tables, however, Players MAY pick and choose, or, build their own.
@@ -87,9 +90,11 @@ Some advanced technology or magic MAY move from the Protagonist to the target (e
 |Attribute |Modification                                             |
 |:---------|:-------------------------------------------------------:|
 |Internal  |0                                                        |
-|External  |Antagonist Difficulty Rating divided by 4; rounded down. |
+|External  |Target Difficulty Rating divided by 4; rounded down. |
 
 ## Allies
+
+Version: 0.1.0
 
 - An active ally MUST be a Character who has the ability to perform Actions during a round and those Actions will be in support of the Protagonist or Antagonist, not both.
 - If the Antagonist has active allies, the Difficulty Rating MUST be increased by 1 for every 2 active allies. (1 active ally MUST NOT result in an increase, 4 active allies SHOULD result in an increase of 2.)
@@ -97,23 +102,25 @@ Some advanced technology or magic MAY move from the Protagonist to the target (e
 
 ## Criticality
 
-Criticality represents success *and* failure beyond the intention of the Character for mundane and aggressive actions.
+Version: 0.1.0
 
-- Characters MUST have one or more non-health Life Batteries.
+Criticality represents success *and* failure beyond the intention of the Character for mundane and aggressive Actions.
+
+- Characters SHOULD have one or more non-health Life Batteries, or, some aspects of the RECOMMENDED resolution tables MUST be altered.
 - Players MUST add an extra die to the Dice Pool, which is known as the Criticality Die and SHOULD be distinct from other dice in the pool; we RECOMMEND using a die with the same number of sides or greater.
 	- The die MAY be changed per Session or Action.
 - If a 1 is rolled on the Criticality Die, the result is a critical success or failure based on the success or failure of the rest of the Dice Pool, respectively.
 - Players MAY decide to opt-out or -in to using the Criticality Die prior to the creation of the Dice Pool.
 	- Players SHOULD decide whether they will apply the Critically Die prior to becoming aware of the Difficulty Rating assigned to the Action.
 	- Players MAY decide to always roll a Criticality Die as a group decision (part of the Social Contract). We RECOMMEND the decision be made prior to the beginning of the Session.
-
-Beyond the narrative implications and outcomes, Criticality comes with mechanical impacts on the Character.
+- Beyond the narrative implications and outcomes, Criticality SHOULD come with mechanical impacts on the Character.
 
 ### Mundane Success: Criticality
 
 A critical success on a non-combat (mundane) action, results in the following changes to the Target Action Battery.
 
 - MUST NOT be the health Battery.
+- If the Target Action Battery becomes full, the Player MAY distribute the remaining points to other non-health Batteries.
 
 The Player rolls one, 12-sided die.
 
@@ -124,7 +131,7 @@ The Player rolls one, 12-sided die.
 |3 or 7      |Plus 3                          |
 |11          |Plus 5                          |
 
-If the Target Action Battery becomes full, the Player MAY distribute the remaining points to other non-health Batteries.
+
 
 ### Mundane Failure: Criticality
 
@@ -145,7 +152,7 @@ The Player rolls one, 12-sided die.
 |Even number |Plus 1 to Protagonist Target Action Battery, or, any other non-health Battery if the Target Action Battery is full. |
 |1, 5, or 9  |Multiply base Potential Energy by 1.5; MUST be rounded up or down.                                                  |
 |3 or 7      |Multiply base Potential Energy by 2.                                                                                |
-|11          |Trauma: Roll another 12-sided die and apply result from the Critical, combat success effects extension table        |
+|11          |Trauma: Roll another 12-sided die and apply result from the Critical, Aggressive Success Extension table.           |
 
 #### Aggressive Success Extension Table: Criticality
 
@@ -161,7 +168,7 @@ The Player rolls one, 12-sided die.
 |11         |Multiply base Potential Energy by 3, target Antagonist.                                               |
 |12         |Antagonist can’t act for 2 rounds; no longer considered an Active Character.                          |
 
-*A note on Recurring and Compounding: A Protagonist is fighting an Antagonist with a Difficulty Rating 6; based on Proficiency Ranks in the Protagonist's Action. The Player rolls a Critical, success resulting in the Difficulty Rating being reduced by 2, becoming a Difficulty Rating 4. Every following round, the Antagonist’s Difficulty Rating will be 4 (Recurring). If the Player manages to roll the same Critical, combat success a second time, the Antagonist’s Difficulty Rating becomes 2 (compounding). This could increase to the point where the Antagonist’s Difficulty Rating becomes 0.*
+*A note on Recurring and Compounding: A Protagonist is fighting an Antagonist with a Difficulty Rating 6; based on Proficiency Ranks in the Protagonist's Action. The Player rolls a Critical, success resulting in the Difficulty Rating being reduced by 2, becoming a Difficulty Rating 4. Every following round, the Antagonist’s Difficulty Rating will be 4 (Recurring). If the Player manages to roll the same Critical, aggressive success a second time, the Antagonist’s Difficulty Rating becomes 2 (compounding). This could increase to the point where the Antagonist’s Difficulty Rating becomes 0.*
 
 ### Aggressive Failure: Criticality
 
@@ -169,10 +176,10 @@ The Player rolls one, 12-sided die.
 
 |Die value   |Effect                                                                                                                   |
 |:-----------|:------------------------------------------------------------------------------------------------------------------------|
-|Even number |Minus 1 from Protagonist's Target Action Battery, or, any other non-health battery, if the Target Action Battery is at 0 |
+|Even number |Minus 1 from Protagonist's Target Action Battery, or, any other non-health Battery, if the Target Action Battery is at 0 |
 |1, 5, or 9  |Minus 2 from Protagonist's Target Action Battery, does not impact other Life Batteries, if Target Action Battery is at 0 |
-|3 or 7      |Protagonist damages self at one-to-one Scale, 0 resistance, Potential Energy divided by 2 (round down); damage MUST be greater than 0. |
-|11          |Trauma: Roll another 12-sided die and apply result from the Critical, combat failure effects extension table             |
+|3 or 7      |Protagonist damages self at one-to-one Scale, 0 resistance, Potential Energy divided by 2 (round down); Potential Energy MUST be greater than 0. |
+|11          |Trauma: Roll another 12-sided die and apply result from the Critical, Aggressive Failure Extension table.                |
 
 #### Aggressive Failure Extension Table: Criticality
 
@@ -181,22 +188,28 @@ The Player rolls one, 12-sided die.
 |Die value |Effect                                                                                                                            |
 |:---------|:---------------------------------------------------------------------------------------------------------------------------------|
 |11        |Tool used is rendered useless for future Rounds. If no Tool is used, multiply Potential Energy by 3, target the Protagonist. |
-|Other     |Apply Critical, combat success effects extension table replacing the word “Antagonist” with “Protagonist.”                             |
+|Other     |Apply Critical, Aggressive Success Extension table replacing the word “Antagonist” with “Protagonist.”                             |
 
 ## Death, resurrection, and reincarnation
+
+Version: 0.1.0
 
 - If a Character dies, 1 Proficiency Point SHOULD be removed from all completed Proficiency Ranks; including Tools. This represents relearning or recovering while maintaining memory.
 - If a Character is resurrected, the health battery MUST be set to 1; all other batteries MUST be set to 0.
 	- The Character MUST die and the impact of death applies.
+    - 1 Proficiency Point SHOULD be removed from all Proficiency Ranks; including partials.
 	- The Character is the same character and MAY retain possessions.
 - If a Character is reincarnated:
 	- The Character MUST die and the impact of death applies.
-	- The Character MUST be considered resurrected and the impact of death applies.
-	- 1 Proficiency Point SHOULD be removed from all Proficiency Ranks; including partials.
-	- The Character loses all physical possessions they had at the time of death.
+	- The Character MUST be considered resurrected and the impact of resurrection applies.
+	- The Character loses all physical possessions they had with them at the time of death.
+        - The Character MAY return where they died and MAY recover some or all of their items; consider things like decay, environment, and theft.
 	- The Character, if maintained as the same Character, SHOULD appear in their hometown (place of birth) or place of residence.
+        - If considered a different Character, MUST NOT appear near the Character who died.
 
 ## Inter-Character battery point transfer
+
+Version: 0.1.0
 
 This Sprinkle affords one Character to assist another Character by transferring Life Battery points to the other Character.
 
@@ -212,7 +225,13 @@ This Sprinkle affords one Character to assist another Character by transferring 
 
 ## Opposing Difficulty Rating
 
-This Sprinkle is designed to aid in solo-adventuring (the Player is not rolling *for* another Character), introduce opposing rolls (Players can go "head-to-head" with rolls), or both.
+Version: 0.1.0
+
+This Sprinkle is designed to aid:
+
+1. solo-adventuring (the Player is not rolling *for* another, non-Player Character),
+2. introduce opposing rolls (Players can go "head-to-head" with rolls), or
+3. both.
 
 - If using opposing rolls between two Players, two Actions MUST be created; one for the the Protagonist and one for the Antagonist.
 	- The Initial Difficulty Rating SHOULD be for the Protagonist based on their Action against the Antagonist (see Antagonist Difficulty Rating from 4th Earth RAW: Vanilla).
@@ -223,11 +242,14 @@ This Sprinkle is designed to aid in solo-adventuring (the Player is not rolling 
 - If using opposing rolls to facilitate solo-adventuring, one Action MUST be created and SHOULD use the Difficulty Rating Table from 4th Earth RAW to determine Difficulty Rating for the Player.
 	- The non-Player Character (when they are the Protagonist) MUST reduce the Antagonist Difficulty Rating to 0, if possible.
 		- If the non-Player Character cannot reduce the Antagonist Difficulty Rating to 0, they MUST reduce it as much as possible.
-- If using Criticality, resolution SHOULD be handled as if the non-Player Character was a Player Character and the Protagonist in the exchange.
+    - If the non-Player Character's Adjusted Difficulty Rating is greater than 0, the Player uses the opposing value in the Difficulty Rating Table from 4th Earth RAW.
+- If using a Criticality Die, resolution SHOULD be handled as if the non-Player Character rolled the Criticality Die and the non-Player Character SHOULD received the affects as if they were the Protagonist.
 
 ## Partials and Complications
 
-This Sprinkles presumes the Criticality Sprinkle insofar as the Criticality Die is used. Players MAY choose to use this Sprinkle standalone.
+Version: 0.1.0
+
+This Sprinkle presumes the Criticality Sprinkle insofar as the Criticality Die is used. Players MAY choose to use this Sprinkle standalone.
 
 - Players MUST add an extra die to the Dice Pool, which is known as the Criticality Die and SHOULD be distinct from other dice in the pool; we RECOMMEND using a die with the same number of sides or greater.
 	- The die MAY be changed per Session or Action.
@@ -240,7 +262,9 @@ This Sprinkles presumes the Criticality Sprinkle insofar as the Criticality Die 
 
 ## Resistance
 
-Resistance results in a modification to Protagonist Potential Energy (PE) when attacked in a way that causes physical damage; draining the health Life Battery.
+Version: 0.1.0
+
+Resistance results in a modification to Protagonist Potential Energy (PE) when performing aggressive Actions in a way that causes physical damage; draining the health Life Battery.
 
 Every Character SHOULD have some type of flesh with varying degrees of thickness.
 
@@ -263,12 +287,16 @@ Players MAY apply different modifications for specific areas of the Character (b
 
 ## Re-roll
 
+Version: 0.1.0
+
 - Players MAY spend Proficiency Points and non-health Life Battery Points to re-roll an action.
     - When using non-health Life Battery Points, the Points SHOULD use the Target Action Battery. (Any inter-battery recharging mechanics SHOULD apply.)
 - Players MAY spend 1 Point to re-roll the whole Dice Pool or 2 Points to re-roll a single die in the pool (including modifier dice, such as a Criticality Die).
 - As long as the Character has Points remaining, the Player MAY continue spending Points to re-roll.
 
 ## Scale
+
+Version: 0.1.0
 
 Scale is a way of measuring the size difference between Characters in a Setting or Scene.
 
@@ -294,6 +322,8 @@ Imagine a fly hitting a human. The human is hundreds of times larger than the fl
 
 ## Stance
 
+Version: 0.1.0
+
 Stance affords Characters to be more or less aggressive, at a cost.
 
 - Characters MUST be neutral in stance unless announced otherwise.
@@ -306,8 +336,8 @@ Stance affords Characters to be more or less aggressive, at a cost.
 - If the Protagonist and Antagonist are in neutral Stance, there MUST NOT be an adjustment to the Antagonist Difficulty Rating.
 	- If the Protagonist is in an offensive Stance and the Antagonist is in a defensive Stance, there MUST NOT be an adjustment.
 	- If the Protagonist is in a defensive Stance and the Antagonist is in an offensive Stance, there MUST NOT be an adjustment.
-- If the Protagonist and Antagonist are both in an offensive Stance, the antagonist Difficulty Rating SHOULD be decreased by 2.
-	- If the protagonist and antagonist are both in a defensive Stance, the Antagonist Difficulty Rating SHOULD be increased by 2.
+- If the Protagonist and Antagonist are both in an offensive Stance, the Antagonist Difficulty Rating SHOULD be decreased by 2.
+	- If the Protagonist and Antagonist are both in a defensive Stance, the Antagonist Difficulty Rating SHOULD be increased by 2.
 - If the Protagonist is in an offensive Stance and the Antagonist is in a neutral Stance, the Antagonist Difficulty Rating SHOULD be decreased by 1.
 	- If the Protagonist is in a defensive Stance and the Antagonist is in a neutral Stance, the Antagonist Difficulty Rating SHOULD be increased by 1.
 

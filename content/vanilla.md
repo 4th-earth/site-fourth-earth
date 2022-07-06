@@ -1,5 +1,7 @@
 # 4th Earth RAW: Vanilla
 
+Version: 0.1.0
+
 - [Difficulty Rating](#difficulty-rating)
 	- [Opposing character interactions](#opposing-character-interactions)
 - [Dice Pools](#dice-pools)
@@ -10,6 +12,7 @@
 	- [RAW](/)
 	- [Sprinkles](/sprinkles/)
 	- [Character Sheet](/vanilla/character-sheet.pdf)
+    - [Versioning](/versioning/)
 
 4th Earth [.rules as written](RAW): Vanilla is designed to provide a minimal setup for Players to create Characters and stories in the spirit of [4th Earth RAW](/).
 
@@ -23,10 +26,10 @@ The vanilla implementation is designed to facilitate solo-adventuring. However, 
 - If using non-health Life Batteries:
     - Difficulty MAY be reduced by spending [Life Battery](#life-batteries) points; 1 Difficulty Rating for each Target Action Battery point spent.
     - Difficulty Ratings SHOULD target one non-health battery. For example:
-	    - Injury and healing Actions SHOULD affect the health battery.
-	    - Physical Actions SHOULD predominately affect the physical battery.
-	    - Mentally taxing Actions SHOULD predominately impact the mental battery.
-	    - Magic and similar actions SHOULD predominately impact the spiritual battery.
+	    - Injury and healing Actions SHOULD affect the health Battery.
+	    - Physical Actions SHOULD predominately affect the physical Battery.
+	    - Mentally taxing Actions SHOULD predominately affect the mental Battery.
+	    - Magic and similar actions SHOULD predominately affect the spiritual Battery.
 - Difficulty MAY be increased or decreased by negotiating with the Narrator, if applicable.
 
 ### Opposing Character Interactions
@@ -49,7 +52,7 @@ The following apply to Character Actions where the target of the Action is anoth
 The following describes a method for calculating the Difficulty Rating of an Antagonist.
 
 - Start from the Initial Difficulty Rating defined above.
-- If the Antagonist is aware of the aggressive action, the Difficulty Rating MUST be increased by 1.
+- If the Antagonist views the Protagonist's Action as aggressive and the Antagonist is aware of the aggressive action, the Difficulty Rating MUST be increased by 1.
 
 #### Protagonist Potential Energy
 
@@ -100,7 +103,7 @@ See Sprinkles.
 - Characters SHOULD be considered deceased (or incapacitated) when their health Battery reaches 0.
 	- If using non-health Batteries, Characters SHOULD be considered deceased (or incapacitated) when all Life Batteries are at 0.
 - Characters may recharge their health Battery by using items, resting, or transferring Battery Points as described below.
-	- If using non-health Batteries, any recharging Action SHOULD recharge all Batteries, including health, at least 1 point per unit of Character Time. We RECOMMEND the following recharging Actions and primary Batteries affected per unit of Character Time:
+	- If using non-health Batteries, any Character-initiated recharging Action SHOULD recharge all Batteries, including health, at least 1 point per unit of Character Time. We RECOMMEND the following recharging Actions and primary Batteries affected per unit of Character Time:
 	   - Rest (short): Health Battery, 2 points.
 	   - Nap (medium): Physical Battery, 3 points.
 	   - Sleep (long): Physical Battery, 4 points.
