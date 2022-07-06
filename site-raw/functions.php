@@ -5,6 +5,8 @@ declare(strict_types=1);
 require __DIR__ . '/../vendor/autoload.php';
 // phpcs:enable
 
+use League\CommonMark\Extension\CommonMark\Node\Inline\Image;
+
 use Eightfold\Markdown\Markdown as MarkdownConverter;
 
 function pageTitle(): string
@@ -46,6 +48,12 @@ function fileForRequest(): string|bool
     return false;
 }
 
+/**
+ * @param array<string, mixed> $config
+ * @param array<string, mixed> $defaultAttributes
+ * @param array<string, mixed> $externalLinks
+ * @param array<string, mixed> $peprmaLinks
+ */
 function content(
     array $config = [
         'html_input' => 'allow'
@@ -65,25 +73,23 @@ function content(
         'max_heading_level' => 3,
         'symbol'            => '＃'
     ]
-) {
+): string {
     $filePath = fileForRequest();
 
-    if (! $filePath) {
-        throw new Exception('There is no content for this URI');
+    if (is_string($filePath) and $c = file_get_contents($filePath)) {
+        return MarkdownConverter::create()
+            ->withConfig($config)
+            ->minified()
+            ->smartPunctuation()
+            ->descriptionLists()
+            ->tables()
+            ->attributes() // for class on notices
+            ->defaultAttributes($defaultAttributes)
+            ->abbreviations()
+            ->externalLinks($externalLinks)
+            ->accessibleHeadingPermalinks($peprmaLinks)
+            ->convert($c);
     }
 
-    return MarkdownConverter::create()
-        ->withConfig($config)
-        ->minified()
-        ->smartPunctuation()
-        ->descriptionLists()
-        ->tables()
-        ->attributes() // for class on notices
-        ->defaultAttributes($defaultAttributes)
-        ->abbreviations()
-        ->externalLinks($externalLinks)
-        ->accessibleHeadingPermalinks($peprmaLinks)
-        ->convert(
-            file_get_contents($filePath)
-        );
+    throw new Exception('There is no content for this URI');
 }
