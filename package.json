@@ -1,0 +1,14 @@
+{
+  "name": "site-fourth-earth",
+  "version": "0.1.0",
+  "description": "For compiling Sass and JS for 4th.earth",
+  "scripts": {},
+  "author": "Josh Bruce",
+  "license": "MIT",
+  "dependencies": {
+    "@uswds/uswds": "^3.0.2"
+  },
+  "devDependencies": {
+    "@uswds/compile": "^1.0.0-beta.3"
+  }
+}
