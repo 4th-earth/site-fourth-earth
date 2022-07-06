@@ -1,16 +1,14 @@
 <?php
 declare(strict_types=1);
 
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
-ini_set('realpath_cache_size', '4096');
-ini_set('realpath_cache_ttl', '600');
-
+// phpcs:disable
 require __DIR__ . '/../vendor/autoload.php';
+// phpcs:enable
 
 use Eightfold\Markdown\Markdown as MarkdownConverter;
 
-function pageTitle(): string {
+function pageTitle(): string
+{
     $request = $_SERVER['REQUEST_URI'];
     if ($request === '/') {
         return 'Rules as Written | 4th Earth';
@@ -23,12 +21,13 @@ function pageTitle(): string {
 
     } elseif ($request === '/versioning/') {
         return 'Versioning | Rules as Written | 4th Earth';
-        
+
     }
     return 'Page not found error';
 }
 
-function fileForRequest(): string|bool {
+function fileForRequest(): string|bool
+{
     $request = $_SERVER['REQUEST_URI'];
     if ($request === '/') {
         return __DIR__ . '/../content/raw.md';
@@ -41,7 +40,7 @@ function fileForRequest(): string|bool {
 
     } elseif ($request === '/versioning/') {
         return __DIR__ . '/../content/versioning.md';
-        
+
     }
 
     return false;
