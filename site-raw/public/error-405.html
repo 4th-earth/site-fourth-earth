@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title><?php print pageTitle(); ?></title>
+        <title>Page not found error</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta name="description" content="A tabletop role playing game for the ages.">
@@ -51,7 +51,7 @@
             }
 
             table th {
-                padding: 5px 3px;
+                padding: 5px 0;
             }
 
             table td {
@@ -59,16 +59,8 @@
                 border: 1px solid black;
             }
 
-            body > ul:first-of-type {
-                margin-bottom: 4rem;
-            }
-
-            li, dt {
+            li {
                 margin: 0.75rem 0;
-            }
-
-            dt {
-                margin-bottom: 0;
             }
 
             div[is="heading-wrapper"] {
@@ -103,6 +95,10 @@
         </style>
     </head>
     <body>
-        <?php print(content()); ?>
+        <h1>405 : Unsupported method</h1>
+		<p>Woh!</p>
+		<p>Donʼt know how to handle that type of request, please try something else.</p>
+        <p>If this error persists, please contact <a href="https://github.com/joshbruce" title="Josh Bruce on GitHub">Josh Bruce</a>.
     </body>
 </html>
+

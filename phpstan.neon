@@ -1,4 +1,8 @@
 parameters:
 	level: 9
 	paths:
+		- site-public
 		- site-raw
+		- site-lore
+	ignoreErrors:
+		- '#Call to an undefined static method Eightfold\\HTMLBuilder\\Element::(.*)#'
