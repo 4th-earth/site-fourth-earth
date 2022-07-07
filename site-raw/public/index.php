@@ -128,15 +128,21 @@ if (is_string($contentPath) and $c = file_get_contents($contentPath)) {
 }
 
 $body = Document::create(
-        $pageTitle
-    )->head(
-        Element::meta()->props('charset utf-8'),
-        Element::meta()->props('name viewport', 'content width=device-width,initial-scale=1'),
-        Element::meta()->props('name description', 'content A tabletop role playing game for the ages.'),
-        Element::link()->props('rel stylesheet', 'href /assets/css/main.css'),
-    )->body(
-        $content
-    )->build();
+    $pageTitle
+)->head(
+    Element::meta()->props('charset utf-8'),
+    Element::meta()->props(
+        'name viewport',
+        'content width=device-width,initial-scale=1'
+    ),
+    Element::meta()->props(
+        'name description',
+        'content A tabletop role playing game for the ages.'
+    ),
+    Element::link()->props('rel stylesheet', 'href /assets/css/main.css')
+)->body(
+    $content
+)->build();
 
 $responseBody = $psr17Factory->createStream($body);
 $response = $psr17Factory->createResponse(200)->withBody($responseBody);

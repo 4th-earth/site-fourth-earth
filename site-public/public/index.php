@@ -131,24 +131,30 @@ $rawDomain  = "http://raw.earth.fourth:8889";
 $loreDomain = "http://lore.earth.fourth:8889";
 
 $body = Document::create(
-        $pageTitle
-    )->head(
-        Element::meta()->props('charset utf-8'),
-        Element::meta()->props('name viewport', 'content width=device-width,initial-scale=1'),
-        Element::meta()->props('name description', 'content A tabletop role playing game for the ages.'),
-        Element::link()->props('rel stylesheet', 'href /assets/css/main.css'),
-    )->body(
-        Element::ul(
-            Element::li(
-                Element::a(
-                    Element::abbr('RAW')->props('title Rules as Written')
-                )->props('href ' . $rawDomain)
-            ),
-            Element::li(
-                Element::a('Lore')->props('href ' . $loreDomain)
-            )
+    $pageTitle
+)->head(
+    Element::meta()->props('charset utf-8'),
+    Element::meta()->props(
+        'name viewport',
+        'content width=device-width,initial-scale=1'
+    ),
+    Element::meta()->props(
+        'name description',
+        'content A tabletop role playing game for the ages.'
+    ),
+    Element::link()->props('rel stylesheet', 'href /assets/css/main.css'),
+)->body(
+    Element::ul(
+        Element::li(
+            Element::a(
+                Element::abbr('RAW')->props('title Rules as Written')
+            )->props('href ' . $rawDomain)
+        ),
+        Element::li(
+            Element::a('Lore')->props('href ' . $loreDomain)
         )
-    )->build();
+    )
+)->build();
 
 $responseBody = $psr17Factory->createStream($body);
 $response = $psr17Factory->createResponse(200)->withBody($responseBody);
