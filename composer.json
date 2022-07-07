@@ -30,12 +30,12 @@
   },
   "autoload": {
     "psr-4": {
-      "FE\\SiteDynamic\\": "./site-dynamic-php/src"
+      "FE\\": "./src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "FE\\SiteDynamic\\Tests\\": "./site-dynamic-php/tests"
+      "FE\\Tests\\": "./tests"
     }
   },
   "config": {
