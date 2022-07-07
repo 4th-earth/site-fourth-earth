@@ -88,3 +88,7 @@ div[is="heading-wrapper"] > a > span {
   position: absolute;
   left: -999px;
 }
+
+p:last-of-type {
+  font-size: 0.75rem;
+}
