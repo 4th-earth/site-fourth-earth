@@ -147,22 +147,6 @@ class Page
     private function contentPath(): string
     {
         return $this->rootForContent() . $this->path() . 'content.md';
-        var_dump($this->path());
-        die($this->rootForContent());
-        if ($this->path() === '/') {
-            return __DIR__ . '/../../content-raw/raw.md';
-
-        } elseif ($this->path() === '/vanilla/') {
-            return __DIR__ . '/../../content-raw/vanilla.md';
-
-        } elseif ($this->path() === '/sprinkles/') {
-            return __DIR__ . '/../../content-raw/sprinkles.md';
-
-        } elseif ($this->path() === '/versioning/') {
-            return __DIR__ . '/../../content-raw/versioning.md';
-
-        }
-        return __DIR__ . '/error-404.md';
     }
 
     private function rootForContent(): string
