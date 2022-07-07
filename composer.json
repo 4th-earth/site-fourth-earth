@@ -48,8 +48,7 @@
     "production": [
       "composer dumpautoload -o",
       "@style",
-      "@stan",
-      "@test"
+      "@stan"
     ],
     "deploy": [
       "@production",
