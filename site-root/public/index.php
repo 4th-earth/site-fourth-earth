@@ -13,5 +13,5 @@ ini_set('realpath_cache_size', '4096');
 ini_set('realpath_cache_ttl', '600');
 
 (new SapiEmitter())->emit(
-    Page::init('raw')->response()
+    Page::init('root')->response()
 );
