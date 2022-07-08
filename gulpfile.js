@@ -7,8 +7,8 @@ uswds.settings.version = 3;
  * Set as many as you need
  */
 
-uswds.paths.dist.css = './src/dist/css';
-uswds.paths.dist.sass = './src/sass';
+uswds.paths.dist.css = './src/uswds/css';
+uswds.paths.dist.theme = './src/uswds/sass';
 
 /**
  * Exports

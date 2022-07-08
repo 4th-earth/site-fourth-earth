@@ -104,7 +104,8 @@ class Page
             }
 
         } elseif (str_ends_with($this->path(), '.css')) {
-            $resource = @\fopen($this->rootForSite() . $this->path(), 'r');
+            $resource = @\fopen(__DIR__ . '/assets/css/styles.css', 'r');
+            // $resource = @\fopen($this->rootForSite() . $this->path(), 'r');
             if (is_resource($resource)) {
                 return new Response(
                     status: 200,
