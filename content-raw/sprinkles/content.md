@@ -1,3 +1,5 @@
+<article id="main">
+
 # 4th Earth RAW: Sprinkles
 
 - [Advanced Technology and Magic](#advanced-technology-and-magic)
@@ -23,10 +25,6 @@
 	- [Resistance](#resistance-scale)
 - [Stance](#stance)
 	- [Antagonist Difficulty Rating](#antagonist-difficulty-rating-stance)
-- Elsewhere:
-    - [RAW](/)
-    - [Vanilla](/vanilla/)
-    - [Versioning](/versioning/)
 
 4th Earth RAW: Sprinkles are individual, official mechanics that MAY be sprinkled on top of 4th Earth RAW: Vanilla or your own 4th Earth RAW specification.
 
@@ -50,6 +48,8 @@ The following mechanics MAY be applied to both advanced technology Tools and mag
 
 ### Rarity of Tool or Spell
 
+<div is="table">
+
 |Rarity     |Modification |
 |:----------|:-----------:|
 |Ubiquitous |0            |
@@ -57,7 +57,11 @@ The following mechanics MAY be applied to both advanced technology Tools and mag
 |Uncommon   |Plus 2       |
 |Rare       |Plus 3       |
 
+</div>
+
 ### Target of Tool or Spell
+
+<div is="table">
 
 |Target           |Modification |
 |:----------------|:-----------:|
@@ -65,7 +69,11 @@ The following mechanics MAY be applied to both advanced technology Tools and mag
 |Self             |Plus 2       |
 |Another          |Plus 3       |
 
+</div>
+
 ### Intent of Protagonist
+
+<div is="table">
 
 |Intent   |Modification |
 |:--------|:-----------:|
@@ -73,7 +81,11 @@ The following mechanics MAY be applied to both advanced technology Tools and mag
 |Heal     |Plus 1       |
 |Harm     |Plus 2       |
 
+</div>
+
 ### Distance from Protagonist
+
+<div is="table">
 
 |Distance |Modification |
 |:--------|:-----------:|
@@ -81,16 +93,22 @@ The following mechanics MAY be applied to both advanced technology Tools and mag
 |Distance |Plus 1       |
 |Ranged   |Plus 2       |
 
+</div>
+
 ### Internal or External to Target
 
 Some advanced technology or magic MAY move from the Protagonist to the target (external) while others may start *within* the target (internal).
 
 - External technology and magic SHOULD be impacted by Resistance, if applicable.
 
+<div is="table">
+
 |Attribute |Modification                                             |
 |:---------|:-------------------------------------------------------:|
 |Internal  |0                                                        |
 |External  |Target Difficulty Rating divided by 4; rounded down. |
+
+</div>
 
 ## Allies
 
@@ -124,6 +142,8 @@ A critical success on a non-combat (mundane) action, results in the following ch
 
 The Player rolls one, 12-sided die.
 
+<div is="table">
+
 |Die value   |Affect on Target Action Battery |
 |:-----------|:------------------------------:|
 |Even number |Plus 1                          |
@@ -131,7 +151,7 @@ The Player rolls one, 12-sided die.
 |3 or 7      |Plus 3                          |
 |11          |Plus 5                          |
 
-
+</div>
 
 ### Mundane Failure: Criticality
 
@@ -147,6 +167,8 @@ This implementation presumes 4th Earth RAW: Vanilla. Players MAY replace Potenti
 
 The Player rolls one, 12-sided die.
 
+<div is="table">
+
 |Die value   |Effect                                                                                                              |
 |:-----------|:-------------------------------------------------------------------------------------------------------------------|
 |Even number |Plus 1 to Protagonist Target Action Battery, or, any other non-health Battery if the Target Action Battery is full. |
@@ -154,9 +176,13 @@ The Player rolls one, 12-sided die.
 |3 or 7      |Multiply base Potential Energy by 2.                                                                                |
 |11          |Trauma: Roll another 12-sided die and apply result from the Critical, Aggressive Success Extension table.           |
 
+</div>
+
 #### Aggressive Success Extension Table: Criticality
 
 The Player rolls one, 12-sided die.
+
+<div is="table">
 
 |Die value  |Effect |
 |:----------|:-----------------------------------------------------------------------------------------------------|
@@ -168,11 +194,15 @@ The Player rolls one, 12-sided die.
 |11         |Multiply base Potential Energy by 3, target Antagonist.                                               |
 |12         |Antagonist can’t act for 2 rounds; no longer considered an Active Character.                          |
 
+</div>
+
 *A note on Recurring and Compounding: A Protagonist is fighting an Antagonist with a Difficulty Rating 6; based on Proficiency Ranks in the Protagonist's Action. The Player rolls a Critical, success resulting in the Difficulty Rating being reduced by 2, becoming a Difficulty Rating 4. Every following round, the Antagonist’s Difficulty Rating will be 4 (Recurring). If the Player manages to roll the same Critical, aggressive success a second time, the Antagonist’s Difficulty Rating becomes 2 (compounding). This could increase to the point where the Antagonist’s Difficulty Rating becomes 0.*
 
 ### Aggressive Failure: Criticality
 
 The Player rolls one, 12-sided die.
+
+<div is="table">
 
 |Die value   |Effect                                                                                                                   |
 |:-----------|:------------------------------------------------------------------------------------------------------------------------|
@@ -181,14 +211,20 @@ The Player rolls one, 12-sided die.
 |3 or 7      |Protagonist damages self at one-to-one Scale, 0 resistance, Potential Energy divided by 2 (round down); Potential Energy MUST be greater than 0. |
 |11          |Trauma: Roll another 12-sided die and apply result from the Critical, Aggressive Failure Extension table.                |
 
+</div>
+
 #### Aggressive Failure Extension Table: Criticality
 
 The Player rolls one, 12-sided die.
+
+<div is="table">
 
 |Die value |Effect                                                                                                                            |
 |:---------|:---------------------------------------------------------------------------------------------------------------------------------|
 |11        |Tool used is rendered useless for future Rounds. If no Tool is used, multiply Potential Energy by 3, target the Protagonist. |
 |Other     |Apply Critical, Aggressive Success Extension table replacing the word “Antagonist” with “Protagonist.”                             |
+
+</div>
 
 ## Death, resurrection, and reincarnation
 
@@ -268,13 +304,19 @@ Resistance results in a modification to Protagonist Potential Energy (PE) when p
 
 Every Character SHOULD have some type of flesh with varying degrees of thickness.
 
+<div is="table">
+
 |Thickness |Resistance |PE adjustment |
 |:---------|:---------:|:------------:|
 |Thin      |Negative 1 |Plus 1        |
 |Average   |0          |0             |
 |Thick     |1          |Minus 1       |
 
+</div>
+
 Characters MAY have some type of armor.
+
+<div is="table">
 
 |Grade  |Resistance |PE adjustment |
 |:------|:---------:|:------------:|
@@ -282,6 +324,8 @@ Characters MAY have some type of armor.
 |Light  |1          |Minus 1       |
 |Medium |2          |Minus 2       |
 |Heavy  |3          |Minus 3       |
+
+</div>
 
 Players MAY apply different modifications for specific areas of the Character (being hit where a Character isn't armored, for example).
 
@@ -341,11 +385,15 @@ Stance affords Characters to be more or less aggressive, at a cost.
 - If the Protagonist is in an offensive Stance and the Antagonist is in a neutral Stance, the Antagonist Difficulty Rating SHOULD be decreased by 1.
 	- If the Protagonist is in a defensive Stance and the Antagonist is in a neutral Stance, the Antagonist Difficulty Rating SHOULD be increased by 1.
 
+<div is="table">
+
 |             |P: Offensive |P: Neutral |P: Defensive |
 |-------------|:-----------:|:---------:|:-----------:|
 |A: Offensive |Minus 2      |Minus 1    | 0           |
 |A: Neutral   |Minus 1      | 0         |Plus 1       |
 |A: Defensive |0            |Plus 1     |Plus 2       |
+
+</div>
 
 ## Glossary
 
@@ -354,5 +402,7 @@ Compounding
 
 Recurring
 :    Recurring means the effect is applied every Round.
+
+</article>
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">4th Earth RAW, 4th Earth RAW: Vanilla, and 4th Earth RAW: Sprinkles</span> by <span property="cc:attributionName">Alexander Midknight</span> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">Attribution-ShareAlike 4.0 International.<br><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>

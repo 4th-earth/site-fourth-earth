@@ -1,3 +1,5 @@
+<article id="main">
+
 # 4th Earth RAW: Vanilla
 
 Version: 0.1.0
@@ -8,11 +10,6 @@ Version: 0.1.0
 - [Proficiency Ranks](#proficiency-ranks)
 - [Life Batteries](#life-batteries)
 - [Glossary](#glossary)
-- Elsewhere:
-	- [RAW](/)
-	- [Sprinkles](/sprinkles/)
-	- [Character Sheet](/vanilla/character-sheet.pdf)
-    - [Versioning](/versioning/)
 
 4th Earth [.rules as written](RAW): Vanilla is designed to provide a minimal setup for Players to create Characters and stories in the spirit of [4th Earth RAW](/).
 
@@ -67,6 +64,8 @@ The following table describes a method for calculating the Potential Energy (dam
 		- If using non-health Life Batteries, Players MAY spend non-health Life Battery Points to reduce the Difficulty Ratings individually; as if they were two, separate Actions.
 - Potential Energy MAY be reduced mechanically (see Resistance Sprinkle), or, through negotiation and narrative convenience (incapacitate instead of kill, for example).
 
+<div is="table">
+
 |Action                       |Speed |Potential Energy                                     |
 |:----------------------------|:----:|:----------------------------------------------------|
 |Jab                          |Fast  |1 per Fast Action taken and successful; maximum of 2 |
@@ -74,6 +73,8 @@ The following table describes a method for calculating the Potential Energy (dam
 |Dual (same tool each hand)   |Fast  |2 per Fast Action taken with the tool; maximum of 4  |
 |Two-handed                   |Slow  |3                                                    |
 |Advanced technology or magic |Slow  |5                                                    |
+
+</div>
 
 ## Dice Pools
 
@@ -132,5 +133,7 @@ Target Action Battery
 
 Target Action Battery Point
 :    The Battery Points for a Target Action Battery.
+
+</article>
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">4th Earth RAW, 4th Earth RAW: Vanilla, and 4th Earth RAW: Sprinkles</span> by <span property="cc:attributionName">Alexander Midknight</span> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">Attribution-ShareAlike 4.0 International.<br><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>

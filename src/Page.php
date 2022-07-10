@@ -113,6 +113,26 @@ class Page
                     body: Stream::create($resource)
                 );
             }
+
+        } elseif (str_ends_with($this->path(), '.svg')) {
+            $resource = @\fopen(__DIR__ . $this->path(), 'r');
+            if (is_resource($resource)) {
+                return new Response(
+                    status: 200,
+                    headers: ['content-type' => 'image/svg+xml'],
+                    body: Stream::create($resource)
+                );
+            }
+
+        } elseif (str_ends_with($this->path(), '.js')) {
+            $resource = @\fopen(__DIR__ . $this->path(), 'r');
+            if (is_resource($resource)) {
+                return new Response(
+                    status: 200,
+                    headers: ['content-type' => 'application/javascript'],
+                    body: Stream::create($resource)
+                );
+            }
         }
     }
 
@@ -209,8 +229,46 @@ class Page
                     'content A tabletop role playing game for the ages.'
                 ),
                 Element::link()->props('rel stylesheet', 'href /assets/css/main.css'),
+                Element::script()->props('src /assets/js/interactive.js')
             )->body(
+                $this->navigation(),
                 $content
             )->build();
+    }
+
+    private function navigation(): Element
+    {
+        $links = [
+            '/ Rules as Writen',
+            '/vanilla/ Vanilla',
+            '/sprinkles/ Sprinkles'
+        ];
+
+        $l = [];
+        $requestPath = $this->path();
+        foreach ($links as $link) {
+            list($href, $title) = explode(' ', $link, 2);
+
+            $a = Element::a(
+                Element::span($title)
+            )->props('href ' . $href);
+            if ($requestPath === '/' and $href === $requestPath) {
+                $a = Element::a(
+                    Element::span($title)
+                )->props('href ' . $href, 'class current');
+
+            } elseif (
+                $href !== '/' and
+                str_starts_with($requestPath, $href)
+            ) {
+                $a = Element::a(
+                    Element::span($title)
+                )->props('href ' . $href, 'class current');
+
+            }
+
+            $l[] = Element::li($a);
+        }
+        return Element::nav(Element::ul(...$l))->props('is main-nav');
     }
 }
