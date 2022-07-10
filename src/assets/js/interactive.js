@@ -17,9 +17,11 @@ function toggleTOC() {
   toc.setAttribute('data-open', expanded);
 }
 
-window.addEventListener('scroll', function() {
-  let shouldClose = document.getElementById('toc-toggle').getAttribute('aria-expanded');
-  if (shouldClose === 'true') {
-    toggleTOC();
-  }
+document.addEventListener('DOMContentLoaded', function() {
+  window.addEventListener('scroll', function() {
+    let shouldClose = document.getElementById('toc-toggle').getAttribute('aria-expanded');
+    if (shouldClose === 'true') {
+      toggleTOC();
+    }
+  });
 });

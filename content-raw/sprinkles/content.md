@@ -2,6 +2,9 @@
 
 # 4th Earth RAW: Sprinkles
 
+<nav id="toc" role="region" aria-live="polite" data-open="false">
+<button id="toc-toggle" aria-expanded="false" aria-controls="toc" onclick="toggleTOC()"><span>open</span> <abbr title="table of contents">TOC</abbr></button>
+
 - [Advanced Technology and Magic](#advanced-technology-and-magic)
 	- [Rarity of Tool or Spell](#rarity-of-tool-or-spell)
 	- [Target of Tool or Spell](#target-of-tool-or-spell)
@@ -25,6 +28,8 @@
 	- [Resistance](#resistance-scale)
 - [Stance](#stance)
 	- [Antagonist Difficulty Rating](#antagonist-difficulty-rating-stance)
+
+</nav>
 
 4th Earth RAW: Sprinkles are individual, official mechanics that MAY be sprinkled on top of 4th Earth RAW: Vanilla or your own 4th Earth RAW specification.
 

@@ -1,0 +1,53 @@
+nav[id="toc"] {
+  padding-top: 44pt;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--white);
+  position: absolute;
+  z-index: 1000;
+  transition: top 0.2s ease-in-out,
+    left 0.2s ease-in-out;
+
+  & > button {
+    font-size: 1rem;
+    cursor: pointer;
+    height: 44pt;
+    width: 100%;
+    border: none;
+    background-color: var(--white);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  & ul {
+    list-style: none;
+  }
+
+  & > ul {
+    overflow-y: scroll;
+    height: calc(100vh - 44pt);
+    margin: 0;
+    padding: 0;
+  }
+
+  &[data-open="true"] {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    & button {
+      width: 100%;
+    }
+  }
+
+  &[data-open="false"] {
+    position: fixed;
+    top: calc(100vh - 44pt);
+    left: -50vw;
+
+    & button {
+      width: 50%;
+    }
+  }
+}

@@ -104,7 +104,7 @@ class Page
             }
 
         } elseif (str_ends_with($this->path(), '.css')) {
-            $resource = @\fopen(__DIR__ . '/assets/css/styles.css', 'r');
+            $resource = @\fopen(__DIR__ . $this->path(), 'r');
             // $resource = @\fopen($this->rootForSite() . $this->path(), 'r');
             if (is_resource($resource)) {
                 return new Response(
@@ -228,7 +228,7 @@ class Page
                     'name description',
                     'content A tabletop role playing game for the ages.'
                 ),
-                Element::link()->props('rel stylesheet', 'href /assets/css/main.css'),
+                Element::link()->props('rel stylesheet', 'href /assets/css/styles.min.css'),
                 Element::script()->props('src /assets/js/interactive.js')
             )->body(
                 $this->navigation(),

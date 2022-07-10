@@ -1,19 +1,43 @@
-const uswds = require("@uswds/compile");
+const gulp = require("gulp");
 
-uswds.settings.version = 3;
+const autoprefixer = require("autoprefixer");
+const csso = require("postcss-csso");
+const discardComments = require("postcss-discard-comments");
+const postcss = require("gulp-postcss");
+const rename = require("gulp-rename");
+const sass = require("gulp-dart-scss");
+const sourcemaps = require("gulp-sourcemaps");
+
+gulp.task("default", (done) => {
+  console.log('gulp sass: Compiles the CSS');
+  console.log('gulp javascript: Compiles the JavaScript');
+	done();
+});
 
 /**
- * Path settings
- * Set as many as you need
+ * See the USWDS
  */
+gulp.task("sass", (done) => {
+  const pluginsProcess = [discardComments(), autoprefixer()];
+  const pluginsMinify  = [csso({ forceMediaMerge: false })];
+  const src            = "./src/assets/sass/styles.scss";
+  const dest           = "./src/assets/css";
+  gulp
+    .src(src)
+    .pipe(sourcemaps.init({ largeFile: true }))
+    .pipe(
+      sass({ outputStyle: "expanded" })
+      .on("error", () => { console.log('ERROR: while compiling Sass') }))
+    .pipe(postcss(pluginsProcess))
+    .pipe(gulp.dest(dest))
+    .pipe(postcss(pluginsMinify))
+    .pipe(rename({suffix: ".min"}))
+    // .pipe(sourcemaps.write("."))
+    .pipe(gulp.dest(dest));
+  done();
+});
 
-uswds.paths.dist.css = './src/uswds/css';
-uswds.paths.dist.theme = './src/uswds/sass';
-
-/**
- * Exports
- * Add as many as you need
- */
-
-exports.init = uswds.init;
-exports.compile = uswds.compile;
+gulp.task("watch", () => {
+  gulp.watch("./src/assets/sass/**/*.scss", gulp.series("sass"));
+  return;
+});
