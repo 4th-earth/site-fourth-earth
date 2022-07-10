@@ -232,7 +232,8 @@ class Page
                 Element::script()->props('src /assets/js/interactive.js')
             )->body(
                 $this->navigation(),
-                $content
+                $content,
+                Element::a('to top')->props('id back-to-top', 'href #main')
             )->build();
     }
 

@@ -4,12 +4,17 @@
 
 Version: 0.1.0
 
+<nav id="toc" role="region" aria-live="polite" data-open="false">
+<button id="toc-toggle" aria-expanded="false" aria-controls="toc" onclick="toggleTOC()"><span>open</span> <abbr title="table of contents">TOC</abbr></button>
+
 - [Difficulty Rating](#difficulty-rating)
 	- [Opposing character interactions](#opposing-character-interactions)
 - [Dice Pools](#dice-pools)
 - [Proficiency Ranks](#proficiency-ranks)
 - [Life Batteries](#life-batteries)
 - [Glossary](#glossary)
+
+</nav>
 
 4th Earth [.rules as written](RAW): Vanilla is designed to provide a minimal setup for Players to create Characters and stories in the spirit of [4th Earth RAW](/).
 
