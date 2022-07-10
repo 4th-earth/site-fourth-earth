@@ -4,6 +4,7 @@
   --line-height:1.5rem;
   --m-font:clamp(14pt, 5vw, 18pt);
   --spacer-smallest:0.5rem;
+  --fe-key:#5E9D9D;
   --white:#ffffff;
   --fe-white:#fcfcfd;
   --margin-centered:0 auto;
@@ -32,6 +33,7 @@ nav[is=main-nav] > ul > li{
   padding:0;
 }
 nav[is=main-nav] > ul > li > a{
+  text-decoration:none;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -40,6 +42,7 @@ nav[is=main-nav] > ul > li > a{
   background-position:center center;
   background-size:auto 20pt;
   background-repeat:no-repeat;
+  transition:transform 0.2s ease-in-out;
 }
 nav[is=main-nav] > ul > li > a > span{
   position:absolute;
@@ -53,8 +56,11 @@ nav[is=main-nav] > ul > li > a > span{
     right:0;
   }
 }
+nav[is=main-nav] > ul > li > a:hover:not(.current){
+  transform:scale(1.1, 1.1);
+}
 nav[is=main-nav] > ul > li > a.current{
-  background-color:#000000;
+  background-color:var(--fe-key);
   color:var(--white);
 }
 nav[is=main-nav] > ul > li:first-of-type > a{
@@ -115,6 +121,14 @@ nav[id=toc]{
   z-index:1000;
   transition:top 0.2s ease-in-out, left 0.2s ease-in-out;
 }
+@media screen and (min-width: 800px){
+  nav[id=toc]{
+    padding-top:0;
+    width:auto;
+    height:auto;
+    position:initial;
+  }
+}
 nav[id=toc] > button{
   font-size:1rem;
   cursor:pointer;
@@ -122,9 +136,15 @@ nav[id=toc] > button{
   width:100%;
   border:none;
   background-color:var(--white);
+  color:var(--fe-key);
   position:absolute;
   top:0;
   right:0;
+}
+@media screen and (min-width: 800px){
+  nav[id=toc] > button{
+    display:none;
+  }
 }
 nav[id=toc] ul{
   list-style:none;
@@ -140,6 +160,13 @@ nav[id=toc][data-open=true]{
   top:0;
   left:0;
 }
+@media screen and (min-width: 800px){
+  nav[id=toc][data-open=true]{
+    position:initial;
+    top:auto;
+    left:auto;
+  }
+}
 nav[id=toc][data-open=true] button{
   width:100%;
 }
@@ -147,6 +174,13 @@ nav[id=toc][data-open=false]{
   position:fixed;
   top:calc(100vh - 44pt);
   left:-50vw;
+}
+@media screen and (min-width: 800px){
+  nav[id=toc][data-open=false]{
+    position:initial;
+    top:auto;
+    left:auto;
+  }
 }
 nav[id=toc][data-open=false] button{
   width:50%;
@@ -189,6 +223,11 @@ html{
 
 ul{
   padding-left:2ch;
+}
+
+a{
+  font-weight:bold;
+  color:#5E9D9D;
 }
 
 div[is=table]{

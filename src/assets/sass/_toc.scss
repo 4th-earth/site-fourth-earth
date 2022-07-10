@@ -1,3 +1,5 @@
+@use 'mixins';
+
 nav[id="toc"] {
   padding-top: 44pt;
   width: 100vw;
@@ -8,6 +10,13 @@ nav[id="toc"] {
   transition: top 0.2s ease-in-out,
     left 0.2s ease-in-out;
 
+  @include mixins.at-media {
+    padding-top: 0;
+    width: auto;
+    height: auto;
+    position: initial;
+  }
+
   & > button {
     font-size: 1rem;
     cursor: pointer;
@@ -15,9 +24,14 @@ nav[id="toc"] {
     width: 100%;
     border: none;
     background-color: var(--white);
+    color: var(--fe-key);
     position: absolute;
     top: 0;
     right: 0;
+
+    @include mixins.at-media {
+      display: none;
+    }
   }
 
   & ul {
@@ -36,6 +50,12 @@ nav[id="toc"] {
     top: 0;
     left: 0;
 
+    @include mixins.at-media {
+      position: initial;
+      top: auto;
+      left: auto;
+    }
+
     & button {
       width: 100%;
     }
@@ -45,6 +65,12 @@ nav[id="toc"] {
     position: fixed;
     top: calc(100vh - 44pt);
     left: -50vw;
+
+    @include mixins.at-media {
+      position: initial;
+      top: auto;
+      left: auto;
+    }
 
     & button {
       width: 50%;
