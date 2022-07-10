@@ -1,0 +1,11 @@
+a#back-to-top {
+  display: flex;
+  height: 44pt;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  position: fixed;
+  top: calc(100vh - 44pt);
+  left: 49.5vw;
+}

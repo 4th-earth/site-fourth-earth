@@ -102,38 +102,34 @@ class Page
                     body: Stream::create($resource)
                 );
             }
+        }
 
-        } elseif (str_ends_with($this->path(), '.css')) {
-            $resource = @\fopen(__DIR__ . $this->path(), 'r');
-            // $resource = @\fopen($this->rootForSite() . $this->path(), 'r');
-            if (is_resource($resource)) {
-                return new Response(
-                    status: 200,
-                    headers: ['content-type' => 'text/css'],
-                    body: Stream::create($resource)
-                );
-            }
+        $resource = @\fopen(__DIR__ . $this->path(), 'r');
+        $contentType = 'text/plain';
+        if (str_ends_with($this->path(), '.css')) {
+            $contentType = 'text/css';
 
         } elseif (str_ends_with($this->path(), '.svg')) {
-            $resource = @\fopen(__DIR__ . $this->path(), 'r');
-            if (is_resource($resource)) {
-                return new Response(
-                    status: 200,
-                    headers: ['content-type' => 'image/svg+xml'],
-                    body: Stream::create($resource)
-                );
-            }
+            $contentType = 'image/svg+xml';
 
         } elseif (str_ends_with($this->path(), '.js')) {
-            $resource = @\fopen(__DIR__ . $this->path(), 'r');
-            if (is_resource($resource)) {
-                return new Response(
-                    status: 200,
-                    headers: ['content-type' => 'application/javascript'],
-                    body: Stream::create($resource)
-                );
-            }
+            $contentType = 'application/javascript';
+
         }
+
+        if (is_resource($resource)) {
+            return new Response(
+                status: 200,
+                headers: ['content-type' => $contentType],
+                body: Stream::create($resource)
+            );
+        }
+
+        return new Response(
+            status: 404,
+            headers: ['content-type' => $contentType],
+            body: 'Content not found.'
+        );
     }
 
     private function pageTitle(): string
@@ -231,9 +227,14 @@ class Page
                 Element::link()->props('rel stylesheet', 'href /assets/css/styles.min.css'),
                 Element::script()->props('src /assets/js/interactive.js')
             )->body(
+                Element::a('Skip to main content')->props('href #main', 'id skip-nav'),
                 $this->navigation(),
-                $content,
-                Element::a('to top')->props('id back-to-top', 'href #main')
+                Element::article(
+                    Element::section(
+                        $content
+                    )
+                )->props('id main', 'role main'),
+                Element::a('to top')->props('id back-to-top', 'href #skip-nav')
             )->build();
     }
 

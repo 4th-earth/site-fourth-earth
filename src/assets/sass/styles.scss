@@ -1,9 +1,18 @@
+@use 'mixins';
 @use 'variables';
-@use 'toc';
 
+@forward 'main-nav';
+@forward 'toc';
+@forward 'back-to-top';
 
+@forward 'article';
 
+// @use 'toc';
 
+html,
+body {
+  @include mixins.reset-margin-padding;
+}
 
 html {
   scroll-behavior: var(--smooth);
@@ -12,104 +21,14 @@ html {
   background-color: var(--fe-white);
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
-article {
-  padding-bottom: 60pt;
-  max-width: var(--text-width);
-  /* margin: var(--margin-centered);
-  padding: var(--spacer-smallest); */
-  line-height: var(--line-height);
-}
-
 ul {
   padding-left: 2ch;
 }
 
-nav[is="main-nav"] {
-  background-color: var(--white);
-}
 
-nav[is="main-nav"] > ul {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  list-style: none;
-}
-
-nav[is="main-nav"] > ul > li {
-  margin: 0;
-  padding: 0;
-}
-
-nav[is="main-nav"] > ul > li > a {
-  display: block;
-  height: 100%;
-  min-height: 44pt;
-}
-
-nav[is="main-nav"] > ul > li > a.current {
-  background-color: #000000;
-}
-
-nav[is="main-nav"] > ul > li > a > span {
-  position: absolute;
-  left: -999em;
-  right: auto;
-}
-
-nav[is="main-nav"] > ul > li:first-of-type > a {
-  background-image: url('/assets/icons/home.svg');
-  background-position: center center;
-  background-size: auto 20pt;
-  background-repeat: no-repeat;
-}
-
-nav[is="main-nav"] > ul > li:nth-of-type(2) > a {
-  background-image: url('/assets/icons/vanilla.svg');
-  background-position: center center;
-  background-size: auto 20pt;
-  background-repeat: no-repeat;
-}
-
-nav[is="main-nav"] > ul > li:nth-of-type(3) > a {
-  background-image: url('/assets/icons/sprinkles.svg');
-  background-position: center center;
-  background-size: auto 20pt;
-  background-repeat: no-repeat;
-}
-
-nav[is="main-nav"] > ul > li:first-of-type > a.current {
-  background-image: url('/assets/icons/home-white.svg');
-}
-
-nav[is="main-nav"] > ul > li:nth-of-type(2) > a.current {
-  background-image: url('/assets/icons/vanilla-white.svg');
-}
-
-nav[is="main-nav"] > ul > li:nth-of-type(3) > a.current {
-  background-image: url('/assets/icons/sprinkles-white.svg');
-}
 
 div[is="table"] {
   overflow-x: scroll;
-}
-
-a#back-to-top {
-  display: flex;
-  height: 44pt;
-  width: 50vw;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--white);
-  position: fixed;
-  top: calc(100vh - 44pt);
-  left: 49.5vw;
-  /* z-index: 50; */
 }
 
 /* div[is="toc-toggle"] {

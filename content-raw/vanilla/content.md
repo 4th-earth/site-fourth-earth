@@ -1,5 +1,3 @@
-<article id="main">
-
 # 4th Earth RAW: Vanilla
 
 Version: 0.1.0
@@ -138,7 +136,5 @@ Target Action Battery
 
 Target Action Battery Point
 :    The Battery Points for a Target Action Battery.
-
-</article>
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">4th Earth RAW, 4th Earth RAW: Vanilla, and 4th Earth RAW: Sprinkles</span> by <span property="cc:attributionName">Alexander Midknight</span> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">Attribution-ShareAlike 4.0 International.<br><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
