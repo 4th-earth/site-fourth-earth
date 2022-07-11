@@ -155,6 +155,11 @@ nav[id=toc] > ul{
   margin:0;
   padding:0;
 }
+@media screen and (min-width: 800px){
+  nav[id=toc] > ul{
+    height:auto;
+  }
+}
 nav[id=toc][data-open=true]{
   position:fixed;
   top:0;
@@ -228,6 +233,9 @@ ul{
 a{
   font-weight:bold;
   color:#5E9D9D;
+}
+a:hover{
+  text-decoration:none;
 }
 
 div[is=table]{

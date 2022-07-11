@@ -7,8 +7,6 @@
 
 @forward 'article';
 
-// @use 'toc';
-
 html,
 body {
   @include mixins.reset-margin-padding;
@@ -28,6 +26,10 @@ ul {
 a {
   font-weight: bold;
   color: #5E9D9D;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 

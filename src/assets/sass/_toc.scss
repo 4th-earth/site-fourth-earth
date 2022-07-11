@@ -43,6 +43,10 @@ nav[id="toc"] {
     height: calc(100vh - 44pt);
     margin: 0;
     padding: 0;
+
+    @include mixins.at-media {
+      height: auto;
+    }
   }
 
   &[data-open="true"] {
