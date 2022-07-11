@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;1,300;1,500&display=swap");
 :root{
-  --font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  --font-family:Raleway, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   --text-width:70ch;
   --line-height:1.5rem;
   --m-font:clamp(14pt, 5vw, 18pt);
@@ -201,6 +202,13 @@ a#back-to-top{
   position:fixed;
   top:calc(100vh - 44pt);
   left:49.5vw;
+  text-decoration:none;
+}
+@media screen and (min-width: 800px){
+  a#back-to-top{
+    width:100vw;
+    left:0;
+  }
 }
 
 article{
@@ -240,28 +248,4 @@ a:hover{
 
 div[is=table]{
   overflow-x:scroll;
-}
-.root > h1{
-  position:absolute;
-  left:-999em;
-  right:auto;
-}
-
-.root a{
-  display:block;
-  margin:1rem;
-  padding:1rem 1rem;
-  text-align:center;
-}
-
-.root a:hover{
-  border-radius:5px;
-  background:#ebebeb;
-  box-shadow:13px 13px 26px #cfcfcf, -13px -13px 26px #ffffff;
-}
-
-.root ul{
-  margin:0;
-  padding:0;
-  list-style:none;
 }

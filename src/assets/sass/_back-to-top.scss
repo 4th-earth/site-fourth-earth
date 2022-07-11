@@ -1,3 +1,5 @@
+@use 'mixins';
+
 a#back-to-top {
   display: flex;
   height: 44pt;
@@ -8,4 +10,10 @@ a#back-to-top {
   position: fixed;
   top: calc(100vh - 44pt);
   left: 49.5vw;
+  text-decoration: none;
+
+  @include mixins.at-media {
+    width: 100vw;
+    left: 0;
+  }
 }

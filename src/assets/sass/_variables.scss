@@ -1,5 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;1,300;1,500&display=swap');
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(http://fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4saVQUwaEQbjB_mQ.woff) format('woff');
+  unicode-range: U+1F00-1FFF;
+}
+
 :root {
-  --font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  --font-header: GG Deco, Raleway, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  --font-family: Raleway, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   --text-width: 70ch;
   --line-height: 1.5rem;
 
