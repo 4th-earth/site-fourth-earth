@@ -32,6 +32,8 @@ nav[is="main-nav"] {
         background-size: auto 20pt;
         background-repeat: no-repeat;
         transition: transform 0.2s ease-in-out;
+        font-family: var(--font-header);
+        font-size: var(--l-font);
 
         & > span {
           @include mixins.sr-only;

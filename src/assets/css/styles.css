@@ -1,9 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;1,300;1,500&display=swap");
+@font-face{
+  font-family:"Deco";
+  font-style:normal;
+  font-weight:300;
+  font-stretch:100%;
+  src:url("/assets/fonts/deco.ttf") format("truetype");
+}
 :root{
+  --font-header:"Deco", sans-serif;
   --font-family:Raleway, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   --text-width:70ch;
   --line-height:1.5rem;
   --m-font:clamp(14pt, 5vw, 18pt);
+  --l-font:30pt;
   --spacer-smallest:0.5rem;
   --fe-key:#5E9D9D;
   --white:#ffffff;
@@ -44,6 +53,8 @@ nav[is=main-nav] > ul > li > a{
   background-size:auto 20pt;
   background-repeat:no-repeat;
   transition:transform 0.2s ease-in-out;
+  font-family:var(--font-header);
+  font-size:var(--l-font);
 }
 nav[is=main-nav] > ul > li > a > span{
   position:absolute;

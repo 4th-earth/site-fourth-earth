@@ -115,6 +115,9 @@ class Page
         } elseif (str_ends_with($this->path(), '.js')) {
             $contentType = 'application/javascript';
 
+        } elseif (str_ends_with($this->path(), '.ttf')) {
+            $contentType = 'font/ttf';
+
         }
 
         if (is_resource($resource)) {
