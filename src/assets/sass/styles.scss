@@ -1,11 +1,15 @@
 @use 'mixins';
 @use 'variables';
 
+@forward 'typography';
+@forward 'lists';
+
 @forward 'main-nav';
 @forward 'toc';
 @forward 'back-to-top';
 
 @forward 'article';
+@forward 'footer';
 
 html,
 body {
@@ -38,24 +42,6 @@ div[is="table"] {
 }
 
 /*
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  text-align: center;
-}
-
-h3 {
-  font-style: italic;
-}
-
 details:hover {
   cursor: pointer;
 }
@@ -77,14 +63,6 @@ table td {
 
 body > ul:first-of-type {
   margin-bottom: 4rem;
-}
-
-li, dt {
-  margin: 0.75rem 0;
-}
-
-dt {
-  margin-bottom: 0;
 }
 
 div[is="heading-wrapper"] {

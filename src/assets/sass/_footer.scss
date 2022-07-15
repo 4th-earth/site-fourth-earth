@@ -1,0 +1,11 @@
+footer {
+  padding-top: 40pt;
+  padding-bottom: 60pt;
+  text-align: center;
+  font-size: 0.7rem;
+  line-height: 1.5rem;
+
+  & > p {
+      margin: 0;
+  }
+}
