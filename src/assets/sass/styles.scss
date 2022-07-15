@@ -1,0 +1,100 @@
+@use 'mixins';
+@use 'variables';
+
+@forward 'typography';
+@forward 'lists';
+
+@forward 'main-nav';
+@forward 'toc';
+@forward 'back-to-top';
+
+@forward 'article';
+@forward 'footer';
+
+html,
+body {
+  @include mixins.reset-margin-padding;
+}
+
+html {
+  scroll-behavior: var(--smooth);
+  font-family: var(--font-family);
+  font-size: var(--m-font);
+  background-color: var(--fe-white);
+}
+
+ul {
+  padding-left: 2ch;
+}
+
+a {
+  font-weight: bold;
+  color: #5E9D9D;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+div[is="table"] {
+  overflow-x: scroll;
+}
+
+/*
+details:hover {
+  cursor: pointer;
+}
+
+table {
+  margin: 2rem auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th {
+  padding: 5px 3px;
+}
+
+table td {
+  padding: 7px 5px;
+  border: 1px solid black;
+}
+
+body > ul:first-of-type {
+  margin-bottom: 4rem;
+}
+
+div[is="heading-wrapper"] {
+  display: grid;
+  grid-auto-columns: 44pt auto;
+  column-gap: 2ch;
+  grid-template-areas:
+      'link text';
+  margin-top: 3rem;
+}
+
+div[is="heading-wrapper"] > h2,
+div[is="heading-wrapper"] > h3,
+div[is="heading-wrapper"] > h4,
+div[is="heading-wrapper"] > h5,
+div[is="heading-wrapper"] > h6 {
+  grid-area: text;
+}
+
+div[is="heading-wrapper"] > a {
+  grid-area: link;
+  display: inline-block;
+  width: 44pt;
+  height: 44pt;
+  background: red;
+}
+
+div[is="heading-wrapper"] > a > span {
+  position: absolute;
+  left: -999px;
+}
+
+p:last-of-type {
+  font-size: 0.75rem;
+} */

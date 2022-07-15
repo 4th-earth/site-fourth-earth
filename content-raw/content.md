@@ -2,6 +2,9 @@
 
 Version: 0.1.0
 
+<nav id="toc" role="region" aria-live="polite" data-open="false">
+<button id="toc-toggle" aria-expanded="false" aria-controls="toc" onclick="toggleTOC()"><span>open</span> <abbr title="table of contents">TOC</abbr></button>
+
 - [Difficulty rating](#difficulty-rating)
 	- [Difficulty rating table](#difficulty-rating-table)
 - [Dice pools](#dice-pools)
@@ -12,10 +15,8 @@ Version: 0.1.0
 - [Time and space](#time-and-space)
 - [Social contract](#social-contract)
 - [Glossary](#glossary)
-- Elsewhere
-    - [Vanilla](/vanilla/)
-    - [Sprinkles](/sprinkles/)
-    - [Versioning](/versioning/)
+
+</nav>
 
 4th Earth [.rules as written](RAW) is designed for collaborative storytelling, home brewing, and hacking. From the mundane, theatre of the absurd, to the fanciful and super-heroic, whether you're solo-adventuring or in a group, 4th Earth RAW gives you a set of mechanics to keep the mystery and challenge alive.
 
@@ -69,6 +70,8 @@ Actions are resolved by answering: Was the Action successful? and How were the S
 
 ### Difficulty Rating Table
 
+<div is="table">
+
 |Level    |Sides          |Human-friendly             |Opposing value |
 |:-------:|:-------------:|:--------------------------|:-------------:|
 |0        |0              |Done!                      |Infinite       |
@@ -80,6 +83,8 @@ Actions are resolved by answering: Was the Action successful? and How were the S
 |6        |12             |Inconceivable              |2              |
 |7        |No dice!       |Impossible, if not reduced |1              |
 |Infinite |non-applicable |Impossible                 |0              |
+
+</div>
 
 *Note: Multiplying the Difficulty Rating by 2 results in the number of sides for the dice in the [Dice Pool](#dice-pools).*
 
@@ -261,5 +266,3 @@ Tool
 
 Turn
 :    Ends after all Fast and Slow Actions have been performed by a Character.
-
-<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">4th Earth RAW, 4th Earth RAW: Vanilla, and 4th Earth RAW: Sprinkles</span> by <span property="cc:attributionName">Alexander Midknight</span> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">Attribution-ShareAlike 4.0 International.<br><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>

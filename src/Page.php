@@ -102,17 +102,37 @@ class Page
                     body: Stream::create($resource)
                 );
             }
-
-        } elseif (str_ends_with($this->path(), '.css')) {
-            $resource = @\fopen($this->rootForSite() . $this->path(), 'r');
-            if (is_resource($resource)) {
-                return new Response(
-                    status: 200,
-                    headers: ['content-type' => 'text/css'],
-                    body: Stream::create($resource)
-                );
-            }
         }
+
+        $resource = @\fopen(__DIR__ . $this->path(), 'r');
+        $contentType = 'text/plain';
+        if (str_ends_with($this->path(), '.css')) {
+            $contentType = 'text/css';
+
+        } elseif (str_ends_with($this->path(), '.svg')) {
+            $contentType = 'image/svg+xml';
+
+        } elseif (str_ends_with($this->path(), '.js')) {
+            $contentType = 'application/javascript';
+
+        } elseif (str_ends_with($this->path(), '.ttf')) {
+            $contentType = 'font/ttf';
+
+        }
+
+        if (is_resource($resource)) {
+            return new Response(
+                status: 200,
+                headers: ['content-type' => $contentType],
+                body: Stream::create($resource)
+            );
+        }
+
+        return new Response(
+            status: 404,
+            headers: ['content-type' => $contentType],
+            body: 'Content not found.'
+        );
     }
 
     private function pageTitle(): string
@@ -207,9 +227,118 @@ class Page
                     'name description',
                     'content A tabletop role playing game for the ages.'
                 ),
-                Element::link()->props('rel stylesheet', 'href /assets/css/main.css'),
+                Element::link()->omitEndTag()->props(
+                    'type image/x-icon',
+                    'rel icon',
+                    'href /assets/icons/favicon.ico'
+                ),
+                Element::link()->omitEndTag()->props(
+                    'sizes 180x180',
+                    'rel apple-touch-icon',
+                    'href /assets/icons/apple-touch-icon.png'
+                ),
+                Element::link()->omitEndTag()->props(
+                    'sizes 32x32',
+                    'rel image/png',
+                    'href /assets/icons/favicon-32x32.png'
+                ),
+                Element::link()->omitEndTag()->props(
+                    'sizes 16x16',
+                    'rel image/png',
+                    'href /assets/icons/favicon-16x16.png'
+                ),
+                Element::link()->props('rel stylesheet', 'href /assets/css/styles.min.css'),
+                Element::script()->props('src /assets/js/interactive.js')
             )->body(
-                $content
+                Element::a('Skip to main content')->props('href #main', 'id skip-nav'),
+                $this->navigation(),
+                Element::article(
+                    Element::section(
+                        $content
+                    )
+                )->props('id main', 'role main'),
+                Element::footer(
+                    Element::img()->props(
+                        'src /assets/icons/fourth-earth-mark.svg',
+                        'alt Fourth Earth logo, with a 4 and E overlapping and the 4 has a curved hypotenuse',
+                        'width 100px',
+                        'height auto'
+                    ),
+                    Element::p(
+                        Element::span(
+                            '4th Earth RAW, 4th Earth RAW: Vanilla, and 4th Earth RAW: Sprinkles'
+                        )->props('property dct:title'),
+                        Element::br()->omitEndTag(),
+                        ' by ',
+                        Element::span(
+                            'Alexander Midknight'
+                        )->props('property cc:attributionName'),
+                        ' is ',
+                        Element::br()->omitEndTag(),
+                        ' licensed under ',
+                        Element::a(
+                            'Attribution-ShareAlike 4.0 International'
+                        )->props(
+                            'href http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1',
+                            'target _blank',
+                            'rel license noopener noreferrer'
+                        ),
+                        '.',
+                        Element::br()->omitEndTag(),
+                        Element::img()->props(
+                            'style height:22px!important;margin-left:3px;vertical-align:text-bottom;',
+                            'src https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1'
+                        ),
+                        Element::img()->props(
+                            'style height:22px!important;margin-left:3px;vertical-align:text-bottom;',
+                            'src https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1'
+                        ),
+                        Element::img()->props(
+                            'style height:22px!important;margin-left:3px;vertical-align:text-bottom;',
+                            'src https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1'
+                        )
+                    )->props(
+                       'xmlns:cc http://creativecommons.org/ns#',
+                       'xmlns:dct http://purl.org/dc/terms/'
+                    )
+                ),
+                Element::a('to top')->props('id back-to-top', 'href #skip-nav')
             )->build();
+    }
+
+    private function navigation(): Element
+    {
+        $links = [
+            '/ Rules as Writen',
+            '/vanilla/ Vanilla',
+            '/sprinkles/ Sprinkles'
+        ];
+
+        $l = [];
+        $requestPath = $this->path();
+        foreach ($links as $link) {
+            list($href, $title) = explode(' ', $link, 2);
+
+            $a = Element::a(
+                Element::span($title)
+            )->props('href ' . $href);
+            if ($requestPath === '/' and $href === $requestPath) {
+                $a = Element::a(
+                    Element::span($title)
+                )->props('href ' . $href, 'class current');
+
+            } elseif (
+                $href !== '/' and
+                str_starts_with($requestPath, $href)
+            ) {
+                $a = Element::a(
+                    Element::span($title)
+                )->props('href ' . $href, 'class current');
+
+            }
+
+            $l[] = Element::li($a);
+        }
+        return Element::nav(Element::ul(...$l))->props('is main-nav');
     }
 }

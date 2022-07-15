@@ -1,0 +1,9 @@
+article {
+  margin: var(--margin-centered);
+  max-width: 1100px;
+  line-height: var(--line-height);
+
+  & > section {
+    max-width: var(--text-width);
+  }
+}

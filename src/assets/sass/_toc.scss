@@ -1,0 +1,87 @@
+@use 'mixins';
+
+nav[id="toc"] {
+  padding-top: 44pt;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--white);
+  position: absolute;
+  z-index: 1000;
+  transition: top 0.2s ease-in-out,
+    left 0.2s ease-in-out;
+
+  @include mixins.at-media {
+    padding-top: 0;
+    width: auto;
+    height: auto;
+    position: initial;
+  }
+
+  & > button {
+    font-size: 1rem;
+    cursor: pointer;
+    height: 44pt;
+    width: 100%;
+    border: none;
+    background-color: var(--white);
+    color: var(--fe-key);
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @include mixins.at-media {
+      display: none;
+    }
+  }
+
+  & ul {
+    list-style: none;
+  }
+
+  & li {
+    margin: 0;
+  }
+
+  & > ul {
+    overflow-y: scroll;
+    height: calc(100vh - 44pt);
+    margin: 0;
+    padding: 0;
+
+    @include mixins.at-media {
+      height: auto;
+    }
+  }
+
+  &[data-open="true"] {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    @include mixins.at-media {
+      position: initial;
+      top: auto;
+      left: auto;
+    }
+
+    & button {
+      width: 100%;
+    }
+  }
+
+  &[data-open="false"] {
+    position: fixed;
+    top: calc(100vh - 44pt);
+    left: -50vw;
+
+    @include mixins.at-media {
+      position: initial;
+      top: auto;
+      left: auto;
+    }
+
+    & button {
+      width: 50%;
+    }
+  }
+}
