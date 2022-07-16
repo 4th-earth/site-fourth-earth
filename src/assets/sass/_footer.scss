@@ -5,6 +5,27 @@ footer {
   font-size: 0.7rem;
   line-height: 1.5rem;
 
+  & > ul {
+    display: block;
+    margin: 0 auto;
+    list-style: none;
+
+    & > li {
+      display: inline-block;
+      & > a {
+        margin-right: 1rem;
+
+        &:last-of-type {
+          margin-left: 1rem;
+        }
+      }
+
+      &:first-of-type:after {
+        content: '|';
+      }
+    }
+  }
+
   & > p {
       margin: 0;
   }

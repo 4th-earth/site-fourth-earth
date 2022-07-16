@@ -16,4 +16,23 @@ a#back-to-top {
     width: 100vw;
     left: 0;
   }
+
+  & > span {
+    display: block;
+    max-width: var(--max-width);
+
+    &:before {
+      display: var(--inline-block);
+      content: var(--icon-increase);
+      position: var(--relative);
+      right: var(--xs-spacer);
+    }
+
+    &:after {
+      display: var(--inline-block);
+      content: var(--icon-increase);
+      position: var(--relative);
+      left: var(--xs-spacer);
+    }
+  }
 }
