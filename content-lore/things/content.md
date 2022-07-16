@@ -12,7 +12,7 @@ Citizen Goggles facilitate augmented and virtual reality experiences. They are t
 
 ## Citizen Cane
 
-A Citizen Cane is issued to every higher-order sentient being when they reach 25 revolutions. At this age the height of the individual is typically static. This is important as the length of each cane is determined by the height of the individual. The length of the fully assembled cane is equal to the height of the individual. 
+A Citizen Cane is issued to every higher-order sentient being when they reach 25 revolutions. At this age the height of the individual is typically static. This is important as the length of each cane is determined by the height of the individual. The length of the fully assembled cane is equal to the height of the individual.
 
 Most of the length of the cane is 25 millimeters in diameter. The cane’s main shaft is made of Biofabricated Steel. One end of the cane is tapered to a point (referred to as the spear) while the opposite end has a wide ring surrounding the shaft (referred to as the cudgel). Both the spear tip and the cudgel ring are made of Biofabricated Tungsten to add weight and balance.
 
@@ -21,3 +21,7 @@ The cane can be separated at the middle by unscrewing the two ends from one anot
 The spear and cudgel are able to split at the middle as well in the same manner as breaking the cane down into the spear and the cudgel. However, the two parts that make up the spear and cudgel are connected by a narrow chain of Biofabricated Steel. Typically the cane is broken down in this manner for easier storage and carrying; usually in clothing pockets or accessories on the outside of the thigh, base of the spine, or similar.
 
 The design was inspired by the primary tool of the Grimalkin and modified using Fenghuang materials.
+
+## Citizen Poncho
+
+## Gravity Plates
