@@ -1,0 +1,43 @@
+@use 'mixins';
+
+div[is="heading-wrapper"] {
+  display: grid;
+  grid-template-areas:
+    'link'
+    'header';
+
+  & a {
+    display: block;
+    width: 100%;
+    height: 44pt;
+    grid-area: link;
+    margin: 1.5rem auto 0.5rem auto;
+    background-image: url('/assets/icons/inline-anchor.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 22pt;
+    @include mixins.at-media {
+      margin: 3rem auto 1rem auto;
+      background-size: auto 44pt;
+    }
+
+    &:hover {
+      filter: blur(1px);
+    }
+
+    & > span {
+      display: none;
+    }
+
+    & > span:nth-of-type(2) {
+      clip: rect(1px,1px,1px,1px)!important;
+      border-width: 0!important;
+      height: 1px!important;
+      overflow: hidden!important;
+      padding: 0!important;
+      position: absolute!important;
+      white-space: nowrap!important;
+      width: 1px!important;
+    }
+  }
+}

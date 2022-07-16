@@ -17,7 +17,10 @@
   --m-font: clamp(14pt, 5vw, 18pt);
   --l-font: 30pt;
 
-  --spacer-smallest: 0.5rem;
+  --icon-increase: "◭";
+
+  --0-spacer: 0;
+  --xs-spacer: 0.5rem;
 
   --fe-key: #5E9D9D;
   --white: #ffffff;
@@ -25,5 +28,10 @@
 
   --margin-centered: 0 auto;
 
+  --max-width: 1100px;
+
   --smooth: smooth;
+  --inline-block: inline-block;
+  --absolute: absolute;
+  --relative: relative;
 }
