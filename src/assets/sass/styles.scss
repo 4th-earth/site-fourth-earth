@@ -7,8 +7,10 @@
 @forward 'main-nav';
 @forward 'toc';
 @forward 'back-to-top';
+@forward 'heading-wrapper';
 
 @forward 'article';
+@forward 'table';
 @forward 'footer';
 
 html,
@@ -21,6 +23,10 @@ html {
   font-family: var(--font-family);
   font-size: var(--m-font);
   background-color: var(--fe-white);
+  scroll-padding-top: 55pt;
+  @include mixins.at-media {
+    scroll-padding-top: 66pt;
+  }
 }
 
 ul {
@@ -45,22 +51,10 @@ div[is="table"] {
 details:hover {
   cursor: pointer;
 }
+*/
 
-table {
-  margin: 2rem auto;
-  width: 100%;
-  border-collapse: collapse;
-}
 
-table th {
-  padding: 5px 3px;
-}
-
-table td {
-  padding: 7px 5px;
-  border: 1px solid black;
-}
-
+/*
 body > ul:first-of-type {
   margin-bottom: 4rem;
 }

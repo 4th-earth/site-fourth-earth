@@ -171,12 +171,16 @@ class Page
 
     private function rootForContent(): string
     {
+        if ($this->shouldUseRootContent()) {
+            return __DIR__ . '/../content-root';
+        }
         return __DIR__ . '/../content-' . $this->site();
     }
 
-    private function rootForSite(): string
+    private function shouldUseRootContent(): bool
     {
-        return __DIR__ . '/../site-' . $this->site() . '/public';
+        return str_starts_with($this->path(), '/legal/') or
+            str_starts_with($this->path(), '/support/');
     }
 
     private function textResponse(): Response
@@ -187,6 +191,7 @@ class Page
 
     private function body(): string
     {
+        $content = '';
         if (
             is_string($this->contentPath()) and
             $c = file_get_contents($this->contentPath())
@@ -264,6 +269,18 @@ class Page
                         'width 100px',
                         'height auto'
                     ),
+                    Element::ul(
+                        Element::li(
+                            Element::a(
+                                'terms'
+                            )->props('href /legal/')
+                        ),
+                        Element::li(
+                            Element::a(
+                                'support'
+                            )->props('href /support/')
+                        )
+                    ),
                     Element::p(
                         Element::span(
                             '4th Earth RAW, 4th Earth RAW: Vanilla, and 4th Earth RAW: Sprinkles'
@@ -302,14 +319,18 @@ class Page
                        'xmlns:dct http://purl.org/dc/terms/'
                     )
                 ),
-                Element::a('to top')->props('id back-to-top', 'href #skip-nav')
+                Element::a(
+                    Element::span(
+                        'to top'
+                    )
+                )->props('id back-to-top', 'href #skip-nav')
             )->build();
     }
 
     private function navigation(): Element
     {
         $links = [
-            '/ Rules as Writen',
+            '/ Rules as Written',
             '/vanilla/ Vanilla',
             '/sprinkles/ Sprinkles'
         ];
