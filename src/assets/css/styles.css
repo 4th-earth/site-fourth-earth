@@ -69,8 +69,13 @@ nav[is=main-nav] > ul{
   margin:var(--margin-centered);
   padding:0;
   display:grid;
-  grid-template-columns:repeat(3, 1fr);
   list-style:none;
+}
+nav[is=main-nav] > ul.col-3{
+  grid-template-columns:repeat(3, 1fr);
+}
+nav[is=main-nav] > ul.col-4{
+  grid-template-columns:repeat(4, 1fr);
 }
 nav[is=main-nav] > ul > li{
   margin:0;

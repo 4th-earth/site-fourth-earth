@@ -81,6 +81,16 @@ class Page
         return $this->site;
     }
 
+    private function isRoot(): bool
+    {
+        return $this->site === 'root';
+    }
+
+    private function isNotRoot(): bool
+    {
+        return ! $this->isRoot();
+    }
+
     private function uri(): Uri
     {
         return $this->serverRequest()->getUri();
@@ -327,39 +337,53 @@ class Page
             )->build();
     }
 
-    private function navigation(): Element
+    private function navigation(): Element|string
     {
-        $links = [
-            '/ Rules as Written',
-            '/vanilla/ Vanilla',
-            '/sprinkles/ Sprinkles'
-        ];
-
-        $l = [];
-        $requestPath = $this->path();
-        foreach ($links as $link) {
-            list($href, $title) = explode(' ', $link, 2);
-
-            $a = Element::a(
-                Element::span($title)
-            )->props('href ' . $href);
-            if ($requestPath === '/' and $href === $requestPath) {
-                $a = Element::a(
-                    Element::span($title)
-                )->props('href ' . $href, 'class current');
-
-            } elseif (
-                $href !== '/' and
-                str_starts_with($requestPath, $href)
-            ) {
-                $a = Element::a(
-                    Element::span($title)
-                )->props('href ' . $href, 'class current');
-
+        if ($this->isNotRoot()) {
+            $links = [
+                '/ Rules as Written',
+                '/vanilla/ Vanilla',
+                '/sprinkles/ Sprinkles'
+            ];
+            if ($this->site() === 'lore') {
+                $links = [
+                    '/ Introduction',
+                    '/people/ People',
+                    '/places/ Places',
+                    '/things/ Things'
+                ];
             }
 
-            $l[] = Element::li($a);
+            $l = [];
+            $requestPath = $this->path();
+            foreach ($links as $link) {
+                list($href, $title) = explode(' ', $link, 2);
+
+                $a = Element::a(
+                    Element::span($title)
+                )->props('href ' . $href);
+                if ($requestPath === '/' and $href === $requestPath) {
+                    $a = Element::a(
+                        Element::span($title)
+                    )->props('href ' . $href, 'class current');
+
+                } elseif (
+                    $href !== '/' and
+                    str_starts_with($requestPath, $href)
+                ) {
+                    $a = Element::a(
+                        Element::span($title)
+                    )->props('href ' . $href, 'class current');
+
+                }
+
+                $l[] = Element::li($a);
+            }
+            return Element::nav(
+                Element::ul(...$l)->props('class col-' . count($links))
+            )->props('is main-nav');
+
         }
-        return Element::nav(Element::ul(...$l))->props('is main-nav');
+        return '';
     }
 }
