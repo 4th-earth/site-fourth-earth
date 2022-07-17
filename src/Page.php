@@ -361,15 +361,14 @@ class Page
             $requestPath = $this->path();
             foreach ($links as $link) {
                 list($href, $ts, $title) = explode(' ', $link, 3);
+                $id = str_replace('/', '', $href);
 
                 $a = Element::a(
-                    Element::span($title),
-                    Element::span($ts)
+                    ...$this->spans($title, $ts)
                 )->props('href ' . $href);
                 if ($requestPath === '/' and $href === $requestPath) {
                     $a = Element::a(
-                        Element::span($title),
-                        Element::span($ts)
+                        ...$this->spans($title, $ts)
                     )->props('href ' . $href, 'class current');
 
                 } elseif (
@@ -377,8 +376,7 @@ class Page
                     str_starts_with($requestPath, $href)
                 ) {
                     $a = Element::a(
-                        Element::span($title),
-                        Element::span($ts)
+                        ...$this->spans($title, $ts)
                     )->props('href ' . $href, 'class current');
 
                 }
@@ -391,5 +389,13 @@ class Page
 
         }
         return '';
+    }
+
+    private function spans(string $title, string $titleShort): array
+    {
+        return [
+            Element::span($title),
+            Element::span($titleShort)->props('aria-label ' . $title)
+        ];
     }
 }
