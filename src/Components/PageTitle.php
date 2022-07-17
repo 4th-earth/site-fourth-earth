@@ -41,6 +41,11 @@ class PageTitle
         return implode(' | ', $titles);
     }
 
+    private function site(): string
+    {
+        return $this->site;
+    }
+
     private function path(): string
     {
         return $this->path;
