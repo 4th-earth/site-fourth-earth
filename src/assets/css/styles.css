@@ -89,6 +89,7 @@ nav[is=main-nav] > ul > li > a{
   align-items:center;
   height:100%;
   min-height:44pt;
+  color:#000000;
   background-position:center center;
   background-size:auto 20pt;
   background-repeat:no-repeat;
@@ -96,16 +97,23 @@ nav[is=main-nav] > ul > li > a{
   font-family:var(--font-header);
   font-size:var(--l-font);
 }
-nav[is=main-nav] > ul > li > a > span{
-  position:absolute;
-  left:-999em;
-  right:auto;
+nav[is=main-nav] > ul > li > a > span:nth-of-type(1){
+  display:none;
+}
+nav[is=main-nav] > ul > li > a > span:nth-of-type(2){
+  display:inline;
 }
 @media screen and (min-width: 800px){
   nav[is=main-nav] > ul > li > a > span{
     position:relative;
     left:0;
     right:0;
+  }
+  nav[is=main-nav] > ul > li > a > span:nth-of-type(1){
+    display:inline;
+  }
+  nav[is=main-nav] > ul > li > a > span:nth-of-type(2){
+    display:none;
   }
 }
 nav[is=main-nav] > ul > li > a:hover:not(.current){
@@ -114,54 +122,6 @@ nav[is=main-nav] > ul > li > a:hover:not(.current){
 nav[is=main-nav] > ul > li > a.current{
   background-color:var(--fe-key);
   color:var(--white);
-}
-nav[is=main-nav] > ul > li:first-of-type > a{
-  background-image:url("/assets/icons/home.svg");
-}
-@media screen and (min-width: 800px){
-  nav[is=main-nav] > ul > li:first-of-type > a{
-    background-image:none;
-  }
-}
-nav[is=main-nav] > ul > li:first-of-type > a.current{
-  background-image:url("/assets/icons/home-white.svg");
-}
-@media screen and (min-width: 800px){
-  nav[is=main-nav] > ul > li:first-of-type > a.current{
-    background-image:none;
-  }
-}
-nav[is=main-nav] > ul > li:nth-of-type(2) > a{
-  background-image:url("/assets/icons/vanilla.svg");
-}
-@media screen and (min-width: 800px){
-  nav[is=main-nav] > ul > li:nth-of-type(2) > a{
-    background-image:none;
-  }
-}
-nav[is=main-nav] > ul > li:nth-of-type(2) > a.current{
-  background-image:url("/assets/icons/vanilla-white.svg");
-}
-@media screen and (min-width: 800px){
-  nav[is=main-nav] > ul > li:nth-of-type(2) > a.current{
-    background-image:none;
-  }
-}
-nav[is=main-nav] > ul > li:nth-of-type(3) > a{
-  background-image:url("/assets/icons/sprinkles.svg");
-}
-@media screen and (min-width: 800px){
-  nav[is=main-nav] > ul > li:nth-of-type(3) > a{
-    background-image:none;
-  }
-}
-nav[is=main-nav] > ul > li:nth-of-type(3) > a.current{
-  background-image:url("/assets/icons/sprinkles-white.svg");
-}
-@media screen and (min-width: 800px){
-  nav[is=main-nav] > ul > li:nth-of-type(3) > a.current{
-    background-image:none;
-  }
 }
 
 nav[id=toc]{
@@ -331,6 +291,10 @@ article > section{
   margin:var(--xs-spacer);
 }
 
+div[is=table]{
+  overflow-x:scroll;
+}
+
 table{
   margin:2rem auto;
   display:block;
@@ -403,8 +367,4 @@ a{
 }
 a:hover{
   text-decoration:none;
-}
-
-div[is=table]{
-  overflow-x:scroll;
 }

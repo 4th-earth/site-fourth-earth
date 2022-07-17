@@ -344,30 +344,32 @@ class Page
     {
         if ($this->isNotRoot()) {
             $links = [
-                '/ Rules as Written',
-                '/vanilla/ Vanilla',
-                '/sprinkles/ Sprinkles'
+                '/ R Rules as Written',
+                '/vanilla/ V Vanilla',
+                '/sprinkles/ S Sprinkles'
             ];
             if ($this->site() === 'lore') {
                 $links = [
-                    '/ Introduction',
-                    '/people/ People',
-                    '/places/ Places',
-                    '/things/ Things'
+                    '/ I Introduction',
+                    '/people/ Pe People',
+                    '/places/ Pl Places',
+                    '/things/ T Things'
                 ];
             }
 
             $l = [];
             $requestPath = $this->path();
             foreach ($links as $link) {
-                list($href, $title) = explode(' ', $link, 2);
+                list($href, $ts, $title) = explode(' ', $link, 3);
 
                 $a = Element::a(
-                    Element::span($title)
+                    Element::span($title),
+                    Element::span($ts)
                 )->props('href ' . $href);
                 if ($requestPath === '/' and $href === $requestPath) {
                     $a = Element::a(
-                        Element::span($title)
+                        Element::span($title),
+                        Element::span($ts)
                     )->props('href ' . $href, 'class current');
 
                 } elseif (
@@ -375,7 +377,8 @@ class Page
                     str_starts_with($requestPath, $href)
                 ) {
                     $a = Element::a(
-                        Element::span($title)
+                        Element::span($title),
+                        Element::span($ts)
                     )->props('href ' . $href, 'class current');
 
                 }
