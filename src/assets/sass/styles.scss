@@ -22,7 +22,7 @@ html {
   scroll-behavior: var(--smooth);
   font-family: var(--font-family);
   font-size: var(--m-font);
-  background-color: var(--fe-white);
+  background-color: var(--background-color);
   scroll-padding-top: 55pt;
   @include mixins.at-media {
     scroll-padding-top: 66pt;

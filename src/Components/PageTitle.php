@@ -36,7 +36,17 @@ class PageTitle
             }
             array_pop($filtered);
         }
-        $titles[] = $this->metaForPath('/')->title;
+
+        if ($this->site() === 'raw') {
+            $titles[] = '4th Earth: Rules as Written';
+
+        } elseif ($this->site() === 'lore') {
+            $titles[] = '4th Earth: Lore';
+
+        } else {
+            $titles[] = '4th Earth';
+
+        }
 
         return implode(' | ', $titles);
     }

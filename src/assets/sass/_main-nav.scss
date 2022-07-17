@@ -7,7 +7,7 @@ a#skip-nav {
 }
 
 nav[is="main-nav"] {
-  background-color: var(--white);
+  background-color: var(--background-color);
 
   & > ul {
     max-width: 1100px;
