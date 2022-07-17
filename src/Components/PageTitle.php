@@ -21,9 +21,7 @@ class PageTitle
     {
         $this->path = $path;
         $this->contentRoot = $contentRoot;
-// var_dump($path);
-// var_dump($contentRoot);
-// die();
+
         $pathParts = explode('/', $this->path());
         $filtered  = array_filter($pathParts);
 
@@ -74,6 +72,10 @@ class PageTitle
         }
 
         $meta = file_get_contents($metaPath);
-        return json_decode($meta, false);
+        $json = json_decode($meta, false);
+        if ($json === NULL) {
+            return false;
+        }
+        return $json;
     }
 }
