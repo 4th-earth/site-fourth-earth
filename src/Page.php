@@ -147,12 +147,6 @@ class Page
         );
     }
 
-    private function pageTitle(): string
-    {
-        return PageTitle::init($this->site())
-            ->titleFor($this->path(), $this->rootForContent());
-    }
-
     private function contentPath(): string
     {
         return $this->rootForContent() . $this->path() . 'content.md';
@@ -183,6 +177,7 @@ class Page
         $content = '';
         if (
             is_string($this->contentPath()) and
+            file_exists($this->contentPath()) and
             $c = file_get_contents($this->contentPath())
         ) {
             $content = MarkdownConverter::create()
@@ -207,10 +202,39 @@ class Page
                 ->attributes() // for class on notices
                 ->abbreviations()
                 ->convert($c);
+        } else {
+            $content = <<<html
+                <h1>Ready player 404</h1>
+                <p>We couldnʼt find that content.</p>
+                <p>Maybe it was eaten by a dinosaur. Or perhaps it's just on vacation.</p>
+            html;
+
+            if ($this->site() === 'raw') {
+                $content .= <<<html
+                    <p>Try here instead:</p>
+                    <ul>
+                    <li><a href="/">RAW</a></li>
+                    <li><a href="/vanilla/">Vanilla</a></li>
+                    <li><a href="/sprinkles/">Sprinkles</a></li>
+                    </ul>
+                html;
+
+            } elseif ($this->site() === 'lore') {
+                $content .= <<<html
+                    <p>Try here instead:</p>
+                    <ul>
+                    <li><a href="/">Lore</a></li>
+                    <li><a href="/people/">People</a></li>
+                    <li><a href="/places/">Places</a></li>
+                    <li><a href="/things/">Things</a></li>
+                    </ul>
+                html;
+            }
         }
 
         return Document::create(
-                $this->pageTitle()
+                PageTitle::init($this->site())
+                    ->titleFor($this->path(), $this->rootForContent())
             )->head(
                 Element::meta()->props('charset utf-8'),
                 Element::meta()->props(
