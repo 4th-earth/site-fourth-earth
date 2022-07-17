@@ -18,6 +18,8 @@ use Eightfold\Markdown\Markdown as MarkdownConverter;
 use Eightfold\HTMLBuilder\Document;
 use Eightfold\HTMLBuilder\Element;
 
+use FE\Components\PageTitle;
+
 class Page
 {
     private Psr17Factory $psr17Factory;
@@ -147,6 +149,9 @@ class Page
 
     private function pageTitle(): string
     {
+        return PageTitle::init($this->site())
+            ->titleFor($this->path(), $this->rootForContent());
+
         $title = [
             '4th Earth',
             'Rules as Written'
