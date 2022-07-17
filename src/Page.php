@@ -151,32 +151,6 @@ class Page
     {
         return PageTitle::init($this->site())
             ->titleFor($this->path(), $this->rootForContent());
-
-        $title = [
-            '4th Earth',
-            'Rules as Written'
-        ];
-
-        $contentPath = __DIR__ . '/error-404.md';
-
-        if ($this->path() === '/') {
-            $title       = $title;
-
-        } elseif ($this->path() === '/vanilla/') {
-            $title[] = 'Vanilla';
-
-        } elseif ($this->path() === '/sprinkles/') {
-            $title[] = 'Sprinkles';
-
-        } elseif ($this->path() === '/versioning/') {
-            $title[] = 'Versioning';
-
-        } else {
-            $title = ['Page not found error'];
-
-        }
-
-        return implode(' | ', array_reverse($title));
     }
 
     private function contentPath(): string

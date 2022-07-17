@@ -21,12 +21,24 @@ class PageTitle
     {
         $this->path = $path;
         $this->contentRoot = $contentRoot;
+// var_dump($path);
+// var_dump($contentRoot);
+// die();
+        $pathParts = explode('/', $this->path());
+        $filtered  = array_filter($pathParts);
 
-        if ($this->path() === '/') {
-            return $this->metaForPath($this->path())->title;
+        $titles = [];
+        while (count($filtered) > 0) {
+            $path  = '/' . implode('/', $filtered) . '/';
+            $title = $this->metaForPath($path);
+            if ($title) {
+                $titles[] = $title->title;
+            }
+            array_pop($filtered);
         }
-        die(var_dump($contentRoot . $path));
-        return '';
+        $titles[] = $this->metaForPath('/')->title;
+
+        return implode(' | ', $titles);
     }
 
     private function path(): string
@@ -39,7 +51,14 @@ class PageTitle
         return $this->contentRoot;
     }
 
-    private function metaForPath(string $path): object
+    private function metaForPath(string $path): object|false
     {
+        $metaPath = $this->contentRoot() . $path . 'meta.json';
+        if (! file_exists($metaPath)) {
+            return false;
+        }
 
+        $meta = file_get_contents($metaPath);
+        return json_decode($meta, false);
     }
+}
