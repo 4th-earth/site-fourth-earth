@@ -232,28 +232,8 @@ class Page
             }
         }
 
-        $contentRoot = __DIR__ . '/../content-' . $this->site();
-        $pageTitle   = PageTitle::init($contentRoot, $this->path());
-        if ($this->site() === 'raw' or $this->site() === 'lore') {
-            if (
-                str_starts_with($this->path(), '/legal/') or
-                str_starts_with($this->path(), '/support/')
-            ) {
-                $part = 'legal';
-                if (str_starts_with($this->path(), '/support/')) {
-                    $part = 'support';
-                }
-                $baseTitleMeta = $contentRoot . '/meta.json';
-                $baseTitle     = PageTitle::titleForPath($baseTitleMeta);
-
-                $contentRoot = __DIR__ . '/../content-root';
-                $pageTitle = PageTitle::init($contentRoot, $this->path())
-                    ->overrideBaseTitle($baseTitle);
-            }
-        }
-
         return Document::create(
-                $pageTitle->title()
+                $this->pageTitle()
             )->head(
                 Element::meta()->props('charset utf-8'),
                 Element::meta()->props(
@@ -357,6 +337,30 @@ class Page
                     )
                 )->props('id back-to-top', 'href #skip-nav')
             )->build();
+    }
+
+    private function pageTitle(): string
+    {
+        $contentRoot = __DIR__ . '/../content-' . $this->site();
+        $pageTitle   = PageTitle::init($contentRoot, $this->path());
+        if ($this->site() === 'raw' or $this->site() === 'lore') {
+            if (
+                str_starts_with($this->path(), '/legal/') or
+                str_starts_with($this->path(), '/support/')
+            ) {
+                $part = 'legal';
+                if (str_starts_with($this->path(), '/support/')) {
+                    $part = 'support';
+                }
+                $baseTitleMeta = $contentRoot . '/meta.json';
+                $baseTitle     = PageTitle::titleForPath($baseTitleMeta);
+
+                $contentRoot = __DIR__ . '/../content-root';
+                $pageTitle = PageTitle::init($contentRoot, $this->path())
+                    ->overrideBaseTitle($baseTitle);
+            }
+        }
+        return $pageTitle->title();
     }
 
     private function navigation(): Element|string
