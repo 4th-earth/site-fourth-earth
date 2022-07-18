@@ -147,38 +147,6 @@ class Page
         );
     }
 
-    private function pageTitle(): string
-    {
-        return PageTitle::init($this->site())
-            ->titleFor($this->path(), $this->rootForContent());
-
-        $title = [
-            '4th Earth',
-            'Rules as Written'
-        ];
-
-        $contentPath = __DIR__ . '/error-404.md';
-
-        if ($this->path() === '/') {
-            $title       = $title;
-
-        } elseif ($this->path() === '/vanilla/') {
-            $title[] = 'Vanilla';
-
-        } elseif ($this->path() === '/sprinkles/') {
-            $title[] = 'Sprinkles';
-
-        } elseif ($this->path() === '/versioning/') {
-            $title[] = 'Versioning';
-
-        } else {
-            $title = ['Page not found error'];
-
-        }
-
-        return implode(' | ', array_reverse($title));
-    }
-
     private function contentPath(): string
     {
         return $this->rootForContent() . $this->path() . 'content.md';
@@ -209,6 +177,7 @@ class Page
         $content = '';
         if (
             is_string($this->contentPath()) and
+            file_exists($this->contentPath()) and
             $c = file_get_contents($this->contentPath())
         ) {
             $content = MarkdownConverter::create()
@@ -233,6 +202,34 @@ class Page
                 ->attributes() // for class on notices
                 ->abbreviations()
                 ->convert($c);
+        } else {
+            $content = <<<html
+                <h1>Ready player 404</h1>
+                <p>We couldnʼt find that content.</p>
+                <p>Maybe it was eaten by a dinosaur. Or perhaps it's just on vacation.</p>
+            html;
+
+            if ($this->site() === 'raw') {
+                $content .= <<<html
+                    <p>Try here instead:</p>
+                    <ul>
+                    <li><a href="/">RAW</a></li>
+                    <li><a href="/vanilla/">Vanilla</a></li>
+                    <li><a href="/sprinkles/">Sprinkles</a></li>
+                    </ul>
+                html;
+
+            } elseif ($this->site() === 'lore') {
+                $content .= <<<html
+                    <p>Try here instead:</p>
+                    <ul>
+                    <li><a href="/">Lore</a></li>
+                    <li><a href="/people/">People</a></li>
+                    <li><a href="/places/">Places</a></li>
+                    <li><a href="/things/">Things</a></li>
+                    </ul>
+                html;
+            }
         }
 
         return Document::create(
@@ -342,34 +339,59 @@ class Page
             )->build();
     }
 
+    private function pageTitle(): string
+    {
+        $contentRoot = __DIR__ . '/../content-' . $this->site();
+        $pageTitle   = PageTitle::init($contentRoot, $this->path());
+        if ($this->site() === 'raw' or $this->site() === 'lore') {
+            if (
+                str_starts_with($this->path(), '/legal/') or
+                str_starts_with($this->path(), '/support/')
+            ) {
+                $part = 'legal';
+                if (str_starts_with($this->path(), '/support/')) {
+                    $part = 'support';
+                }
+                $baseTitleMeta = $contentRoot . '/meta.json';
+                $baseTitle     = PageTitle::titleForPath($baseTitleMeta);
+
+                $contentRoot = __DIR__ . '/../content-root';
+                $pageTitle = PageTitle::init($contentRoot, $this->path())
+                    ->overrideBaseTitle($baseTitle);
+            }
+        }
+        return $pageTitle->title();
+    }
+
     private function navigation(): Element|string
     {
         if ($this->isNotRoot()) {
             $links = [
-                '/ Rules as Written',
-                '/vanilla/ Vanilla',
-                '/sprinkles/ Sprinkles'
+                '/ R Rules as Written',
+                '/vanilla/ V Vanilla',
+                '/sprinkles/ S Sprinkles'
             ];
             if ($this->site() === 'lore') {
                 $links = [
-                    '/ Introduction',
-                    '/people/ People',
-                    '/places/ Places',
-                    '/things/ Things'
+                    '/ I Introduction',
+                    '/people/ Pe People',
+                    '/places/ Pl Places',
+                    '/things/ T Things'
                 ];
             }
 
             $l = [];
             $requestPath = $this->path();
             foreach ($links as $link) {
-                list($href, $title) = explode(' ', $link, 2);
+                list($href, $ts, $title) = explode(' ', $link, 3);
+                $id = str_replace('/', '', $href);
 
                 $a = Element::a(
-                    Element::span($title)
+                    ...$this->spans($title, $ts)
                 )->props('href ' . $href);
                 if ($requestPath === '/' and $href === $requestPath) {
                     $a = Element::a(
-                        Element::span($title)
+                        ...$this->spans($title, $ts)
                     )->props('href ' . $href, 'class current');
 
                 } elseif (
@@ -377,7 +399,7 @@ class Page
                     str_starts_with($requestPath, $href)
                 ) {
                     $a = Element::a(
-                        Element::span($title)
+                        ...$this->spans($title, $ts)
                     )->props('href ' . $href, 'class current');
 
                 }
@@ -390,5 +412,13 @@ class Page
 
         }
         return '';
+    }
+
+    private function spans(string $title, string $titleShort): array
+    {
+        return [
+            Element::span($title),
+            Element::span($titleShort)->props('aria-label ' . $title)
+        ];
     }
 }

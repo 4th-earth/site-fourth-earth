@@ -5,25 +5,71 @@ namespace FE\Components;
 
 class PageTitle
 {
-    private string $path = '';
-    private string $contentRoot = '';
+    private string $baseTitle = '';
 
-    public static function init(string $site): PageTitle
+    public static function titleForPath(string $path): string
     {
-        return new static($site);
+        if (file_exists($path) === false) {
+            return '';
+        }
+
+        $json = file_get_contents($path);
+        $obj  = json_decode($json);
+
+        return $obj->title;
     }
 
-    public function __construct(private string $site)
-    {
+    public static function init(
+        string $contentRoot,
+        string $path
+    ): PageTitle {
+        return new static($contentRoot, $path);
     }
 
-    public function titleFor(string $path, string $contentRoot): string
-    {
-        $this->path = $path;
-        $this->contentRoot = $contentRoot;
+    public function __construct(
+        private string $contentRoot,
+        private string $path
+    ) {
+    }
 
-        die(var_dump($contentRoot . $path));
-        return '';
+    public function overrideBaseTitle(string $title = ''): PageTitle
+    {
+        $this->baseTitle = $title;
+        return $this;
+    }
+
+    public function title(): string
+    {
+        $pathParts = explode('/', $this->path());
+        $filtered  = array_filter($pathParts);
+
+        $titles = [];
+        while (count($filtered) > 0) {
+            $path     = '/' . implode('/', $filtered) . '/';
+            $metaPath = $this->contentRoot() . $path . 'meta.json';
+            $titles[] = $this->titleFor($metaPath);
+
+            array_pop($filtered);
+        }
+
+        $baseTitle = $this->baseTitle();
+        if (strlen($baseTitle) === 0) {
+            $rootTitlePath = $this->contentRoot() . '/meta.json';
+            $titles[]      = $this->titleFor($rootTitlePath);
+
+        } else {
+            $titles[] = $baseTitle;
+
+        }
+
+        $titles = array_filter($titles);
+
+        return implode(' | ', $titles);
+    }
+
+    private function contentRoot(): string
+    {
+        return $this->contentRoot;
     }
 
     private function path(): string
@@ -31,7 +77,13 @@ class PageTitle
         return $this->path;
     }
 
-    private function contentRoot(): string
+    private function titleFor(string $path): string
     {
-        return $this->contentRoot;
+        return static::titleForPath($path);
     }
+
+    private function baseTitle(): string
+    {
+        return $this->baseTitle;
+    }
+}
