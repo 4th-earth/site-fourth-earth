@@ -232,9 +232,28 @@ class Page
             }
         }
 
+        $contentRoot = __DIR__ . '/../content-' . $this->site();
+        $pageTitle   = PageTitle::init($contentRoot, $this->path());
+        if ($this->site() === 'raw' or $this->site() === 'lore') {
+            if (
+                str_starts_with($this->path(), '/legal/') or
+                str_starts_with($this->path(), '/support/')
+            ) {
+                $part = 'legal';
+                if (str_starts_with($this->path(), '/support/')) {
+                    $part = 'support';
+                }
+                $baseTitleMeta = $contentRoot . '/meta.json';
+                $baseTitle     = PageTitle::titleForPath($baseTitleMeta);
+
+                $contentRoot = __DIR__ . '/../content-root';
+                $pageTitle = PageTitle::init($contentRoot, $this->path())
+                    ->overrideBaseTitle($baseTitle);
+            }
+        }
+
         return Document::create(
-                PageTitle::init($this->site())
-                    ->titleFor($this->path(), $this->rootForContent())
+                $pageTitle->title()
             )->head(
                 Element::meta()->props('charset utf-8'),
                 Element::meta()->props(

@@ -5,58 +5,66 @@ namespace FE\Components;
 
 class PageTitle
 {
-    private string $path = '';
-    private string $contentRoot = '';
+    private string $baseTitle = '';
 
-    public static function init(string $site): PageTitle
+    public static function titleForPath(string $path): string
     {
-        return new static($site);
+        if (file_exists($path) === false) {
+            return '';
+        }
+
+        $json = file_get_contents($path);
+        $obj  = json_decode($json);
+
+        return $obj->title;
     }
 
-    public function __construct(private string $site)
-    {
+    public static function init(
+        string $contentRoot,
+        string $path
+    ): PageTitle {
+        return new static($contentRoot, $path);
     }
 
-    public function titleFor(string $path, string $contentRoot): string
-    {
-        $this->path = $path;
-        $this->contentRoot = $contentRoot;
+    public function __construct(
+        private string $contentRoot,
+        private string $path
+    ) {
+    }
 
+    public function overrideBaseTitle(string $title = ''): PageTitle
+    {
+        $this->baseTitle = $title;
+        return $this;
+    }
+
+    public function title(): string
+    {
         $pathParts = explode('/', $this->path());
         $filtered  = array_filter($pathParts);
 
         $titles = [];
         while (count($filtered) > 0) {
-            $path  = '/' . implode('/', $filtered) . '/';
-            $title = $this->metaForPath($path);
-            if ($title) {
-                $titles[] = $title->title;
-            }
+            $path     = '/' . implode('/', $filtered) . '/';
+            $metaPath = $this->contentRoot() . $path . 'meta.json';
+            $titles[] = $this->titleFor($metaPath);
+
             array_pop($filtered);
         }
 
-        if ($this->site() === 'raw') {
-            $titles[] = '4th Earth: Rules as Written';
-
-        } elseif ($this->site() === 'lore') {
-            $titles[] = '4th Earth: Lore';
+        $baseTitle = $this->baseTitle();
+        if (strlen($baseTitle) === 0) {
+            $rootTitlePath = $this->contentRoot() . '/meta.json';
+            $titles[]      = $this->titleFor($rootTitlePath);
 
         } else {
-            $titles[] = '4th Earth';
+            $titles[] = $baseTitle;
 
         }
 
+        $titles = array_filter($titles);
+
         return implode(' | ', $titles);
-    }
-
-    private function site(): string
-    {
-        return $this->site;
-    }
-
-    private function path(): string
-    {
-        return $this->path;
     }
 
     private function contentRoot(): string
@@ -64,18 +72,18 @@ class PageTitle
         return $this->contentRoot;
     }
 
-    private function metaForPath(string $path): object|false
+    private function path(): string
     {
-        $metaPath = $this->contentRoot() . $path . 'meta.json';
-        if (! file_exists($metaPath)) {
-            return false;
-        }
+        return $this->path;
+    }
 
-        $meta = file_get_contents($metaPath);
-        $json = json_decode($meta, false);
-        if ($json === NULL) {
-            return false;
-        }
-        return $json;
+    private function titleFor(string $path): string
+    {
+        return static::titleForPath($path);
+    }
+
+    private function baseTitle(): string
+    {
+        return $this->baseTitle;
     }
 }
