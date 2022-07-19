@@ -18,7 +18,9 @@ use Eightfold\Markdown\Markdown as MarkdownConverter;
 use Eightfold\HTMLBuilder\Document;
 use Eightfold\HTMLBuilder\Element;
 
+use FE\Environment;
 use FE\Components\PageTitle;
+use FE\Sitemap;
 
 class Page
 {
@@ -28,13 +30,15 @@ class Page
 
     private string $path = '';
 
-    public static function init(string $site): Page
+    public static function init(string $site, Environment $environment): Page
     {
-        return new static($site);
+        return new static($site, $environment);
     }
 
-    public function __construct(private string $site)
-    {
+    public function __construct(
+        private string $site,
+        private Environment $environment
+    ) {
         $this->psr17Factory = new Psr17Factory();
 
         $creator = new ServerRequestCreator(
@@ -71,6 +75,11 @@ class Page
             return $this->fileResponse();
         }
         return $this->textResponse();
+    }
+
+    private function environment(): Environment
+    {
+        return $this->environment;
     }
 
     private function psr17Factory(): Psr17Factory
@@ -130,6 +139,20 @@ class Page
         } elseif (str_ends_with($this->path(), '.ttf')) {
             $contentType = 'font/ttf';
 
+        } elseif (str_ends_with($this->path(), 'sitemap.xml')) {
+            $contentType = 'application/xml';
+            return new Response(
+                status: 200,
+                headers: ['content-type' => $contentType],
+                body: Stream::create(
+                    Sitemap::create(
+                        $this->site(),
+                        $this->environment()->contentRootForSite($this->site()),
+                        $this->environment()->authorityForSite($this->site()),
+                        $this->environment()->schemeForSite($this->site())
+                    )
+                )
+            );
         }
 
         if (is_resource($resource)) {
@@ -190,7 +213,8 @@ class Page
                     ]
                 ])->externalLinks([
                     'open_in_new_window' => true,
-                    'internal_hosts'     => 'raw.earth.fourth'
+                    'internal_hosts'     =>
+                        $this->environment()->authorityForSite($this->site())
                 ])->accessibleHeadingPermalinks([
                     'min_heading_level' => 2,
                     'max_heading_level' => 3,

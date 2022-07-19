@@ -41,3 +41,12 @@ a {
     text-decoration: none;
   }
 }
+
+a[rel~=noreferrer]:after {
+  content: var(--icon-new-window);
+  display: var(--inline-block);
+  margin-left: var(--2xs-spacer);
+  position: var(--relative);
+  top: var(--icon-lift-spacer);
+  font-size: var(--xs-font);
+}
