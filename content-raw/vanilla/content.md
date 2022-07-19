@@ -10,6 +10,8 @@ Version: 0.1.0
 - [Dice Pools](#dice-pools)
 - [Proficiency Ranks](#proficiency-ranks)
 - [Life Batteries](#life-batteries)
+- [Characters](#characters)
+- [Social contract](#social-contract)
 - [Glossary](#glossary)
 
 </nav>
@@ -118,6 +120,14 @@ See Sprinkles.
 	- The health battery MUST NOT be used to recharge any other Life Batteries.
 	- To recharge 1 Battery Point to the health Battery, Players MUST spend Battery Points equal to the number of non-health Life Batteries to recharge 1 point to the health Battery. (For example, 3 non-health batteries means 2 points from spiritual and 1 point from physical MAY recharge 1 point to health.)
     - To recharge 1 Battery Point to a non-health Battery, Players MUST spend Battery Points equal to the number of non-health Batteries minus 1 (the target). (For example, if there are 3 non-health Life Batteries, 2 points from spiritual MAY recharge 1 point to physical; or, 1 point from spiritual and 1 point from mental MAY recharge 1 point to physical.)
+
+## Characters
+
+[Vanilla Character Sheet](/vanilla/character-sheet.pdf)
+
+## Social contract
+
+[Vanilla Socail Contract](/vanilla/social-contract.pdf)
 
 ## Glossary
 

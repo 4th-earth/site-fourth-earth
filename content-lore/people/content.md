@@ -16,7 +16,7 @@ Believed to be the first higher-order sentient beings to rise as they seemed to 
 
 The Fenghuang are believed to have descended from flightless birds on the continent of Dragonus. Aquiline nose. Round eyes, round pupil, barely visible sclera. The slightly pronounced eyebrow exaggerates the backward slow of the forehead. Hair is the textures of bristle and down feathers, with interlocking barbs creating sheets and layers; only present on the head. No external, protruding ears; similar to the Caudata, Grampus, and Cigwe.
 
-The Fenghuang built The Central Habitat of The Cradle; the other habitats were not built until The Great Grimalkin Immigration. 
+The Fenghuang built The Central Habitat of The Cradle; the other habitats were not built until The Great Grimalkin Immigration.
 
 The Fenghuang had contact with the remaining First Earthers before their extinction.
 
@@ -42,7 +42,7 @@ The Cigwe joined The Cradle in the middle of Second Earth with The Cigwe Immigra
 
 The Grampus are believed to have descended from porpoises on the continent of Oceana. Broad, flat nose. Round eyes, with no visible pupils or sclera. Broad upper body, tapering into narrow lower body.
 
-The Grampus joined The Cradle in the early-middle of Third Earth with The Grampus Immigration. 
+The Grampus joined The Cradle in the early-middle of Third Earth with The Grampus Immigration.
 
 ## Caudata
 

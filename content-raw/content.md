@@ -143,6 +143,8 @@ Examples:
 
 *Note: The Characters in these examples, MUST NOT be played in the same [Setting](#setting), unless the Players agree to modify the Characters to have the same Life Batteries and maximum values.*
 
+[Vanilla Character Sheet](/vanilla/character-sheet.pdf)
+
 ## Setting
 
 4th Earth RAW is a game engine and does not require a specific Setting. Further, you MAY use 4th Earth RAW in the Setting of other games.
@@ -185,10 +187,7 @@ The Social Contract:
 - MAY be verbal or unspoken; we RECOMMEND written.
 - MAY be created or modified as Players interact with each other.
 
-Resources for developing a Social Contract:
-
-- Large list of starter questions a Social Contract MAY address: [https://rpgmuseum.fandom.com/wiki/Social_contract](https://rpgmuseum.fandom.com/wiki/Social_contract)
-- An example of a Social Contract: [https://static1.squarespace.com/static/5512e30de4b018f9300e3a55/t/57802bb3bebafbf78186bc68/1468017592481/Downloadable+Social+Contract.pdf](https://static1.squarespace.com/static/5512e30de4b018f9300e3a55/t/57802bb3bebafbf78186bc68/1468017592481/Downloadable+Social+Contract.pdf)
+[Vanilla Social Contract](/vanilla/social-contract.pdf)
 
 ## Glossary
 

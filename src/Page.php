@@ -114,8 +114,11 @@ class Page
 
     private function fileResponse(): Response
     {
-        if ($this->path() === '/vanilla/character-sheet.pdf') {
-            $resource = @\fopen(__DIR__ . '/../../content-raw/character-sheet.pdf', 'r');
+        if (
+            $this->path() === '/vanilla/character-sheet.pdf' or
+            $this->path() === '/vanilla/social-contract.pdf'
+        ) {
+            $resource = @\fopen(__DIR__ . '/../content-raw' . $this->path(), 'r');
             if (is_resource($resource)) {
                 return new Response(
                     status: 200,
