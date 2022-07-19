@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://raw.4th.earth/sitemap.xml

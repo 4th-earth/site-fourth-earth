@@ -22,6 +22,17 @@ The spear and cudgel are able to split at the middle as well in the same manner 
 
 The design was inspired by the primary tool of the Grimalkin and modified using Fenghuang materials.
 
+
+Biofabricated Materials
+
+Aluminum
+Steel
+Tungsten
+Glass
+ClothFirst Earth
+
 ## Citizen Poncho
+
+## Credit System
 
 ## Gravity Plates
