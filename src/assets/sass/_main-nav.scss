@@ -77,48 +77,6 @@ nav[is="main-nav"] {
           color: var(--white);
         }
       }
-
-//       &:first-of-type > a {
-//         background-image: url('/assets/icons/home.svg');
-//         @include mixins.at-media {
-//           background-image: none;
-//         }
-//
-//         &.current {
-//           background-image: url('/assets/icons/home-white.svg');
-//           @include mixins.at-media {
-//             background-image: none;
-//           }
-//         }
-//       }
-
-//       &:nth-of-type(2) > a {
-//         background-image: url('/assets/icons/vanilla.svg');
-//         @include mixins.at-media {
-//           background-image: none;
-//         }
-//
-//         &.current {
-//           background-image: url('/assets/icons/vanilla-white.svg');
-//           @include mixins.at-media {
-//             background-image: none;
-//           }
-//         }
-//       }
-
-//       &:nth-of-type(3) > a {
-//         background-image: url('/assets/icons/sprinkles.svg');
-//         @include mixins.at-media {
-//           background-image: none;
-//         }
-//
-//         &.current {
-//           background-image: url('/assets/icons/sprinkles-white.svg');
-//           @include mixins.at-media {
-//             background-image: none;
-//           }
-//         }
-//       }
     }
   }
 }

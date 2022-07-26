@@ -38,24 +38,3 @@ $request = (new ServerRequestCreator(
     )->response(for: $request)
 );
 exit();
-/*
-(new SapiEmitter())->emit(
-    Page::init(
-        'raw',
-        Environment:: init([
-            'root' => [
-                'http://earth.fourth:8889',
-                __DIR__ . '/../../content-root'
-            ],
-            'raw' => [
-                'http://raw.earth.fourth:8889',
-                __DIR__ . '/../../content-raw'
-            ],
-            'lore' => [
-                'http://lore.earth.fourth:8889',
-                __DIR__ . '/../../content-lore'
-            ]
-        ])
-    )->response()
-);
-*/
