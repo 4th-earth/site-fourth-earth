@@ -18,27 +18,27 @@ class Markdown
     ): MarkdownConverter {
         if (isset(self::$markdownConverter) === false) {
             if ($converter === null) {
-            self::$markdownConverter = MarkdownConverter::create()
-                ->withConfig(
-                    [
-                        'html_input' => 'allow'
-                    ]
-                )->minified()
-                ->smartPunctuation()
-                ->descriptionLists()
-                ->attributes() // for class on notices
-                ->defaultAttributes([
-                    Image::class => [
-                        'loading'  => 'lazy',
-                        'decoding' => 'async'
-                    ]
-                ])->abbreviations()
-                ->externalLinks(
-                    [
-                        'open_in_new_window' => true,
-                        'internal_hosts'     => 'joshbruce.com'
-                    ]
-                );
+                self::$markdownConverter = MarkdownConverter::create()
+                    ->withConfig(
+                        [
+                            'html_input' => 'allow'
+                        ]
+                    )->minified()
+                    ->smartPunctuation()
+                    ->descriptionLists()
+                    ->attributes() // for class on notices
+                    ->defaultAttributes([
+                        Image::class => [
+                            'loading'  => 'lazy',
+                            'decoding' => 'async'
+                        ]
+                    ])->abbreviations()
+                    ->externalLinks(
+                        [
+                            'open_in_new_window' => true,
+                            'internal_hosts'     => 'joshbruce.com'
+                        ]
+                    );
 
             } else {
                 self::$markdownConverter = $converter;

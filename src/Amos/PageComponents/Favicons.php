@@ -31,8 +31,7 @@ class Favicons implements Buildable
         string $path = '',
         string $msAppTileColor = '',
         string $safariTabColor = ''
-    ): self
-    {
+    ): self {
         return new self($path, $themeColor, $msAppTileColor, $safariTabColor);
     }
 
@@ -41,8 +40,7 @@ class Favicons implements Buildable
         private string $themeColor,
         private string $msAppTileColor = '',
         private string $safariTabColor = ''
-    )
-    {
+    ) {
     }
 
     private function path(): string

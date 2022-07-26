@@ -31,7 +31,7 @@ $request = (new ServerRequestCreator(
 
 (new SapiEmitter())->emit(
     Site::init(
-        withDomain: 'http://lore.earth.fourth:8889',
+        withDomain: 'https://lore.4th.earth',
         contentIn: Content::init(__DIR__ . '/../../content-lore')
     )->templates(
         default: Page::class

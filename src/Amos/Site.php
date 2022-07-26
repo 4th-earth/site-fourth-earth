@@ -32,8 +32,7 @@ class Site
     public static function init(
         string $withDomain,
         Content $contentIn,
-    ): self
-    {
+    ): self {
         return new Site($withDomain, $contentIn);
     }
 

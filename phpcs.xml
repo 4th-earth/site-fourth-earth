@@ -2,9 +2,9 @@
 <ruleset name="8fold PSR12">
 	<description>PHP-FIG PSR-12 standards with modifications to: control structure (empty space before closing brace).</description>
 
-	<file>site-root</file>
-	<file>site-raw</file>
-	<file>site-lore</file>
+	<file>src</file>
+
+	<exclude-pattern>*/src/assets/**/*</exclude-pattern>
 
 	<arg name="colors" />
 
