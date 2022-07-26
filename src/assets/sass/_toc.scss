@@ -5,7 +5,7 @@ nav[id="toc"] {
   padding-top: 44pt;
   width: 100vw;
   height: 100vh;
-  background-color: var(--white);
+  background-color: var(--background-color);
   position: absolute;
   z-index: 1000;
   transition: top 0.2s ease-in-out,
@@ -24,7 +24,7 @@ nav[id="toc"] {
     height: 44pt;
     width: 100%;
     border: none;
-    background-color: var(--white);
+    background-color: var(--background-color);
     color: var(--fe-key);
     position: absolute;
     top: 0;
@@ -44,13 +44,14 @@ nav[id="toc"] {
   }
 
   & > ul {
-    overflow-y: scroll;
     height: calc(100vh - 44pt);
+    overflow-y: scroll;
     margin: 0;
     padding: 0;
 
     @include mixins.at-media {
       height: auto;
+      overflow-y: auto;
     }
   }
 

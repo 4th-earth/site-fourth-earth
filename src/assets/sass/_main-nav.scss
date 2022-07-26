@@ -7,7 +7,7 @@ a#skip-nav {
 }
 
 nav[is="main-nav"] {
-  background-color: var(--white);
+  background-color: var(--background-color);
 
   & > ul {
     max-width: 1100px;
@@ -37,6 +37,7 @@ nav[is="main-nav"] {
         align-items: center;
         height: 100%;
         min-height: 44pt;
+        color: #000000;
         background-position: center center;
         background-size: auto 20pt;
         background-repeat: no-repeat;
@@ -45,11 +46,25 @@ nav[is="main-nav"] {
         font-size: var(--l-font);
 
         & > span {
-          @include mixins.sr-only;
+          &:nth-of-type(1) {
+            display: none;
+          }
+
+          &:nth-of-type(2) {
+            display: inline;
+          }
+
           @include mixins.at-media {
             position: relative;
             left: 0;
             right: 0;
+            &:nth-of-type(1) {
+              display: inline;
+            }
+
+            &:nth-of-type(2) {
+              display: none;
+            }
           }
         }
 
@@ -60,48 +75,6 @@ nav[is="main-nav"] {
         &.current {
           background-color: var(--fe-key);
           color: var(--white);
-        }
-      }
-
-      &:first-of-type > a {
-        background-image: url('/assets/icons/home.svg');
-        @include mixins.at-media {
-          background-image: none;
-        }
-
-        &.current {
-          background-image: url('/assets/icons/home-white.svg');
-          @include mixins.at-media {
-            background-image: none;
-          }
-        }
-      }
-
-      &:nth-of-type(2) > a {
-        background-image: url('/assets/icons/vanilla.svg');
-        @include mixins.at-media {
-          background-image: none;
-        }
-
-        &.current {
-          background-image: url('/assets/icons/vanilla-white.svg');
-          @include mixins.at-media {
-            background-image: none;
-          }
-        }
-      }
-
-      &:nth-of-type(3) > a {
-        background-image: url('/assets/icons/sprinkles.svg');
-        @include mixins.at-media {
-          background-image: none;
-        }
-
-        &.current {
-          background-image: url('/assets/icons/sprinkles-white.svg');
-          @include mixins.at-media {
-            background-image: none;
-          }
         }
       }
     }

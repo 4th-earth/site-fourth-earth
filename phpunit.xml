@@ -13,7 +13,7 @@
 	xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
   <coverage>
     <include>
-      <directory suffix=".php">./site-raw/</directory>
+      <directory suffix=".php">./src/</directory>
     </include>
     <exclude>
       <directory>vendor/</directory>
@@ -21,7 +21,7 @@
   </coverage>
   <testsuites>
     <testsuite name="dynamic">
-      <directory suffix="Test.php">./site-dynamic-php/tests/</directory>
+      <directory suffix="Test.php">./tests/</directory>
     </testsuite>
   </testsuites>
   <php>

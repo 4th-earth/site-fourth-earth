@@ -22,7 +22,7 @@ html {
   scroll-behavior: var(--smooth);
   font-family: var(--font-family);
   font-size: var(--m-font);
-  background-color: var(--fe-white);
+  background-color: var(--background-color);
   scroll-padding-top: 55pt;
   @include mixins.at-media {
     scroll-padding-top: 66pt;
@@ -42,53 +42,11 @@ a {
   }
 }
 
-
-div[is="table"] {
-  overflow-x: scroll;
+a[rel~=noreferrer]:after {
+  content: var(--icon-new-window);
+  display: var(--inline-block);
+  margin-left: var(--2xs-spacer);
+  position: var(--relative);
+  top: var(--icon-lift-spacer);
+  font-size: var(--xs-font);
 }
-
-/*
-details:hover {
-  cursor: pointer;
-}
-*/
-
-
-/*
-body > ul:first-of-type {
-  margin-bottom: 4rem;
-}
-
-div[is="heading-wrapper"] {
-  display: grid;
-  grid-auto-columns: 44pt auto;
-  column-gap: 2ch;
-  grid-template-areas:
-      'link text';
-  margin-top: 3rem;
-}
-
-div[is="heading-wrapper"] > h2,
-div[is="heading-wrapper"] > h3,
-div[is="heading-wrapper"] > h4,
-div[is="heading-wrapper"] > h5,
-div[is="heading-wrapper"] > h6 {
-  grid-area: text;
-}
-
-div[is="heading-wrapper"] > a {
-  grid-area: link;
-  display: inline-block;
-  width: 44pt;
-  height: 44pt;
-  background: red;
-}
-
-div[is="heading-wrapper"] > a > span {
-  position: absolute;
-  left: -999px;
-}
-
-p:last-of-type {
-  font-size: 0.75rem;
-} */

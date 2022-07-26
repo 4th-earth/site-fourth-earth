@@ -5,7 +5,7 @@
   font-style: normal;
   font-weight: 300;
   font-stretch: 100%;
-  src: url('/assets/fonts/deco.ttf') format('truetype');
+  src: url('/fonts/deco.ttf') format('truetype');
 }
 
 :root {
@@ -14,14 +14,19 @@
   --text-width: 70ch;
   --line-height: 1.5rem;
 
+  --xs-font: clamp(10pt, 3.125vw, 14pt);
   --m-font: clamp(14pt, 5vw, 18pt);
   --l-font: 30pt;
 
   --icon-increase: "◭";
+  --icon-new-window: "⧉";
 
   --0-spacer: 0;
+  --2xs-spacer: 0.25rem;
   --xs-spacer: 0.5rem;
+  --icon-lift-spacer: -0.5rem;
 
+  --background-color: #ffffff;
   --fe-key: #5E9D9D;
   --white: #ffffff;
   --fe-white: #fcfcfd;
