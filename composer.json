@@ -32,7 +32,8 @@
   },
   "autoload": {
     "psr-4": {
-      "FE\\": "./src"
+      "FE\\": "./src",
+      "Eightfold\\Amos\\": "./src/Amos"
     }
   },
   "autoload-dev": {
