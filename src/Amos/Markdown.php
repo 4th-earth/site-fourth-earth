@@ -13,9 +13,11 @@ class Markdown
 
     private const COMPONENT_WRAPPER = '{!!(.*)!!}';
 
-    public static function singletonConverter(): MarkdownConverter
-    {
-        if (! isset(self::$markdownConverter)) {
+    public static function singletonConverter(
+        MarkdownConverter $converter = null
+    ): MarkdownConverter {
+        if (isset(self::$markdownConverter) === false) {
+            if ($converter === null) {
             self::$markdownConverter = MarkdownConverter::create()
                 ->withConfig(
                     [
@@ -37,6 +39,11 @@ class Markdown
                         'internal_hosts'     => 'joshbruce.com'
                     ]
                 );
+
+            } else {
+                self::$markdownConverter = $converter;
+
+            }
         }
         return self::$markdownConverter;
     }

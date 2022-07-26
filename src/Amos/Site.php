@@ -11,8 +11,11 @@ use Psr\Http\Message\StreamInterface;
 use Nyholm\Psr7\Response;
 use Nyholm\Psr7\Stream;
 
+use Eightfold\Markdown\Markdown as MarkdownConverter;
+
 use Eightfold\Amos\Content;
 use Eightfold\Amos\Markdown;
+use Eightfold\Amos\Sitemap;
 
 use Eightfold\Amos\Documents\Page;
 
@@ -60,6 +63,20 @@ class Site
     {
         $this->request = $for;
 
+        if ($this->requestPath() === '/sitemap.xml') {
+            return new Response(
+                status: 200,
+                headers: ['Content-type' => 'application/xml'],
+                body: Stream::create(
+                    Sitemap::create(
+                        $this->content(),
+                        $this->domain()
+                    )->build()
+                )
+            );
+
+        }
+
         if ($this->content()->notFound(at: $this->requestPath())) {
             die('404');
         }
@@ -73,13 +90,15 @@ class Site
 
         }
 
+        $this->createMarkdownConverter();
         return new Response(
             status: 200,
             headers: ['Content-type' => 'text/html'],
             body: Stream::create(
                 $template::create(
                     $this->content(),
-                    $this->request()
+                    $this->request(),
+                    $this->domain()
                 )->build()
             )
         );
@@ -100,5 +119,32 @@ class Site
             trigger_error("No request received.", E_USER_WARNING);
         }
         return $this->request;
+    }
+
+    private function createMarkdownConverter(): void
+    {
+        Markdown::singletonConverter(
+            MarkdownConverter::create()
+                ->withConfig([
+                    'html_input' => 'allow'
+                ])->defaultAttributes([
+                    Image::class => [
+                        'loading'  => 'lazy',
+                        'decoding' => 'async'
+                    ]
+                ])->externalLinks([
+                    'open_in_new_window' => true,
+                    'internal_hosts'     => $this->domain()
+                ])->accessibleHeadingPermalinks([
+                    'min_heading_level' => 2,
+                    'max_heading_level' => 3,
+                    'symbol'            => '＃'
+                ])->minified()
+                ->smartPunctuation()
+                ->descriptionLists()
+                ->tables()
+                ->attributes() // for class on notices
+                ->abbreviations()
+        );
     }
 }

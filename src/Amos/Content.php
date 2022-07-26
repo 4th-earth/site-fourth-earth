@@ -75,13 +75,14 @@ class Content
         return ! $this->found($at);
     }
 
+    public function markdown(string $at): string
+    {
+        return file_get_contents($this->contentPath($at));
+    }
+
     public function convertedContent(string $at): string
     {
-        return Markdown::convert(
-            markdown: file_get_contents(
-                $this->contentPath(at: $at)
-            )
-        );
+        return Markdown::convert(markdown: $this->markdown($at));
     }
 
     private function fileInfo(): SplFileInfo
