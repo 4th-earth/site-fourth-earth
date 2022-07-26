@@ -23,10 +23,14 @@ The Fenghuang discover they aren’t the only higher order sentient beings on th
 Marked by Marl, the sorcerer and a mass immigration of Grimalkin to The Cradle. Prior to this immigration and welcoming of the Grimalkin by the Fenghuang word of other higher-order sentient beings was interpreted as rumor and speculation.
 
 The Great Grimalkin Immigration
+
 The Grampus Immigration
+
 The Caudata Immigration
+
 The Chiroptera Immigration
-The Battle of Third EarthFourth Earth
+
+The Battle of Third Earth–Fourth Earth
 
 ## Fourth Earth
 

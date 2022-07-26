@@ -99,7 +99,7 @@ class Page implements Buildable
                 )->props('id main', 'role main'),
                 Element::footer(
                     Element::img()->props(
-                        'src /assets/icons/fourth-earth-mark.svg',
+                        'src /ui/fourth-earth-mark.svg',
                         'alt Fourth Earth logo, with a 4 and E overlapping and the 4 has a curved hypotenuse',
                         'width 100px',
                         'height auto'
@@ -108,12 +108,12 @@ class Page implements Buildable
                         Element::li(
                             Element::a(
                                 'terms'
-                            )->props('href /legal/')
+                            )->props('href https://4th.earth/legal/')
                         ),
                         Element::li(
                             Element::a(
                                 'support'
-                            )->props('href /support/')
+                            )->props('href https://4th.earth/support/')
                         )
                     ),
                     Element::p(
