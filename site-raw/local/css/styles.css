@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;1,300;1,500&display=swap");
 @font-face{
   font-family:"Deco";
   font-style:normal;
@@ -10,7 +9,7 @@
 }
 :root{
   --font-header:"Deco", sans-serif;
-  --font-family:Raleway, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  --font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   --text-width:70ch;
   --line-height:1.5rem;
   --xs-font:clamp(10pt, 3.125vw, 14pt);
@@ -298,6 +297,10 @@ article > section{
 
 div[is=table]{
   overflow-x:scroll;
+}
+div[is=table]::-webkit-scrollbar{
+  width:0px;
+  background:transparent;
 }
 
 table{
