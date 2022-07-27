@@ -170,7 +170,7 @@ class Main implements Buildable
                     Element::img()->props(
                         'style height:22px!important;width:22px!important;margin-left:3px;vertical-align:text-bottom;', //phpcs:ignore
                         'src https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1', //phpcs:ignore
-                        'alt creative-commons share-alike icon, a arrow representing a loop encircled'
+                        'alt creative-commons share-alike icon, a arrow representing a loop encircled' // phpcs:ignore
                     )
                 )->props(
                     'xmlns:cc http://creativecommons.org/ns#',
