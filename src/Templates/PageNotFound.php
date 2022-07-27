@@ -19,7 +19,7 @@ use FE\Documents\Main;
 
 use FE\PageComponents\Navigation;
 
-class Page implements Buildable
+class PageNotFound implements Buildable
 {
     public static function create(
         Content $contentIn,
@@ -54,14 +54,13 @@ class Page implements Buildable
     public function build(): string
     {
         return Main::create($this->content(), $this->request(), $this->domain())
-            ->setPageTitle(
-                PageTitle::create(
-                    $this->content(),
-                    $this->request()
-                )->build()
-            )->setBody(
-                $this->content()->convertedContent(
-                    at: $this->request()->getUri()->getPath()
+            ->setPageTitle('Page not found')
+            ->setBody(
+                $this->content()->convertMarkdown(
+                    $this->content()->markdown(
+                        at: '/errors/404/content.md',
+                        isContent: false
+                    )
                 )
             )->build();
     }
