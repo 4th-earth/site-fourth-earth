@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Eightfold\Amos;
+namespace Eightfold\Amos\Documents;
 
 use SplFileInfo;
 
