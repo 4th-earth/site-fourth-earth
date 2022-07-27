@@ -6,6 +6,7 @@
   font-weight:300;
   font-stretch:100%;
   src:local("sans-serif"), url("/fonts/deco.ttf") format("truetype");
+  font-display:swap;
 }
 :root{
   --font-header:"Deco", sans-serif;
