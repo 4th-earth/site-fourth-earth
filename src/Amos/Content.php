@@ -67,7 +67,7 @@ class Content
 
     public function found(string $at): bool
     {
-        return file_exists($this->publicContentRoot($at));
+        return file_exists($this->publicPath($at));
     }
 
     public function notFound(string $at): bool
@@ -75,14 +75,22 @@ class Content
         return ! $this->found($at);
     }
 
-    public function markdown(string $at): string
+    public function markdown(string $at, bool $isContent = true): string
     {
+        if ($isContent === false) {
+            return file_get_contents($this->root() . $at);
+        }
         return file_get_contents($this->contentPath($at));
     }
 
     public function convertedContent(string $at): string
     {
-        return Markdown::convert(markdown: $this->markdown($at));
+        return $this->convertMarkdown($this->markdown($at));
+    }
+
+    public function convertMarkdown(string $markdown): string
+    {
+        return Markdown::convert($markdown);
     }
 
     private function fileInfo(): SplFileInfo
