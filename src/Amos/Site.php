@@ -15,9 +15,8 @@ use Eightfold\Markdown\Markdown as MarkdownConverter;
 
 use Eightfold\Amos\Content;
 use Eightfold\Amos\Markdown;
-use Eightfold\Amos\Sitemap;
 
-use Eightfold\Amos\Documents\Page;
+use Eightfold\Amos\Documents\Sitemap;
 
 class Site
 {
