@@ -315,7 +315,7 @@ This Sprinkle is designed to aid:
 
 [Version](/versioning/): 0.1.0
 
-This Sprinkle presumes the Criticality Sprinkle insofar as the Criticality Die is used. Players MAY choose to use this Sprinkle standalone.
+This Sprinkle presumes the [Criticality Sprinkle](/sprinkles/#criticality) insofar as the Criticality Die is used. Players MAY choose to use this Sprinkle standalone.
 
 - Players MUST add an extra die to the Dice Pool, which is known as the Criticality Die and SHOULD be distinct from other dice in the pool; we RECOMMEND using a die with the same number of sides or greater.
 	- The die MAY be changed per Session or Action.
