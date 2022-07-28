@@ -77,7 +77,7 @@ The following table describes a method for calculating the Potential Energy (dam
 	- If the Fast Action is performed twice, the Difficulty Rating MUST be divided by 2 and split evenly between the two Actions; if performing once, the Difficulty Rating MUST NOT be split.
 		- If the Fast Action is performed twice and the Difficulty Rating is odd, the Player MUST round up the first and round down the second Difficulty Rating.
 		- If using non-health Life Batteries, Players MAY spend non-health Life Battery Points to reduce the Difficulty Ratings individually; as if they were two, separate Actions.
-- Potential Energy MAY be reduced mechanically (see Resistance Sprinkle), or, through negotiation and narrative convenience (incapacitate instead of kill, for example).
+- Potential Energy MAY be reduced mechanically (see [Resistance Sprinkle](https://raw.4th.earth/sprinkles/#resistance)), or, through negotiation and narrative convenience (incapacitate instead of kill, for example).
 
 <div is="table">
 
