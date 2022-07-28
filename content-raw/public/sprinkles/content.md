@@ -3,6 +3,10 @@
 <nav id="toc" role="region" aria-live="polite" data-open="false">
 <button id="toc-toggle" aria-expanded="false" aria-controls="toc" onclick="toggleTOC()"><span>open</span> <abbr title="table of contents">TOC</abbr></button>
 
+- [Turn-based action resolution](#turn-based-action-resolution)
+	- [Action deck](#action-deck)
+	- [Difficulty rating based](#difficulty-rating-based)
+	- [Modified die roll](#modified-die-roll)
 - [Advanced Technology and Magic](#advanced-technology-and-magic)
 	- [Rarity of Tool or Spell](#rarity-of-tool-or-spell)
 	- [Target of Tool or Spell](#target-of-tool-or-spell)
@@ -33,9 +37,31 @@
 
 *Note: Sprinkles add complexity to gameplay.*
 
+## Turn-based action resolution
+
+[Version](/versioning/): 0.1.0
+
+### Action deck
+
+- Each Round, Players MUST draw one card from a standard 52 deck of platings cards for each Character they’re playing; no jokers or specialty cards.
+- Actions MUST be resolved from highest to lowest.
+	- Ties MUST be resolved in alphabetical order of suit names; clubs, diamonds, hearts, spades.
+
+### Difficulty rating based
+
+- Each round, Characters MUST decide what they will attempt to do. All Actions MUST be given a Difficulty Rating. All Players MUST modify the Difficulty Rating.
+- Resolution SHOULD be from the most difficult to the least.
+	- Ties SHOULD favor Player Characters.
+
+### Modified die roll
+
+- Players MUST roll a 12-sided die and add the total of their unspent Battery Points.
+- Turn order MUST be resolved in descending order.
+	- Ties SHOULD favor Player Characters.
+
 ## Advanced Technology and Magic
 
-Version: 0.1.0
+[Version](/versioning/): 0.1.0
 
 The following mechanics MAY be applied to both advanced technology Tools and magic.
 
@@ -115,7 +141,7 @@ Some advanced technology or magic MAY move from the Protagonist to the target (e
 
 ## Allies
 
-Version: 0.1.0
+[Version](/versioning/): 0.1.0
 
 - An active ally MUST be a Character who has the ability to perform Actions during a round and those Actions will be in support of the Protagonist or Antagonist, not both.
 - If the Antagonist has active allies, the Difficulty Rating MUST be increased by 1 for every 2 active allies. (1 active ally MUST NOT result in an increase, 4 active allies SHOULD result in an increase of 2.)
@@ -123,7 +149,7 @@ Version: 0.1.0
 
 ## Criticality
 
-Version: 0.1.0
+[Version](/versioning/): 0.1.0
 
 Criticality represents success *and* failure beyond the intention of the Character for mundane and aggressive Actions.
 
@@ -231,7 +257,7 @@ The Player rolls one, 12-sided die.
 
 ## Death, resurrection, and reincarnation
 
-Version: 0.1.0
+[Version](/versioning/): 0.1.0
 
 - If a Character dies, 1 Proficiency Point SHOULD be removed from all completed Proficiency Ranks; including Tools. This represents relearning or recovering while maintaining memory.
 - If a Character is resurrected, the health battery MUST be set to 1; all other batteries MUST be set to 0.
@@ -248,7 +274,7 @@ Version: 0.1.0
 
 ## Inter-Character battery point transfer
 
-Version: 0.1.0
+[Version](/versioning/): 0.1.0
 
 This Sprinkle affords one Character to assist another Character by transferring Life Battery points to the other Character.
 
@@ -264,7 +290,7 @@ This Sprinkle affords one Character to assist another Character by transferring 
 
 ## Opposing Difficulty Rating
 
-Version: 0.1.0
+[Version](/versioning/): 0.1.0
 
 This Sprinkle is designed to aid:
 
@@ -286,7 +312,7 @@ This Sprinkle is designed to aid:
 
 ## Partials and Complications
 
-Version: 0.1.0
+[Version](/versioning/): 0.1.0
 
 This Sprinkle presumes the Criticality Sprinkle insofar as the Criticality Die is used. Players MAY choose to use this Sprinkle standalone.
 
@@ -301,7 +327,7 @@ This Sprinkle presumes the Criticality Sprinkle insofar as the Criticality Die i
 
 ## Resistance
 
-Version: 0.1.0
+[Version](/versioning/): 0.1.0
 
 Resistance results in a modification to Protagonist Potential Energy (PE) when performing aggressive Actions in a way that causes physical damage; draining the health Life Battery.
 
@@ -334,7 +360,7 @@ Players MAY apply different modifications for specific areas of the Character (b
 
 ## Re-roll
 
-Version: 0.1.0
+[Version](/versioning/): 0.1.0
 
 - Players MAY spend Proficiency Points and non-health Life Battery Points to re-roll an action.
     - When using non-health Life Battery Points, the Points SHOULD use the Target Action Battery. (Any inter-battery recharging mechanics SHOULD apply.)
@@ -343,7 +369,7 @@ Version: 0.1.0
 
 ## Scale
 
-Version: 0.1.0
+[Version](/versioning/): 0.1.0
 
 Scale is a way of measuring the size difference between Characters in a Setting or Scene.
 
@@ -369,7 +395,7 @@ Imagine a fly hitting a human. The human is hundreds of times larger than the fl
 
 ## Stance
 
-Version: 0.1.0
+[Version](/versioning/): 0.1.0
 
 Stance affords Characters to be more or less aggressive, at a cost.
 
