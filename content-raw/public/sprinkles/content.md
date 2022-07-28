@@ -160,7 +160,7 @@ Criticality represents success *and* failure beyond the intention of the Charact
 - If a 1 is rolled on the Criticality Die, the result is a critical success or failure based on the success or failure of the rest of the Dice Pool, respectively.
 - Players MAY decide to opt-out or -in to using the Criticality Die prior to the creation of the Dice Pool.
 	- Players SHOULD decide whether they will apply the Critically Die prior to becoming aware of the Difficulty Rating assigned to the Action.
-	- Players MAY decide to always roll a Criticality Die as a group decision (part of the Social Contract). We RECOMMEND the decision be made prior to the beginning of the Session.
+	- Players MAY decide to always roll a Criticality Die as a group decision (part of the [Social Contract](/#social-contract)). We RECOMMEND the decision be made prior to the beginning of the Session.
 - Beyond the narrative implications and outcomes, Criticality SHOULD come with mechanical impacts on the Character.
 
 ### Mundane Success: Criticality
