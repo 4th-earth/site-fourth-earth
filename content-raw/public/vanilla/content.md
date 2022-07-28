@@ -1,6 +1,6 @@
 # 4th Earth RAW: Vanilla
 
-Version: 0.1.1
+[Version](/versioning/): 0.1.1
 
 <nav id="toc" role="region" aria-live="polite" data-open="false">
 <button id="toc-toggle" aria-expanded="false" aria-controls="toc" onclick="toggleTOC()"><span>open</span> <abbr title="table of contents">TOC</abbr></button>
