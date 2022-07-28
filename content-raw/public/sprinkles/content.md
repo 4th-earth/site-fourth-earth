@@ -39,13 +39,14 @@
 
 ## Turn-based action resolution
 
-[Version](/versioning/): 0.1.0
+[Version](/versioning/): 0.1.1
 
 ### Action deck
 
 - Each Round, Players MUST draw one card from a standard 52 deck of playing cards for each Character they’re playing; no jokers or specialty cards.
 - Actions MUST be resolved from highest to lowest.
 	- Ties MUST be resolved in alphabetical order of suit names; clubs, diamonds, hearts, spades.
+	- Players SHOULD decide prior to drawing whether the ace represents 1 (lowest), 14 (highest), or, if the Player can choose to be lowest or highest (a special feature of drawing an ace).
 
 ### Difficulty rating based
 
