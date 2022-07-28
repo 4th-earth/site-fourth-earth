@@ -391,7 +391,7 @@ Presumes Resistance Sprinkle or similar implementation.
 
 Imagine a fly hitting a human. The human is hundreds of times larger than the fly. The human will most likely not take damage enough to matter, even if bitten by the fly.
 
-- We RECOMMEND using in conjunction with the Resistance Sprinkle.
+- We RECOMMEND using in conjunction with the [Resistance Sprinkle](/sprinkles/#resistance).
 - Larger Scale Characters SHOULD have a higher Resistance, if applicable. We RECOMMEND increasing Resistance by 1 for each step greater the Antagonist is.
 
 ## Stance
