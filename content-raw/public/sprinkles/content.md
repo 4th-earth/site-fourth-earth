@@ -363,7 +363,7 @@ Players MAY apply different modifications for specific areas of the Character (b
 
 [Version](/versioning/): 0.1.0
 
-- Players MAY spend Proficiency Points and non-health Life Battery Points to re-roll an action.
+- Players MAY spend Proficiency Points and non-health Life Battery Points to re-roll an Action.
     - When using non-health Life Battery Points, the Points SHOULD use the Target Action Battery. (Any inter-battery recharging mechanics SHOULD apply.)
 - Players MAY spend 1 Point to re-roll the whole Dice Pool or 2 Points to re-roll a single die in the pool (including modifier dice, such as a Criticality Die).
 - As long as the Character has Points remaining, the Player MAY continue spending Points to re-roll.
