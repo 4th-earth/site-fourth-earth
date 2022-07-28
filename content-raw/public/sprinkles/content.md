@@ -309,7 +309,7 @@ This Sprinkle is designed to aid:
 	- The non-Player Character (when they are the Protagonist) MUST reduce the Antagonist Difficulty Rating to 0, if possible.
 		- If the non-Player Character cannot reduce the Antagonist Difficulty Rating to 0, they MUST reduce it as much as possible.
     - If the non-Player Character's Adjusted Difficulty Rating is greater than 0, the Player uses the opposing value in the Difficulty Rating Table from 4th Earth RAW.
-- If using a Criticality Die, resolution SHOULD be handled as if the non-Player Character rolled the Criticality Die and the non-Player Character SHOULD received the affects as if they were the Protagonist.
+- If using a Criticality Die, resolution SHOULD be handled as if the non-Player Character rolled the Criticality Die and the non-Player Character SHOULD receive the affects as if they were the Protagonist.
 
 ## Partials and Complications
 
