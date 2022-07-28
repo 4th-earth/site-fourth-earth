@@ -43,7 +43,7 @@
 
 ### Action deck
 
-- Each Round, Players MUST draw one card from a standard 52 deck of platings cards for each Character they’re playing; no jokers or specialty cards.
+- Each Round, Players MUST draw one card from a standard 52 deck of playing cards for each Character they’re playing; no jokers or specialty cards.
 - Actions MUST be resolved from highest to lowest.
 	- Ties MUST be resolved in alphabetical order of suit names; clubs, diamonds, hearts, spades.
 
