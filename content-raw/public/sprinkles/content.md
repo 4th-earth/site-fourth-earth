@@ -39,13 +39,14 @@
 
 ## Turn-based action resolution
 
-[Version](/versioning/): 0.1.0
+[Version](/versioning/): 0.1.1
 
 ### Action deck
 
-- Each Round, Players MUST draw one card from a standard 52 deck of platings cards for each Character they’re playing; no jokers or specialty cards.
+- Each Round, Players MUST draw one card from a standard 52 deck of playing cards for each Character they’re playing; no jokers or specialty cards.
 - Actions MUST be resolved from highest to lowest.
 	- Ties MUST be resolved in alphabetical order of suit names; clubs, diamonds, hearts, spades.
+	- Players SHOULD decide prior to drawing whether the ace represents 1 (lowest), 14 (highest), or, if the Player can choose to be lowest or highest (a special feature of drawing an ace).
 
 ### Difficulty rating based
 
@@ -159,7 +160,7 @@ Criticality represents success *and* failure beyond the intention of the Charact
 - If a 1 is rolled on the Criticality Die, the result is a critical success or failure based on the success or failure of the rest of the Dice Pool, respectively.
 - Players MAY decide to opt-out or -in to using the Criticality Die prior to the creation of the Dice Pool.
 	- Players SHOULD decide whether they will apply the Critically Die prior to becoming aware of the Difficulty Rating assigned to the Action.
-	- Players MAY decide to always roll a Criticality Die as a group decision (part of the Social Contract). We RECOMMEND the decision be made prior to the beginning of the Session.
+	- Players MAY decide to always roll a Criticality Die as a group decision (part of the [Social Contract](/#social-contract)). We RECOMMEND the decision be made prior to the beginning of the Session.
 - Beyond the narrative implications and outcomes, Criticality SHOULD come with mechanical impacts on the Character.
 
 ### Mundane Success: Criticality
@@ -299,8 +300,8 @@ This Sprinkle is designed to aid:
 3. both.
 
 - If using opposing rolls between two Players, two Actions MUST be created; one for the the Protagonist and one for the Antagonist.
-	- The Initial Difficulty Rating SHOULD be for the Protagonist based on their Action against the Antagonist (see Antagonist Difficulty Rating from 4th Earth RAW: Vanilla).
-	- The Difficulty Rating for the Antagonist SHOULD be an opposing Difficulty Rating (see opposing value in the Difficulty Rating Table from 4th Earth RAW).
+	- The Initial Difficulty Rating SHOULD be for the Protagonist based on their Action against the Antagonist (see [Antagonist Difficulty Rating from 4th Earth RAW: Vanilla](/vanilla/#opposing-character-interactions)).
+	- The Difficulty Rating for the Antagonist SHOULD be an opposing Difficulty Rating (see opposing value in the [Difficulty Rating Table from 4th Earth RAW](/#difficulty-rating-table)).
 	- Both Players MAY reduce their Difficulty Ratings as if their Character was performing the Action.
 		- The Player with the most ones rolled from their pool SHOULD win.
 		- We RECOMMEND ties go to the Protagonist.
@@ -308,13 +309,13 @@ This Sprinkle is designed to aid:
 	- The non-Player Character (when they are the Protagonist) MUST reduce the Antagonist Difficulty Rating to 0, if possible.
 		- If the non-Player Character cannot reduce the Antagonist Difficulty Rating to 0, they MUST reduce it as much as possible.
     - If the non-Player Character's Adjusted Difficulty Rating is greater than 0, the Player uses the opposing value in the Difficulty Rating Table from 4th Earth RAW.
-- If using a Criticality Die, resolution SHOULD be handled as if the non-Player Character rolled the Criticality Die and the non-Player Character SHOULD received the affects as if they were the Protagonist.
+- If using a Criticality Die, resolution SHOULD be handled as if the non-Player Character rolled the Criticality Die and the non-Player Character SHOULD receive the affects as if they were the Protagonist.
 
 ## Partials and Complications
 
 [Version](/versioning/): 0.1.0
 
-This Sprinkle presumes the Criticality Sprinkle insofar as the Criticality Die is used. Players MAY choose to use this Sprinkle standalone.
+This Sprinkle presumes the [Criticality Sprinkle](/sprinkles/#criticality) insofar as the Criticality Die is used. Players MAY choose to use this Sprinkle standalone.
 
 - Players MUST add an extra die to the Dice Pool, which is known as the Criticality Die and SHOULD be distinct from other dice in the pool; we RECOMMEND using a die with the same number of sides or greater.
 	- The die MAY be changed per Session or Action.
@@ -362,7 +363,7 @@ Players MAY apply different modifications for specific areas of the Character (b
 
 [Version](/versioning/): 0.1.0
 
-- Players MAY spend Proficiency Points and non-health Life Battery Points to re-roll an action.
+- Players MAY spend Proficiency Points and non-health Life Battery Points to re-roll an Action.
     - When using non-health Life Battery Points, the Points SHOULD use the Target Action Battery. (Any inter-battery recharging mechanics SHOULD apply.)
 - Players MAY spend 1 Point to re-roll the whole Dice Pool or 2 Points to re-roll a single die in the pool (including modifier dice, such as a Criticality Die).
 - As long as the Character has Points remaining, the Player MAY continue spending Points to re-roll.
@@ -390,7 +391,7 @@ Presumes Resistance Sprinkle or similar implementation.
 
 Imagine a fly hitting a human. The human is hundreds of times larger than the fly. The human will most likely not take damage enough to matter, even if bitten by the fly.
 
-- We RECOMMEND using in conjunction with the Resistance Sprinkle.
+- We RECOMMEND using in conjunction with the [Resistance Sprinkle](/sprinkles/#resistance).
 - Larger Scale Characters SHOULD have a higher Resistance, if applicable. We RECOMMEND increasing Resistance by 1 for each step greater the Antagonist is.
 
 ## Stance

@@ -1,6 +1,6 @@
 # Versioning
 
-We RECOMMEND using semantic versioning as described below and described in the spirit of Semantic Versioning 2.0.0 described at: [https://semver.org/spec/v2.0.0.html](https://semver.org/spec/v2.0.0.html)
+We RECOMMEND using semantic versioning as described below and described in the spirit of Semantic Versioning 2.0.0 described at: [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html)
 
 4th Earth RAW Specifications (represented by [4th Earth RAW](/raw/) and [4th Earth RAW: Vanilla](/vanilla/)) SHOULD be versioned as a collection of guidelines and guardrails. Individual mechanics (represented by the individual concepts in [4th Earth RAW: Sprinkles](/sprinkles/)) SHOULD be versioned separately.
 
