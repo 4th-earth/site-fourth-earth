@@ -301,7 +301,7 @@ This Sprinkle is designed to aid:
 
 - If using opposing rolls between two Players, two Actions MUST be created; one for the the Protagonist and one for the Antagonist.
 	- The Initial Difficulty Rating SHOULD be for the Protagonist based on their Action against the Antagonist (see [Antagonist Difficulty Rating from 4th Earth RAW: Vanilla](/vanilla/#opposing-character-interactions)).
-	- The Difficulty Rating for the Antagonist SHOULD be an opposing Difficulty Rating (see opposing value in the Difficulty Rating Table from 4th Earth RAW).
+	- The Difficulty Rating for the Antagonist SHOULD be an opposing Difficulty Rating (see opposing value in the [Difficulty Rating Table from 4th Earth RAW](/#difficulty-rating-table)).
 	- Both Players MAY reduce their Difficulty Ratings as if their Character was performing the Action.
 		- The Player with the most ones rolled from their pool SHOULD win.
 		- We RECOMMEND ties go to the Protagonist.
