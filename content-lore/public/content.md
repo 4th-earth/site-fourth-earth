@@ -16,21 +16,25 @@ Dominate higher order species believed to be descended from primates and referre
 
 ## Second Earth
 
-The Fenghuang discover they aren’t the only higher order sentient beings on the planet due to The Cigwe Immigration.
+The Fenghuang discover they aren’t the only higher order sentient beings on the planet. 
+
+## The Cigwe Immigration
 
 ## Third Earth
 
 Marked by Marl, the sorcerer and a mass immigration of Grimalkin to The Cradle. Prior to this immigration and welcoming of the Grimalkin by the Fenghuang word of other higher-order sentient beings was interpreted as rumor and speculation.
 
-The Great Grimalkin Immigration
+### The Great Grimalkin Immigration
 
-The Grampus Immigration
+### The Grampus Immigration
 
-The Caudata Immigration
+### The Caudata Immigration
 
-The Chiroptera Immigration
+### The Chiroptera Immigration
 
-The Battle of Third Earth–Fourth Earth
+### The Capra Immigration
+
+### The Battle of Third Earth
 
 ## Fourth Earth
 
