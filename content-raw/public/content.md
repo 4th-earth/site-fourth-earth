@@ -61,13 +61,24 @@ Character Actions consist of the following, minimal, list of activities:
 
 Actions are resolved by answering: Was the Action successful? and How were the Setting and other Characters affected by the Action?
 
-- Difficulty Rating 0 MUST represent automatic success.
-- Difficulty Rating Infinite MUST be impossible for the Character to achieve in the Setting.
-- Difficulty Ratings MUST NOT be less than 0.
-- Difficulty Ratings MUST be whole numbers.
-- Difficulty Ratings SHOULD be based on the Character attempting the Action, the complexity of the Action, and qualities of any opposing force (standing up may be Difficulty 6 for an infant and Difficulty 0 for an able-bodied adult).
-- Players SHOULD be able to influence the Difficulty Rating in one or more ways.
-- Using a Tool MAY reduce the [Difficulty Rating](#difficulty-rating) of an Action up to 2 levels.
+Difficulty Ratings MUST NOT:
+
+- be less than 0.
+
+Difficulty Ratings MUST:
+
+- be whole numbers.
+- be automatically successful, if 0.
+- be impossible, if Infinite.
+
+Difficulty Ratings SHOULD:
+
+- be based on the Character attempting the Action, the complexity of the Action, and qualities of any opposing force (standing up may be Difficulty 6 for an infant and Difficulty 0 for an able-bodied adult).
+- be adjustable by Players in one or more ways.
+
+Using a Tool MAY:
+
+- reduce the [Difficulty Rating](#difficulty-rating) of an Action up to 2 levels.
 
 ### Difficulty Rating Table
 
