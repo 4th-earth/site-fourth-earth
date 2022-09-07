@@ -1,11 +1,12 @@
 # 4th Earth RAW: Vanilla
 
-Version: 0.1.0
+[Version](/versioning/): 0.1.1
 
 <nav id="toc" role="region" aria-live="polite" data-open="false">
 <button id="toc-toggle" aria-expanded="false" aria-controls="toc" onclick="toggleTOC()"><span>open</span> <abbr title="table of contents">TOC</abbr></button>
 
 - [Difficulty Rating](#difficulty-rating)
+	- [Real-time action resolution](#real-time-action-resolution)
 	- [Opposing character interactions](#opposing-character-interactions)
 - [Dice Pools](#dice-pools)
 - [Proficiency Ranks](#proficiency-ranks)
@@ -33,6 +34,15 @@ The vanilla implementation is designed to facilitate solo-adventuring. However, 
 	    - Mentally taxing Actions SHOULD predominately affect the mental Battery.
 	    - Magic and similar actions SHOULD predominately affect the spiritual Battery.
 - Difficulty MAY be increased or decreased by negotiating with the Narrator, if applicable.
+
+### Real-time action resolution 
+
+- All Characters MUST decide what they will attempt to do.
+- All Actions MUST be given a Difficulty Rating.
+- All Players MUST modify the Difficulty Rating, build their Dice Pools, and roll at the same time.
+- Character Actions SHOULD be narratively resolved starting with the Dice Pools containing the most ones.
+    - Ties between Antagonist and Protagonist Characters SHOULD go to the Character with more dice in their Dice Pool.
+- Character Actions MAY be negated as a result of Action resolution.
 
 ### Opposing Character Interactions
 
@@ -67,7 +77,7 @@ The following table describes a method for calculating the Potential Energy (dam
 	- If the Fast Action is performed twice, the Difficulty Rating MUST be divided by 2 and split evenly between the two Actions; if performing once, the Difficulty Rating MUST NOT be split.
 		- If the Fast Action is performed twice and the Difficulty Rating is odd, the Player MUST round up the first and round down the second Difficulty Rating.
 		- If using non-health Life Batteries, Players MAY spend non-health Life Battery Points to reduce the Difficulty Ratings individually; as if they were two, separate Actions.
-- Potential Energy MAY be reduced mechanically (see Resistance Sprinkle), or, through negotiation and narrative convenience (incapacitate instead of kill, for example).
+- Potential Energy MAY be reduced mechanically (see [Resistance Sprinkle](https://raw.4th.earth/sprinkles/#resistance)), or, through negotiation and narrative convenience (incapacitate instead of kill, for example).
 
 <div is="table">
 

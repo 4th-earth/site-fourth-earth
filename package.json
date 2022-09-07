@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "description": "For compiling Sass and JS for 4th.earth",
   "scripts": {
-    "deploy": "concurrently --kill-others \"npm run css\" \"npm run js\" \"npm run favicons\" \"npm run ui\" \"npm run fonts\"",
-    "css": "gulp sass",
+    "sass": "gulp sass",
     "js": "gulp javascript",
     "favicons": "gulp favicons",
     "ui": "gulp ui",

@@ -35,7 +35,7 @@ ul {
 
 a {
   font-weight: bold;
-  color: #5E9D9D;
+  color: var(--fe-key);
 
   &:hover {
     text-decoration: none;

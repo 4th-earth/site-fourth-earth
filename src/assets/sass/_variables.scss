@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;1,300;1,500&display=swap');
-
 @font-face {
   font-family: 'Deco';
   font-style: normal;
   font-weight: 300;
   font-stretch: 100%;
-  src: url('/fonts/deco.ttf') format('truetype');
+  src: local('sans-serif'), url('/fonts/deco.ttf') format('truetype');
+  font-display: swap;
 }
 
 :root {
   --font-header: 'Deco', sans-serif;
-  --font-family: Raleway, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  --font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   --text-width: 70ch;
   --line-height: 1.5rem;
 
@@ -27,7 +26,7 @@
   --icon-lift-spacer: -0.5rem;
 
   --background-color: #ffffff;
-  --fe-key: #5E9D9D;
+  --fe-key: #008181;
   --white: #ffffff;
   --fe-white: #fcfcfd;
 

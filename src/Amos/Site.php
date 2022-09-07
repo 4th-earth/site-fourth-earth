@@ -15,9 +15,8 @@ use Eightfold\Markdown\Markdown as MarkdownConverter;
 
 use Eightfold\Amos\Content;
 use Eightfold\Amos\Markdown;
-use Eightfold\Amos\Sitemap;
 
-use Eightfold\Amos\Documents\Page;
+use Eightfold\Amos\Documents\Sitemap;
 
 class Site
 {
@@ -52,9 +51,12 @@ class Site
         return $this->contentIn;
     }
 
-    public function templates(string $default): self
+    public function templates(string $default, array $templates): self
     {
         $this->templates['default'] = $default;
+        foreach ($templates as $id => $className) {
+            $this->templates[$id] = $className;
+        }
         return $this;
     }
 
@@ -74,13 +76,39 @@ class Site
                 )
             );
 
+        } elseif (str_contains($this->requestPath(), '.')) {
+            $path = $this->content()->publicContentRoot() . $this->requestPath();
+            if (file_exists($path)) {
+                $mime = mime_content_type($path);
+
+                return new Response(
+                    status: 200,
+                    headers: ['Content-type' => mime_content_type($path)],
+                    body: Stream::create(@\fopen($path, 'r'))
+                );
+
+            }
         }
 
+        $this->createMarkdownConverter();
         if ($this->content()->notFound(at: $this->requestPath())) {
-            die('404');
+            $template = $this->templates['error404'];
+            $path = $this->content()->root() . '/errors/404/content.md';
+            if (file_exists($path)) {
+                return new Response(
+                    status: 404,
+                    headers: ['Content-type' => 'text/html'],
+                    body: Stream::create(
+                        $template::create(
+                            $this->content(),
+                            $this->request(),
+                            $this->domain()
+                        )->build()
+                    )
+                );
+            }
         }
 
-        $template = $this->templates['default'];
         if (
             $this->content()->meta($this->requestPath())
                 ->valueExists(for: 'template')
@@ -89,7 +117,7 @@ class Site
 
         }
 
-        $this->createMarkdownConverter();
+        $template = $this->templates['default'];
         return new Response(
             status: 200,
             headers: ['Content-type' => 'text/html'],

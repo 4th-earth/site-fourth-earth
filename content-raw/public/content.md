@@ -1,6 +1,6 @@
 # 4th Earth: Rules as Written
 
-Version: 0.1.1
+[Version](/versioning/): 0.1.1
 
 <nav id="toc" role="region" aria-live="polite" data-open="false">
 <button id="toc-toggle" aria-expanded="false" aria-controls="toc" onclick="toggleTOC()"><span>open</span> <abbr title="table of contents">TOC</abbr></button>
@@ -26,7 +26,7 @@ These are the guidelines and guardrails for 4th Earth RAW a framework for creati
 
 4th Earth RAW presumes little previous experience with TTRPGs; defined terms are title-cased and their definitions are available in the glossary for each implementation. It should be presumed if there is not an explicit rule for or against something, Players MAY do whatever they like.
 
-4th Earth RAW uses the key words described in [Key words for use in RFCs to Indicate Requirement Levels](https://datatracker.ietf.org/doc/html/rfc2119), the all-caps are not screaming at you:
+4th Earth RAW uses the key words described in [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119), the all-caps are not screaming at you:
 
 - MUST, REQUIRED, or SHALL, mean that the definition is an absolute requirement of the specification;
 - MUST NOT or SHALL NOT, mean that the definition is an absolute prohibition of the specification;

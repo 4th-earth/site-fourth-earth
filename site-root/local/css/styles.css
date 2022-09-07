@@ -1,15 +1,15 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;1,300;1,500&display=swap");
 @font-face{
   font-family:"Deco";
   font-style:normal;
   font-weight:300;
   font-stretch:100%;
-  src:url("/fonts/deco.ttf") format("truetype");
+  src:local("sans-serif"), url("/fonts/deco.ttf") format("truetype");
+  font-display:swap;
 }
 :root{
   --font-header:"Deco", sans-serif;
-  --font-family:Raleway, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  --font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   --text-width:70ch;
   --line-height:1.5rem;
   --xs-font:clamp(10pt, 3.125vw, 14pt);
@@ -22,7 +22,7 @@
   --xs-spacer:0.5rem;
   --icon-lift-spacer:-0.5rem;
   --background-color:#ffffff;
-  --fe-key:#5E9D9D;
+  --fe-key:#008181;
   --white:#ffffff;
   --fe-white:#fcfcfd;
   --margin-centered:0 auto;
@@ -50,6 +50,10 @@ h1{
 
 h3{
   font-style:italic;
+}
+
+abbr{
+  border-bottom:1px dotted;
 }
 
 li, dt{
@@ -298,6 +302,10 @@ article > section{
 div[is=table]{
   overflow-x:scroll;
 }
+div[is=table]::-webkit-scrollbar{
+  width:0px;
+  background:transparent;
+}
 
 table{
   margin:2rem auto;
@@ -367,7 +375,7 @@ ul{
 
 a{
   font-weight:bold;
-  color:#5E9D9D;
+  color:var(--fe-key);
 }
 a:hover{
   text-decoration:none;

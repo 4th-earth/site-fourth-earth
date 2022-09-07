@@ -19,6 +19,7 @@ use Nyholm\Psr7Server\ServerRequestCreator;
 use Nyholm\Psr7\Factory\Psr17Factory;
 
 use FE\Templates\Page;
+use FE\Templates\PageNotFound;
 
 $psr17Factory = new Psr17Factory();
 
@@ -31,10 +32,13 @@ $request = (new ServerRequestCreator(
 
 (new SapiEmitter())->emit(
     Site::init(
-        withDomain: 'http://4th.earth',
+        withDomain: 'https://4th.earth',
         contentIn: Content::init(__DIR__ . '/../../content-root')
     )->templates(
-        default: Page::class
+        default: Page::class,
+        templates: [
+            'error404' => PageNotFound::class
+        ]
     )->response(for: $request)
 );
 exit();
