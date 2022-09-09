@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+	<head>
+		<style type="text/css">
+			nav > button {
+				display: none;
+			}
+
+			nav[data-js="true"] > button {
+				display: block;
+			}
+
+			nav[data-js="true"] > ul {
+				background-color: green;
+				position: absolute;
+				left: -999px;
+				height: 100vh;
+				width: 100vw;
+			}
+
+			nav[data-open="false"][data-js="true"][data-loaded="true"] > ul {
+				animation: close 0.2s ease-in-out;
+			}
+
+			nav[data-open="true"][data-js="true"] > ul {
+				left: 0px;
+				transition: left 0.2s ease-in-out;
+				visibility: visible;
+			}
+
+			@keyframes close {
+				from {
+					left: 0px;
+				}
+				to {
+					left: -999px;
+					visibility: hidden;
+				}
+			}
+		</style>
+		<script>
+		function toggleNav(button, isInitial = false) {
+			let b = button;
+			let nav = b.parentNode;
+			let expanded = b.getAttribute('aria-expanded');
+
+			if (isInitial === false) {
+				nav.setAttribute('data-loaded', 'true');
+			}
+
+			if (expanded === 'true') {
+				nav.setAttribute('data-open', 'false');
+				b.setAttribute('aria-expanded', 'false');
+				if (b.getAttribute('id') === 'main-nav-toggle') {
+					b.innerHTML = "menu";
+
+				} else {
+					b.innerHTML = 'TOC';
+
+				}
+
+			} else {
+				nav.setAttribute('data-open', 'true');
+				b.setAttribute('aria-expanded', 'true');
+				b.innerHTML = "close";
+
+			}
+		}
+
+		document.addEventListener('DOMContentLoaded', function() {
+			let mainNav = document.getElementById("main-nav");
+			let tocNav = document.getElementById("toc");
+			if (mainNav) {
+				mainNav.setAttribute("data-js", "true");
+				toggleNav(document.getElementById("main-nav-toggle"), true);
+
+			}
+
+			if (tocNav) {
+				tocNav.setAttribute("data-js", "true");
+				toggleNav(document.getElementById("toc-toggle"), true);
+
+			}
+
+  			window.addEventListener('scroll', function() {
+				let mainNav = document.getElementById("main-nav");
+				let tocNav = document.getElementById("toc");
+
+				if (mainNav) {
+					let b = mainNav.firstElementChild;
+					if (b.getAttribute('aria-expanded') === 'true') {
+						toggleNav(b);
+					}
+				}
+
+				if (tocNav) {
+					let b = tocNav.firstElementChild;
+					if (b.getAttribute('aria-expanded') === 'true') {
+						toggleNav(b);
+					}
+				}
+  			});
+		});
+		</script>
+
+	</head>
+	<body>
+		<nav id="main-nav" role="region" aria-live="polite" aria-label="main navigation" data-open="false" data-js="false" data-loaded="false">
+			<button id="main-nav-toggle" aria-expanded="true" aria-controls="main-nav-links" onclick="toggleNav(this)">menu</button>
+			<ul id="main-nav-links">
+				<li><a href="/">test</a></li>
+				<li><a href="/">test</a></li>
+				<li><a href="/">test</a></li>
+				<li><a href="/">test</a></li>
+			</ul>
+		</nav>
+		<nav id="toc" role="region" aria-live="polite" aria-label="table of contents" data-open="false" data-js="false" data-loaded="false">
+			<button id="toc-toggle" aria-expanded="true" aria-controls="toc" onclick="toggleNav(this)">TOC</button>
+			<ul>
+				<li><a href="/">test</a></li>
+				<li><a href="/">test</a></li>
+				<li><a href="/">test</a></li>
+				<li><a href="/">test</a></li>
+			</ul>
+		</nav>
+	</body>
+</html>
