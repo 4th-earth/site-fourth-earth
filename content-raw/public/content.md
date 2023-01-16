@@ -1,6 +1,6 @@
 # 4th Earth: Rules as Written
 
-[Version](/versioning/): 0.1.0
+[Version](/versioning/): 0.1.1
 
 <nav id="toc" role="region" aria-live="polite" data-open="false">
 <button id="toc-toggle" aria-expanded="false" aria-controls="toc" onclick="toggleTOC()"><span>open</span> <abbr title="table of contents">TOC</abbr></button>
@@ -67,6 +67,7 @@ Actions are resolved by answering: Was the Action successful? and How were the S
 - Difficulty Ratings MUST be whole numbers.
 - Difficulty Ratings SHOULD be based on the Character attempting the Action, the complexity of the Action, and qualities of any opposing force (standing up may be Difficulty 6 for an infant and Difficulty 0 for an able-bodied adult).
 - Players SHOULD be able to influence the Difficulty Rating in one or more ways.
+- Using a Tool MAY reduce the [Difficulty Rating](#difficulty-rating) of an Action up to 2 levels.
 
 ### Difficulty Rating Table
 
@@ -113,7 +114,7 @@ Proficiency Ranks represent the level of proficiency a [Character](#characters) 
 	- 3 Ranks per Action Type.
 	- 1 Rank per Tool; general, not specific (if a Character knows how to use a knife for cooking, they know how to use it for combat; they're just better at cooking than combat).
 - Each Rank MAY increase the number of dice in the [Dice Pool](#dice-pools) by 1.
-- Using a Tool MAY reduce the [Difficulty Rating](#difficulty-rating) of an Action up to 2 levels.
+
 
 ## Life Batteries
 

@@ -32,7 +32,7 @@ $request = (new ServerRequestCreator(
 
 (new SapiEmitter())->emit(
     Site::init(
-        withDomain: 'http://raw.4ht.earth',
+        withDomain: 'https://raw.4th.earth',
         contentIn: Content::init(__DIR__ . '/../../content-raw')
     )->templates(
         default: Page::class,
