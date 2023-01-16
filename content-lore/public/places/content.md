@@ -12,6 +12,10 @@ The majority of sentient beings now live in the same area, spanning just over 20
 
 Having seen the benefit in working together, all sentient beings on the planet know that, if they need to retreat again, they are always welcome.
 
+#### Governance
+
+
+
 ### Last Ditch
 
 ## Mau
