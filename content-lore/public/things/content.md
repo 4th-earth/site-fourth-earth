@@ -6,7 +6,7 @@ Citizen Goggles allow for both augmented and virtual reality simulation and inte
 
 The standard issue goggles are made of a single sheet of Biofabricated Glass framed in Biofabricated Aluminum. The lens is designed to be hidden from view of the wearer as much as possible; extending from one temple to the other and from above the eyebrows to below the cheekbones. A 50 millimeter wide, adjustable strap made of Biofabricated Cloth secures the device the wearer. Bone conduction speakers are attached to the strap and can also be adjusted.
 
-Last Ditch allows its citizens to choose an alternative pair goggles made from a modified pair of the standard issue goggles; they’re more glasses than goggles to allow easy removal and storage. The lens is reduced in height while maintaining the wraparound width. The frame is repurposed to create a larger top frame and temple arms. The strap is shortened and attached to the ends of the temple arms; adjustable for a secure fit and can be removed.
+Last Ditch allows its citizens to choose an alternative pair of goggles made from a modified pair of the standard issue goggles; they’re more glasses than goggles to allow easy removal and storage. The lens is reduced in height while maintaining the wraparound width. The frame is repurposed to create a larger top frame and temple arms. The strap is shortened and attached to the ends of the temple arms; adjustable for a secure fit and can be removed.
 
 Citizen Goggles facilitate augmented and virtual reality experiences. They are the primary communication and transaction technology of Fourth Earth.
 
