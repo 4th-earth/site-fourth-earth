@@ -14,6 +14,11 @@ You spotted something and want to **do something about it**? It's a little more 
 
 You can also sponsor this project financially by looking in the sidebar (to the right) under "Sponsor this project" and clicking on the heart.
 
+## Support
+
+- Subscribe to our [Ko-fi](https://ko-fi.com/4thearth).
+- Sponsor directly through GitHub using the sponsor links!
+
 ## Performance
 
 We use [web.dev](https://web.dev/measure/?url=https%3A%2F%2Fraw.4th.earth) to measure various pages. We emphasize accessibility, performance, and best practices (in that order). Our goal is 90 percent or higher for all four metrics.

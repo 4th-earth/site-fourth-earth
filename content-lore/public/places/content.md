@@ -1,6 +1,6 @@
 # Places
 
-Fourth Consists of eight continents. Each continent has 
+Fourth Consists of eight continents. Each continent has
 
 ## Dragonus
 
@@ -8,7 +8,7 @@ Temperate Deciduous forest, Fenghuang; East Asia.
 
 ### The Cradle
 
-The majority of sentient beings now live in the same area, spanning almost 12 miles in diameter in a temperate zone we call, The Cradle (Islamabad region).
+The majority of sentient beings now live in the same area, spanning just over 20 kilometers (12 miles) in diameter in a temperate zone we call, The Cradle (Islamabad region).
 
 Having seen the benefit in working together, all sentient beings on the planet know that, if they need to retreat again, they are always welcome.
 
@@ -22,7 +22,7 @@ Having seen the benefit in working together, all sentient beings on the planet k
 
 Savanna, Grimalkin; Africa.
 
-## Sobaka 
+## Sobaka
 
 Steppe, Hundkin; Siberia.
 
@@ -37,7 +37,7 @@ Wetlands, Grampus; Indonesia.
 ## Walumban
 
 Tropical Evergreen Forest, Caudata; Australia.
- 
+
 ## Sotz
 
 Tropical deciduous Forest, Chiroptera; South America.
