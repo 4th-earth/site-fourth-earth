@@ -10,53 +10,83 @@ Each of the eight higher-order sentient beings is believed to have evolved from 
 
 ## Fenghuang
 
-**Supposed origin:** [Dragonus](/places/dragonus/)
+**Presumed origin:** [Dragonus](/places/dragonus/)
+
+**Pronounced:** fong-hwah
 
 Believed to be the first higher-order sentient beings to rise as they seemed to have the most overlap with humans.
 
-The Fenghuang are believed to have descended from flightless birds on the continent of Dragonus. Aquiline nose. Round eyes, round pupil, barely visible sclera. The slightly pronounced eyebrow exaggerates the backward slow of the forehead. Hair is the textures of bristle and down feathers, with interlocking barbs creating sheets and layers; only present on the head. No external, protruding ears; similar to the Caudata, Grampus, and Cigwe.
+The Fenghuang are believed to have descended from flightless birds on the continent of Dragonus. Aquiline nose. Round eyes, round pupil, barely visible sclera. The slightly pronounced eyebrow exaggerates the backward slope of the forehead. Hair is the texture of bristle and down feathers, with interlocking barbs creating sheets and layers; only present on the head. No external, protruding ears; similar to the [Caudata](#caudata), [Grampus](#grampus), and [Cigwe](#cigwe).
 
-The Fenghuang built The Central Habitat of The Cradle; the other habitats were not built until The Great Grimalkin Immigration.
+The Fenghuang built The Central Habitat of [The Cradle](/places/#the-cradle); the other habitats were not built until [The Great Grimalkin Immigration](/#the-great-grimalkin-immigration).
 
 The Fenghuang had contact with the remaining First Earthers before their extinction.
 
 ## Grimalkin
 
-The Grimalkin are believed to have descended from felines on the continent of Mau. Narrow nasal passages and bridge-less nose. Human shaped eyes, visible sclera, vertical slit pupil. Canine teeth similar to the Hundkin, though more narrow. Typically lithe skeletal structure compared to other species. Almond-shaped eyes.
+**Presumed origin:** Mau
+
+**Pronounced:** gri-maul-kin
+
+Believed to have descended from felines. Narrow nasal passages and bridge-less nose. Human shaped eyes, visible sclera, vertical slit pupil. Canine teeth similar to the [Hundkin](#hundkin), though more narrow. Typically lithe skeletal structure compared to other species. Almond-shaped eyes.
 
 The Grimalkin joined The Cradle at the beginning of Third Earth. They were the first to experience Marl and came with their surviving population and a plan. It was a long-term, strategic plan. It seems to have worked. While the Fenghuang designed The Cradle and the technology used, the Grimalkin provided the manpower and training to prepare for the onslaught of Marl.
 
 ## Hundkin
 
-The Hundkin are believed to have descended from canines on the continent of Sobaka. Nose similar to the Grimalkin. Human shaped eyes, visible sclera, round pupil. Enlarged canine teeth. Generally “hearty” in build and musculature.
+**Presumed origin:** Sobaka
 
-The Hundkin were the last to come to The Cradle; arriving at The Battle of Third Earth, acting as an unplanned and welcomed flank attack. They never experienced Marl directly.
+**Pronounced:** hūn-d-kin
+
+The Hundkin are believed to have descended from canines. Nose similar to the [Grimalkin](#grimalkin). Human shaped eyes, visible sclera, round pupil. Enlarged canine teeth. Generally “hearty” in build and musculature.
+
+The Hundkin were the last to come to The Cradle; arriving at [The Battle of Third Earth](/#the-battle-of-third-earth), acting as an unplanned and welcomed flank attack. They never experienced Marl directly.
 
 ## Cigwe
 
-The Cigwe are believed to have descended from predator birds on the continent of Halgai. Nose similar to the Fenghuang, only broader. Round eyes, no sclera, round pupil. Slightly overdeveloped chest with legs similar to the Fenghuang.
+**Presumed origin:** Halgai
 
-The Cigwe joined The Cradle in the middle of Second Earth with The Cigwe Immigration.
+**Pronounced:** cheeg-weah (as in yeah)
+
+The Cigwe are believed to have descended from predator birds. Nose similar to the [Fenghuang](#fenghuang), only broader. Round eyes, no sclera, round pupil. Slightly overdeveloped chest with legs similar to the Fenghuang.
+
+The Cigwe joined The Cradle in the middle of Second Earth with [The Cigwe Immigration](/#the-cigwe-immigration).
 
 ## Grampus
 
-The Grampus are believed to have descended from porpoises on the continent of Oceana. Broad, flat nose. Round eyes, with no visible pupils or sclera. Broad upper body, tapering into narrow lower body.
+**Presumed origin:** Oceana
 
-The Grampus joined The Cradle in the early-middle of Third Earth with The Grampus Immigration.
+**Pronounced:** gram-pes (as in pest)
+
+The Grampus are believed to have descended from porpoises. Broad, flat nose. Round eyes, with no visible pupils or sclera. Broad upper body, tapering into narrow lower body.
+
+The Grampus joined The Cradle in the early-middle of Third Earth with [The Grampus Immigration](/#the-grampus-immigration).
 
 ## Caudata
 
-The Caudata are believed to have descended from salamanders on the continent of Walumban. Narrow nose, with little protrusion. Round eyes, no visible pupils or sclera. Long torso, “beanpole.”
-The Caudata joined The Cradle in the middle of Third Earth following the Grampus with The Caudata Immigration.
+**Presumed origin:** Walumban
+
+**Pronounced:** cah-dah-tah 
+
+The Caudata are believed to have descended from salamanders. Narrow nose, with little protrusion. Round eyes, no visible pupils or sclera. Long torso, “beanpole.”
+The Caudata joined The Cradle in the middle of Third Earth following the Grampus with [The Caudata Immigration](/#the-caudata-immigration).
 
 ## Chiroptera
 
-The Chiroptera are believed to have descended from bats on the continent of Sotz. Narrow nose, with little protrusion; similar to Caudata. Round eyes, no visible pupils or sclera. Long, narrow fingers. Body shape similar to Grampus.
+**Presumed origin:** Sotz
 
-The Chiroptera joined The Cradle in the late-middle of Third Earth following the Caudata with The Chiroptera Immigration.
+**Pronounced:** Kī-rop-ter-uh
+
+The Chiroptera are believed to have descended from bats. Narrow nose, with little protrusion; similar to [Caudata](#caudata). Round eyes, no visible pupils or sclera. Long, narrow fingers. Body shape similar to [Grampus](#grampus).
+
+The Chiroptera joined The Cradle in the late-middle of Third Earth following the Caudata with [The Chiroptera Immigration](/#the-chiroptera-immigration).
 
 ## Capra
 
-The Capra are believed to have descended from goats on the continent of Geit. Wide nostrils running the full length of the nose, flat and broad, no eyebrow ridge. Teardrop-shaped eyes, no visible sclera, horizontal slit pupil. Diamond shaped, external ears. Horns are short ranging from unexposed protrusions beneath the skin and short exposed horns.
+**Presumed origin:** Geit
 
-The Capra joined The Cradle just before The Battle of Third Earth following the Chiroptera and were followed by Marl to find The Cradle.
+**Pronounced:** cap-ruh 
+
+The Capra are believed to have descended from goats. Wide nostrils running the full length of the nose, flat and broad, no eyebrow ridge. Teardrop-shaped eyes, no visible sclera, horizontal slit pupil. Diamond shaped, external ears. Horns are short ranging from unexposed protrusions beneath the skin and short exposed horns.
+
+The Capra joined The Cradle just before The Battle of Third Earth following the [Chiroptera](#chiroptera), known as [The Capra Immigration](/#the-capra-immigration) and were followed by Marl to find The Cradle.
