@@ -1,6 +1,6 @@
 # Support
 
-You can support us by [buying us a coffee](https://ko-fi.com/4thearth).
+You can support us on [open collective](https://opencollective.com/alexander-midknight/projects/4th-earth).
 
 Contributing through [GitHub](https://github.com/4th-earth/site-fourth-earth).
 
