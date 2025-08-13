@@ -38,5 +38,7 @@ Marked by Marl, the sorcerer and a mass immigration of Grimalkin to The Cradle. 
 
 ## Fourth Earth
 
+Median lifespan: 100 Sol Revolutions
+
 The Cradle
 The Central Habitat

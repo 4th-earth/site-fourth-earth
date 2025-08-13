@@ -31,8 +31,16 @@ Tungsten
 Glass
 ClothFirst Earth
 
+## Citizen Jeans
+
+## Citizen Bag
+
 ## Citizen Poncho
 
 ## Credit System
 
-## Gravity Plates
+### Collective Pool (not Citizen Pool)
+
+## Heating Pod
+
+## Gravity Plates (?)

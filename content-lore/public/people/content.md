@@ -14,6 +14,8 @@ Each of the eight higher-order sentient beings is believed to have evolved from 
 
 **Pronounced:** fong-hwah
 
+**Average lifespan:** 200
+
 Believed to be the first higher-order sentient beings to rise as they seemed to have the most overlap with humans.
 
 The Fenghuang are believed to have descended from flightless birds on the continent of Dragonus. Aquiline nose. Round eyes, round pupil, barely visible sclera. The slightly pronounced eyebrow exaggerates the backward slope of the forehead. Hair is the texture of bristle and down feathers, with interlocking barbs creating sheets and layers; only present on the head. No external, protruding ears; similar to the [Caudata](#caudata), [Grampus](#grampus), and [Cigwe](#cigwe).
@@ -52,15 +54,15 @@ The Cigwe are believed to have descended from predator birds. Nose similar to th
 
 The Cigwe joined The Cradle in the middle of Second Earth with [The Cigwe Immigration](/#the-cigwe-immigration).
 
-## Grampus
+## Lepus
 
 **Presumed origin:** Oceana
 
-**Pronounced:** gram-pes (as in pest)
+**Pronounced:** lee-pes (as in pest)
 
-The Grampus are believed to have descended from porpoises. Broad, flat nose. Round eyes, with no visible pupils or sclera. Broad upper body, tapering into narrow lower body.
+The Lepus are believed to have descended from hares. Broad, flat nose. Round eyes, visible pupils with black sclera. Narrow upper body, tapering into wide lower body.
 
-The Grampus joined The Cradle in the early-middle of Third Earth with [The Grampus Immigration](/#the-grampus-immigration).
+The Lepus joined The Cradle in the early-middle of Third Earth with [The Lepus Immigration](/#the-grampus-immigration).
 
 ## Caudata
 
