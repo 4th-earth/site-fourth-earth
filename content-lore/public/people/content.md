@@ -1,108 +1,106 @@
 # People
 
-With humans gone, it didn’t take long for a diverse population of sentient beings to rise. It’s believed most came from domesticated animals. However, there is no proof and no real reward in speculation given domestication was thousands of years ago and the Fenghuang trace their history for almost 4,000 years.
-
-Fourth Earth has eight continents. Each continent is dominated by one of the eight primary habitats. Each habitat is believed to be the origin of the seven higher-order species. While it is very anthropocentric, but it’s how we try and answer that fundamental question of: Where did I come from?
-
-We all agree it’s probably not true. We also all agree it’s pointless to do much more than speculate on the matter.
-
-Each of the eight higher-order sentient beings is believed to have evolved from the creatures of previous ages. This evolution seems to only effect physical appearance and any innate characteristics of the original species have been lost to the sands of time.
+People are the name given to all members of the so-called higher-order species of 4th Earth. It’s believed most species came from domesticated animals. However, there is no proof and no reward in speculation, given domestication was thousands of years ago. While we tend to be anthropocentric, it’s how we try to answer the question: Where did I come from?
 
 ## Fenghuang
 
-**Presumed origin:** [Dragonus](/places/dragonus/)
-
-**Pronounced:** fong-hwah
+**Pronounced:** fung-HWAHNG
 
 **Average lifespan:** 200
 
 **Believed to evolve from:** Flightless birds
 
-Believed to be the first higher-order sentient beings to rise as they seemed to have the most overlap with humans.
+**Physical characteristics:**
+    
+- Aquiline nose.
+- Round eyes, round pupil, barely visible sclera; set more front of face. 
+- Hair has the texture of bristle and down feathers, with interlocking barbs creating sheets and layers; only present on the head.
+- No external protruding ears.
 
-Aquiline nose. Round eyes, round pupil, barely visible sclera. The slightly pronounced eyebrow exaggerates the backward slope of the forehead. Hair is the texture of bristle and down feathers, with interlocking barbs creating sheets and layers; only present on the head. No external, protruding ears; similar to the [Caudata](#caudata), [Grampus](#grampus), and [Cigwe](#cigwe).
+Believed to be the first higher-order sentient beings to rise, as they had the most overlap and interactions with humans before humans went extinct.
 
-The Fenghuang built The Central Habitat of [The Cradle](/places/#the-cradle); the other habitats were not built until [The Great Grimalkin Immigration](/#the-great-grimalkin-immigration).
-
-The Fenghuang had contact with the remaining First Earthers before their extinction.
+The Fenghuang helped humans build the Central Habitat of [The Cradle](/places/#the-cradle).
 
 ## Grimalkin
-
-**Presumed origin:** Mau
 
 **Pronounced:** gri-maul-kin
 
 **Believed to evolve from:** Felines
 
-Narrow nasal passages and bridge-less nose. Human shaped eyes, visible sclera, vertical slit pupil. Canine teeth similar to the [Hundkin](#hundkin), though more narrow. Typically lithe skeletal structure compared to other species. Almond-shaped eyes.
+**Physical characteristics:**
 
-The Grimalkin joined The Cradle at the beginning of Third Earth. They were the first to experience Marl and came with their surviving population and a plan. It was a long-term, strategic plan. It seems to have worked. While the Fenghuang designed The Cradle and the technology used, the Grimalkin provided the manpower and training to prepare for the onslaught of Marl.
+- Nose is wider at the forehead junction than at the nostrils; roughly one-third. 
+- The eyes are rhomboid, with curves at the nose-forehead junction and the opposite corner, with a visible sclera and a vertical slit pupil; set more front of the face. 
+- Hair is short because of the growth and shed cycles.
+- Ears taper and are on top of the skull.
+- Canine teeth are longer than average and narrow. 
+
+The Grimalkin joined The Cradle at the beginning of Third Earth. They were the first to experience Maul (măll) and came with their surviving population and a plan.
+
+While the Fenghuang, along with the last of the humans, designed The Cradle and some of the technology used, the Grimalkin provided the personnel and training to prepare for war.
 
 ## Hundkin
 
-**Presumed origin:** Sobaka
-
-**Pronounced:** hūn-d-kin
+**Pronounced:** hūnd-kin
 
 **Believed to evolve from:** Canines
 
-Nose similar to the [Grimalkin](#grimalkin). Human shaped eyes, visible sclera, round pupil. Enlarged canine teeth. Generally “hearty” in build and musculature.
+**Physical characteristics:**
 
-The Hundkin were the last to come to The Cradle; arriving at [The Battle of Third Earth](/#the-battle-of-third-earth), acting as an unplanned and welcomed flank attack. They never experienced Marl directly.
+- Nose is wider at the forehead junction than at the nostrils; roughly two-thirds. 
+- The eyes are rhomboid, with curves at the nose-forehead junction and the opposite corner, with a visible sclera and round pupil; set more front of face. 
+- Hair is short because of the growth and shed cycles.
+- Ears taper and are on top of the skull.
+- Canine teeth are longer than average and wide.
 
-## Macropod
-
-**Presumed origin:** Minawara
-
-**Pronounced:** mack-row-pod
-
-**Believed to evolve from:** Marsupials
-
-Broad, flat nose. Round eyes, visible pupils with black sclera. Broad upper body, narrow waist, large thighs.
+The Hundkin were the last to come to The Cradle; arriving at [The Battle over Third Earth](/#the-battle-of-third-earth), acting as an unplanned and welcomed flank attack. They never experienced Maul directly.
 
 ## Lepus
-
-**Presumed origin:** Oceana
 
 **Pronounced:** lee-pes (as in pest)
 
 **Believed to evolve from:** Hares
 
-Broad, flat nose. Round eyes, visible pupils with black sclera. Narrow upper body, tapering into wide lower body.
-
-The Lepus joined The Cradle in the early-middle of Third Earth with [The Lepus Immigration](/#the-grampus-immigration).
-
-## Caudata
-
-**Presumed origin:** Walumban
-
-**Pronounced:** cah-dah-tah 
-
-**Believed to evolve from:** Salammanders
-
-Narrow nose, with little protrusion. Round eyes, no visible pupils or sclera. Long torso, “beanpole.”
-The Caudata joined The Cradle in the middle of Third Earth following the Grampus with [The Caudata Immigration](/#the-caudata-immigration).
-
-## Chiroptera
-
-**Presumed origin:** Sotz
-
-**Pronounced:** Kī-rop-ter-uh
-
-**Believed to evolve from:** Bats
-
-Narrow nose, with little protrusion; similar to [Caudata](#caudata). Round eyes, no visible pupils or sclera. Long, narrow fingers. Body shape similar to [Grampus](#grampus).
-
-The Chiroptera joined The Cradle in the late-middle of Third Earth following the Caudata with [The Chiroptera Immigration](/#the-chiroptera-immigration).
+- Nose is wider at the forehead junction than at the nostrils; roughly two-thirds. 
+- The eyes are circular, with visible pupils and black sclera set more side of the face. 
+- Hair is short because of the growth and shed cycles.
+- Ears are long, elliptical, and on top of the skull.
+- Upper and lower incisors are longer than average.
 
 ## Capra
-
-**Presumed origin:** Geit
 
 **Pronounced:** cap-ruh 
 
 **Believed to evolve from:** Goats
 
-Wide nostrils running the full length of the nose, flat and broad, no eyebrow ridge. Teardrop-shaped eyes, no visible sclera, horizontal slit pupil. Diamond shaped, external ears. Horns are short ranging from unexposed protrusions beneath the skin and short exposed horns.
+**Believed to evolve from:** Hares
 
-The Capra joined The Cradle just before The Battle of Third Earth following the [Chiroptera](#chiroptera), known as [The Capra Immigration](/#the-capra-immigration) and were followed by Marl to find The Cradle.
+- Nose is wider at the forehead junction than at the nostrils; roughly two-thirds, and no eyebrow ridge. 
+- The eyes are rhomboid, with curves at the nose-forehead junction and the opposite corner, no visible sclera, and a horizontal slit pupil; set more side of face. 
+- Hair is short because of the growth and shed cycles.
+- Ears are long, varied shapes, and on the sides of the skull; often extending horizontally.
+- Possible bumps or short horns protrude from the top of the skull.
+
+## Chiroptera
+
+**Pronounced:** Kī-rop-ter-uh
+
+**Believed to evolve from:** Bats
+
+**Believed to evolve from:** Hares
+
+- Nose is wider at the forehead junction than at the nostrils; roughly one-third, and no eyebrow ridge. 
+- The eyes are round, with no visible sclera or pupils; set more side of face. 
+- Hair is short because of the growth and shed cycles.
+- Ears are long, varied shapes, and on the sides of the skull; often extending vertically.
+
+## Coati
+
+**Pronounced:** co-ah-tee
+
+**Believed to evolve from:** Raccoons
+
+- Nose is wider at the forehead junction than at the nostrils; roughly one-third, and minor eyebrow ridge. 
+- The eyes are round, with no visible sclera or pupils; set front of face. 
+- Hair is short because of the growth and shed cycles.
+- Ears are short, rounded, and on the top of the skull.
