@@ -61,6 +61,8 @@ The Hundkin were the last to come to The Cradle; arriving at [The Battle over Th
 
 **Believed to evolve from:** Hares
 
+**Physical characteristics:**
+
 - Nose is wider at the forehead junction than at the nostrils; roughly two-thirds. 
 - The eyes are circular, with visible pupils and black sclera set more side of the face. 
 - Hair is short because of the growth and shed cycles.
@@ -73,7 +75,7 @@ The Hundkin were the last to come to The Cradle; arriving at [The Battle over Th
 
 **Believed to evolve from:** Goats
 
-**Believed to evolve from:** Hares
+**Physical characteristics:**
 
 - Nose is wider at the forehead junction than at the nostrils; roughly two-thirds, and no eyebrow ridge. 
 - The eyes are rhomboid, with curves at the nose-forehead junction and the opposite corner, no visible sclera, and a horizontal slit pupil; set more side of face. 
@@ -87,7 +89,7 @@ The Hundkin were the last to come to The Cradle; arriving at [The Battle over Th
 
 **Believed to evolve from:** Bats
 
-**Believed to evolve from:** Hares
+**Physical characteristics:**
 
 - Nose is wider at the forehead junction than at the nostrils; roughly one-third, and no eyebrow ridge. 
 - The eyes are round, with no visible sclera or pupils; set more side of face. 
@@ -99,6 +101,8 @@ The Hundkin were the last to come to The Cradle; arriving at [The Battle over Th
 **Pronounced:** co-ah-tee
 
 **Believed to evolve from:** Raccoons
+
+**Physical characteristics:**
 
 - Nose is wider at the forehead junction than at the nostrils; roughly one-third, and minor eyebrow ridge. 
 - The eyes are round, with no visible sclera or pupils; set front of face. 
