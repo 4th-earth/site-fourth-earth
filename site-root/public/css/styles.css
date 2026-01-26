@@ -1,4 +1,8 @@
-@charset "UTF-8";
+* {
+  font-family: sans-serif;
+}
+
+/*@charset "UTF-8";
 @font-face{
   font-family:"Deco";
   font-style:normal;
@@ -388,4 +392,4 @@ a[rel~=noreferrer]:after{
   position:var(--relative);
   top:var(--icon-lift-spacer);
   font-size:var(--xs-font);
-}
+}*/
