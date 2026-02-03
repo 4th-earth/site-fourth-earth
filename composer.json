@@ -20,7 +20,7 @@
     "php": "^8.1",
     "8fold/commonmark-fluent-markdown": "^0.10.0",
     "8fold/php-html-builder": "^1.0.0",
-    "laminas/laminas-httphandlerrunner": "^2.1",
+    "laminas/laminas-httphandlerrunner": "^2.13",
     "nyholm/psr7": "^1.4",
     "nyholm/psr7-server": "^1.0",
     "symfony/finder": "^6.1"
