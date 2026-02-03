@@ -64,7 +64,7 @@ h1 {
 }
 
 h2 {
-  margin-top: 4rem;
+  margin-top: 3rem;
   font-size: var(--font-header2-size);
 }
 
@@ -90,7 +90,7 @@ button.popover {
   color: var(--color-black);
   text-decoration: underline;
   text-decoration-color: var(--color-theme);
-  text-decoration-thickness: 0.1rem;
+  text-decoration-thickness: 0.15rem;
   text-underline-offset: 0.1rem;
   transition: text-decoration-color 0.3s;  
 }
@@ -178,6 +178,10 @@ nav[aria-label="quick navigation"] > ul > li:nth-of-type(2) > a:hover {
   background-color: var(--color-theme);
 }
 
+nav#primary-nav {
+  margin: 0 auto;
+  max-width: 1000px;
+}
 
 nav#primary-nav > ul > li > a.current {
   background-color: var(--color-black);
