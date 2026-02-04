@@ -30,6 +30,35 @@ $request = (new ServerRequestCreator(
     $psr17Factory  // StreamFactory
 ))->fromGlobals();
 
+$path = $request->getUri()->getPath();
+if ($path === '/people/') {
+    header("HTTP/1.1 301 Moved Permanently");
+    header('Location: https://4th.earth/species/');
+    header("Connection: close");
+    exit();
+}
+
+if ($path === '/places/') {
+    header("HTTP/1.1 301 Moved Permanently");
+    header('Location: https://4th.earth/places/');
+    header("Connection: close");
+    exit();
+}
+
+if ($path === '/things/') {
+    header("HTTP/1.1 301 Moved Permanently");
+    header('Location: https://4th.earth/inventory/');
+    header("Connection: close");
+    exit();
+}
+
+if ($path === '/') {
+    header("HTTP/1.1 301 Moved Permanently");
+    header('Location: https://4th.earth');
+    header("Connection: close");
+    exit();
+}
+
 (new SapiEmitter())->emit(
     Site::init(
         withDomain: 'https://lore.4th.earth',
