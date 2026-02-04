@@ -18,14 +18,14 @@ ErrorDocument 500 /error-500.html
 	Header add Access-Control-Allow-Methods "GET, HEAD"
 	Header add Allow "GET, HEAD"
 
-	# Handle redirects
-	# [status] [original] [updated]
-	301 /people/ https://4th.earth/species/
-
 	# Redirect to trailing slash if not folder or file
 	RewriteCond %{REQUEST_URI} /+[^\.]+$
 	RewriteRule ^(.+[^/])$ %{REQUEST_URI}/ [R=301,L]
 
+	# Handle redirects
+	# [status] [original] [updated]
+	301 /people/ https://4th.earth/species/
+	
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
