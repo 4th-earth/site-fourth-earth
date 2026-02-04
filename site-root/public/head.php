@@ -13,7 +13,7 @@
     <meta name="msapplication-TileColor" content="#008181">
     <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     <meta name="theme-color" color="#ffffff">
-    <link type="text/css" rel="stylesheet" href="/css/styles.css">
+    <link type="text/css" rel="stylesheet" href="/css/styles.css?v=2">
 </head>     
 <body>
     <a id="skip-nav" href="#main-content">skip navigation</a>
