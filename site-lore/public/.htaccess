@@ -24,8 +24,8 @@ ErrorDocument 500 /error-500.html
 
 	# Handle redirects
 	# [status] [original] [updated]
-	301 /people/ https://4th.earth/species/
-	
+	# 301 /people/ https://4th.earth/species/
+
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
