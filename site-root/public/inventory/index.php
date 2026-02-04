@@ -10,6 +10,8 @@ ini_set('realpath_cache_ttl', '600');
 
 require_once(__DIR__ . '/../../../vendor/autoload.php');
 
+$title = 'Inventory | 4th Earth';
+
 require_once('../head.php');
 ?>
     <article id="main-content">
