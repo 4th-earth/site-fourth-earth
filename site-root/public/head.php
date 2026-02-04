@@ -1,6 +1,6 @@
 <!doctype html>
 <head>
-    <title>4th Earth</title>
+    <title><?php echo $title; ?></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="A tabletop role playing game and lore for the ages.">
