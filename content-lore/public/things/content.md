@@ -37,10 +37,14 @@ ClothFirst Earth
 
 ## Citizen Poncho
 
+## Citizen Locker
+
 ## Credit System
 
 ### Collective Pool (not Citizen Pool)
 
 ## Heating Pod
+
+## Sleeping Pod
 
 ## Gravity Plates (?)
