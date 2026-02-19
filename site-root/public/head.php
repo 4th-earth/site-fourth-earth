@@ -13,13 +13,14 @@
     <meta name="msapplication-TileColor" content="#008181">
     <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     <meta name="theme-color" color="#ffffff">
-    <link type="text/css" rel="stylesheet" href="/css/styles.css?v=2">
+    <link type="text/css" rel="stylesheet" href="/css/styles.css?v=3">
 </head>     
 <body>
     <a id="skip-nav" href="#main-content">skip navigation</a>
     <nav aria-label="quick navigation">
         <ul>
             <li><a href="#primary-nav">menu <span class="sr-only">(go to primary navigation)</span></a></li>
-            <li><a href="https://www.patreon.com/cw/4thearth" target="_blank">support <span class="sr-only">(new window)</span></a></li>
+            <li><a href="/read/">read</a></li>
+            <li><a rel="noopener noreferrer" href="https://www.patreon.com/cw/4thearth" target="_blank">support <span class="sr-only">(new window)</span></a></li>
         </ul>
     </nav>
