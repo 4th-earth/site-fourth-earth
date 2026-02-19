@@ -1,17 +1,25 @@
 @font-face{
   font-family:"AH-light";
-  font-style:normal;
-  font-weight:normal;
+  /*font-style:normal;*/
+  /*font-weight:normal;*/
   src:local("sans-serif"), url("/fonts/AtkinsonHyperlegibleNext-Light.ttf") format("truetype");
-  font-display:swap;
+  /*font-display:swap;*/
 }
 
 @font-face{
   font-family:"AH-regular";
-  font-style:normal;
-  font-weight:normal;
+  /*font-style:normal;*/
+  /*font-weight:normal;*/
   src:local("sans-serif"), url("/fonts/AtkinsonHyperlegibleNext-Regular.ttf") format("truetype");
-  font-display:swap;
+  /*font-display:swap;*/
+}
+
+@font-face{
+  font-family:"AH-italic";
+  /*font-style:normal;*/
+  /*font-weight:normal;*/
+  src:local("sans-serif"), url("/fonts/AtkinsonHyperlegibleNext-LightItalic.ttf") format("truetype");
+  /*font-display:swap;*/
 }
 
 :root {
@@ -20,6 +28,7 @@
   --font-header: "AH-regular";
   --font-header-size: 20pt;
   --font-header2-size: 16pt;
+  --font-italic: "AH-italic";
   --line-height: 1.5rem;
   --color-theme: #008181;
   --color-black: #000000;
@@ -73,7 +82,9 @@ h3 {
 }
 
 blockquote {
-  margin-left: 1rem;
+  margin: 3rem 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--color-shadow);
 }
 
 footer {
@@ -105,6 +116,10 @@ body:has(div:popover-open) {
   background-color: hsl(0, 0%, 0%, 5%);
 }
 
+body:has(div:popover-open) article {
+  filter: blur(0.25rem);
+}
+
 div:popover-open {
   padding: 0;
   border-color: var(--color-black);
@@ -130,11 +145,6 @@ div:popover-open > button:hover {
   background-color: var(--color-black);
 }
 
-div:popover-open ~ article {
-  filter: blur(0.25rem);
-  /*background-color: hsl(0, 0%, 0%, 1%);*/
-}
-
 .sr-only {
   position: absolute;
   left: -999em;
@@ -156,6 +166,10 @@ nav#primary-nav > ul {
   grid-template-columns: 1fr 1fr;
 }
 
+nav[aria-label="quick navigation"] > ul {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 nav[aria-label="quick navigation"] > ul > li > a,
 nav#primary-nav > ul > li > a {
   display: block;
@@ -169,11 +183,11 @@ nav#primary-nav > ul > li > a {
   transition: background-color 0.3s;
 }
 
-nav[aria-label="quick navigation"] > ul > li:nth-of-type(2) > a {
+nav[aria-label="quick navigation"] > ul > li:last-of-type > a {
   background-color: var(--color-black);
 }
 
-nav[aria-label="quick navigation"] > ul > li:nth-of-type(2) > a:hover {
+nav[aria-label="quick navigation"] > ul > li:last-of-type > a:hover {
   background-color: var(--color-theme);
 }
 
@@ -208,6 +222,8 @@ p#top > a {
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  margin: auto 15px;
+@media (min-width: 768px) {
+  nav[aria-label="quick navigation"] > ul {
+    grid-template-columns: 1fr 1fr 0.5fr;
+  }  
 }
