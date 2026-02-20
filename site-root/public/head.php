@@ -21,6 +21,6 @@
         <ul>
             <li><a href="#primary-nav">menu <span class="sr-only">(go to primary navigation)</span></a></li>
             <li><a href="/read/">read</a></li>
-            <li><a rel="noopener noreferrer" href="https://www.patreon.com/cw/4thearth" target="_blank">support <span class="sr-only">(new window)</span></a></li>
+            <li><a rel="noopener noreferrer" href="https://www.patreon.com/cw/4thearth" target="_blank">patreon <span class="sr-only">(new window)</span></a></li>
         </ul>
     </nav>
