@@ -49,7 +49,7 @@ require_once('../head.php');
 
 <p>“Thank you, Lafit. That is correct.”</p>
 
-<p>A notification appeared in Lafit&#8217;s Citizen Goggles informing her she had earned three credits for answering correctly. Had Url and the Credit System determined the answer was incorrect, she would have received one credit for the attempt in the classroom context.</p>
+<p>A notification appeared in Lafit&#8217;s Citizen Goggles informing her she had earned two credits for answering correctly. Had Url and the Credit System determined the answer was incorrect, she would have received one credit for the attempt in the classroom context.</p>
 
 <p>Url continued, “In fact, First Earthers are the ones who named this planet Earth. This name is one of many things we use to this day. From First Earth to Fourth Earth, the name survives, even though First Earthers do not.</p>
 
@@ -117,7 +117,7 @@ require_once('../head.php');
 
 <p>Url noticed a circle above Lafit’s head, and that she had not marked herself done.</p>
 
-<p>Dea preferred one card at a time. The first read, “Human effects on climate made the Earth uninhabitable for them.” This was like the card he created that said, “Climate change,” and he slid the card behind his. The next card read, “They left Earth.” This was not similar to any of his inputs, and he slid it with his eyes to his right, starting a stack of unique inputs compared to his own.</p>
+<p>Dea preferred one card at a time. The first read, “Human effects on climate made the Earth uninhabitable for them.” This was like the card he created that said, “Climate change,” and he slid the card to the right of his. The next card read, “They left Earth.” This was not similar to any of his inputs, and he slid it with his eyes to his right, starting a stack of unique inputs compared to his own.</p>
 
 <p>Deci colored their inputs teal with a narrow outline. They maintained the groupings they created of the peer inputs. The first of their inputs read, “Human effects on climate made the Earth uninhabitable for them.” They enlarged their input and slid it to the climate-themed grouping, ensuring it appeared in front of the group. While they appreciated the input that read, “Climate change,” they thought their articulation was more complete. However, they determined the input reading, “They left Earth” was more concise and just as clear as the input they created reading, “They mastered extraterrestrial travel, exploration, and colonization,” which was similar to, but relied on less conjecture than another input with a similar theme reading, “Extraterrestrial beings visited Earth, and First Earthers went with them.” Deci added their input to the group, made the “They left Earth” input yellow with a wide border, and placed it visually in front of and larger than the cards in the group.</p>
 
