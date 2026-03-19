@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
+ini_set('display_errors', '0');
+ini_set('display_startup_errors', '0');
 error_reporting(E_ALL);
 
 ini_set('realpath_cache_size', '4096');
 ini_set('realpath_cache_ttl', '600');
 
-require __DIR__ . '/../../vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 use Laminas\HttpHandlerRunner\Emitter\SapiEmitter;
 
@@ -32,8 +32,8 @@ $request = (new ServerRequestCreator(
 
 (new SapiEmitter())->emit(
     Site::init(
-        withDomain: 'http://raw.earth.fourth:8889',
-        contentIn: Content::init(__DIR__ . '/../../content-raw')
+        withDomain: 'https://raw.4th.earth',
+        contentIn: Content::init(__DIR__ . '/../content-raw')
     )->templates(
         default: Page::class,
         templates: [
